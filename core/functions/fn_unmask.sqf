@@ -89,4 +89,4 @@ if (_goggles in life_maskingGoggles) then
 
 if(_onceDelete) then {titleText["Vous avez été démasqué !","PLAIN"];};
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/

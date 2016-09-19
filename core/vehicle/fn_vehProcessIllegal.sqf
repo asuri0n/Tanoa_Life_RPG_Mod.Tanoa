@@ -15,18 +15,18 @@ if(isNull _vehicle) exitWith {}; //Null was passed?
 if(!isNil {_vehicle getVariable "process"}) exitWith {hint localize "Ce laboratoire est déjà occupé, laisse-le finir!";}; //process is already in progress..
 closeDialog 0; //Close the interaction menu.
 life_action_inUse = true; //Lock out the interaction menu for a bit..
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 _processComplete = false;
 _weight = [_vehicle] call life_fnc_vehicleWeight;
-if((_weight select 1) == 0) exitWith {hint "Ce véhicule est vide."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if((_weight select 1) == 0) exitWith {hint "Ce véhicule est vide."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 //Number of players in the Lab. Should be 2 or more.
 _objectsInVehicle = crew _vehicle;
 _playersInVehicle = count _objectsInVehicle;
 diag_log format ["ZAMAK LABO ----- _playersInVehicle: %1 -----",_playersInVehicle];
-if (_playersInVehicle < 2) exitWith {hint "Il faut deux laborantins à bord minimum."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if (fuel _vehicle < 0.50) exitWith {hint "Il n'y a pas assez d'essence pour permettre au labo de fonctionner."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if (_playersInVehicle < 2) exitWith {hint "Il faut deux laborantins à bord minimum."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if (fuel _vehicle < 0.50) exitWith {hint "Il n'y a pas assez d'essence pour permettre au labo de fonctionner."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 _countAllWest=0;
 {
@@ -35,7 +35,7 @@ _countAllWest=0;
 	  _countAllWest=_countAllWest+1;// magic
    };
 } forEach playableUnits;
-if (_countAllWest < 4) exitWith {hint "Il n'y a pas assez de gendarmes sur l'île pour utiliser un Zamak Lab."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if (_countAllWest < 4) exitWith {hint "Il n'y a pas assez de gendarmes sur l'île pour utiliser un Zamak Lab."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 
 //Distance from closest DP - a mean to avoid having lab too close from certain cities.
@@ -45,7 +45,7 @@ _dpInRange = false;
 	if(str(_x) in life_dp_points) exitWith {_dpInRange = true;};
 } forEach _objectsInRange;
 
-if(_dpInRange) exitWith{hint "Il faut être à plus d'un kilomètre d'un DP."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(_dpInRange) exitWith{hint "Il faut être à plus d'un kilomètre d'un DP."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 //Getting Trunk content
 _vInv = _vehicle getVariable ["Trunk",[[],0]];
@@ -63,11 +63,11 @@ _itemInfo = switch(true) do {
 	default {[]};
 };
 
-if(count _itemInfo == 0) exitWith {hint "Ce laboratoire ne peut traiter les objets présents dans le véhicule."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(count _itemInfo == 0) exitWith {hint "Ce laboratoire ne peut traiter les objets présents dans le véhicule."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 _vehicle setVariable ["process",true,true]; //Lock the device
 //[_vehicle,"life_fnc_soundDevice",true,false] spawn life_fnc_MP; //Broadcast the 'process' sound of the device for nearby units. Komodo: We'll find a sound for the zamak lab later.
 life_action_inUse = false; //Unlock it since it's going to do it's own thing...
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 
 //Setup vars.
 _oldItem = _itemInfo select 0;
@@ -96,7 +96,7 @@ while{true} do
 		_objectsInVehicle = crew _vehicle;
 		_playersInVehicle = count _objectsInVehicle;
 		diag_log format ["ZAMAK LABO ----- _playersInVehicle: %1 -----",_playersInVehicle];
-		if (_playersInVehicle < 2) exitWith {hint "Il faut deux laborantins à bord minimum."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+		if (_playersInVehicle < 2) exitWith {hint "Il faut deux laborantins à bord minimum."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 		sleep  0.3;
 		_cP = _cP + 0.002;

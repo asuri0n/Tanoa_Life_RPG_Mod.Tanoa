@@ -14,7 +14,7 @@ if(isNil {(_house getVariable "house_owner")}) exitWith {hint "Cette maison n'a 
 _uid = (_house getVariable "house_owner") select 0;
 if(!([_uid] call life_fnc_isUIDActive)) exitWith {hint "Cette personne n'est pas en ligne, vous ne pouvez pas piller sa maison!"};
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 //Setup the progress bar
 disableSerialization;
@@ -45,11 +45,11 @@ while {true} do
 
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
-if(player distance _house > 13) exitWith {life_action_inUse = false; titleText["Vous êtes allé trop loin de la maison!","PLAIN"]; player setVariable ["AGM_canTreat", true, true];};
-if(!alive player) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if (vehicle player != player) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(player distance _house > 13) exitWith {life_action_inUse = false; titleText["Vous êtes allé trop loin de la maison!","PLAIN"]; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(!alive player) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if (vehicle player != player) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 
 [_house] call life_fnc_lockHouse; //Komodo: allows to make containers popup, and to fill in the trunk if players hasn't use the house.
 sleep 4; //waiting for server to complete.

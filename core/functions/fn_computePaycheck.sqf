@@ -8,7 +8,7 @@
 
 private ["_date, _extra"];
 
-if((!alive player) OR (player getVariable "restrained") OR (player getVariable "Escorting") OR (player getVariable "AGM_isUnconscious") OR (life_is_arrested)) then
+if((!alive player) OR (player getVariable "restrained") OR (player getVariable "Escorting")/* OR (player getVariable "AGM_isUnconscious")*/ OR (life_is_arrested)) then
 {
 	systemChat "Vous n'avez pas reçu de salaire car vous êtes soit coma, AFK, menotté, prison, escorté";
 }

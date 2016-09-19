@@ -19,4 +19,4 @@ if(([true,"conewithlight",1] call life_fnc_handleInv)) then
 };
 
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/

@@ -9,7 +9,7 @@ private["_sellers","_names"];
 _sellers = (_this select 0) getVariable["sellers",[]];
 if(count _sellers == 0) exitWith {hint "Personne est venu dealer ici ! Ne me faite pas de mal !"}; //No data.
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 _names = "";
 {
@@ -23,5 +23,5 @@ _names = "";
 
 hint parseText format["Des personnes m'ont effectivement vendu de la marchandise.<br/><br/>%1",_names];
 (_this select 0) setVariable["sellers",[],true];
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 life_action_inUse = false;

@@ -17,7 +17,7 @@ if(_door == 0) exitWith {hint "Vous n'êtes pas près d'une porte!"};
 if((_house getVariable[format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {hint "La porte est déjà débloqué!"};
 
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 //Setup the progress bar
 disableSerialization;
@@ -56,9 +56,9 @@ while {true} do
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(!alive player) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulé","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(!alive player) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulé","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 _house animate [format["door_%1_rot",_door],1];
 _house setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.

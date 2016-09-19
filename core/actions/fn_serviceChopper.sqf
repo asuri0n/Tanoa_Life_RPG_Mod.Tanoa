@@ -14,7 +14,7 @@ if(life_liquide < 1000) exitWith {hint "Tu as besoin de $1,000 pour réparer un 
 life_liquide = life_liquide - 1000;
 ["Repair Chopper", false, -1000] call life_fnc_antiCheatCash;
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
@@ -32,7 +32,7 @@ while {true} do
 	if(_cP >= 1) exitWith {};
 };
 
-if(!alive (_search select 0) || (_search select 0) distance air_sp > 10) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true]; hint "Le véhicule est détruit ou n'est plus sur l'héliport!"};
+if(!alive (_search select 0) || (_search select 0) distance air_sp > 10) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/ hint "Le véhicule est détruit ou n'est plus sur l'héliport!"};
 if(!local (_search select 0)) then
 {
 	[{(_search select 0) setFuel 1;},"BIS_fnc_spawn",(_search select 0),false] spawn life_fnc_MP;
@@ -46,4 +46,4 @@ if(!local (_search select 0)) then
 5 cutText ["","PLAIN"];
 titleText ["Votre hélicoptère est maintenant réparé et ravitaillé.","PLAIN"];
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/

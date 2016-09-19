@@ -61,7 +61,7 @@ switch(playerSide) do
 		{
 			case (__GETC__(life_medicLevel) > 0) :
 			{
-				player setVariable ["AGM_IsMedic", true, true]; //Komodo: nécessaire pour @AGM
+				//player setVariable ["AGM_IsMedic", true, true]; //Komodo: nécessaire pour @AGM
 				life_actions = life_actions + [player addAction["Voir les inconscient",life_fnc_med,"",0,false,false,"",' playerside == independent ']];
 				[] spawn life_fnc_medicLoadout;
 				3 radioChannelAdd [player];

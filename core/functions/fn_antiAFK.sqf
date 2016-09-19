@@ -25,7 +25,7 @@ while{true} do
     {
         sleep 5;
 
-        if((player getVariable "AGM_isUnconscious") OR (player getVariable "restrained")) exitwith{}; //si une personne est menottée elle ne rentre pas dans la boucle
+        if(/*(player getVariable "AGM_isUnconscious") OR */(player getVariable "restrained")) exitwith{}; //si une personne est menottée elle ne rentre pas dans la boucle
         if (license_civ_presse) exitWith {}; //False si journaliste
         if (__GETC__(life_adminlevel) != 0) exitWith {}; //False if admin
 

@@ -40,13 +40,13 @@ if((_curTarget isKindOf "House_F" && {player distance _curTarget < 12}) OR (((ne
 if(dialog) exitWith {}; //Don't bother when a dialog is open.
 if(vehicle player != player) exitWith {}; //He's in a vehicle, cancel!
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 //Temp fail safe.
 [] spawn {
 	sleep 60;
 	life_action_inUse = false;
-	player setVariable ["AGM_canTreat", true, true];
+	/*player setVariable ["AGM_canTreat", true, true];*/
 
 };
 
@@ -107,10 +107,10 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		else
 		{
 			//only if the player is not unconscious
-            if(player getVariable["AGM_isUnconscious",false]) then {
+            //if(player getVariable["AGM_isUnconscious",false]) then {
                 //ok then it's a civilian so we draw windows for civilians
                 [_curTarget] call life_fnc_civInteractionMenu;
-            };
+            //};
 		};
 	};
 } else {

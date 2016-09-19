@@ -89,7 +89,7 @@ if(_diff == 0 OR _val==0) exitWith {hint "Votre inventaire est rempli."};
 //diag_log format ["farmingToolUse; diff: %1", _diff];
 /* now we can launch the action */
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 _starttime = time;
 _duration = round (3 * _diff / _val);
 
@@ -185,7 +185,7 @@ for "_i" from 0 to (_duration/2.5) do
 	if (vehicle player != player) exitWith {};
 };
 
-if (life_interrupted OR (vehicle player != player)) exitWith {hint "Action annulée, tu n'as rien récolté."; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if (life_interrupted OR (vehicle player != player)) exitWith {hint "Action annulée, tu n'as rien récolté."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 diag_log format ["farmingToolUse; starttime: %1; endtime: %2", _starttime, time];
 diag_log "[VACA_DEBUG] ===== FIN ======";
@@ -196,4 +196,4 @@ if(([true,_mine,_diff] call life_fnc_handleInv)) then
 };
 
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/

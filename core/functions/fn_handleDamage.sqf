@@ -56,10 +56,10 @@ if (((vehicle _source isKindOf "Ship") OR ( vehicle _source isKindOf "Air") OR (
 {
 	diag_log "INVO DEBUG - Carkill";
 	_unit allowDamage false;
-	_unit setVariable ["AGM_allowDamage", False];
+	//_unit setVariable ["AGM_allowDamage", False];
 	_unit spawn {
 		sleep 2;
-		_this setVariable ["AGM_allowDamage", True];
+		//_this setVariable ["AGM_allowDamage", True];
 		_this allowDamage true;
 	};
 };

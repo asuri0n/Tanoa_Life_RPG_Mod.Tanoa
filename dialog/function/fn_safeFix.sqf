@@ -8,7 +8,7 @@ _vault = _this select 0;
 if(!(_vault getVariable["safe_open",false])) exitWith {hint "The vault is already locked?"};
 
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 //Setup the progress bar
 disableSerialization;

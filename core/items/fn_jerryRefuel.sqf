@@ -14,7 +14,7 @@ if(player distance _vehicle > 7.5) exitWith {hint "Tu dois être proche d'un vé
 
 if(!([false,"fuelF",1] call life_fnc_handleInv)) exitWith {};
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 _displayName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 
 _upp = format["Ravitaillement %1",_displayName];
@@ -51,7 +51,7 @@ while{true} do
 	if(life_interrupted) exitWith {};
 };
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player) exitWith {};

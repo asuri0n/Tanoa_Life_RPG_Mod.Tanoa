@@ -20,7 +20,7 @@ waitUntil {!(isNull (findDisplay 46))};
 		sleep 35;
 	};
 
-player setVariable ["AGM_IsMedic", true, true]; //Komodo: nécessaire pour @AGM
+//player setVariable ["AGM_IsMedic", true, true]; //Komodo: nécessaire pour @AGM
 player setVariable["mediclevel", __GETC__(life_mediclevel), true];
 
 life_actions = life_actions + [player addAction["Voir les inconscient",life_fnc_med,"",0,false,false,"",' playerside == independent ']];

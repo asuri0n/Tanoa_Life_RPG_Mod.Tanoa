@@ -22,7 +22,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 	if("ToolKit" in (items player)) then
 	{
 		life_action_inUse = true;
-		player setVariable ["AGM_canTreat", false, true];
+		/*player setVariable ["AGM_canTreat", false, true];*/
 		_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
 		_upp = format["Réparation %1",_displayName];
 		//Setup our progress bar.
@@ -54,12 +54,12 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		};
 
 		life_action_inUse = false;
-		player setVariable ["AGM_canTreat", true, true];
+		/*player setVariable ["AGM_canTreat", true, true];*/
 		5 cutText ["","PLAIN"];
 		player playActionNow "stop";
 		if (!("ToolKit" in (items player))) exitWith {};
 		if(!alive player) exitWith {};
-		if(life_interrupted) exitWith {life_interrupted = false; titleText["Action terminée","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+		if(life_interrupted) exitWith {life_interrupted = false; titleText["Action terminée","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 		if(player != vehicle player) exitWith {titleText["Tu dois être à l'exterieur du véhicule pour le réparer.","PLAIN"];};
 		player removeItem "ToolKit";
 		_veh setDamage 0;

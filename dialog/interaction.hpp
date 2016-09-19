@@ -49,7 +49,7 @@ class Interaction_Extended
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
 			text = "$STR_Global_Close";
-			onButtonClick = "closeDialog 0; life_action_inUse = false; player setVariable [""AGM_canTreat"", true, true];";
+			onButtonClick = "closeDialog 0; life_action_inUse = false;"; //player setVariable [""AGM_canTreat"", true, true];
 			x = BGX;
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);

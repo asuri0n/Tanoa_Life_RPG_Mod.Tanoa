@@ -17,4 +17,4 @@ _crew = crew cursorTarget;
 } foreach _crew;
 
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/

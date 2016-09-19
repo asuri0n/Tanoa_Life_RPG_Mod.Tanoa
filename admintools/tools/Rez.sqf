@@ -14,9 +14,9 @@ player playMove "";
 
 //Komodo: nécessaire pour @AGM
 player setDamage 0;
-player setVariable ["AGM_Blood", 1, True];
-player setVariable ["AGM_isBleeding", False, True];
-player setVariable ["AGM_Painkiller", 1, True];
-player setVariable ["AGM_Pain", 0, True];
-player setVariable ["AGM_isUnconscious", False, True];
-[player] call AGM_Medical_fnc_wakeUp;
+//player setVariable ["AGM_Blood", 1, True];
+//player setVariable ["AGM_isBleeding", False, True];
+//player setVariable ["AGM_Painkiller", 1, True];
+//player setVariable ["AGM_Pain", 0, True];
+//player setVariable ["AGM_isUnconscious", False, True];
+//[player] call AGM_Medical_fnc_wakeUp;

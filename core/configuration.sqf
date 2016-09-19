@@ -39,7 +39,7 @@ life_is_processing = false;
 life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 life_action_gather = false;
 life_spikestrip = ObjNull;
 life_has_insurance = true;
@@ -82,7 +82,7 @@ invo_garage_last_query_car = [];
 invo_garage_last_query_air = [];
 invo_garage_last_query_ship = [];
 invo_killer = ObjNull; //Komodo: on stocke l'info sur la personne ayant tiré la dernière fois sur le joueur.
-invo_AGM_knockOut = false;
+//invo_AGM_knockOut = false;
 invo_bleedOutTime = 0;
 invo_canSuicide = false;
 invo_allies = []; //Komodo: Liste des alliés, remplie à l'init group. 0: id du gang, 1: objet group ou grpNull
@@ -109,10 +109,10 @@ invo_mission_types = [
 ];
 
 invo_weird_items = [
-	"AGM_Bandage",
-	"AGM_Morphine",
-	"AGM_Epipen",
-	"AGM_Bloodbag"
+	//"AGM_Bandage",
+	//"AGM_Morphine",
+	//"AGM_Epipen",
+	//"AGM_Bloodbag"
 ];
 
 invo_vaults = [
@@ -139,11 +139,11 @@ __CONST__(life_gangUpgradeBase,300000);
 __CONST__(life_gangUpgradeMultipler,2.5);
 
 player setDamage 0;
-player setVariable ["AGM_Blood", 1, True];
-player setVariable ["AGM_isBleeding", False, True];
-player setVariable ["AGM_Painkiller", 1, True];
-player setVariable ["AGM_Pain", 0, True];
-player setVariable ["AGM_isUnconscious", False, True];
+//player setVariable ["AGM_Blood", 1, True];
+//player setVariable ["AGM_isBleeding", False, True];
+//player setVariable ["AGM_Painkiller", 1, True];
+//player setVariable ["AGM_Pain", 0, True];
+//player setVariable ["AGM_isUnconscious", False, True];
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];

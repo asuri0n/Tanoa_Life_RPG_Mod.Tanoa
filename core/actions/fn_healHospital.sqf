@@ -17,10 +17,10 @@ hint "Tu est maintenant soigné!";
 
 //Komodo: @AGM complete healing.
 player setDamage 0;
-player setVariable ["AGM_Blood", 1, True];
-player setVariable ["AGM_isBleeding", False, True];
-player setVariable ["AGM_Painkiller", 1, True];
-player setVariable ["AGM_Pain", 0, True];
+//player setVariable ["AGM_Blood", 1, True];
+//player setVariable ["AGM_isBleeding", False, True];
+//player setVariable ["AGM_Painkiller", 1, True];
+//player setVariable ["AGM_Pain", 0, True];
 
 life_liquide = life_liquide - 500;
 ["Heal Hospital", false, -500] call life_fnc_antiCheatCash;
@@ -42,14 +42,15 @@ if (count _nearPlayers > 0) then {hint "Ok, on va s'occuper de ce(s) blessé(s)!
 else {hint "Pas de blessé autour de toi.";};
 
 {
-	if (_x getVariable["AGM_isUnconscious",false] && {!(_x getVariable["AGM_isBleeding",false])}) then
-	{
+	//if (_x getVariable["AGM_isUnconscious",false] && {!(_x getVariable["AGM_isBleeding",false])}) then
+	//{
 		//revive
-		_x setVariable ["AGM_isUnconscious", False, True];
-		_x setVariable ["AGM_Blood", 1, True];
-		_x setVariable ["AGM_isBleeding", False, True];
-		_x setVariable ["AGM_Painkiller", 1, True];
-		_x setVariable ["AGM_Pain", 0, True];
-		[_x] call AGM_Medical_fnc_wakeUp;
-	};
+		//_x setVariable ["AGM_isUnconscious", False, True];
+		//_x setVariable ["AGM_Blood", 1, True];
+		//_x setVariable ["AGM_isBleeding", False, True];
+		//_x setVariable ["AGM_Painkiller", 1, True];
+		//_x setVariable ["AGM_Pain", 0, True];
+		//[_x] call AGM_Medical_fnc_wakeUp;
+	//};
+	_x setDamage 0;
 } forEach _nearPlayers;

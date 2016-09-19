@@ -21,7 +21,7 @@ if(!_isVehicle && !(_curTarget getVariable["restrained",false])) exitWith {};
 
 _title = format["Crochettage de %1",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 //Setup the progress bar
 disableSerialization;
@@ -61,14 +61,14 @@ while {true} do
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(!alive player OR life_istazed) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if((player getVariable["restrained",false])) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(!isNil "_badDistance") exitWith {titleText["Tu es trop loin de la cible.","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulé","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(!alive player OR life_istazed) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if((player getVariable["restrained",false])) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(!isNil "_badDistance") exitWith {titleText["Tu es trop loin de la cible.","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulé","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 
 if(!_isVehicle) then {
 	_curTarget setVariable["restrained",false,true];

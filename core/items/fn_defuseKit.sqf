@@ -11,7 +11,7 @@ if(typeOf _vault != "Land_CargoBox_V1_F") exitWith {};
 if(!(_vault getVariable["chargeplaced",false])) exitWith {hint "Il n'y a pas de charge sur le coffre?"};
 
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 //Setup the progress bar
 disableSerialization;
 _title = "Désarmement de la bombe...";
@@ -48,10 +48,10 @@ while {true} do
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(!alive player) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(!alive player) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 _vault setVariable["chargeplaced",false,true];
 [[2,"La charge a été désamorcé."],"life_fnc_broadcast",west,false] spawn life_fnc_MP;

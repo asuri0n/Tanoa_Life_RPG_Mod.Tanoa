@@ -24,7 +24,7 @@ for "_i" from 1 to _doors do {
 if(_door == 0) exitWith {hint "Vous n'êtes pas près d'une porte!"}; //Not near a door to be broken into.
 if((_building getVariable[format["bis_disabled_Door_%1",_door],0]) == 1) exitWith {hint "This door is already locked!"};
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 closeDialog 0;
 //Setup the progress bar
@@ -67,9 +67,9 @@ while {true} do
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(!alive player) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulée","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(!alive player) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulée","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 _building animate [format["door_%1_rot",_door],0];
 _building setVariable[format["bis_disabled_Door_%1",_door],1,true]; //Unlock the door.

@@ -23,7 +23,7 @@ if (locked _veh > 1) Then
 	_nop = false;
 };
 
-if (((playerSide == civilian) && (license_civ_rebel)) && (cursortarget getVariable "AGM_isUnconscious") or (cursortarget getVariable "restrained") or (group cursortarget == group player) or (cursortarget getVariable "playerSurrender")) then {
+if (((playerSide == civilian) && (license_civ_rebel)) /*&& (cursortarget getVariable "AGM_isUnconscious")*/or (cursortarget getVariable "restrained") or (group cursortarget == group player) or (cursortarget getVariable "playerSurrender")) then {
 	hint "Ouverture du sac !";
 } else {
 	hint "Impossible de voler dans les sacs !";

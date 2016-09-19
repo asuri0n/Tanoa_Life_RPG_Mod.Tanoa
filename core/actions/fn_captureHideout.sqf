@@ -54,7 +54,7 @@ if ((_posBefore distance (getPosATL player)) > 2) exitWith {hint "Arrête de gli
 
 if(!isNil "_action" && {!_action}) exitWith {titleText["Capture annulée","PLAIN"];};
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 /* ça ne semble pas marcher... on verra ça plus tard, je (Komodo) simplifie en attendant.
 _msg = format["<t font='puristaMedium'><t size='1.30' align='center' color='#0D82DF'>Système de capture</t><br/>
@@ -110,18 +110,18 @@ while {true} do
 	if(life_interrupted) exitWith {};
 	if(player != vehicle player) exitWith {titleText["Tu dois être à l'exterieur du véhicule pour capturer la zone!.","PLAIN"]; life_interrupted = true;};
 	if(!alive player) exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
-	if(player getVariable "AGM_isUnconscious") exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
+	//if(player getVariable "AGM_isUnconscious") exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
 };
 
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(!alive player OR life_istazed) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if((player getVariable["restrained",false])) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulé","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(!alive player OR life_istazed) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if((player getVariable["restrained",false])) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulé","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
-if(player getVariable "AGM_isUnconscious") exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
+/*player setVariable ["AGM_canTreat", true, true];*/
+//if(player getVariable "AGM_isUnconscious") exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
 
 titleText["La zone a été capturé avec succes.","PLAIN"];
 _flagTexture = [

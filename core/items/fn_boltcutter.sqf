@@ -27,7 +27,7 @@ for "_i" from 1 to _doors do {
 if(_door == 0) exitWith {hint localize "Vous n'êtes pas près d'une porte!"}; //Not near a door to be broken into.
 if((_building getVariable[format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {hint localize "La porte est déjà débloqué!"};
 life_action_inUse = true;
-player setVariable ["AGM_canTreat", false, true];
+/*player setVariable ["AGM_canTreat", false, true];*/
 
 //Setup the progress bar
 disableSerialization;
@@ -71,11 +71,11 @@ while {true} do
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
-if(!alive player OR life_istazed) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if((player getVariable["restrained",false])) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "Action Annulée","PLAIN"]; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+if(!alive player OR life_istazed) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if((player getVariable["restrained",false])) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "Action Annulée","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 life_boltcutter_uses = life_boltcutter_uses + 1;
-life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];
+life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/
 if(life_boltcutter_uses >= 5) then {
 	[false,"boltcutter",1] call life_fnc_handleInv;
 	life_boltcutter_uses = 0;

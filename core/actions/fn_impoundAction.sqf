@@ -18,7 +18,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 	[[0,format[localize "STR_NOTF_BeingImpounded",(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	life_action_inUse = true;
-	player setVariable ["AGM_canTreat", false, true];
+	/*player setVariable ["AGM_canTreat", false, true];*/
 
 	_upp = localize "STR_NOTF_Impounding";
 	//Setup our progress bar.
@@ -42,14 +42,14 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	};
 	5 cutText ["","PLAIN"];
 
-	if(player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
-	if(!alive player) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+	if(player distance _vehicle > 10) exitWith {hint localize "STR_NOTF_ImpoundingCancelled"; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+	if(!alive player) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 	//_time = _vehicle getVariable "time";
 	//if(isNil {_time}) exitWith {deleteVehicle _vehicle; hint "This vehicle was hacked in"};
 	//if((time - _time)  < 120) exitWith {hint "This is a freshly spawned vehicle, you have no right impounding it."};
 	if((count crew _vehicle) == 0) then
 	{
-		if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {life_action_inUse = false; player setVariable ["AGM_canTreat", true, true];};
+		if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 		_type = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 		if((playerSide == independent) && ((call life_depanLevel) > 0)) then
 			{
@@ -82,4 +82,4 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	};
 };
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/

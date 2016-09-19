@@ -162,7 +162,7 @@ player setVariable["steam64ID",getPlayerUID player];
 player setVariable["realname",profileName,true];
 
 //Komodo: intégration AGM - modifications touches par défaut
-if (profileNamespace getVariable "AGM_Key_ModifierKey" != 0) then
+/*if (profileNamespace getVariable "AGM_Key_ModifierKey" != 0) then
 {
 	profileNamespace setVariable ["AGM_Key_ModifierKey",0];
 };
@@ -173,7 +173,7 @@ if (profileNamespace getVariable "AGM_Key_openInteractionMenuNew" == 219) then
 if (profileNamespace getVariable "AGM_Key_openInteractionMenuSelfNew" == 219.2) then
 {
 	profileNamespace setVariable ["AGM_Key_openInteractionMenuSelfNew",18.1];
-};
+};*/
 life_fnc_moveIn = compileFinal
 "
 	player moveInCargo (_this select 0);
@@ -195,11 +195,11 @@ switch (playerSide) do {
 
 //Mise a 0 des PV car quand spawn, dégat AGM
 player setDamage 0;
-player setVariable ["AGM_Blood", 1, True];
-player setVariable ["AGM_isBleeding", False, True];
-player setVariable ["AGM_Painkiller", 1, True];
-player setVariable ["AGM_Pain", 0, True];
-player setVariable ["AGM_isUnconscious", False, True];
+//player setVariable ["AGM_Blood", 1, True];
+//player setVariable ["AGM_isBleeding", False, True];
+//player setVariable ["AGM_Painkiller", 1, True];
+//player setVariable ["AGM_Pain", 0, True];
+//player setVariable ["AGM_isUnconscious", False, True];
 
 if(life_firstSpawn AND invo_play_intro) then
 {
@@ -272,7 +272,7 @@ switch (playerSide) do
 [] spawn INVO_fnc_commanderViewRestriction;
 
 //No Voice!
-player setSpeaker "AGM_NoVoice";
+//player setSpeaker "AGM_NoVoice";
 
 //test blackjack
 //player addAction["Test jeu de blackjack",life_fnc_jeuBlackJack];
@@ -283,7 +283,7 @@ player setSpeaker "AGM_NoVoice";
 //Test wall
 //player addAction ["<t color='#d06228'>Remettre le mur</t>", "test2.sqf", "", 1, false, false];
 
-player setVariable ["AGM_Name","Inconnu",true]; //Komodo: anti meta gaming
+//player setVariable ["AGM_Name","Inconnu",true]; //Komodo: anti meta gaming
 
 // NO FATIGUE
 if(local player) then 

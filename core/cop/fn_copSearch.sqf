@@ -7,7 +7,7 @@
 	Returns information on the search.
 */
 life_action_inUse = false;
-player setVariable ["AGM_canTreat", true, true];
+/*player setVariable ["AGM_canTreat", true, true];*/
 private["_civ","_invs","_license","_robber","_guns","_gun"];
 
 if (isServer && isDedicated) exitWith {};
