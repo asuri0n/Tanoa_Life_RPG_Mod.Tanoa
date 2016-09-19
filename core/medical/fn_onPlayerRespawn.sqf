@@ -31,7 +31,7 @@ switch(playerSide) do
 	case west:
 	{
 		[] spawn life_fnc_loadGear;
-		//player setVariable ["FAR_isUnconscious", 0, true];
+		player setVariable ["FAR_isUnconscious", 0, true];
 	};
 
 	case civilian:
@@ -40,7 +40,7 @@ switch(playerSide) do
 		_unit setVariable["ziptiesOwners",[],true];
 		_unit setVariable["Escorting",false,true];
 		_unit setVariable["transporting",false,true];
-		//_unit setVariable ["FAR_isUnconscious", 0, true];
+		_unit setVariable ["FAR_isUnconscious", 0, true];
 		life_istazed = false;//added 04/26/2014
 		if(headGear player != "") then {removeHeadgear player;};
 		if(goggles player != "") then {removeGoggles player;};
@@ -51,7 +51,7 @@ switch(playerSide) do
 		_unit setVariable["ziptiesOwners",[],true];
 		_unit setVariable["Escorting",false,true];
 		_unit setVariable["transporting",false,true];
-		//player setVariable ["FAR_isUnconscious", 0, true];
+		player setVariable ["FAR_isUnconscious", 0, true];
 		life_istazed = false;//added 04/26/2014
 	};
 };

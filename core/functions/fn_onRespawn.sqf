@@ -25,7 +25,7 @@ switch(playerSide) do
 	case west:
 	{
 		[] spawn life_fnc_loadGear;
-		//player setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
+		player setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
 	};
 
 	case civilian:
@@ -34,12 +34,12 @@ switch(playerSide) do
 		_unit setVariable["ziptiesOwners",[],true];
 		_unit setVariable["Escorting",false,true];
 		_unit setVariable["transporting",false,true];
-		//_unit setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
+		_unit setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
 		_unit setVariable ["civrestrained",false,true];
 // AJOUT SERRAT
 
 		_unit setVariable ["playerSurrender", false, true];
-		//_unit setVariable ["FAR_isUnconscious", 0, true];
+		_unit setVariable ["FAR_isUnconscious", 0, true];
 
 		_unit setVariable ["saveContact",ObjNull,true];
 		_unit setVariable ["invisible",false,true];
@@ -55,7 +55,7 @@ switch(playerSide) do
 		_unit setVariable ["ziptiesOwners",[],true];
 		_unit setVariable["Escorting",false,true];
 		_unit setVariable["transporting",false,true];
-		//player setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
+		player setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
 		life_istazed = false;//added 04/26/2014
 		switch(true) do
 		{

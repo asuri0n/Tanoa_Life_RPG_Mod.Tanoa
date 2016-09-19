@@ -1,4 +1,4 @@
-//[cursorTarget] spawn FAR_HandleRevive;
+[cursorTarget] spawn FAR_HandleRevive;
 
 //Komodo: nécessaire pour @AGM
 cursorTarget setDamage 0;
