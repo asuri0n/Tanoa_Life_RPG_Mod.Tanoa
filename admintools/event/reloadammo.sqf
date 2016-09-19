@@ -1,0 +1,1 @@
+vehicle player setVehicleAmmo 1;

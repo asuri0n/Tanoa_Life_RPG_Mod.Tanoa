@@ -1,0 +1,1 @@
+player playmove "AmovPercMstpSnonWnonDnon_exerciseKata";

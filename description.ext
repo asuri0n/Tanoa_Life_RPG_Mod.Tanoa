@@ -1,0 +1,513 @@
+author = "Tonic";
+onLoadName = "Tanoa Life Vacation Gaming";
+onLoadMission = "A RPG game mode developed by Tonic, modified by Vacation Gaming";
+joinUnassigned = 0;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+disableChannels[]={0,1,2};
+enableDebugConsole = 1;
+loadScreen = "loading.paa";
+respawnDialog = 0;
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 120;
+};
+
+wreckLimit = 3;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+corpseLimit = 150;
+corpseRemovalMinTime = 999;
+corpseRemovalMaxTime = 9999;
+
+#include "dialog\MasterHandler.h"
+#include "monitor\info.hpp"
+#include "core\adminMenu\spectator\spectating.hpp"
+
+class RscTitles
+{
+	#include "dialog\ui.hpp"
+	#include "dialog\progress.hpp"
+	#include "monitor\info.hpp"
+	#include "dialog\codes.hpp"
+    #include "dialog\involved.hpp"
+    #include "dialog\radio_player.hpp"
+    #include "dialog\notification.hpp"
+    #include "dialog\screenText.hpp"
+};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+};
+
+class CfgSounds {
+
+	class defibrillateur {
+		name = "defibrillateur";
+		sound[] = {"sounds\defibrillateur.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class SirenLong {
+		name = "SirenLong";
+		sound[] = {"sounds\Siren_Long.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class SirenHorn {
+		name = "SirenHorn";
+		sound[] = {"sounds\Siren_HORN.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class News {
+		name = "News";
+		sound[] = {"sounds\News.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class SirenTrack {
+		name = "SirenTrack";
+		sound[] = {"sounds\Siren_Track.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Bankalarm {
+		name = "bankalarm";
+		sound[] = {"sounds\bankalarm.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class CodeAlerte {
+		name = "CodeAlerte";
+		sound[] = {"sounds\bankalarm.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class reverse_truck {
+		name = "reverse_truck";
+		sound[] = {"sounds\truck_reverse.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class ambulance {
+		name = "ambulance";
+		sound[] = {"sounds\ambulance.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class tazersound {
+		name = "Tazersound";
+		sound[] = {"sounds\tazer.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class BeepBeep {
+		name = "BeepBeep";
+		sound[] = {"sounds\BeepBeep.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Beep {
+		name = "Beep";
+		sound[] = {"sounds\Beep.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Bag {
+		name = "bag";
+		sound[] = {"sounds\bag.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Caching {
+		name = "caching";
+		sound[] = {"sounds\caching.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Mining {
+		name = "mining";
+		sound[] = {"sounds\mining.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Cuff {
+		name = "cuff";
+		sound[] = {"sounds\cuff.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Eat {
+		name = "eat";
+		sound[] = {"sounds\eat.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Intro {
+		name = "Intro";
+		sound[] = {"sounds\Intro.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class houselock {
+		name = "houselock";
+		sound[] = {"sounds\houselock.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class houseunlock {
+		name = "houseunlock";
+		sound[] = {"sounds\houseunlock.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class fermeture {
+		name = "fermeture";
+		sound[] = {"sounds\fermeture.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class ouverture {
+		name = "ouverture";
+		sound[] = {"sounds\ouverture.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class ambfr {
+		name = "ambfr";
+		sound[] = {"sounds\amb_fr.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class ambfr2 {
+		name = "ambfr2";
+		sound[] = {"sounds\amb_fr2.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class hood {
+		name = "hood";
+		sound[] = {"sounds\cagoule.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class repairCric {
+		name = "repairCric";
+		sound[] = {"sounds\repairCric.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class networkOut {
+		name = "networkOut";
+		sound[] = {"sounds\networkOut.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class ringtone {
+		name = "ringtone";
+		sound[] = {"sounds\ringtone.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class breakingNews {
+		name = "breakingNews";
+		sound[] = {"sounds\BreakingNews.ogv", 1, 1};
+		titles[] = {};
+	};
+
+	class Flashbang
+	{
+		name = "Flashbang";
+		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
+	class gps_tracker
+	{
+		name = "gps_tracker";
+		sound[] = {"\sounds\gps_tracker.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
+	class Siren2EMT
+	{
+		name="Siren2EMT";
+		sound[]=
+		{
+			"\sounds\SIREN1emt.ogg",
+			1,
+			1
+		};
+		titles[]={};
+	};
+	class AirhornEMT
+	{
+		name="Airhorn";
+		Sound[]=
+		{
+			"\sounds\AIRHORNemt.ogg",
+			1,
+			1
+		};
+		titles[]={};
+	};
+	class Whelen_HowlerEMT
+	{
+		name="Whelen Howler";
+		Sound[]=
+		{
+			"\sounds\HOWLERemt.ogg",
+			1,
+			1
+		};
+		titles[]={};
+	};
+	class Whelen_ManualEMT
+	{
+		name="Whelen Manual";
+		Sound[]=
+		{
+			"\sounds\MANUALemt.ogg",
+			1,
+			1
+		};
+		titles[]={};
+	};
+	class Whelen_TakedownEMT
+	{
+		name="Whelen Takedown";
+		Sound[]=
+		{
+			"\sounds\TAKEDOWNemt.ogg",
+			1,
+			1
+		};
+		titles[]={};
+	};
+	class alarmevoiture
+	{
+		name = "alarmevoiture";
+		sound[] = {"\sounds\alarmevoiture.ogg", 1, 1};
+		titles[] = {};
+	};
+	class avion_decole
+	{
+		name = "avion_decole";
+		sound[] = {"\sounds\atterit.ogg", 1, 1};
+		titles[] = {};
+	};
+	class avion_atteri
+	{
+		name = "avion_atteri";
+		sound[] = {"\sounds\decole.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zipup
+	{
+		name = "zipup";
+		sound[] = {"\sounds\zipup.ogg", 1, 1};
+		titles[] = {};
+	};
+	class zipdown
+	{
+		name = "zipdown";
+		sound[] = {"\sounds\zipdown.ogg", 1, 1};
+		titles[] = {};
+	};
+	class unlock_phone
+	{
+		name = "unlock_phone";
+		sound[] = {"\sounds\unlock_phone.ogg", 1, 1};
+		titles[] = {};
+	};
+};
+
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Mission Terminé";
+		subtitle = "Tu n'es pas autorisé à utiliser ce slot";
+		description = "Tu n'es pas whitelisté sur ce slot !";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+	class Blacklisted
+	{
+		title = "Mission Terminé";
+		subtitle = "Tu as été blacklisté des forces de l'ordre";
+		description = "Tu n'es plus autorisé a étre un gendarme suite ? tes actions pr?alables les administrateurs t'ont retir? le droit de jouer gendarme.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+	class SpyGlass
+	{
+		title = "The SpyGlass t'as trouv?";
+		subTitle = "Tu as été détécté par spyGlass";
+		description = "Tu as ét? détécté par spyGlas pour hack et a ?t? report? aux administrateurs. Enjoy your day.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+	class NotPremium
+	{
+		title = "Echec de la Mission";
+		subtitle = "Vous n'étes pas autorisé a utiliser ce slot";
+		description = "Vous n'etes pas autorisé à utiliser ce slot parce que vous n'etes pas membre premium grade 2, essayez un autre emplacement";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	class Nopapiers
+	{
+		title = "EXTRADITION";
+		subtitle = "Vous n'avez aucun papiers d'identité";
+		description = "Vous devez vous connecter sur le serveur Stratis Life Vacation afin d'obtenir des papiers d'identit? pour venir sur Altis";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	class scriptKiddie
+	{
+		title = "No more cancer";
+		subtitle = "POWNED BY BLOOPIS SCRIPT KIDDIE ;)";
+		description = "TRY HARDER AND GET SOME PROGRAMMING SKILLZ, KID";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+  class papiers
+  {
+    title = "Direction Stratis !";
+    subtitle = "Vous êtes en train de voyager vers l'île de Stratis";
+    description = "Tu te dirige vers l'?le de Stratis. Tu peux te d?connecter et rejoindre l'autre serveur";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+  };
+
+  class altis
+  {
+    title = "Impossible !";
+    subtitle = "Vous n'êtes pas passé par le bateau";
+    description = "Pour vous rendre sur Stratis, il vous faut prendre le large en bateau depuis Stratis";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+  };
+};
+
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "Demande de Soin";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+
+	class DeliveryAssigned
+	{
+		title = "Mission de Livraison";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+
+	class DeliveryFailed
+	{
+		title = "Livraison Interrompue";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+
+	class DeliverySucceeded
+	{
+		title = "Livraison Terminée";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+
+	class TextMessage
+	{
+		title = "Nouveau message";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class PoliceDispatch
+	{
+		title = "Centrale de la Gendarmerie";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+  class BorderBreach
+  {
+    title = "Dispositif de protection Frontiere";
+    iconPicture = "icons\messagepolice.paa";
+    description = "%1";
+    duration = 10;
+    priority = 6;
+  };
+
+  class DetectedSuspect
+  {
+    title = "Suspect repéré dans la Wanted List";
+    iconPicture = "icons\messagepolice.paa";
+    description = "%1";
+    duration = 10;
+    priority = 6;
+  };
+
+
+	class AdminDispatch
+	{
+		title = "Requète Administrative";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class AdminMessage
+	{
+		title = "MESSAGE IMPORTANT";
+		iconPicture = "icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+
+  class CaptureSystem
+  {
+    title = "Systeme de capture";
+    iconPicture = "icons\messagenew.paa";
+    description = "%1";
+    duration = 10;
+    priority = 8;
+  };
+};

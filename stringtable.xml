@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="Tanoa Life RPG">
+	<Package name="Life_Prof">
+		<Key ID="STR_Prof_Oil">
+			<Original>Oil Proficiency</Original>
+			<English>Oil Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Sand">
+			<Original>Sand Proficiency</Original>
+			<English>Sand Proficiency</English>
+			<German>Sand Können</German>
+			<French>compétence d'sable</French>
+			<Italian>Proficiency sabbia</Italian>
+			<Portuguese>areia de Proficiência </Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Rock">
+			<Original>Rock Proficiency</Original>
+			<English>Rock Proficiency</English>
+			<German>Rock Können</German>
+			<French>compétence d'rock</French>
+			<Italian>Proficiency roccia</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Salt">
+			<Original>Salt Proficiency</Original>
+			<English>Salt Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Canabis">
+			<Original>Cannabis Proficiency</Original>
+			<English>Cannabis Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Heroin">
+			<Original>Heroin Proficiency</Original>
+			<English>Heroin Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Cocain">
+			<Original>Cocaine Proficiency</Original>
+			<English>Cocaine Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Diamond">
+			<Original>Diamond Proficiency</Original>
+			<English>Diamond Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Iron">
+			<Original>Iron Proficiency</Original>
+			<English>Iron Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Copper">
+			<Original>Copper Proficiency</Original>
+			<English>Copper Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key>
+		<Key ID="STR_Prof_Fruit">
+			<Original>Fruit Proficiency</Original>
+			<English>Fruit Proficiency</English>
+			<German>Öl Können</German>
+			<French>compétence d'huile</French>
+			<Italian>Proficiency olio</Italian>
+			<Portuguese>Proficiência Oil</Portuguese>
+		</Key> 
+	</Package>
+
+	<Package name="Global">
+		<Key ID="STR_Global_Close">
+			<Original>Fermer</Original>
+		</Key>
+		<Key ID="STR_Global_Sell">
+			<Original>Vendre</Original>
+		</Key>
+		<Key ID="STR_Global_Buy">
+			<Original>Acheter</Original>
+		</Key>
+		<Key ID="STR_Global_Give">
+			<Original>Donner</Original>
+		</Key>
+		<Key ID="STR_Global_Use">
+			<Original>Utiliser</Original>
+		</Key>
+		<Key ID="STR_Global_Remove">
+			<Original>Retirer</Original>
+		</Key>
+		<Key ID="STR_Global_Settings">
+			<Original>Paramètres</Original>
+		</Key>
+		<Key ID="STR_Global_RentVeh">
+			<Original>Louer</Original>
+		</Key>
+		<Key ID="STR_Global_Retrieve">
+			<Original>Récupérer</Original>
+		</Key>
+		<Key ID="STR_Global_NoSelection">
+			<Original>Vous n'avez rien sélectionné.</Original>
+		</Key>
+	</Package>
+	<Package name="Admin_Menu">
+		<Key ID="STR_Admin_Title">
+			<Original>Admin Menu</Original>
+		</Key>
+		<Key ID="STR_Admin_GetID">
+			<Original>Obtenir ID</Original>
+		</Key>
+	</Package>
+	<Package name="ATM_Menu">
+		<Key ID="STR_ATM_Title">
+			<Original>Gestion du compte bancaire</Original>
+		</Key>
+		<Key ID="STR_ATM_Withdraw">
+			<Original>Retirer</Original>
+		</Key>
+		<Key ID="STR_ATM_Deposit">
+			<Original>Déposer</Original>
+		</Key>
+		<Key ID="STR_ATM_Transfer">
+			<Original>Transférer</Original>
+		</Key>
+		<Key ID="STR_ATM_GreaterThan">
+			<Original>Pas plus de 999 999€ en une seule fois !</Original>
+		</Key>
+		<Key ID="STR_ATM_notnumeric">
+			<Original>Il ne s'agit pas d'une valeur numérique.</Original>
+		</Key>
+	</Package>
+	<Package name="Cell_Phone">
+		<Key ID="STR_CELL_Title">
+			<Original>Message à envoyer :</Original>
+		</Key>
+		<Key ID="STR_CELL_TextToSend">
+			<Original>Message à envoyer:</Original>
+		</Key>
+		<Key ID="STR_CELL_TextMSGBtn">
+			<Original>Envoyer</Original>
+		</Key>
+		<Key ID="STR_CELL_TextPolice">
+			<Original>Gendarme</Original>
+		</Key>
+		<Key ID="STR_CELL_TextAdmins">
+			<Original>Admins</Original>
+		</Key>
+		<Key ID="STR_CELL_AdminMsg">
+			<Original>Msg Admins</Original>
+		</Key>
+		<Key ID="STR_CELL_AdminMSGAll">
+			<Original>Msg Admin All</Original>
+		</Key>
+		<Key ID="STR_CELL_EMSRequest">
+			<Original>Msg Ambu.</Original>
+		</Key>
+		<Key ID="STR_CELL_LastContact">
+			<Original>Dernier contact :</Original>
+		</Key>
+		<Key ID="STR_CELL_FastReply">
+			<Original>Réponse rapide à</Original>
+		</Key>
+	</Package>
+	<Package name="Chop_Shop">
+		<Key ID="STR_ChopShop_Title">
+			<Original>Revente de véhicule volé</Original>
+		</Key>
+	</Package>
+	<Package name="Gang_Menu">
+		<Key ID="STR_Gang_Title">
+			<Original>Gestion du gang</Original>
+		</Key>
+		<Key ID="STR_Gang_Title2">
+			<Original>Gestion du gang - Gangs Actuels</Original>
+		</Key>
+		<Key ID="STR_Gang_Join">
+			<Original>Rejoindre</Original>
+		</Key>
+		<Key ID="STR_Gang_Leave">
+			<Original>Partir</Original>
+		</Key>
+		<Key ID="STR_Gang_UpgradeSlots">
+			<Original>Augmenter Slots</Original>
+		</Key>
+		<Key ID="STR_Gang_Kick">
+			<Original>Kick</Original>
+		</Key>
+		<Key ID="STR_Gang_SetLeader">
+			<Original>Mettre Chef</Original>
+		</Key>
+		<Key ID="STR_Gang_PriceTxt">
+			<Original>Il faut $%1 pour créer un gang</Original>
+		</Key>
+		<Key ID="STR_Gang_Create">
+			<Original>Créer</Original>
+		</Key>
+		<Key ID="STR_Gang_YGN">
+			<Original>Nom du gang</Original>
+		</Key>
+		<Key ID="STR_Gang_MainMenu">
+			<Original>Tu n'as pas de gang, que veux tu faire ?</Original>
+		</Key>
+		<Key ID="STR_Gang_Browse">
+			<Original>Parcourir</Original>
+		</Key>
+		<Key ID="STR_Invite_Player">
+			<Original>Inviter Joueur</Original>
+		</Key>
+		<Key ID="STR_Disband_Gang">
+			<Original>Dissoudre Gang</Original>
+		</Key>
+	</Package>
+		<Package name="Garage_Menu">
+		<Key ID="STR_Garage_Title">
+			<Original>Garage véhicule</Original>
+		</Key>
+		<Key ID="STR_Garage_GetVehicle">
+			<Original>Sortir le véhicule</Original>
+		</Key>
+		<Key ID="STR_Garage_SellVehicle">
+			<Original>Vendre le véhicule</Original>
+		</Key>
+		<Key ID="STR_Garage_SellPrice">
+			<Original>Prix de vente</Original>
+		</Key>
+		<Key ID="STR_Garage_SFee">
+			<Original>Frais de stockage</Original>
+		</Key>
+		<Key ID="STR_Garage_NoVehicles">
+			<Original>Aucun véhicule n'est disponible dans votre garage.</Original>
+		</Key>
+		<Key ID="STR_Garage_CashError">
+			<Original>Vous n'avez pas %1€ en banque</Original>
+		</Key>
+		<Key ID="STR_Garage_SpawningVeh">
+			<Original>Le véhicule arrive...</Original>
+		</Key>
+		<Key ID="STR_Garage_SQLError_Destroyed">
+			<Original>Désolé mais %1 a été déposé à la casse-auto.</Original>
+		</Key>
+		<Key ID="STR_Garage_SQLError_Active">
+			<Original>Désolé mais %1 a déjà été sorti ailleurs.</Original>
+		</Key>
+		<Key ID="STR_Garage_SpawnPointError">
+			<Original>Il y a déjà un véhicule sur le lieu d'apparition. Nous vous avons remboursé les frais de sortie.</Original>
+		</Key>
+		<Key ID="STR_Garage_SoldCar">
+			<Original>Vous avez vendu le véhicule pour %1€</Original>
+		</Key>
+		<Key ID="STR_Garage_Store_NotPersistent">
+			<Original>C'est un véhicule de location, impossible à mettre dans le garage.</Original>
+		</Key>
+		<Key ID="STR_Garage_Store_NoOwnership">
+			<Original>Ce véhicule ne vous appartient pas !</Original>
+		</Key>
+		<Key ID="STR_Garage_Store_Success">
+			<Original>Le véhicule a été correctement rangé dans votre garage.</Original>
+		</Key>
+	</Package>
+	<Package name="Key_Chain">
+		<Key ID="STR_Keys_Title">
+			<Original>Trousseau de clés - Votre liste de clés</Original>
+		</Key>
+		<Key ID="STR_Keys_DropKey">
+			<Original>Lâcher</Original>
+		</Key>
+		<Key ID="STR_Keys_GiveKey">
+			<Original>Donner</Original>
+		</Key>
+	</Package>
+	<Package name="Player_Menu">
+	
+		<Key ID="STR_PM_Craft">
+			<Original>Craft</Original>
+			<English>Craft</English>
+			<German>Craft</German>
+			<French>Fabriquer</French>
+			<Italian>Craft</Italian>
+			<Portuguese>Craft</Portuguese>
+		</Key>
+		<Key ID="STR_PM_Title">
+			<Original>Menu joueur</Original>
+		</Key>
+		<Key ID="STR_PM_cItems">
+			<Original>Objets</Original>
+		</Key>
+		<Key ID="STR_PM_Licenses">
+			<Original>Licenses</Original>
+		</Key>
+		<Key ID="STR_PM_MoneyStats">
+			<Original>Compte en banque</Original>
+		</Key>
+		<Key ID="STR_PM_MyGang">
+			<Original>Mon gang</Original>
+		</Key>
+		<Key ID="STR_PM_WantedList">
+			<Original>Interpol</Original>
+		</Key>
+		<Key ID="STR_PM_CellPhone">
+			<Original>Mobile</Original>
+		</Key>
+		<Key ID="STR_PM_KeyChain">
+			<Original>Mes clés</Original>
+		</Key>
+		<Key ID="STR_PM_AdminMenu">
+			<Original>Admin Menu</Original>
+		</Key>
+		<Key ID="STR_PM_SyncData">
+			<Original>Sync Data</Original>
+		</Key>
+	</Package>
+	<Package name="Licenses_Menu">
+		<Key ID="STR_Licenses_Title">
+			<Original>Licenses</Original>
+			<English>Licenses</English>
+			<German>Lizenzen</German>
+			<French>Licences</French>
+			<Italian>Licenze</Italian>
+			<Portuguese>Licenças</Portuguese>
+		</Key>
+		<Key ID="STR_My_Licenses">
+			<Original>Available</Original>
+			<English>Available</English>
+			<German>Verfügbar</German>
+			<French>Disponible</French>
+			<Italian>Disponibile</Italian>
+			<Portuguese>Disponível</Portuguese>
+		</Key>
+		<Key ID="STR_Show_Licenses">
+			<Original>My Licenses</Original>
+			<English>My Licenses</English>
+			<German>Meine Lizenzen</German>
+			<French>Mes Licences</French>
+			<Italian>Miei Licenze</Italian>
+			<Portuguese>Meus Licenças</Portuguese>
+		</Key>
+	</Package>
+	<Package name="Settings_Menu">
+		<Key ID="STR_SM_Title">
+			<Original>Menu réglage</Original>
+		</Key>
+		<Key ID="STR_SM_onFoot">
+			<Original>Pied:</Original>
+		</Key>
+		<Key ID="STR_SM_inCar">
+			<Original>Véhicule:</Original>
+		</Key>
+		<Key ID="STR_SM_inAir">
+			<Original>Aérien:</Original>
+		</Key>
+		<Key ID="STR_SM_ToolTip1">
+			<Original>Distance à pied</Original>
+		</Key>
+		<Key ID="STR_SM_ToolTip2">
+			<Original>Distance dans un véhicule terrestre</Original>
+		</Key>
+		<Key ID="STR_SM_ToolTip3">
+			<Original>Distance dans un véhicule aérien</Original>
+		</Key>
+		<Key ID="STR_SM_PlayerTags">
+			<Original>Player Tags</Original>
+		</Key>
+		<Key ID="STR_SM_TagsON">
+			<Original>Tags ON</Original>
+		</Key>
+		<Key ID="STR_SM_TagsOFF">
+			<Original>Tags OFF</Original>
+		</Key>
+		<Key ID="STR_SM_SC">
+			<Original>Réglages Sidechat</Original>
+		</Key>
+		<Key ID="STR_SM_SCOFF">
+			<Original>Sidechat OFF</Original>
+		</Key>
+		<Key ID="STR_SM_SCON">
+			<Original>Sidechat ON</Original>
+		</Key>
+	</Package>
+	<Package name="Virt_Shop">
+		<Key ID="STR_VS_SI">
+			<Original>Magasin</Original>
+		</Key>
+		<Key ID="STR_VS_PI">
+			<Original>Ton Inventaire</Original>
+		</Key>
+		<Key ID="STR_VS_BuyItem">
+			<Original>Acheter</Original>
+		</Key>
+		<Key ID="STR_VS_SellItem">
+			<Original>Vendre</Original>
+		</Key>
+	</Package>
+	<Package name="Spawn_Menu">
+		<Key ID="STR_Spawn_Title">
+			<Original>Sélection du spawn</Original>
+		</Key>
+		<Key ID="STR_Spawn_Spawn">
+			<Original>Spawn</Original>
+		</Key>
+		<Key ID="STR_Spawn_CSP">
+			<Original>Spawn actuel</Original>
+		</Key>
+		<Key ID="STR_Spawn_Spawned">
+			<Original>Tu as spawn à</Original>
+		</Key>
+	</Package>
+	<Package name="Ticket_Menu">
+		<Key ID="STR_Ticket_GiveTicket">
+			<Original>Donner amende</Original>
+		</Key>
+		<Key ID="STR_Ticket_PayTicket">
+			<Original>Payer</Original>
+		</Key>
+		<Key ID="STR_Ticket_RefuseTicket">
+			<Original>Refuser</Original>
+		</Key>
+	</Package>
+	<Package name="Trunk_Menu">
+		<Key ID="STR_Trunk_TInventory">
+			<Original>Coffre</Original>
+		</Key>
+		<Key ID="STR_Trunk_PInventory">
+			<Original>Inventaire</Original>
+		</Key>
+		<Key ID="STR_Trunk_Take">
+			<Original>Prendre</Original>
+		</Key>
+		<Key ID="STR_Trunk_Store">
+			<Original>Stocker</Original>
+		</Key>
+	</Package>
+	<Package name="Wanted_Menu">
+		<Key ID="STR_Wanted_Title">
+			<Original>APD Wanted List</Original>
+		</Key>
+		<Key ID="STR_Wanted_Pardon">
+			<Original>Pardon</Original>
+		</Key>
+	</Package>
+	<Package name="Animals">
+		<Key ID="STR_ANIM_Salema">
+			<Original>Saumon</Original>
+		</Key>
+		<Key ID="STR_ANIM_Ornate">
+			<Original>Ornate</Original>
+		</Key>
+		<Key ID="STR_ANIM_Mackerel">
+			<Original>Maquereau</Original>
+		</Key>
+		<Key ID="STR_ANIM_Tuna">
+			<Original>Thon</Original>
+		</Key>
+		<Key ID="STR_ANIM_Mullet">
+			<Original>Mulet</Original>
+		</Key>
+		<Key ID="STR_ANIM_Catshark">
+			<Original>Requin</Original>
+		</Key>
+		<Key ID="STR_ANIM_Rabbit">
+			<Original>Lapin</Original>
+		</Key>
+	</Package>
+	<Package name="Notifications">
+		<Key ID="STR_NOTF_NE_1">
+			<Original>Vous n'avez pas %1€ pour un %2</Original>
+		</Key>
+		<Key ID="STR_NOTF_B_1">
+			<Original>Vous avez acheté un %1 pour %2€</Original>
+		</Key>
+		<Key ID="STR_NOTF_Arrested_1">
+			<Original>%1 a été arrêté par %2</Original>
+		</Key>
+		<Key ID="STR_NOTF_Fishing">
+			<Original>Vous avez attrapé un %1</Original>
+		</Key>
+		<Key ID="STR_NOTF_CaughtTurtle">
+			<Original>Vous avez pris un peu de viande de tortue</Original>
+		</Key>
+		<Key ID="STR_NOTF_Earned_1">
+			<Original>Tu as gagné %1€</Original>
+		</Key>
+		<Key ID="STR_NOTF_NetDrop">
+			<Original>Filet de pêche déployé...</Original>
+		</Key>
+		<Key ID="STR_NOTF_NetDropFail">
+			<Original>Vous n'avez attrapé aucun poisson...</Original>
+		</Key>
+		<Key ID="STR_NOTF_NetUp">
+			<Original>Filet de pêche remonté.</Original>
+		</Key>
+		<Key ID="STR_NOTF_InvFull">
+			<Original>Votre inventaire est plein.</Original>
+		</Key>
+		<Key ID="STR_NOTF_Gathering">
+			<Original>Collecte en cours %1...</Original>
+		</Key>
+		<Key ID="STR_NOTF_Gather_Success">
+			<Original>Tu as collecté %2 %1(s)</Original>
+		</Key>
+		<Key ID="STR_NOTF_GatherVeh">
+			<Original>Tu ne peux pas collecter à l'interieur d'une voiture!</Original>
+		</Key>
+		<Key ID="STR_NOTF_ChopSoldCar">
+			<Original>Vous avez vendu un %1 pour %2€</Original>
+		</Key>
+		<Key ID="STR_NOTF_Picked">
+			<Original>Vous avez ramassé %1 %2</Original>
+		</Key>
+		<Key ID="STR_NOTF_Collected">
+			<Original>Vous avez recolté quelques %1</Original>
+		</Key>
+		<Key ID="STR_NOTF_DPStart">
+			<Original>Tu dois livrer le paquet a %1</Original>
+		</Key>
+		<Key ID="STR_NOTF_DPTask">
+			<Original>Livrer ce paquet au %1</Original>
+		</Key>
+		<Key ID="STR_NOTF_DPFailed">
+			<Original>Vous n'avez pas livrer le colis car vous êtes morts. C'est con.</Original>
+		</Key>
+		<Key ID="STR_NOTF_HS_NoCash">
+			<Original>Tu n'as pas %1€ pour être soigné</Original>
+		</Key>
+		<Key ID="STR_NOTF_HS_Healing">
+			<Original>S'il te plait, attend</Original>
+		</Key>
+		<Key ID="STR_NOTF_HS_ToFar">
+			<Original>Vous devez être à moins de 5m pendant que le médecin vous soigne</Original>
+		</Key>
+		<Key ID="STR_NOTF_HS_Healed">
+			<Original>Vous êtes maintenant totalement guéri.</Original>
+		</Key>
+		<Key ID="STR_NOTF_BeingImpounded">
+			<Original>%1 ton %2 va être emmené par la dépanneuse.</Original>
+		</Key>
+		<Key ID="STR_NOTF_Impounding">
+			<Original>Fourrière</Original>
+		</Key>
+		<Key ID="STR_NOTF_ImpoundingCancelled">
+			<Original>Mise en fourrière annulée.</Original>
+		</Key>
+		<Key ID="STR_NOTF_Impounded">
+			<Original>Tu as mis en frourriere un %1\n\nTu as recu %2€ pour avoir nettoyé les rues!</Original>
+		</Key>
+		<Key ID="STR_NOTF_HasImpounded">
+			<Original>%2, ton véhicule a été emmené par la dépanneuse</Original>
+		</Key>
+		<Key ID="STR_NOTF_AbortESC">
+			<Original>Déconnexion dans %1</Original>
+		</Key>
+		<Key ID="STR_NOTF_DeviceIsMining">
+			<Original>Le véhicule est déjà en train de miner</Original>
+		</Key>
+		<Key ID="STR_NOTF_DeviceFull">
+			<Original>Le véhicule est rempli</Original>
+		</Key>
+		<Key ID="STR_NOTF_notNearResource">
+			<Original>Tu n'es pas proche d'une zone de minage</Original>
+		</Key>
+		<Key ID="STR_NOTF_MiningStopped">
+			<Original>Tu ne peux pas allumer le moteur pendant un cycle de minage</Original>
+		</Key>
+		<Key ID="STR_NOTF_DeviceMining">
+			<Original>L'engin est en train de miner.</Original>
+		</Key>
+		<Key ID="STR_NOTF_DeviceMined">
+			<Original>Cycle terminé, l'engin a miné %1</Original>
+		</Key>
+		<Key ID="STR_NOTF_OutOfFuel">
+			<Original>Le véhicule n'a plus d'essence</Original>
+		</Key>
+	</Package>
+	<Package name="Life_Items">
+		<Key ID="STR_Item_Cannabis">
+			<Original>Weed</Original>
+		</Key>
+		<Key ID="STR_Item_Apple">
+			<Original>Pomme</Original>
+		</Key>
+		<Key ID="STR_Item_Apples">
+			<Original>Pommes</Original>
+		</Key>
+		<Key ID="STR_Item_Cocaine">
+			<Original>Cocaïne</Original>
+		</Key>
+		<Key ID="STR_Item_Heroin">
+			<Original>Heroïne</Original>
+		</Key>
+		<Key ID="STR_Item_Oil">
+			<Original>Pétrole</Original>
+		</Key>
+		<Key ID="STR_Item_Peach">
+			<Original>Pêche</Original>
+		</Key>
+		<Key ID="STR_Item_Peaches">
+			<Original>Pêches</Original>
+		</Key>
+		<Key ID="STR_Item_Rye">
+			<Original>Plant de seigle</Original>
+		</Key>
+		<Key ID="STR_Item_Hops">
+			<Original>Houblon</Original>
+		</Key>
+		<Key ID="STR_Item_Yeast">
+			<Original>Levure</Original>
+		</Key>
+
+	</Package>
+	<Package name="Federal_Reserve">
+		<Key ID="STR_NOTF_FRRobbery_fail">
+			<Original>Les braqueurs avaient mal aux dents, ils sont partis</Original>
+		</Key>
+		<Key ID="STR_NOTF_FRRobbery_Success">
+			<Original>%1€ a été volé de la banque</Original>
+		</Key>
+		<Key ID="STR_FEDR_VInUse">
+			<Original>Cette reserve est déjà volé par quelqu'un d'autre</Original>
+		</Key>
+		<Key ID="STR_FEDR_VRecently">
+			<Original>Cette reserve a été déjà volé récemment</Original>
+		</Key>
+	</Package>
+	<Package name="Player_Interaction">
+		<Key ID="STR_pInAct_Title">
+			<Original>Menu Interaction</Original>
+		</Key>
+		<Key ID="STR_pInAct_PutInCar">
+			<Original>Mettre dans VHL</Original>
+		</Key>
+		<Key ID="STR_pInAct_Unrestrain">
+			<Original>Démenotter</Original>
+		</Key>
+		<Key ID="STR_pInAct_checkLicenses">
+			<Original>Verifier licences</Original>
+		</Key>
+		<Key ID="STR_pInAct_SearchPlayer">
+			<Original>Fouiller joueur</Original>
+		</Key>
+		<Key ID="STR_pInAct_StopEscort">
+			<Original>Arreter escorte</Original>
+		</Key>
+		<Key ID="STR_pInAct_Escort">
+			<Original>Escorter</Original>
+		</Key>
+		<Key ID="STR_pInAct_TicketBtn">
+			<Original>Mettre une amende</Original>
+		</Key>
+		<Key ID="STR_pInAct_Arrest">
+			<Original>Prison</Original>
+		</Key>
+		<Key ID="STR_pInAct_Restric">
+			<Original>Confiscation</Original>
+		</Key>
+		<Key ID="STR_pInAct_RestricWp">
+			<Original>Confis. arme</Original>
+		</Key>
+		<Key ID="STR_pInAct_RestricCL">
+			<Original>Confis. vêtements</Original>
+		</Key>
+		<Key ID="STR_pInAct_RestricLicen">
+			<Original>Confis. licences</Original>
+		</Key>
+		<Key ID="STR_pInAct_Breathalyzer">
+		<Original>Ethylotest</Original>
+		</Key>
+	</Package>
+	<Package name="Vehicle_Interaction">
+		<Key ID="STR_vInAct_Title">
+			<Original>Menu Interaction</Original>
+		</Key>
+		<Key ID="STR_vInAct_Unflip">
+			<Original>Retourner véhicule</Original>
+		</Key>
+		<Key ID="STR_vInAct_GetInKart">
+			<Original>Aller dans kart</Original>
+		</Key>
+		<Key ID="STR_vInAct_PushBoat">
+			<Original>Pousser</Original>
+		</Key>
+		<Key ID="STR_vInAct_Repair">
+			<Original>Réparer</Original>
+		</Key>
+		<Key ID="STR_vInAct_Registration">
+			<Original>Enregistrer</Original>
+		</Key>
+		<Key ID="STR_vInAct_SearchVehicle">
+			<Original>Fouiller Véhicule</Original>
+		</Key>
+		<Key ID="STR_vInAct_PullOut">
+			<Original>Sortir joueur</Original>
+		</Key>
+		<Key ID="STR_vInAct_Impound">
+			<Original>Fourrière</Original>
+		</Key>
+		<Key ID="STR_vInAct_Insure">
+			<Original>Assurer</Original>
+		</Key>
+		<Key ID="STR_vInAct_DeviceMine">
+			<Original>Minage Auto</Original>
+		</Key>
+	</Package>
+	<Package name="Gather">
+	    <Key ID="STR_Gather_Rye">
+			<Original>Ramasser Seigle</Original>
+		</Key>
+		<Key ID="STR_Gather_Hops">
+			<Original>Ramasser Houblon</Original>
+		</Key>
+		<Key ID="STR_Gather_Yeast">
+			<Original>Ramasser Levure</Original>
+		</Key>
+	</Package>
+	<Package name="Misc">
+		<Key ID="STR_MISC_StPubIntox">
+			<Original>%1 est passé en état d'ébriété en public!</Original>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>Vous êtes deja en train de boire</Original>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>Ne buvez pas pendant le travail</Original>
+			<French>Pas boire pendant le travail</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut">
+			<Original>Coma ethilique</Original>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut1">
+			<Original>Bordel je comprend plus rien</Original>
+		</Key>
+<Package name="Craft">
+	<Key ID="STR_CRAFT_Title">
+		<Original>Menu de fabrication</Original>
+		<English>Crafting Menu</English>
+		<German>Crafting Menu</German>
+		<French>Menu de fabrication</French>
+		<Italian>Crafting Menu</Italian>
+		<Portuguese>Crafting Menu</Portuguese>
+	</Key>
+	<Key ID="STR_PM_CraftStats">
+		<Original>Objet à fabriquer</Original>
+ 		<English>Object to craft</English>
+ 		<German>Object to craft</German>
+		<French>Objet à fabriquer</French>
+		<Italian>Object to craft</Italian>
+		<Portuguese>Object to craft</Portuguese>
+	</Key>
+	<Key ID="STR_PM_CraftMaterials">
+		<Original>Materials needed</Original>
+ 		<English>Materials needed</English>
+ 		<German>Materials needed</German>
+		<French>Materiaux requis</French>
+		<Italian>Materials needed</Italian>
+		<Portuguese>Materials needed</Portuguese>
+	</Key>
+	<Key ID="STR_CRAFT_Button">
+		<Original>Craft !</Original>
+ 		<English>Craft !</English>
+ 		<German>Craft !</German>
+		<French>Fabriquer !</French>
+		<Italian>Craft !</Italian>
+		<Portuguese>Craft !</Portuguese>
+	</Key>
+	<Key ID="STR_PM_NoMaterial">
+		<Original>You do not have all the required materials !</Original>
+ 		<English>You do not have all the required materials !</English>
+ 		<German>You do not have all the required materials !</German>
+		<French>Vous n'avez pas tous les matériaux requis !</French>
+		<Italian>You do not have all the required materials !</Italian>
+		<Portuguese>You do not have all the required materials !</Portuguese>
+	</Key>
+	<Key ID="STR_CRAFT_Process">
+		<Original>You have crafted : %1</Original>
+		<English>You have crafted : %1</English>
+		<German>You have crafted : %1</German>
+		<French>Vous en êtes à : %1</French>
+		<Italian>You have crafted : %1</Italian>
+		<Portuguese>You have crafted : %1</Portuguese>
+	</Key>
+</Package>
+
+</Project>
