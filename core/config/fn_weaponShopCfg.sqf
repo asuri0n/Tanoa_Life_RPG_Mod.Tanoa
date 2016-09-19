@@ -85,11 +85,10 @@ switch(_shop) do
 			default {
 				["Magasin Medecin",
 					[
-						//["hgun_PDW2000_F","ARME POUR TRAINER",0],					
-						["AGM_Epipen",nil,0],
-						["AGM_Bloodbag",nil,0],
-						["AGM_Bandage",nil,0],
-						["AGM_Morphine",nil,0],
+						//["AGM_Epipen",nil,0],
+						//["AGM_Bloodbag",nil,0],
+						//["AGM_Bandage",nil,0],
+						//["AGM_Morphine",nil,0],
 						["ItemMap",nil,50],
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
@@ -230,18 +229,15 @@ switch(_shop) do
 						["muzzle_snds_B_khk_F",nil,30000],
 						["muzzle_snds_65_TI_ghex_F",nil,30000],
 						["muzzle_snds_65_TI_hex_F",nil,30000],
-						["muzzle_snds_L",nil,30000],
-
-					
+						["muzzle_snds_L",nil,30000],					
 					
 					//ACCESSOIRES	
-						["AGM_Bloodbag",nil,10000],		
+						//["AGM_Bloodbag",nil,10000],		
 						["NVGoggles","Night Vision",2000],	
 						["ToolKit","Kit de reparation",2000],
 						["Rangefinder",nil,8000],
 						["FirstAidKit","Trousse de soin",500],
-						["Skyline_C_Remote_Cam",nil,50000],
-						
+						//["Skyline_C_Remote_Cam",nil,50000],						
 						
 					//Smoke
 						["SmokeShell","Fumi blanche",1000],
@@ -268,8 +264,8 @@ switch(_shop) do
 				["Armes a Feu De Billy Joe",
 					[	
 					// Soins
-						["AGM_Bloodbag",nil,10000],
-						["AGM_Bandage",nil,150],
+						//["AGM_Bloodbag",nil,10000],
+						//["AGM_Bandage",nil,150],
 					// Armes
 						["hgun_P07_F",nil,20000],
 						["hgun_Rook40_F",nil,20000],
@@ -296,7 +292,7 @@ switch(_shop) do
 							["30Rnd_9x21_Mag_SMG_02",nil,500],
 								
 					//ACCESSOIRES	
-						["Skyline_C_Remote_Cam",nil,60000],
+						//["Skyline_C_Remote_Cam",nil,60000],
 						["NVGoggles","Night Vision",2000],	
 						["ToolKit","Kit de reparation",2000],
 						["Rangefinder",nil,8000],
@@ -340,33 +336,33 @@ switch(_shop) do
 				["Magasin de la communauté",
 					[
 					// Soins
-						["AGM_Epipen",nil,34500],
-						["AGM_Bloodbag",nil,8600],
-						["AGM_Bandage",nil,130],
+						//["AGM_Epipen",nil,34500],
+						//["AGM_Bloodbag",nil,8600],
+						//["AGM_Bandage",nil,130],
 					// Armes					
-							["hgun_P07_F",nil,17000],
-							["hgun_Rook40_F",nil,17000],
-								["16Rnd_9x21_Mag",nil,430],
-								
-							["hgun_ACPC2_F",nil,17000],
-								["9Rnd_45ACP_Mag",nil,430],
-								
-							["hgun_Pistol_heavy_01_F",nil,17000],
-								["11Rnd_45ACP_Mag",nil,430],
-								
-							["hgun_Pistol_heavy_02_F",nil,17000],
-								["6Rnd_45ACP_Cylinder",nil,430],
-								
-							["hgun_PDW2000_F",nil,33000],
-								["30Rnd_9x21_Mag",nil,430],
-								
-							["arifle_Mk20_plain_F",nil,52000],
-							["arifle_TRG21_F",nil,69000],
-							["arifle_SDAR_F",nil,52000],
-								["30Rnd_556x45_Stanag",nil,430],
-																
-							["SMG_05_F",nil,34500],
-								["30Rnd_9x21_Mag_SMG_02",nil,430],
+						["hgun_P07_F",nil,17000],
+						["hgun_Rook40_F",nil,17000],
+							["16Rnd_9x21_Mag",nil,430],
+							
+						["hgun_ACPC2_F",nil,17000],
+							["9Rnd_45ACP_Mag",nil,430],
+							
+						["hgun_Pistol_heavy_01_F",nil,17000],
+							["11Rnd_45ACP_Mag",nil,430],
+							
+						["hgun_Pistol_heavy_02_F",nil,17000],
+							["6Rnd_45ACP_Cylinder",nil,430],
+							
+						["hgun_PDW2000_F",nil,33000],
+							["30Rnd_9x21_Mag",nil,430],
+							
+						["arifle_Mk20_plain_F",nil,52000],
+						["arifle_TRG21_F",nil,69000],
+						["arifle_SDAR_F",nil,52000],
+							["30Rnd_556x45_Stanag",nil,430],
+															
+						["SMG_05_F",nil,34500],
+							["30Rnd_9x21_Mag_SMG_02",nil,430],
 								
 								
 					//ACCESSOIRES	
@@ -384,7 +380,7 @@ switch(_shop) do
 	{
 		["magasin général",
 			[
-				["AGM_Bandage",nil,150],
+				//["AGM_Bandage",nil,150],
 				["ItemMap",nil,200],
 				["ItemGPS",nil,200],
 				["ItemCompass",nil,200],
@@ -405,9 +401,9 @@ switch(_shop) do
 			case (__GETC__(life_copLevel)  == 1):{
 				["Armurerie resérviste",
 					[
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -437,9 +433,9 @@ switch(_shop) do
 			case (__GETC__(life_copLevel)  == 2):{
 				["Armurerie gendarme",
 					[
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -511,9 +507,9 @@ switch(_shop) do
 			case (__GETC__(life_copLevel)  == 3):{
 				["Armurerie adjudant",
 					[
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -581,17 +577,17 @@ switch(_shop) do
 						["SmokeShellYellow","Fumi jaune",500],
 						["SmokeShellPurple","Fumi violette",500],
 						["SmokeShellBlue","Fumi bleu",500],
-						["SmokeShellOrange","Fumi orange",500],
-						["Skyline_B_Remote_Cam",nil,5000]	
+						["SmokeShellOrange","Fumi orange",500]
+						//["Skyline_B_Remote_Cam",nil,5000]	
 					]
 				];
 			};		
 			case (__GETC__(life_copLevel)  == 4):{
 				["Armurerie lieutenant",
 					[
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -628,10 +624,6 @@ switch(_shop) do
 							
 						["arifle_CTARS_blk_F",nil,42500],
 							["100Rnd_580x42_Mag_F",nil,500],
-
-
-		
-
 							
 					//VISEURS				
 						["optic_MRCO",nil,2500],
@@ -674,17 +666,17 @@ switch(_shop) do
 						["SmokeShellYellow","Fumi jaune",500],
 						["SmokeShellPurple","Fumi violette",500],
 						["SmokeShellBlue","Fumi bleu",500],
-						["SmokeShellOrange","Fumi orange",500],
-						["Skyline_B_Remote_Cam",nil,5000]	
+						["SmokeShellOrange","Fumi orange",500]
+						//["Skyline_B_Remote_Cam",nil,5000]	
 					]
 				];
 			};
 			case (__GETC__(life_copLevel)  == 5):{
 				["Armurerie Major",
 					[
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -751,8 +743,8 @@ switch(_shop) do
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 						
 					//Items
-						["AGM_Epipen",nil,35000],
-						["AGM_Bloodbag",nil,2000],
+						//["AGM_Epipen",nil,35000],
+						//["AGM_Bloodbag",nil,2000],
 						["ItemMap","Carte",0],
 						["ItemGPS","GPS",0],
 						["ItemCompass","Boussole",0],
@@ -776,17 +768,17 @@ switch(_shop) do
 						["SmokeShellYellow","Fumi jaune",500],
 						["SmokeShellPurple","Fumi violette",500],
 						["SmokeShellBlue","Fumi bleu",500],
-						["SmokeShellOrange","Fumi orange",500],
-						["Skyline_B_Remote_Cam",nil,5000]	
+						["SmokeShellOrange","Fumi orange",500]
+						//["Skyline_B_Remote_Cam",nil,5000]	
 					]
 				];
 			};
 			case (__GETC__(life_copLevel)  == 6):{
 				["Armurerie colonel",
 					[
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -859,8 +851,8 @@ switch(_shop) do
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 						
 					//Items
-						["AGM_Epipen",nil,35000],
-						["AGM_Bloodbag",nil,2000],
+						//["AGM_Epipen",nil,35000],
+						//["AGM_Bloodbag",nil,2000],
 						["ItemMap","Carte",0],
 						["ItemGPS","GPS",0],
 						["ItemCompass","Boussole",0],
@@ -884,8 +876,8 @@ switch(_shop) do
 						["SmokeShellYellow","Fumi jaune",500],
 						["SmokeShellPurple","Fumi violette",500],
 						["SmokeShellBlue","Fumi bleu",500],
-						["SmokeShellOrange","Fumi orange",500],
-						["Skyline_B_Remote_Cam",nil,5000]	
+						["SmokeShellOrange","Fumi orange",500]
+						//["Skyline_B_Remote_Cam",nil,5000]	
 					]
 				];
 			};
@@ -902,9 +894,9 @@ switch(_shop) do
 						["9Rnd_45ACP_Mag",nil,500],
 
 					
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -959,8 +951,6 @@ switch(_shop) do
 							
 						["srifle_LRR_F",nil,65000],
 							["7Rnd_408_Mag",nil,1000],
-							
-
 
 					//VISEURS				
 						["optic_MRCO",nil,2500],
@@ -980,8 +970,8 @@ switch(_shop) do
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 						
 					//Items
-						["AGM_Epipen",nil,35000],
-						["AGM_Bloodbag",nil,2000],
+						//["AGM_Epipen",nil,35000],
+						//["AGM_Bloodbag",nil,2000],
 						["ItemMap","Carte",0],
 						["ItemGPS","GPS",0],
 						["ItemCompass","Boussole",0],
@@ -1005,8 +995,8 @@ switch(_shop) do
 						["SmokeShellYellow","Fumi jaune",500],
 						["SmokeShellPurple","Fumi violette",500],
 						["SmokeShellBlue","Fumi bleu",500],
-						["SmokeShellOrange","Fumi orange",500],
-						["Skyline_B_Remote_Cam",nil,5000]	
+						["SmokeShellOrange","Fumi orange",500]
+						//["Skyline_B_Remote_Cam",nil,5000]	
 					]
 				];
 			};
@@ -1022,9 +1012,9 @@ switch(_shop) do
 						["30Rnd_580x42_Mag_F",nil,500],
 						["9Rnd_45ACP_Mag",nil,500],
 						
-						["DDOPP_X26","Taser X26 Jaune",0],
-						["DDOPP_X26_b","Taser X26 Noir",0],
-							["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						//["DDOPP_X26","Taser X26 Jaune",0],
+						//["DDOPP_X26_b","Taser X26 Noir",0],
+							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
 							
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],
@@ -1079,8 +1069,6 @@ switch(_shop) do
 							
 						["srifle_LRR_F",nil,65000],
 							["7Rnd_408_Mag",nil,1000],
-							
-
 
 					//VISEURS				
 						["optic_MRCO",nil,2500],
@@ -1100,8 +1088,8 @@ switch(_shop) do
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 						
 					//Items
-						["AGM_Epipen",nil,35000],
-						["AGM_Bloodbag",nil,2000],
+						//["AGM_Epipen",nil,35000],
+						//["AGM_Bloodbag",nil,2000],
 						["ItemMap","Carte",0],
 						["ItemGPS","GPS",0],
 						["ItemCompass","Boussole",0],
@@ -1125,8 +1113,8 @@ switch(_shop) do
 						["SmokeShellYellow","Fumi jaune",500],
 						["SmokeShellPurple","Fumi violette",500],
 						["SmokeShellBlue","Fumi bleu",500],
-						["SmokeShellOrange","Fumi orange",500],
-						["Skyline_B_Remote_Cam",nil,5000]	
+						["SmokeShellOrange","Fumi orange",500]
+						//["Skyline_B_Remote_Cam",nil,5000]	
 					]
 				];
 			};

@@ -342,9 +342,6 @@ switch (_filter) do
 		{		
 			case (__GETC__(life_copLevel)  == 1):{			
 				_ret pushBack["B_FieldPack_blk",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
 			};
 			
 			case (__GETC__(life_copLevel)  == 2):{			
@@ -354,9 +351,6 @@ switch (_filter) do
 				_ret pushBack["B_ViperHarness_oli_F",nil,500]; 
 				_ret pushBack["B_Bergen_tna_F",nil,500]; 
 				_ret pushBack["B_AssaultPack_tna_F",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
 			};
 
 			case (__GETC__(life_copLevel)  == 3):{			
@@ -366,9 +360,6 @@ switch (_filter) do
 				_ret pushBack["B_ViperHarness_oli_F",nil,500]; 
 				_ret pushBack["B_Bergen_tna_F",nil,500]; 
 				_ret pushBack["B_AssaultPack_tna_F",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
 			};
 			
 			case (__GETC__(life_copLevel)  == 4):{			
@@ -378,9 +369,6 @@ switch (_filter) do
 				_ret pushBack["B_ViperHarness_oli_F",nil,500]; 
 				_ret pushBack["B_Bergen_tna_F",nil,500]; 
 				_ret pushBack["B_AssaultPack_tna_F",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
 			};
 
 			case (__GETC__(life_copLevel)  == 5):{			
@@ -390,9 +378,6 @@ switch (_filter) do
 				_ret pushBack["B_ViperHarness_oli_F",nil,500]; 
 				_ret pushBack["B_Bergen_tna_F",nil,500]; 
 				_ret pushBack["B_AssaultPack_tna_F",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
 			};
 
 			case (__GETC__(life_copLevel)  == 6):{			
@@ -402,9 +387,6 @@ switch (_filter) do
 				_ret pushBack["B_ViperHarness_oli_F",nil,500]; 
 				_ret pushBack["B_Bergen_tna_F",nil,500]; 
 				_ret pushBack["B_AssaultPack_tna_F",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
 			};
 
 			case (__GETC__(life_copLevel)  == 7):{			
@@ -415,10 +397,7 @@ switch (_filter) do
 				_ret pushBack["B_ViperHarness_blk_F",nil,500]; 
 				_ret pushBack["B_ViperHarness_oli_F",nil,500]; 
 				_ret pushBack["B_Bergen_tna_F",nil,500]; 
-				_ret pushBack["B_AssaultPack_tna_F",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
+				_ret pushBack["B_AssaultPack_tna_F",nil,500];  
 			};
 
 			case (__GETC__(life_copLevel)  == 8):{		
@@ -429,10 +408,7 @@ switch (_filter) do
 				_ret pushBack["B_ViperHarness_blk_F",nil,500]; 
 				_ret pushBack["B_ViperHarness_oli_F",nil,500]; 
 				_ret pushBack["B_Bergen_tna_F",nil,500]; 
-				_ret pushBack["B_AssaultPack_tna_F",nil,500]; 
-				
-				_ret pushBack["tf_anprc155",nil,20000]; 
-				_ret pushBack["tf_anprc155_coyote",nil,20000]; 
+				_ret pushBack["B_AssaultPack_tna_F",nil,500];  
 			};		
 		};
 	};

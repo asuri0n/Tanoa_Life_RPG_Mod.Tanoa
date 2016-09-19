@@ -217,10 +217,7 @@ switch (_filter) do
 			
 			["B_Bergen_hex_F",nil,15000],
 			["B_Bergen_dgtl_F",nil,15000],
-			["B_Bergen_mcamo_F",nil,15000],
-			
-			["tf_anprc155",nil,20000],
-			["tf_anprc155_coyote",nil,20000]
+			["B_Bergen_mcamo_F",nil,15000]
 		];
 	};
 };
