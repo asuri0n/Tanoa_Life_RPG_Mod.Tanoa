@@ -111,8 +111,8 @@ switch (_item) do
 	case "planchep" : {3};
 	case "linp" : {1};
 	case "tissup" : {1};
-	case "charbonp" : {2};
-	case "poudrenoirp" : {2};
+	case "charbonp" : {1};
+	case "poudrenoirp" : {1};
 	case "briquep" : {3};
 	case "clayp" : {5};
 	case "souffrep" : {5};

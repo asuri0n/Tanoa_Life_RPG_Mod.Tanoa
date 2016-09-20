@@ -120,7 +120,8 @@ switch (_shop) do
             //["DAR_FusionCiv",60000],
 		   
             //["shounka_a3_ds4_civ",60000],
-		   
+            ["C_Hatchback_01_F",60000],
+
             ["C_Van_01_transport_F",65333],
             ["I_C_Van_01_transport_brown_F",65333],
             ["I_C_Van_01_transport_olive_F",65333],
@@ -490,7 +491,10 @@ switch (_shop) do
             {
                 _return =
                 [
-			["I_Heli_Transport_02_F",333333]
+				
+			["I_Heli_Transport_02_F",333333],
+			["C_Hatchback_01_sport_F",250000]
+
 					
             //["Skyline_Bus_10_F",20000],
 					
@@ -657,6 +661,8 @@ switch (_shop) do
             //["Mrshounka_lykan_c_grise",5333333],
             //["Mrshounka_lykan_c_violet",5333333],
             //["Mrshounka_lykan_c_orange",5333333]
+			
+			
            
                 ];
             };         
