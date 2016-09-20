@@ -21,7 +21,7 @@ while {_timer > 0} do
 	_timer = _timer - 1;
 	_dist = _robber distance _shop;//Distance beetwen the robber and the shop owner
 
-	if (!(alive _robber)/* || (player getVariable ["AGM_isUnconscious", false])*/) exitwith
+	if (!(alive _robber) || (player getVariable ["FAR_isUnconscious", false])) exitwith
 	{
 		hint "Le braquage a échoué suite à la mort du braqueur !";
 		INVO_robShops_Result = false;

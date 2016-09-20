@@ -99,7 +99,7 @@ switch (_code) do
 		{
 			if ( !isNull cursorTarget && (cursorTarget isKindOf "Man") && isPlayer cursorTarget && alive cursorTarget && (cursorTarget distance player < 4) && speed cursorTarget < 1 ) then
 			{
-				if( !(cursorTarget getVariable "Escorting") && (( cursorTarget getVariable "restrained") || cursorTarget getVariable["playerSurrender",false]/* || (cursorTarget getVariable["AGM_isUnconscious",false])*/ || (animationState cursorTarget) == "Incapacitated"))then
+				if( !(cursorTarget getVariable "Escorting") && (( cursorTarget getVariable "restrained") || cursorTarget getVariable["playerSurrender",false] || (cursorTarget getVariable["FAR_isUnconscious",false]) || (animationState cursorTarget) == "Incapacitated"))then
 				{
 					[[player], "life_fnc_stealKey",vehicle cursorTarget,false] spawn life_fnc_MP;
 					titleText["Vous avez pris les clés de ses véhicules à proximite!","PLAIN"];
@@ -221,7 +221,7 @@ switch (_code) do
 					[] call INVO_fnc_restrainAction;
 				};
 				//we check if the civilian have enough items to do this action !
-				if(cursorTarget getVariable["playerSurrender",false] || (/*(cursorTarget getVariable["AGM_isUnconscious",false]) && */(license_civ_rebel))) then {
+				if(cursorTarget getVariable["playerSurrender",false] || ((cursorTarget getVariable["FAR_isUnconscious",false]) && (license_civ_rebel))) then {
 					[] call INVO_fnc_restrainAction;
 				};
 			};
@@ -230,7 +230,7 @@ switch (_code) do
 		{
 			if ( !isNull cursorTarget && (cursorTarget isKindOf "Man") && isPlayer cursorTarget && alive cursorTarget && (cursorTarget distance player < 4) && speed cursorTarget < 1 ) then
 			{
-				if( !(cursorTarget getVariable "Escorting") && (( cursorTarget getVariable "restrained") || cursorTarget getVariable["playerSurrender",false]/* || (cursorTarget getVariable["AGM_isUnconscious",false])*/ || (animationState cursorTarget) == "Incapacitated"))then				{
+				if( !(cursorTarget getVariable "Escorting") && (( cursorTarget getVariable "restrained") || cursorTarget getVariable["playerSurrender",false] || (cursorTarget getVariable["FAR_isUnconscious",false]) || (animationState cursorTarget) == "Incapacitated"))then				{
 					[[player],"life_fnc_dropRadioGPS",vehicle cursortarget,true] spawn life_fnc_MP;
 					titleText["Vous avez pris les moyens de communications de cette personne !","PLAIN"];
 					_handled = true;
@@ -562,7 +562,7 @@ switch (_code) do
 		{
 			if ( !isNull cursorTarget && (cursorTarget isKindOf "Man") && isPlayer cursorTarget && alive cursorTarget && (cursorTarget distance player < 4) && speed cursorTarget < 1 ) then
 			{
-				if( !(cursorTarget getVariable "Escorting") && (( cursorTarget getVariable "restrained") || cursorTarget getVariable["playerSurrender",false]/* || (cursorTarget g/riable["AGM_isUnconscious",false])*/ || (animationState cursorTarget) == "Incapacitated"))then				{
+				if( !(cursorTarget getVariable "Escorting") && (( cursorTarget getVariable "restrained") || cursorTarget getVariable["playerSurrender",false] || (cursorTarget g/riable["FAR_isUnconscious",false]) || (animationState cursorTarget) == "Incapacitated"))then				{
 					//Check if we have an item
 					//N'est pas cagoule, le faire
 					if ((cursorTarget getVariable ["INVO_hooded",0]) == 0) then

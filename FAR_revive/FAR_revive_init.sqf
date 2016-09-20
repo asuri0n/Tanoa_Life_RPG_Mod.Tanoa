@@ -7,13 +7,13 @@
 //------------------------------------------//
 
 // Seconds until unconscious unit bleeds out and dies. Set to 0 to disable.
-FAR_BleedOut = 600;	
+FAR_BleedOut = 400;	
 
 // Enable teamkill notifications
 FAR_EnableDeathMessages = true;
 
 // If enabled, unconscious units will not be able to use radios, hear other people or use proximity chat
-FAR_MuteRadio = false;
+FAR_MuteRadio = true;
 
 /*
 	0 = Only medics can revive

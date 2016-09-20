@@ -42,7 +42,7 @@ if (count _nearPlayers > 0) then {hint "Ok, on va s'occuper de ce(s) blessé(s)!
 else {hint "Pas de blessé autour de toi.";};
 
 {
-	//if (_x getVariable["AGM_isUnconscious",false] && {!(_x getVariable["AGM_isBleeding",false])}) then
+	if (_x getVariable["FAR_isUnconscious",false]/* && {!(_x getVariable["AGM_isBleeding",false])}*/) then
 	//{
 		//revive
 		//_x setVariable ["AGM_isUnconscious", False, True];
@@ -51,6 +51,7 @@ else {hint "Pas de blessé autour de toi.";};
 		//_x setVariable ["AGM_Painkiller", 1, True];
 		//_x setVariable ["AGM_Pain", 0, True];
 		//[_x] call AGM_Medical_fnc_wakeUp;
+		[_x] spawn FAR_HandleRevive;
 	//};
 	_x setDamage 0;
 } forEach _nearPlayers;

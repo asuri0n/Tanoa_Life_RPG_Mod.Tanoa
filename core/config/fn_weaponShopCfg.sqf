@@ -89,6 +89,7 @@ switch(_shop) do
 						//["AGM_Bloodbag",nil,0],
 						//["AGM_Bandage",nil,0],
 						//["AGM_Morphine",nil,0],
+						["medikit",nil,0],
 						["ItemMap",nil,50],
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
@@ -336,7 +337,7 @@ switch(_shop) do
 				["Magasin de la communauté",
 					[
 					// Soins
-						//["AGM_Epipen",nil,34500],
+						["medikit",nil,35000],
 						//["AGM_Bloodbag",nil,8600],
 						//["AGM_Bandage",nil,130],
 					// Armes					

@@ -68,14 +68,14 @@ if(!_cell) then {
 	ctrlEnable [3031, false];		//Depanneuse
 };
 
-//if(player getVariable ["AGM_isUnconscious", false]) then {
-	//hint parseText format ["<t size='1.30' font='puristaMedium' align='center' color='#0D82DF'>Vous êtes blessé</t><br/><br/><t size='0.90 'font='puristaLight' align='left'>Vous ne pouvez pas envoyer de messages lorsque vous êtes inconscient, excepté aux services médicaux</t><br/><br/>Vous pouvez cependant toujours recevoir/envoyer des messages aux administrateurs et médecins."];
-	//ctrlEnable [3022, false];		//Fast reply
-	//ctrlEnable [3015, false];		//Bouton envoyer
-	//ctrlEnable [3016, false];		//Cop
+if(player getVariable ["FAR_isUnconscious", false]) then {
+	hint parseText format ["<t size='1.30' font='puristaMedium' align='center' color='#0D82DF'>Vous êtes blessé</t><br/><br/><t size='0.90 'font='puristaLight' align='left'>Vous ne pouvez pas envoyer de messages lorsque vous êtes inconscient, excepté aux services médicaux</t><br/><br/>Vous pouvez cependant toujours recevoir/envoyer des messages aux administrateurs et médecins."];
+	ctrlEnable [3022, false];		//Fast reply
+	ctrlEnable [3015, false];		//Bouton envoyer
+	ctrlEnable [3016, false];		//Cop
 	//3017 - Autorisé - Admin
 	//ctrlEnable [3031, false];		//Depanneuse
-//};
+};
 
 if(player getVariable ["playerSurrender", false]) then {
 	hint parseText format ["<t size='1.30' font='puristaMedium' align='center' color='#0D82DF'>Vous avez les mains en l'air</t><br/><br/><t size='0.90 'font='puristaLight' align='left'>Vous ne pouvez pas envoyer de messages lorsque vous êtes dans cette position, excepté aux services médicaux</t><br/><br/>Vous pouvez cependant toujours recevoir/envoyer des messages aux administrateurs et médecins."];

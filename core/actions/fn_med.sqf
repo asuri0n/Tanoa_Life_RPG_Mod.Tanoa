@@ -19,7 +19,7 @@
         yo = 0;
         o = 0;
         {
-            if ((isPlayer _x) /*&& (_x getVariable "AGM_isUnconscious")*/) then
+            if ((isPlayer _x) && (_x getVariable "FAR_isUnconscious")) then
             {
                 deleteMarkerLocal ("Player" + (str o));
                 yo = o + 1;

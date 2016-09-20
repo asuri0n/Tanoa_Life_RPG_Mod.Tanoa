@@ -6,10 +6,13 @@ FAR_Player_Actions =
 	if (alive player && player isKindOf "Man") then 
 	{
 		// addAction args: title, filename, (arguments, priority, showWindow, hideOnUse, shortcut, condition, positionInModel, radius, radiusView, showIn3D, available, textDefault, textToolTip)
-		player addAction ["<t color=""#C90000"">" + "Revive" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_revive"], 10, true, true, "", "call FAR_Check_Revive"];
-		player addAction ["<t color=""#C90000"">" + "Stabilize" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_stabilize"], 10, true, true, "", "call FAR_Check_Stabilize"];
-		player addAction ["<t color=""#C90000"">" + "Suicide" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_suicide"], 9, false, true, "", "call FAR_Check_Suicide"];
-		player addAction ["<t color=""#C90000"">" + "Drag" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_drag"], 9, false, true, "", "call FAR_Check_Dragging"];
+		player addAction ["<t color=""#C90000"">" + "Stopper l'hémorragie" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_stabilize"], 10, true, true, "", "call FAR_Check_Stabilize"];
+		//player addAction ["<t color=""#C90000"">" + "Suicide" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_suicide"], 9, false, true, "", "call FAR_Check_Suicide"];
+		player addAction ["<t color=""#C90000"">" + "Trainer" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_drag"], 9, false, true, "", "call FAR_Check_Dragging"];
+		
+		if((playerSide == independent) || (playersNumber resistance == 0)) then {
+			player addAction ["<t color=""#C90000"">" + "Réanimer" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_revive"], 10, true, true, "", "call FAR_Check_Revive"];
+		};	
 	};
 };
 
@@ -98,7 +101,7 @@ FAR_Player_Unconscious =
 		
 		while { !isNull _unit && alive _unit && _unit getVariable "FAR_isUnconscious" == 1 && _unit getVariable "FAR_isStabilized" == 0 && (FAR_BleedOut <= 0 || time < _bleedOut) } do
 		{
-			hintSilent format["Bleedout in %1 seconds\n\n%2", round (_bleedOut - time), call FAR_CheckFriendlies];
+			hintSilent format["Mort dans %1 secondes si vous n'êtes pas stabilisé\n\n%2", round (_bleedOut - time), call FAR_CheckFriendlies];
 			
 			sleep 0.5;
 		};
@@ -109,7 +112,7 @@ FAR_Player_Unconscious =
 			
 			while { !isNull _unit && alive _unit && _unit getVariable "FAR_isUnconscious" == 1 } do
 			{
-				hintSilent format["You have been stabilized\n\n%1", call FAR_CheckFriendlies];
+				hintSilent format["Vous avez été stabilisé\n\n%1", call FAR_CheckFriendlies];
 				
 				sleep 0.5;
 			};
@@ -187,20 +190,16 @@ FAR_HandleRevive =
 		_target setVariable ["FAR_isUnconscious", 0, true];
 		_target setVariable ["FAR_isDragged", 0, true];
 		
-		sleep 6;
-		
-		// [Debugging] Code below is only relevant if revive script is enabled for AI
-		if (!isPlayer _target) then
-		{
-			_target enableSimulation true;
-			_target allowDamage true;
-			_target setDamage 0;
-			_target setCaptive false;
-			
-			_target playMove "amovppnemstpsraswrfldnon";
+		if(playerSide == independent) then {
+			hint "Vous avez été payé 1500€ pour cette action";
+			life_dabliquide = life_dabliquide + 1500;
+			player removeItem "Medikit";
 		};
-	
+			
+		sleep 6;	
 	};
+
+	player reveal _target;
 };
 
 ////////////////////////////////////////////////
@@ -248,7 +247,7 @@ FAR_Drag =
 	publicVariable "FAR_isDragging_EH";
 	
 	// Add release action and save its id so it can be removed
-	_id = player addAction ["<t color=""#C90000"">" + "Release" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_release"], 10, true, true, "", "true"];
+	_id = player addAction ["<t color=""#C90000"">" + "Lâcher" + "</t>", "FAR_revive\FAR_handleAction.sqf", ["action_release"], 10, true, true, "", "true"];
 	
 	hint "Press 'C' if you can't move.";
 	
@@ -303,7 +302,7 @@ FAR_public_EH =
 
 		if (isPlayer _killed && isPlayer _killer) then
 		{
-			systemChat format["%1 was injured by %2", name _killed, name _killer];
+			systemChat format["%1 a été blessé par %2", name _killed, name _killer];
 		};
 	};
 };
@@ -497,12 +496,12 @@ FAR_CheckFriendlies =
 			_unitName	= name _unit;
 			_distance	= floor (player distance _unit);
 			
-			_hintMsg = format["Nearby Medic:\n%1 is %2m away.", _unitName, _distance];
+			_hintMsg = format["Médecin proche:\n%1 is %2m away.", _unitName, _distance];
 		};
 	} 
 	else 
 	{
-		_hintMsg = "No medic nearby.";
+		_hintMsg = "Aucun médecin proche";
 	};
 	
 	_hintMsg

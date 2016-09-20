@@ -107,10 +107,10 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		else
 		{
 			//only if the player is not unconscious
-            //if(player getVariable["AGM_isUnconscious",false]) then {
+            if(player getVariable["FAR_isUnconscious",false]) then {
                 //ok then it's a civilian so we draw windows for civilians
                 [_curTarget] call life_fnc_civInteractionMenu;
-            //};
+            };
 		};
 	};
 } else {
