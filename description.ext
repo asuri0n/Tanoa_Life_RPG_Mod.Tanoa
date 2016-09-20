@@ -1,20 +1,20 @@
 author = "Tonic";
 onLoadName = "Tanoa Life Vacation Gaming";
 onLoadMission = "A RPG game mode developed by Tonic, modified by Vacation Gaming";
-joinUnassigned = 0;
+joinUnassigned = 1;
 respawn = BASE;
-respawndelay = 5;
-disabledAI = true;
+respawndelay = 1;
+disabledAI = 1;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
-loadScreen = "loading.paa";
+loadScreen = "textures\loading.paa";
 respawnDialog = 0;
 
 class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 120;
+	maxPlayers = 100;
 };
 
 wreckLimit = 3;
@@ -344,8 +344,8 @@ class CfgDebriefing
 	class Blacklisted
 	{
 		title = "Mission Terminé";
-		subtitle = "Tu as été blacklisté des forces de l'ordre";
-		description = "Tu n'es plus autorisé a étre un gendarme suite ? tes actions pr?alables les administrateurs t'ont retir? le droit de jouer gendarme.";
+		subtitle = "Tu as été blacklisté des gendarmes";
+		description = "Tu as été licencié des gendarmes.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -365,20 +365,11 @@ class CfgDebriefing
 	{
 		title = "Echec de la Mission";
 		subtitle = "Vous n'étes pas autorisé a utiliser ce slot";
-		description = "Vous n'etes pas autorisé à utiliser ce slot parce que vous n'etes pas membre premium grade 2, essayez un autre emplacement";
+		description = "Ce slot est reservé. ";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
-	};
-	class Nopapiers
-	{
-		title = "EXTRADITION";
-		subtitle = "Vous n'avez aucun papiers d'identité";
-		description = "Vous devez vous connecter sur le serveur Stratis Life Vacation afin d'obtenir des papiers d'identit? pour venir sur Altis";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
+	};	
 	class scriptKiddie
 	{
 		title = "No more cancer";
@@ -388,25 +379,6 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-  class papiers
-  {
-    title = "Direction Stratis !";
-    subtitle = "Vous êtes en train de voyager vers l'île de Stratis";
-    description = "Tu te dirige vers l'?le de Stratis. Tu peux te d?connecter et rejoindre l'autre serveur";
-    pictureBackground = "";
-    picture = "";
-    pictureColor[] = {0,0.3,0.6,1};
-  };
-
-  class altis
-  {
-    title = "Impossible !";
-    subtitle = "Vous n'êtes pas passé par le bateau";
-    description = "Pour vous rendre sur Stratis, il vous faut prendre le large en bateau depuis Stratis";
-    pictureBackground = "";
-    picture = "";
-    pictureColor[] = {0,0.3,0.6,1};
-  };
 };
 
 class CfgNotifications
@@ -465,24 +437,23 @@ class CfgNotifications
 		priority = 6;
 	};
 
-  class BorderBreach
-  {
-    title = "Dispositif de protection Frontiere";
-    iconPicture = "icons\messagepolice.paa";
-    description = "%1";
-    duration = 10;
-    priority = 6;
-  };
+    class BorderBreach
+    {
+		title = "Dispositif de protection Frontiere";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+    };
 
-  class DetectedSuspect
-  {
-    title = "Suspect repéré dans la Wanted List";
-    iconPicture = "icons\messagepolice.paa";
-    description = "%1";
-    duration = 10;
-    priority = 6;
-  };
-
+	class DetectedSuspect
+	{
+		title = "Suspect repéré dans la Wanted List";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
 
 	class AdminDispatch
 	{
@@ -502,12 +473,12 @@ class CfgNotifications
 		priority = 5;
 	};
 
-  class CaptureSystem
-  {
-    title = "Systeme de capture";
-    iconPicture = "icons\messagenew.paa";
-    description = "%1";
-    duration = 10;
-    priority = 8;
-  };
+    class CaptureSystem
+    {
+		title = "Systeme de capture";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 8;
+    };
 };

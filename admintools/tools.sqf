@@ -244,7 +244,7 @@ VehicleCivilMenu =
 		["Voitures", [2], "#USER:VehicleCivilVoituresMenu", -5, [["expression", ""]], "1", "1"],
 		["Camions", [3], "#USER:VehicleCivilCamionsMenu", -5, [["expression", ""]], "1", "1"],
 		["Blindés", [4], "#USER:VehicleCivilBlindeMenu", -5, [["expression", ""]], "1", "1"],
-		["Ajouter action", [5],  "", -5, [["expression", format[_EXECscriptVehicule,"action.sqf"]]], "1", "1"],
+		["Ajouter action", [5],  "", -5, [["expression", format[_EXECscriptVehicule,"addons\action.sqf"]]], "1", "1"],
 		["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 
