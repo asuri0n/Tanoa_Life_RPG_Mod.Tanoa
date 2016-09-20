@@ -32,13 +32,15 @@ _spacesTill = 20;
 	_struct2 = _struct2 + (format["LvL: %1<br/>",_profLevel]);
 	_struct = _struct + format["%1<br/>",_profText];
 		
-	/*
-	diag_log format["------------------- Prof Setup (%1) -------------",_x select 0];
-	diag_log format["name: %1",_struct];
-	diag_log format["name: %1",_struct2];
-	diag_log format["name: %1",_struct3];
-	diag_log "------------------------------------------------";
-	*/
+	
+	if (VACA_SERV_DEBUG) then
+	{
+		diag_log format["------------------- Prof Setup (%1) -------------",_x select 0];
+		diag_log format["name: %1",_struct];
+		diag_log format["name: %1",_struct2];
+		diag_log format["name: %1",_struct3];
+		diag_log "------------------------------------------------";
+	};
 		
 } foreach life_prof; 
 	

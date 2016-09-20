@@ -1,17 +1,5 @@
 private ["_Source", "_debugPlayer", "_cName", "_cCamera", "_KEGs_cs"];
 
-//diag_log format ["camera menu start: %1", KEGs_target];
-
-//_Source = _this select 0;
-
-//_debugPlayer=objNull;
-//if ( f_var_debugMode == 1 ) then {
-//	_debugPlayer=player;
-//};
-//_debugPlayer groupchat format ["CameraMenuHandler Source: %1", _Source]; 
-//_msg = format["CameraMenuHandler Source: %1", _Source];
-//if ( f_var_debugMode == 1 ) then { diag_log  _msg; };
-
 _cName = 55004;
 _cCamera = 55002;
 

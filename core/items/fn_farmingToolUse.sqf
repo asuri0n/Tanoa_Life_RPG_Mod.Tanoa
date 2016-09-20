@@ -25,7 +25,11 @@ if(_zone == "") exitWith {
 	hint localize "STR_NOTF_notNearResource";
 };
 
-diag_log format["farmingToolUse Zone: %1",_zone];
+if (VACA_SERV_DEBUG) then
+{
+	diag_log format["farmingToolUse Zone: %1",_zone];
+};
+
 //Switching between pickaxe and machete, for now. With this method, other tools could be used later to enrich the game.
 switch (_tool) do {
     case "pickaxe": {
@@ -94,7 +98,12 @@ _starttime = time;
 _duration = round (3 * _diff / _val);
 
 _profName = [_mine] call life_fnc_profType;
-diag_log format["[VACA_DEBUG] ===== RECOLTE DU %1 ======", _profName];
+
+if (VACA_SERV_DEBUG) then
+{
+	diag_log format["[VACA_DEBUG] ===== RECOLTE DU %1 ======", _profName];
+};
+
 if( _profName != "" ) then {
 	_data = missionNamespace getVariable (_profName);	
 	diag_log format["LEVEL %1", _data select 0];
@@ -165,7 +174,11 @@ if( _profName != "" ) then {
 	};
 	
 	_duration = _cpUp * round((life_maxWeight - life_carryWeight)/([_mine] call life_fnc_itemweight))*([_mine] call life_fnc_itemweight) * _val;
-	diag_log format["%1 * ((%2 - %3)/%6) * %4 = %5",_cpUp,life_maxWeight,life_carryWeight,_val,_duration,([_mine] call life_fnc_itemweight)];
+	
+	if (VACA_SERV_DEBUG) then
+	{
+		diag_log format["%1 * ((%2 - %3)/%6) * %4 = %5",_cpUp,life_maxWeight,life_carryWeight,_val,_duration,([_mine] call life_fnc_itemweight)];
+	};
 };
 
 _itemName = [([_mine,0] call life_fnc_varHandle)] call life_fnc_varToStr;
@@ -187,8 +200,11 @@ for "_i" from 0 to (_duration/2.5) do
 
 if (life_interrupted OR (vehicle player != player)) exitWith {hint "Action annulée, tu n'as rien récolté."; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
-diag_log format ["farmingToolUse; starttime: %1; endtime: %2", _starttime, time];
-diag_log "[VACA_DEBUG] ===== FIN ======";
+if (VACA_SERV_DEBUG) then
+{
+	diag_log format ["farmingToolUse; starttime: %1; endtime: %2", _starttime, time];
+	diag_log "[VACA_DEBUG] ===== FIN ======";
+};
 
 if(([true,_mine,_diff] call life_fnc_handleInv)) then
 {

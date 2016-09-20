@@ -11,7 +11,11 @@ private["_itemArray","_yItems","_item"];
 
 _itemArray = civ_gear;
 _yItems = [_itemArray,18,[],[[]]] call BIS_fnc_param;
-diag_log format["INVO DEBUG - fn_civLoadLifeGear - yItems: %1 - yItemArray: %2",_yItems,_itemArray];
+
+if (VACA_SERV_DEBUG) then
+{
+	diag_log format["INVO DEBUG - fn_civLoadLifeGear - yItems: %1 - yItemArray: %2",_yItems,_itemArray];
+};
 
 {
     _item = [_x,1] call life_fnc_varHandle;

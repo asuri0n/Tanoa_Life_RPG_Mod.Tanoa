@@ -14,15 +14,18 @@ _xp2Up = [_nextLevel] call life_fnc_getLevelXp;
 _exp = _exp + _amount; 
 
 
-diag_log "------------------- AJOUT EXPERIENCE ------------------";
-diag_log format["Nom champ : %1",_type];
-diag_log format["Nombre d'XP en plus: %1",_amount];
-diag_log format["Donnée du joueur: %1",_profData];
-diag_log format["Level du joueur avant: %1",(_profData select 0)];
-diag_log format["Experience du joueur avant: %1",(_profData select 1)];
-diag_log format["Xp requis pour acceder au level %1: %2",_nextLevel, _xp2Up];
-diag_log format["Experience du joueur apres: %1",_exp];
-diag_log "-------------------------------------------------------";
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "------------------- AJOUT EXPERIENCE ------------------";
+	diag_log format["Nom champ : %1",_type];
+	diag_log format["Nombre d'XP en plus: %1",_amount];
+	diag_log format["Donnée du joueur: %1",_profData];
+	diag_log format["Level du joueur avant: %1",(_profData select 0)];
+	diag_log format["Experience du joueur avant: %1",(_profData select 1)];
+	diag_log format["Xp requis pour acceder au level %1: %2",_nextLevel, _xp2Up];
+	diag_log format["Experience du joueur apres: %1",_exp];
+	diag_log "-------------------------------------------------------";
+};
 
 
 // Si le nombre d'xp du joueur est >= au palier du prochain level

@@ -10,7 +10,10 @@ private["_spawnPos","_allVeh","_pUID","_playerPosition"];
 
 //Sauvegarde de la position
 _playerPosition = civ_position;
-diag_log format ["initciv pos: %1",_playerPosition]; //For debugging
+if (VACA_SERV_DEBUG) then
+{
+	diag_log format ["initciv pos: %1",_playerPosition]; //For debugging
+};
 
 // Liste des spawns
 civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", ["Land_Shop_City_02_F","Land_Shop_City_01_F"],250];
@@ -20,7 +23,6 @@ civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_Shop_City_02_F"
 civ_spawn_5 = nearestObjects[getMarkerPos  "civ_spawn_5", ["Land_Shop_City_02_F","Land_Shop_City_01_F"],250];
 
 waitUntil {!(isNull (findDisplay 46))};
-diag_log format ["life_is_arrested %1",life_is_arrested];
 
 //if(str(player) in ["civ_1","civ_2","civ_3","civ_4","civ_5","civ_6","civ_7","civ_8","civ_9","civ_10","civ_11","civ_12","civ_13","civ_14","civ_15","civ_16","civ_17","civ_18","civ_19","civ_20","civ_21","civ_22","civ_23","civ_24","civ_25","civ_26","civ_27","civ_28","civ_29","civ_30"]) then {
 if(str(player) in ["don_1","don_2","don_3","don_4","don_5","don_6","don_7","don_8","don_9","don_10"]) then {
@@ -35,21 +37,22 @@ if(str(player) in ["don_1","don_2","don_3","don_4","don_5","don_6","don_7","don_
 /*****
 SAUVEGARDE DE LA POSITION
 ******/
-/*
-diag_log "------------- Life is alive -------------";
-diag_log format["civ position: %1",civ_position];
-diag_log format["Life is alive: %1",life_is_alive];
-diag_log "------------------------------------------------";
-*/
+
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "------------- Life is alive -------------";
+	diag_log format["civ position: %1",civ_position];
+	diag_log format["Life is alive: %1",life_is_alive];
+	diag_log "------------------------------------------------";
+};
+
 if (life_is_alive == 0 || (typeName _playerPosition != "ARRAY")) then {
 	[] call life_fnc_spawnMenu;	
 	waitUntil{!isNull (findDisplay 38500)}; 	
 	waitUntil{isNull (findDisplay 38500)};
 	life_is_alive = true;
 } else {
-	diag_log "entre dans la 2em partie  boucle";
 	if(life_is_arrested) then {
-		diag_log "Lise_is_arrested";
 		life_is_arrested = false;
 		[player,true] spawn life_fnc_jail;
 	} else {

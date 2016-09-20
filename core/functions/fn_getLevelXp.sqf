@@ -69,11 +69,13 @@ switch (_level) do {
 	default{""};
 };
 
-/*
-diag_log "---------------- get Level Exp ----------------";
-diag_log format["_level: %1",_level];
-diag_log format["_xp: %1",_xp];
-diag_log "------------------------------------------------";
-*/
+
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "---------------- get Level Exp ----------------";
+	diag_log format["_level: %1",_level];
+	diag_log format["_xp: %1",_xp];
+	diag_log "------------------------------------------------";
+};
 	
 _xp;

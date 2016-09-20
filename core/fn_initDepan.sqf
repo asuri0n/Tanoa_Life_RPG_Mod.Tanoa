@@ -10,7 +10,6 @@ private["_end"];
 
 //Sauvegarde de la position
 _playerPosition = med_position;
-//diag_log format ["%1",_playerPosition]; //For debugging
 
 player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
@@ -31,15 +30,6 @@ else
 };
 
 [] call life_fnc_depanInitActions;
-
-/*****
-SAUVEGARDE DE LA POSITION
-******/
-
-diag_log "------------- Life is alive -------------";
-diag_log format["med position: %1",med_position];
-diag_log format["Life is alive: %1",life_is_alive];
-diag_log "------------------------------------------------";
 
 if (life_is_alive == 0 || (typeName _playerPosition != "ARRAY")) then{	
 	[] call life_fnc_spawnMenu;	

@@ -8,7 +8,11 @@
 */
 private["_display","_units","_type","_lastContact","_fastReply","_adminReply","_listCommTowers","_countCommTowers","_cell","_name"];
 
-diag_log "[VACA_DEBUG] ===== CELLPHONE =====";
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "[VACA_DEBUG] ===== CELLPHONE =====";
+};
+	
 _cell = false;
 {  
 	_name = [_x,14] call KRON_StrLeft;  
@@ -19,7 +23,10 @@ _cell = false;
 	};
 }foreach assignedItems player;
 
-diag_log format ["_cell %1",_cell]; 
+if (VACA_SERV_DEBUG) then
+{
+	diag_log format ["_cell %1",_cell]; 
+};
 
 _countCommTowers = 0;
 //Komodo: ajout pour permettre la désactivation des messages si une personne est en dehors des zones de couverture active. Calcul sous conditions car couteux.
@@ -125,4 +132,7 @@ lbSort [_units, "ASC"];
 
 lbSetCurSel [3004,0];
 
-diag_log "[VACA_DEBUG] ===== FIN =====";
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "[VACA_DEBUG] ===== FIN =====";
+};

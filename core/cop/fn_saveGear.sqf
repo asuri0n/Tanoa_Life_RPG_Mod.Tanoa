@@ -7,9 +7,13 @@
 */
 private["_primary","_handgun","_magazines","_uniform","_vest","_backpack","_items","_primitems","_secitems","_handgunitems","_uitems","_vitems","_bitems","_curWep"];
 
-		diag_log "********";
-		diag_log "SAVE GEAR START";
-		diag_log "********";
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "********";
+	diag_log "SAVE GEAR START";
+	diag_log "********";
+};
+
 //Old format / code
 _primary = primaryWeapon player;
 _handgun = handGunWeapon player;
@@ -57,6 +61,9 @@ player selectWeapon _curWep;
 
 cop_gear = [_primary,_handgun,_magazines,_uniform,_vest,_backpack,_items,_primitems,_secitems,_handgunitems,_uitems,_vitems,_bitems];
 
-		diag_log "********";
-diag_log ["cop_gear %1",cop_gear];
-		diag_log "********";
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "********";
+	diag_log ["cop_gear %1",cop_gear];
+	diag_log "********";
+};

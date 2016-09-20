@@ -129,10 +129,12 @@ switch ( _type ) do {
 };   
 
 
-diag_log "------------------- Prof Type ------------------";
-diag_log format["_profName: %1",_profName];
-diag_log format["_type: %1",_type];
-diag_log "------------------------------------------------";
-
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "------------------- Prof Type ------------------";
+	diag_log format["_profName: %1",_profName];
+	diag_log format["_type: %1",_type];
+	diag_log "------------------------------------------------";
+};
 	
 _profName;

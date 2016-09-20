@@ -1,11 +1,6 @@
 private [ "_idx", "_name", "_found", "_i", "_OriginalSide","_vm_refreshNumber","_inNameCache"];
 
-//if ( KEGsRunAbort ) then {
-//	diag_log format ["refresh player start: %1", KEGs_target];
-//};
-
-	RefreshListReady = false;
-		
+	RefreshListReady = false;		
 	_vm_refreshNumber = vm_count;
 	// Clear and re-fill targets listbox
 	lbClear KEGs_cLBTargets;

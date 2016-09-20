@@ -10,7 +10,6 @@ private["_end","_playerGroup","_rankIcon"];
 
 //Sauvegarde de la position
 _playerPosition = cop_position;
-//diag_log format ["%1",_playerPosition]; //For debugging
 
 player addRating 9999999;
 waitUntil {!(isNull (findDisplay 46))};
@@ -67,16 +66,6 @@ if((str(player) in ["cop_1","cop_2","cop_3","cop_4","cop_5","cop_6","cop_7","cop
 //////////////MATIII////////////////
 player setVariable["coplevel", __GETC__(life_coplevel), true]; // Rang Anzeige
 player setVariable ["life_ZamakSearch", false, true];
-
-
-/*****
-SAUVEGARDE DE LA POSITION
-******/
-
-diag_log "------------- Life is alive -------------";
-diag_log format["cop position: %1",cop_position];
-diag_log format["Life is alive: %1",life_is_alive];
-diag_log "------------------------------------------------";
 
 if (life_is_alive == 0 || (typeName _playerPosition != "ARRAY")) then{	
 	[] call life_fnc_spawnMenu;	

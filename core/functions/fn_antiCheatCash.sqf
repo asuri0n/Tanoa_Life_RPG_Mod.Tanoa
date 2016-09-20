@@ -32,7 +32,7 @@ switch (_isDab) do {
                     //Potential Cheater identified! Or bug ;)
                     _cheatAmount = life_dabliquide_before + _delta - life_dabliquide;
     	     		[[format["ANTICHEAT-CHEAT_MOD_DAB-name:%1;delta:%2;dab_before:%3;dab_new:%4;action:%5;cheatval:%6",name player, [_delta] call life_fnc_numberText, [life_dabliquide_before] call life_fnc_numberText, [life_dabliquide] call life_fnc_numberText, _action, [_cheatAmount] call life_fnc_numberText]],"TON_fnc_writeLog",false,false] spawn life_fnc_MP;
-                    //diag_log format["ANTICHEAT-CHEAT_MOD_DAB - name: %1; delta: %2; dab_before: %3; dab_new: %4; action: %5; cheat val: %6",name player, [_delta] call life_fnc_numberText, [life_dabliquide_before] call life_fnc_numberText, [life_dabliquide] call life_fnc_numberText, _action, [_cheatAmount] call life_fnc_numberText];
+                    diag_log format["ANTICHEAT-CHEAT_MOD_DAB - name: %1; delta: %2; dab_before: %3; dab_new: %4; action: %5; cheat val: %6",name player, [_delta] call life_fnc_numberText, [life_dabliquide_before] call life_fnc_numberText, [life_dabliquide] call life_fnc_numberText, _action, [_cheatAmount] call life_fnc_numberText];
     	     	};
                 life_dabliquide_before = life_dabliquide;
     	    };
@@ -45,13 +45,13 @@ switch (_isDab) do {
         if (life_liquide == life_liquide_before + _delta) then {
             /* Everything is fine
            [[format["ANTICHEAT-MOD_LIQUIDE: %1; delta: %2; liquide_before: %3; liquide_new: %4; action: %5",name player, [_delta] call life_fnc_numberText, [life_liquide_before] call life_fnc_numberText, [life_liquide] call life_fnc_numberText, _action]],"TON_fnc_writeLog",false,false] spawn life_fnc_MP; */
-           //diag_log format["ANTICHEAT-MOD_LIQUIDE: %1; delta: %2; liquide_before: %3; liquide_new: %4; action: %5",name player, [_delta] call life_fnc_numberText, [life_liquide_before] call life_fnc_numberText, [life_liquide] call life_fnc_numberText, _action];
+           diag_log format["ANTICHEAT-MOD_LIQUIDE: %1; delta: %2; liquide_before: %3; liquide_new: %4; action: %5",name player, [_delta] call life_fnc_numberText, [life_liquide_before] call life_fnc_numberText, [life_liquide] call life_fnc_numberText, _action];
         }
         else {
             /* cheater or bug */
             _cheatAmount = life_liquide_before + _delta - life_liquide;
             [[format["ANTICHEAT-CHEAT_MOD_LIQUIDE: %1; delta: %2; liquide_before: %3; liquide_new: %4; action: %5; cheat val: %6",name player, [_delta] call life_fnc_numberText, [life_liquide_before] call life_fnc_numberText, [life_liquide] call life_fnc_numberText, _action, [_cheatAmount] call life_fnc_numberText]],"TON_fnc_writeLog",false,false] spawn life_fnc_MP;
-            //diag_log format["ANTICHEAT-CHEAT_MOD_LIQUIDE: %1; delta: %2; liquide_before: %3; liquide_new: %4; action: %5; cheat val: %6",name player, [_delta] call life_fnc_numberText, [life_liquide_before] call life_fnc_numberText, [life_liquide] call life_fnc_numberText, _action, [_cheatAmount] call life_fnc_numberText];
+            diag_log format["ANTICHEAT-CHEAT_MOD_LIQUIDE: %1; delta: %2; liquide_before: %3; liquide_new: %4; action: %5; cheat val: %6",name player, [_delta] call life_fnc_numberText, [life_liquide_before] call life_fnc_numberText, [life_liquide] call life_fnc_numberText, _action, [_cheatAmount] call life_fnc_numberText];
         };
     life_liquide_before = life_liquide;
     life_liquide_delta = _delta; //In case we need it, so far useless.

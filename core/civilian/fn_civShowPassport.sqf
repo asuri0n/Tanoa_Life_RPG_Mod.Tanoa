@@ -19,13 +19,14 @@ if(!(_target isKindOf "Man") ) then {_target = player;};
 
 if(!(alive _target) ) then {_target = player;};
 
-
-diag_log "------------- CIV PASSPORT client -------------";
-diag_log format["Result AGE: %1",			player getVariable ["playerAge",0]];
-diag_log format["Result SEXE: %1",			player getVariable ["playerSexe",0]];
-diag_log format["Result NATIONALITE: %1",	player getVariable ["playerNationalite",0]];
-diag_log "------------------------------------------------";
-
+if (VACA_SERV_DEBUG) then
+{
+	diag_log "------------- CIV PASSPORT client -------------";
+	diag_log format["Result AGE: %1",			player getVariable ["playerAge",0]];
+	diag_log format["Result SEXE: %1",			player getVariable ["playerSexe",0]];
+	diag_log format["Result NATIONALITE: %1",	player getVariable ["playerNationalite",0]];
+	diag_log "------------------------------------------------";
+};
 
 if(player getVariable ["playerSexe",0] == "1") then {
 	_sexe = "Homme";

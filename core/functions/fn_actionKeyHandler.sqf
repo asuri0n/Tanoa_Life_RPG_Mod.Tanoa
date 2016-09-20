@@ -25,7 +25,6 @@ if(isNull _curTarget) exitWith {
 		};
 	};
 	if (((__GETC__(life_depanLevel) > 0) AND (playerSide == independent)) OR ((__GETC__(life_coplevel) > 0) AND (playerSide == west))) then {
-		diag_log "H MENU DEPAN/FLIC";
 		_barrieres = nearestObjects[getPos player,["RoadBarrier_F"],3] select 0;
 		_cones = nearestObjects[getPos player,["RoadCone_L_F"],3] select 0;
 		if(!(isNil "_barrieres")) then {[] call life_fnc_packupBarriere;};
