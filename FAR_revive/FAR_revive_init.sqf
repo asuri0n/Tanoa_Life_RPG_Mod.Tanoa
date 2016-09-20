@@ -131,9 +131,10 @@ FAR_Mute_Radio =
 {
 	if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
 		[] spawn FAR_Mute_TFR;
-	} else {
-		[] spawn FAR_Mute_ACRE;
 	};
+	/* else { //ACRE IS FOR PUSSY
+		[] spawn FAR_Mute_ACRE;
+	};*/
 };
 
 FAR_Mute_TFR =
@@ -184,6 +185,7 @@ FAR_Mute_TFR =
 	};
 };
 
+/*
 FAR_Mute_ACRE =
 {
 	waitUntil { time > 0 };
@@ -233,6 +235,7 @@ FAR_Mute_ACRE =
 		false
 	};
 };
+*/
 
 ////////////////////////////////////////////////
 // [Debugging] Add revive to playable AI units
