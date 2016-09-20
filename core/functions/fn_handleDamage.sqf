@@ -14,9 +14,9 @@ _projectile = _this select 4;
 invo_killer = _source;
 
 //Internal Debugging.
-//if (VACA_SERV_DEBUG) then {
+if (VACA_SERV_DEBUG) then {
 	systemChat format["PART: %1 || DAMAGE: %2 || SOURCE: %3 || PROJECTILE: %4 || FRAME: %5",_part,_damage,_source,_projectile,diag_frameno];
-//};
+};
 
 //Handle the tazer first (Top-Priority).
 if(!isNull _source) then {
