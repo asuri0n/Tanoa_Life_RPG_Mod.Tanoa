@@ -11,7 +11,7 @@ while {alive player} do
 
 	if ((cursortarget iskindof "man") && (isplayer cursortarget)) then {
 		//if the player is not a rebel, or if the target is not unconscious, stunned, restrained, surrended; the player can't check inventory of target
-		if((license_civ_rebel)&& (player distance cursortarget < 4) && ((cursortarget getVariable "FAR_isUnconscious") || ((cursortarget getVariable "isknocked")) || ((cursortarget getVariable "restrained")) || ((cursortarget getVariable "playerSurrender")))) then {
+		if((license_civ_rebel)&& (player distance cursortarget < 4) && ((cursortarget getvariable["FAR_isUnconscious",0] == 1) || ((cursortarget getVariable "isknocked")) || ((cursortarget getVariable "restrained")) || ((cursortarget getVariable "playerSurrender")))) then {
 			life_inv_allowed = true;
 		};
 		if(!(life_inv_allowed)) exitWith {(FindDisplay 602) closeDisplay 1; titleText["\n\n\n\n Tu ne peux pas voler dans un sac d'un autre joueur! Système antivol ! ", "PLAIN",0];_alreadyBlock = true;};

@@ -110,7 +110,7 @@ while {true} do
 	if(life_interrupted) exitWith {};
 	if(player != vehicle player) exitWith {titleText["Tu dois être à l'exterieur du véhicule pour capturer la zone!.","PLAIN"]; life_interrupted = true;};
 	if(!alive player) exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
-	if(player getVariable "FAR_isUnconscious") exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
+	if(player getvariable["FAR_isUnconscious",0] == 1) exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
 };
 
 //Kill the UI display and check for various states
@@ -121,7 +121,7 @@ if((player getVariable["restrained",false])) exitWith {life_action_inUse = false
 if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulé","PLAIN"]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 life_action_inUse = false;
 /*player setVariable ["AGM_canTreat", true, true];*/
-if(player getVariable "FAR_isUnconscious") exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
+if(player getvariable["FAR_isUnconscious",0) exitWith {hint "Tu as abandonné la capture de zone car tu es blessé.";};
 
 titleText["La zone a été capturé avec succes.","PLAIN"];
 _flagTexture = [

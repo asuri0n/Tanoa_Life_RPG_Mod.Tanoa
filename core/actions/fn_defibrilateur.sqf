@@ -40,7 +40,7 @@ switch (true) do
 	{
 		hint "Impossible d'effectuer cette action sur ce type d'unité.";
 	};
-	case ((_target getVariable "FAR_isUnconscious" == 0) || !isPlayer _target || ((_target distance player) > 2 )) :
+	case ((_target getvariable["FAR_isUnconscious",0] == 0) || !isPlayer _target || ((_target distance player) > 2 )) :
 	{
 		hint "Impossible d'effectuer cette action sur cette unité.";
 	};

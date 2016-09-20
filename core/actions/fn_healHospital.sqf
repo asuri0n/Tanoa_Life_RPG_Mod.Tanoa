@@ -42,7 +42,7 @@ if (count _nearPlayers > 0) then {hint "Ok, on va s'occuper de ce(s) blessé(s)!
 else {hint "Pas de blessé autour de toi.";};
 
 {
-	if (_x getVariable["FAR_isUnconscious",false]/* && {!(_x getVariable["AGM_isBleeding",false])}*/) then
+	if (_x getvariable["FAR_isUnconscious",0] == 1/* && {!(_x getVariable["AGM_isBleeding",false])}*/) then
 	//{
 		//revive
 		//_x setVariable ["AGM_isUnconscious", False, True];

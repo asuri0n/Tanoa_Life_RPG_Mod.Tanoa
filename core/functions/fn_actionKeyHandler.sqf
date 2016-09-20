@@ -53,7 +53,7 @@ life_action_inUse = true;
 //Check if it's a dead body.
 //CORRIGE PAR ASURION LE 21/06 A 11H00
 /*
-if(_curTarget isKindOf "Man" && {alive _curTarget} && {playerSide == independent} && _curtarget getVariable "FAR_isUnconscious" == 1) exitWith {
+if(_curTarget isKindOf "Man" && {alive _curTarget} && {playerSide == independent} && _curtarget getvariable["FAR_isUnconscious",0] == 1) exitWith {
 	switch(true) do
 	{
 		case (__GETC__(life_medicLevel) > 0) :
@@ -107,7 +107,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		else
 		{
 			//only if the player is not unconscious
-            if(player getVariable["FAR_isUnconscious",false]) then {
+            if(player getvariable["FAR_isUnconscious",0] == 1) then {
                 //ok then it's a civilian so we draw windows for civilians
                 [_curTarget] call life_fnc_civInteractionMenu;
             };

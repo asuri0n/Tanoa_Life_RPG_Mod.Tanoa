@@ -197,8 +197,8 @@ switch (true) do
 	};
 	case (_item == "poison"):
 	{
-		if((isNull cursortarget) OR (alive cursortarget && !(cursortarget getVariable "FAR_isUnconscious"))) exitWith {hint "Impossible d'effectuer cette action"};
-		if(!isNull cursortarget && alive cursortarget && cursortarget getVariable "FAR_isUnconscious") then
+		if((isNull cursortarget) OR (alive cursortarget && !(cursortarget getvariable["FAR_isUnconscious",0] == 1))) exitWith {hint "Impossible d'effectuer cette action"};
+		if(!isNull cursortarget && alive cursortarget && cursortarget getvariable["FAR_isUnconscious",0] == 1) then
 		{
 			[] spawn
 			{
