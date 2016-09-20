@@ -167,7 +167,40 @@
         };
     };
 };
+
+// delete animals when far from hunting zone
+[] spawn {    
+	while {true} do {        
+		{            
+			if (!(isNull agent _x) && ((agent _x isKindOf "Snake_random_F") || (agent _x isKindOf "Rabbit_F"))) then { 
+				deleteVehicle agent _x; 
+			};        
+		}forEach agents;        
+		sleep 10;    
+	};
+}; 
+
+// change les panneaux de pub toutes les 5 min
 /*
+[] spawn {
+	while {true} do {
+		_pubs = [
+			//"HLTextures\divers\pub\hlnews.paa"
+		];
+		_boards = [
+			//pub1
+		];
+		{
+			_pub = selectRandom _pubs;
+			_x setObjectTexture [0,_pub];
+		} foreach _boards;
+		sleep (5*60);
+	};
+};
+*/
+
+// obliger TFAR
+/* TO DO : optimize
 [] spawn 
 {
 	while {true} do
