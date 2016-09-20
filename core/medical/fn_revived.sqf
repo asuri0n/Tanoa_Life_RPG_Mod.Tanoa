@@ -28,7 +28,7 @@ if(life_dabliquide > (call life_revive_fee)) then {
 
 //Retexturing of units clothing, vanilla files only retexture the EMS unit.
 switch(playerSide) do {
-	case independent: {player setObjectTextureGlobal [0,"\vacation_textures\data\tenues\medic_uniform.paa"];};
+	case independent: {player setObjectTextureGlobal [0,"textures\tenues\medic_uniform.paa"];};
 };
 
 //Bring me back to life.

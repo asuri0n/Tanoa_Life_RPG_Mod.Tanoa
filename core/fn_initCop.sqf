@@ -105,7 +105,7 @@ player setVariable ["invo_faction","cop",true];
 	while {true} do  
     {  
         waitUntil {uniform player == "U_Rangemaster"};  
-        player setObjectTextureGlobal [0,"\vacation_textures\data\tenues\cop\gend.paa"];  
+        player setObjectTextureGlobal [0,"textures\tenues\cop\gend.paa"];  
         waitUntil {uniform player != "U_Rangemaster"};  
     };  
 };  

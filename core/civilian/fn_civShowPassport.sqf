@@ -34,6 +34,6 @@ if(player getVariable ["playerSexe",0] == "1") then {
 	_sexe = "Femme";
 };
 
-_message = format["<img size='10' color='#FFFFFF' image='\vacation_textures\data\passport.paa'/><br/><br/><t size='2.5'>%1</t><br/><t size='1'>Citoyen de Tanoa</t><br/> Age : %2<br/>Sexe : %3<br/>Nationalite : %4", name player, player getVariable ["playerAge",0],_sexe, player getVariable ["playerNationalite",0]];
+_message = format["<img size='10' color='#FFFFFF' image='textures\passport.paa'/><br/><br/><t size='2.5'>%1</t><br/><t size='1'>Citoyen de Tanoa</t><br/> Age : %2<br/>Sexe : %3<br/>Nationalite : %4", name player, player getVariable ["playerAge",0],_sexe, player getVariable ["playerNationalite",0]];
 
 [[player, _message],"life_fnc_civPassportShown",_target,false] spawn life_fnc_MP;

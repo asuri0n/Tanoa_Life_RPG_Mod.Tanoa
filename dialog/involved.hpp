@@ -12,7 +12,7 @@ class logo
 		class logoImage : Life_RscPictureKeepAspect
 		{
 			idc = -1;
-			text = "\vacation_textures\data\introinvol.paa";
+			text = "textures\introinvol.paa";
 			x = safeZoneX + (safeZoneW/2) -0.25;
 			y = safeZoneY + 0.05;
 			w = 0.5; h = 0.25;
@@ -38,7 +38,7 @@ class banner
 		{
 
 			idc = -1;
-			text = "\vacation_textures\data\introbanner.paa";
+			text = "textures\introbanner.paa";
 			x = safeZoneX + (safeZoneW/2) -0.35;
 			y = safeZoneY + safeZoneH - 0.2 - 0.05;
 			w = 0.7; h = 0.175;

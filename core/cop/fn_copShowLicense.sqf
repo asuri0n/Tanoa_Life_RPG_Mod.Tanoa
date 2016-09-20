@@ -52,6 +52,6 @@ switch (__GETC__(life_coplevel)) do
 	};
 };
 
-_message = format["<img size='10' color='#FFFFFF' image='\vacation_textures\data\%3'/><br/><br/><t size='2.5'>%1</t><br/><t size='1.8'>%2</t><br/><t size='1'>Gendarme de Tanoa</t>", name player, _rang,_image];
+_message = format["<img size='10' color='#FFFFFF' image='textures\%3'/><br/><br/><t size='2.5'>%1</t><br/><t size='1.8'>%2</t><br/><t size='1'>Gendarme de Tanoa</t>", name player, _rang,_image];
 
 [[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;

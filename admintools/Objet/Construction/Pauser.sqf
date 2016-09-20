@@ -27,7 +27,7 @@ if (OptionObject == 3 ) then {
 [[Objet2,"<t color='#8899FF'>Ouvrir</t>","admintools\Objet\Construction\OuvrirCible.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
 };
 if (OptionObject == 4 ) then {
-Objet2 SetObjectTextureGlobal [0,\vacation_textures\data\\Atrium-Info.paa"];
+Objet2 SetObjectTextureGlobal [0,textures\Atrium-Info.paa"];
 };
 if (OptionObject == 5 ) then {
 Objet2 enableSimulation false ;

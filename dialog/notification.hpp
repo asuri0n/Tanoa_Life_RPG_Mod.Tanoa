@@ -17,7 +17,7 @@ class invo_notification_side
 		{
 			idc = 65601;
 			moving = 1 ;
-			text = "\vacation_textures\data\krisscut\notif2.paa";
+			text = "textures\krisscut\notif2.paa";
 			x = safeZoneX;
 			y = safeZoneY + 1.2*safeZoneH/5;
 			w = 0.08;

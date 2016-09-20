@@ -76,7 +76,7 @@ player setVariable["depanlevel", __GETC__(life_depanlevel), true];
 	while {true} do  
     {  
         waitUntil {uniform player == "U_Rangemaster"};  
-        player setObjectTextureGlobal [0,"\vacation_textures\data\tenues\med\medic_uniform.paa"];  
+        player setObjectTextureGlobal [0,"textures\tenues\med\medic_uniform.paa"];  
         waitUntil {uniform player != "U_Rangemaster"};  
     };  
 }; 
