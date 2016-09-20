@@ -14,4 +14,4 @@ if((_this select 1)) then {
 	[] execVM "core\jip.sqf";
 };
 [] execVM "core\functions\tm4_fuelUptake.sqf";
-//[] execVM "addons\fpsFix\vehicleManager.sqf";
+[] execVM "addons\vehicleManager.sqf";

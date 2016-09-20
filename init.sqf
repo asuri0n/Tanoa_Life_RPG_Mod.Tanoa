@@ -26,7 +26,9 @@ if(isDedicated && isNil("life_market_prices")) then
 	*/
 };
 if (hasInterface) then {[] execVM "monitor\info.sqf";};
-//[] execVM "anti-hack.sqf";
+
+// Attention, réduis les FPS : TODO : Optimize with no while(true)
+[] execVM "addons/anti-hack.sqf";
 
 //[] execVM "core\inventory\init.sqf";
 

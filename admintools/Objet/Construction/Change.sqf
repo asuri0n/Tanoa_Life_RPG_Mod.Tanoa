@@ -185,7 +185,7 @@ Objet2 setdir Rotation;
 detach Objet2;
 };
 if (OptionObject == 1 ) then {
-[[Objet2,"<t color='#0099FF'>S'asseoir</t>","scripts\Chair\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
+[[Objet2,"<t color='#0099FF'>S'asseoir</t>","addons\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
 };
 if (OptionObject == 2 ) then {
 nul = [Objet2,45,60,"Mobile"] execVM "fnc_radar.sqf"; Objet2 allowDamage false;
