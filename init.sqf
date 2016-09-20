@@ -5,7 +5,6 @@ X_Server = false;
 X_Client = false;
 X_JIP = false;
 StartProgress = false;
-[] execVM "fastrope.sqf" ;
 
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
@@ -27,9 +26,11 @@ if(isDedicated && isNil("life_market_prices")) then
 };
 if (hasInterface) then {[] execVM "monitor\info.sqf";};
 
-// Attention, réduis les FPS : TODO : Optimize with no while(true)
-[] execVM "addons/anti-hack.sqf";
-
+/* ===================== */
+/* ====== ADDONS ======= */
+/* ===================== */
+[] execVM "addons/anti-hack.sqf"; // Attention, réduis les FPS : TODO : Optimize with no while(true)
+[] execVM "addons/fastrope.sqf";
 //[] execVM "core\inventory\init.sqf";
 
 StartProgress = true;
