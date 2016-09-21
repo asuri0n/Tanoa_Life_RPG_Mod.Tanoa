@@ -58,4 +58,20 @@ switch (_code) do {
     	3 cutRsc ["ArmyCode","PLAIN"];
 		playSound "CodeAlerte";
     };
+    case 5: //Yellow Code
+    {
+        //3 cutRsc ["breakingNews","PLAIN"];
+        //sleep 15;
+        3 cutText ["", "PLAIN"];
+        3 cutRsc ["YellowCode","PLAIN"];
+        playSound "CodeAlerte";
+    };
+    case 6: //Vigipirate Code
+    {
+        //3 cutRsc ["breakingNews","PLAIN"];
+        //sleep 15;
+        3 cutText ["", "PLAIN"];
+        3 cutRsc ["VigipirateCode","PLAIN"];
+        playSound "CodeAlerte";
+    };
 };

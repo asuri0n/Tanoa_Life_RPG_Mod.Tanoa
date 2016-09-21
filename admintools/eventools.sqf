@@ -255,7 +255,9 @@ EventMenu =
 
 		["Chiens", [3], "#USER:Animals1", -5, [["expression", ""]], "1", "1"],
 		["Activer code Rouge", [4],  "", -5, [["expression", format[_EXECscript3,"fn_activateRed.sqf"]]], "1", "1"],
-		["Activer inter Frini", [5],  "", -5, [["expression", format[_EXECscript3,"fn_activateFrini.sqf"]]], "1", "1"],
+		["Activer code Rebelle", [5],  "", -5, [["expression", format[_EXECscript3,"fn_activateFrini.sqf"]]], "1", "1"],
+		["Activer code Rebelle", [5],  "", -5, [["expression", format[_EXECscript3,"fn_activateVigi.sqf"]]], "1", "1"],
+		["Activer code Rebelle", [5],  "", -5, [["expression", format[_EXECscript3,"fn_activateJaune.sqf"]]], "1", "1"],
 		["Desactiver alerte", [6],  "", -5, [["expression", format[_EXECscript3,"fn_desactivateMsg.sqf"]]], "1", "1"],
 		["Mouvements", [7], "#USER:MoveMenu", -5, [["expression", ""]], "1", "1"],
 

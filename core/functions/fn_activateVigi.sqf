@@ -1,0 +1,1 @@
+[6] spawn life_fnc_launchCode;

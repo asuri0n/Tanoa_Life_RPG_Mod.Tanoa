@@ -423,10 +423,12 @@ EventMenu =
 		["Activer Code Noir", [4],  "", -5, [["expression", format[_EXECscript3,"fn_activateNoir.sqf"]]], "1", "1"],
 		["Activer Code Frini", [5],  "", -5, [["expression", format[_EXECscript3,"fn_activateFrini.sqf"]]], "1", "1"],
 		["Activer Code Rouge", [6],  "", -5, [["expression", format[_EXECscript3,"fn_activateRed.sqf"]]], "1", "1"],
-		["Desactiver alerte", [7],  "", -5, [["expression", format[_EXECscript3,"fn_desactivateMsg.sqf"]]], "1", "1"],
-		["Mouvements", [8], "#USER:MoveMenu", -5, [["expression", ""]], "1", "1"],
-		["Remplir Camion avec Armes", [9],  "", -5, [["expression", format[_EXECscriptEvent,"fillWithRandomStuff.sqf"]]], "1", "1"],
-		["Recharger Munitions Vehicule", [10],  "", -5, [["expression", format[_EXECscriptEvent,"reloadammo.sqf"]]], "1", "1"],
+		["Activer code Vigipirate", [7],  "", -5, [["expression", format[_EXECscript3,"fn_activateVigi.sqf"]]], "1", "1"],
+		["Activer code Jaune", [8],  "", -5, [["expression", format[_EXECscript3,"fn_activateJaune.sqf"]]], "1", "1"],
+		["Desactiver alerte", [9],  "", -5, [["expression", format[_EXECscript3,"fn_desactivateMsg.sqf"]]], "1", "1"],
+		["Mouvements", [10], "#USER:MoveMenu", -5, [["expression", ""]], "1", "1"],
+		["Remplir Camion avec Armes", [11],  "", -5, [["expression", format[_EXECscriptEvent,"fillWithRandomStuff.sqf"]]], "1", "1"],
+		["Recharger Munitions Vehicule", [12],  "", -5, [["expression", format[_EXECscriptEvent,"reloadammo.sqf"]]], "1", "1"],
 		["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 
