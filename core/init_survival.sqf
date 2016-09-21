@@ -169,16 +169,19 @@
 };
 
 // delete animals when far from hunting zone
-[] spawn {    
-	while {true} do {        
-		{            
-			if (!(isNull agent _x) && ((agent _x isKindOf "Snake_random_F") || (agent _x isKindOf "Rabbit_F"))) then { 
-				deleteVehicle agent _x; 
-			};        
-		}forEach agents;        
-		sleep 10;    
+[] spawn {
+	while {true} do {
+    	private["_agents"];
+    	_agents = 0;
+		{
+			if (!(isNull agent _x) && ((agent _x isKindOf "Snake_random_F") || (agent _x isKindOf "Rabbit_F"))) then {
+				deleteVehicle agent _x;
+			};
+		}forEach agents;
+		diag_log format ["Agents supprimé(s) %1",_agents];
+		sleep 30;
 	};
-}; 
+};
 
 // change les panneaux de pub toutes les 5 min
 /*
@@ -201,20 +204,20 @@
 
 // obliger TFAR
 /* TO DO : optimize
-[] spawn 
+[] spawn
 {
 	while {true} do
 	{
-		_server = [] call TFAR_fnc_getTeamSpeakServerName;  
-		_channel = [] call TFAR_fnc_getTeamSpeakChannelName; 
-		
+		_server = [] call TFAR_fnc_getTeamSpeakServerName;
+		_channel = [] call TFAR_fnc_getTeamSpeakChannelName;
+
 		if(_server != "Vacation Gaming TS" || _channel != "SALON TFR") then {
 			player enableSimulation false;
 			cutText["Mauvaise présence dans le canal Task Force Radio ...","BLACK",0,true];
 			sleep 5;
 		} else {
 			player enableSimulation true;
-			cutText["","PLAIN"];  
+			cutText["","PLAIN"];
 			sleep 7;
 		};
 	};
