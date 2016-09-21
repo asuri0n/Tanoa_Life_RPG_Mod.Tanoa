@@ -153,7 +153,7 @@
     {
         private["_damage"];
         sleep 5;
-        while {((player distance (getMarkerPos "uran_1") < 150) && (player getVariable["Revive",TRUE]))} do
+        while {((player distance (getMarkerPos "uranium_area") < 150) && (player getVariable["Revive",TRUE]))} do
         {
             if(uniform player != "U_C_Scientist") then
             {
