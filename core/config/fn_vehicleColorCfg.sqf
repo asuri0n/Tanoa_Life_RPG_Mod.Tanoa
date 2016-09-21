@@ -133,7 +133,6 @@ switch (_vehicle) do
 			["textures\vehicules\civ\SUV_camo.paa","civ"],
 			["textures\vehicules\staff\suv_staff_black.paa","fed"],
 			["textures\vehicules\civ\SUV_ferrari.paa","civ"],
-			["textures\vehicules\civ\SUV_Invo.paa","civ"],
 			["textures\vehicules\civ\SUV_Cube.paa","civ"],
 			["textures\vehicules\civ\SUV_donut.paa","civ"],
 			["textures\vehicules\civ\SUV_homer.paa","civ"],
@@ -141,11 +140,7 @@ switch (_vehicle) do
 			["textures\vehicules\civ\SUV_bfm.paa","civ"],
 			["textures\vehicules\reb\SUV_camo.paa","reb"],			
 			["textures\vehicules\civ\SUV_noir.paa","civ"],
-			["textures\vehicules\civ\SUV_vert.paa","civ"],
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","bac"],
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","bac"],
-			["textures\vehicules\reb\SUV_camo.paa","bac"],
-			["textures\vehicules\civ\SUV_poly.paa","bac"]
+			["textures\vehicules\civ\SUV_vert.paa","civ"]
 		];
 	};
 	
@@ -289,7 +284,7 @@ switch (_vehicle) do
 			["textures\vehicules\reb\ifrit_grey_front.paa","reb","textures\vehicules\reb\ifrit_grey_back.paa"],
 			["textures\vehicules\reb\ifrit_forest_front.paa","reb","textures\vehicules\reb\ifrit_forest_back.paa"],
 			["textures\vehicules\reb\ifrit_red_front.paa","reb","textures\vehicules\reb\ifrit_red_back.paa"],
-			["textures\vehicules\reb\ifrit_reb_front.paa","reb","textures\vehicules\reb\ifrit_noir_back.paa"],
+			["textures\vehicules\reb\ifrit_noir_back.paa","reb","textures\vehicules\reb\ifrit_noir_back.paa"],
 			["textures\vehicules\reb\ifrit_rose_front.paa","reb","textures\vehicules\reb\ifrit_rose_back.paa"]
 		];
 	};
