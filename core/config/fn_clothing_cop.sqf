@@ -123,9 +123,7 @@ switch (_filter) do
 				_ret pushBack["U_B_T_Sniper_F",nil,5000];
 			};
 			
-			case (__GETC__(life_copLevel)  == 8):{
-				_ret pushBack["U_O_V_Soldier_Viper_F",nil,1000]; 	
-
+			case (__GETC__(life_copLevel)  == 8):{	
 				_ret pushBack["U_B_Wetsuit",nil,1000]; 	
 				_ret pushBack["U_Rangemaster","Uniforme gendarme ville",500]; 
 				_ret pushBack["U_B_GEN_Soldier_F",nil,0]; 

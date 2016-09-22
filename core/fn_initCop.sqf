@@ -105,7 +105,34 @@ player setVariable ["invo_faction","cop",true];
 	while {true} do  
     {  
         waitUntil {uniform player == "U_Rangemaster"};  
-        player setObjectTextureGlobal [0,"textures\tenues\cop\gend.paa"];  
+        player setObjectTextureGlobal [0,"textures\tenues\cop\Tenue-gendarme.paa"];  
         waitUntil {uniform player != "U_Rangemaster"};  
     };  
 };  
+[] spawn  
+{  
+	while {true} do  
+    {  
+        waitUntil {uniform player == "U_B_GEN_Commander_F"};  
+        player setObjectTextureGlobal [0,"textures\tenues\cop\PulloverUniform.paa"];  
+        waitUntil {uniform player != "U_B_GEN_Commander_F"};  
+    };  
+};
+[] spawn  
+{  
+	while {true} do  
+    {  
+        waitUntil {uniform player == "U_B_GEN_Soldier_F"};  
+        player setObjectTextureGlobal [0,"textures\tenues\cop\U_B_GEN_Soldier_F.paa"];  
+        waitUntil {uniform player != "U_B_GEN_Soldier_F"};  
+    };  
+};
+[] spawn  
+{  
+	while {true} do  
+    {  
+        waitUntil {uniform player == "U_O_T_Officer_F"};  
+        player setObjectTextureGlobal [0,"textures\tenues\cop\U_O_T_Officer_Gend.paa"];  
+        waitUntil {uniform player != "U_O_T_Officer_F"};  
+    };  
+};
