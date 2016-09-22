@@ -17,7 +17,7 @@ class Socket_Reciever
 class Life_Client_Core
 {
 	tag = "life";
-	
+
 	class Master_Directory
 	{
 		file = "core";
@@ -36,7 +36,7 @@ class Life_Client_Core
 	class Market
 	{
 		file = "core\market";
-		
+
 		class openMarketView {};
 		class refreshMarketView {};
 		class marketShortView {};
@@ -79,7 +79,7 @@ class Life_Client_Core
 		class medicSiren {};
 		class RadioKick {};
 	};
-	
+
 	class Depan_System
 	{
 		file = "core\depan";
@@ -89,11 +89,11 @@ class Life_Client_Core
 		class depanSiren {};
 		class depanInitActions {};
 	};
-	
+
 	class Actions
 	{
-		file = "core\actions";	
-		class craftAction {};		
+		file = "core\actions";
+		class craftAction {};
 		class buyLicense {};
 		class chemlightUse {};
 		class heal {};
@@ -111,7 +111,7 @@ class Life_Client_Core
 		class getDPMission {};
 		class postBail {};
 		class processAction {};
-		
+
 		class suicideBomb {};
 		class arrestAction {};
 		class escortAction {};
@@ -134,7 +134,7 @@ class Life_Client_Core
 
 		class captureHideout {};
 		class disputeArea {}; //Komodo: contestation de zone!
-		
+
 		class getLicensesAction {}; // ajout serrat
 		class surrender {};//asurion
 		// Interraction menu civil
@@ -147,27 +147,27 @@ class Life_Client_Core
 		class CivputInCar {};
 		class defibrilateur {};
 		class copEnter {};
-		class gatherArcheologie {};	
-		class gatherOrgan {};	
+		class gatherArcheologie {};
+		class gatherOrgan {};
 		class packupBarriere {};
-		class packupBarriereStop {};	
-		class packupConewithlight {};	
+		class packupBarriereStop {};
+		class packupConewithlight {};
 		//class insureVehicle {};//added by asurion
 		//class drawInsurance {};//added 05/28/2014
 		class gatherRye {};
 		class gatherHops {};
 		class gatherYeast {};
 		class med {};
-		class revivedirect {};		
+		class revivedirect {};
 		class gather {};
 		class spotShop {}; //added by ladislas
 		class spotShopMarker{}; //added by ladislas
-		
-		class robATM {}; //Rob ATM 
-		class airTravel {}; // Asurion	
+
+		class robATM {}; //Rob ATM
+		class airTravel {}; // Asurion
 		class sendVisa {}; // Asurion
 	};
-	
+
 	class Housing
 	{
 		file = "core\housing";
@@ -192,13 +192,13 @@ class Life_Client_Core
 		class robShops {};
 		class robbery {};
 	};
-	
+
 	class Config
 	{
 		file = "core\config";
-		
+
 		class craftCfg {}; // Pytha
-		
+
 		class licensePrice {};
 		class vehicleColorCfg {};
 		class vehicleColorStr {};
@@ -217,7 +217,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
-		
+
 		//Clothing Store Configs
 		class clothing_cop {};
 		class clothing_bruce {};
@@ -230,14 +230,14 @@ class Life_Client_Core
 		class clothing_bac {};
 		class clothing_hunter {}; //Mais qu'il est con.
 		class clothing_presse {}; //Mais qu'il est teubé
-		class clothing_xxx {}; 
-		class clothing_sscp {}; 
+		class clothing_xxx {};
+		class clothing_sscp {};
 		class clothing_wt {};
 		class clothing_donator {};
 
 		class itemIsLiquid {}; //Komodo: returns true if item in argument is a liquid
 		class carryLoadCfg {}; //Komodo: computes lifeMaxWeight
-		
+
 		class itemIcon {};
 		class profType {}; //papabear pesistent system
 
@@ -246,10 +246,10 @@ class Life_Client_Core
 	class Player_Menu
 	{
 		file = "core\pmenu";
-		
+
 		class craft {};
 		class craft_update {};
-		
+
 		class wantedList {};
 		class wantedInfo {};
 		class wantedMenu {};
@@ -268,16 +268,16 @@ class Life_Client_Core
 		class updateViewDistance {};
 		class settingsMenu {};
 		class settingsInit {};
-		
+
 		//class msgCivils {};//added 07/11/2014
 		class jailTime {};
 		class delStuff {};//added 05/02/2014
 		class delLicenses {};//added 05/02/2014
 		class addCriminal {};//added 05/02/2014
-		
+
 		class movesMenu {};//added 25/06
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
@@ -332,7 +332,7 @@ class Life_Client_Core
 		class CivpullOutVeh {};// ajout serrat
 		class RadarAuto {};// ajout GreeFine
 		class randomRound {}; //ajout Serrat
-        	
+
         class displayCode {};	//added Kriss
         class unmask {};		//unmask target
         class dropRadioGPS {};	//Drop radioGPS
@@ -357,16 +357,16 @@ class Life_Client_Core
 		class initAlliancesMenu {};
 		class computeOwnCrimes {};
 		class stripDownPlayer {};
-		class handleFlashbang {};	
-		
+		class handleFlashbang {};
+
 		class NLR {};
-		
+
 		class profSetUp {}; //papabear pesistent system 27/08/2016
 		class addExp {}; //papabear pesistent system 27/08/2016
 		class getLevelXp {}; //asurion : Get level for a given amount of exp 26/08/2016
 		class firstViewCombat {};
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -381,7 +381,7 @@ class Life_Client_Core
 		class say3D {};
 		class setTexture {};
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -395,11 +395,11 @@ class Life_Client_Core
 		class knockoutAction {};
 		class robReceive {};
 		class robPerson {};
-		
+
 		class removeLicenses {};
 		//class zoneCreator {}; obsolete
 		class demoChargeTimer {};
-		
+
 		class houseSoundClose {};
 		class houseSoundOpen {};
 		class sendCommercialMsg {};
@@ -411,13 +411,13 @@ class Life_Client_Core
 		class busDriverServiceStop {};
 		class busDriverCall {};
 		class jeuBlackJack {};//added by Ladislas 12/10/2014
-		
-		
+
+
 		class GPS_Sound {};
         class civShowPassport  {};
         class civPassportShown  {};
 	};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -442,10 +442,10 @@ class Life_Client_Core
 		class vehTransferItems {}; //Komodo: transfer items between player & trunk or trunk & trunk
 		class vehIsTank {}; // Komodo: tells if a vehicule can contain liquids.
 		class changeInVehicleGarage {}; //Komodo: tells client if given type of garage content has changed to optimize queries to server.
-		class openGarage {}; 
+		class openGarage {};
 		class spawnEventVehicle {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
@@ -472,17 +472,17 @@ class Life_Client_Core
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
-		
+
 		class copBeep {};
 		class waitSound {};
 
 		class seizePlayerWeaponAction {};//added 05/02/2014
 		class seizePlayerStuffAction {};//added 05/02/2014
-		
+
 		class breathalyzer {};
 		class borderAlarm {};
 		class displayBreachNotification {};
-		
+
 		/*class KavalaLoadout {}; //05/10/14 Johnny Loadout flic
 		//class InterLoadout {}; //05/10/14 Johnny Loadout flic
 		//class WaterLoadout {}; //05/10/14 Johnny Loadout flic*/
@@ -490,7 +490,7 @@ class Life_Client_Core
 		class copShowLicense {};
         class copLicenseShown {};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -513,10 +513,10 @@ class Life_Client_Core
 		class chopShopMenu {};
 		class chopShopSelection {};
 		class chopShopSell {};
-		
+
 		class licenses {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -533,19 +533,19 @@ class Life_Client_Core
 		class barriere {};
 		class barrierestop {};
 		class conewithlight {};
-		
+
 		class drinkbeer {};
 		class drinkmoonshine {};
 		class drinkwhiskey {};
 		class weed {};
 
 		class farmingToolUse {}; //Komodo: added to replace pickaxeUse and others!
-		
+
 		class gpsTracker {};
 
 
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";
@@ -573,10 +573,10 @@ class Life_Client_Core
 	};
 };
 
-class Vacation
+class Involved
 {
-	tag = "VACA";
-	class VACA_wanted
+	tag = "INVO";
+	class INVO_wanted
 	{
 		file = "core\WantedSystem";
 		class wantedAdd {};
@@ -590,7 +590,7 @@ class Vacation
 		class wantedCodeCfg {};
 		class wantedComputeBounty {};
 	};
-	class VACA_Monitor
+	class INVO_Monitor
 	{
 		file = "monitor";
 		class drawAlliesIcons {};
