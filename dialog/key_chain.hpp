@@ -4,17 +4,17 @@ class Life_key_management {
 	movingEnable = false;
 	enableSimulation = true;
 	onLoad = "[] spawn life_fnc_keyMenu;";
-	
+
 	class controlsBackground {
 		class fondtablet: Life_RscPicture {
-			idc = 9090909;
+			idc = -1;
 			text = "textures\cle.paa";
 			x = 0;
 			y = -0.12;
 			w = 1;
 			h = 1.28;
-		};		
-		
+		};
+
 		/*class Life_RscTitleBackground:Life_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
@@ -23,7 +23,7 @@ class Life_key_management {
 			w = 0.6;
 			h = (1 / 25);
 		};*/
-		
+
 		/*class MainBackground:Life_RscText {
 			colorBackground[] = {0, 0, 0, 0.7};
 			idc = -1;
@@ -33,9 +33,9 @@ class Life_key_management {
 			h = 0.6 - (22 / 250);
 		};*/
 	};
-	
+
 	class controls {
-		
+
 		/*class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = -1;
@@ -45,16 +45,16 @@ class Life_key_management {
 			w = 0.6;
 			h = (1 / 25);
 		};*/
-		
-		class KeyChainList : Life_RscListBox 
+
+		class KeyChainList : Life_RscListBox
 		{
 			idc = 2701;
 			text = "";
 			sizeEx = 0.035;
-			
-			x = 0.255; 
+
+			x = 0.255;
 			y = 0.377;
-			w = 0.48; 
+			w = 0.48;
 			h = 0.228;
 		};
 
@@ -79,13 +79,13 @@ class Life_key_management {
 			w = 0.027;
 			h = 0.03;
 		};
-		
-		class NearPlayers : Life_RscCombo {		
-			idc = 2702;			
+
+		class NearPlayers : Life_RscCombo {
+			idc = 2702;
 			x = 0.385; y = 0.62;
-			w = 0.220; h = 0.03;		
+			w = 0.220; h = 0.03;
 		};
-		
+
 		class DropKey : life_RscButtonMenu {
 			idc = -1;
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
@@ -107,7 +107,7 @@ class Life_key_management {
 			w = 0.1;
 			h = 0.03;
 		};
-		
+
 		class GiveKey : Life_RscButtonMenu {
 			idc = 2703;
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";

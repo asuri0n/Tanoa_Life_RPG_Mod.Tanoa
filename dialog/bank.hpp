@@ -9,7 +9,7 @@ class Life_atm_management {
 			idc = -1;
 			text = "textures\ATM.paa";
 			x = 0.125;
-			y = 0.00000000372529;
+			y = 0;
 			w = 0.777298;
 			h = 1;
 		};
