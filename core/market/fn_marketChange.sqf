@@ -7,7 +7,7 @@
 private["_rand","_modifier","_price", "_globalchange","_defaultprice","_shortname","_difference","_line","_startTime"];
 
 _startTime = diag_ticktime;
-_rand = [0,106] call life_fnc_randomRound; //0-200
+_rand = [0,160] call life_fnc_randomRound; //0-200
 
 /*
 
@@ -63,7 +63,7 @@ publicVariable "life_market_prices_V2";
 switch(true) do
 {
 	//Augmentation du prix des drogues (6%)
-	case (_rand <= 6):
+	case (_rand <= 10):
 	{
 		/*
 		[[0,"News: Rapeurs louches en vacances sur l'ile, les prix des drogues sont en hausse!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
@@ -79,7 +79,7 @@ switch(true) do
 	};
 
 	//Baisse des prix des drogues (6%)
-	case (_rand <= 12):
+	case (_rand <= 20):
 	{
 		/*
 		[[0,"News:Légalisation des drogues au Pérou, les prix vont baisser!",true,false] spawn life_fnc_MP;
@@ -93,7 +93,7 @@ switch(true) do
 
 		diag_log "+Market+ Event drugm";
 	};
-	//Augmentation du prix de la tortue (6%)
+	/*//Augmentation du prix de la tortue (6%)
 	case (_rand <= 18):
 	{
 		[["notification", "Market System", "[News]","Il y a apparement de moins en moins de morts par balles. Augmentation du prix de la poudre!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
@@ -110,27 +110,27 @@ switch(true) do
 		["turtle", [100,10000] call life_fnc_randomRound, true] call life_fnc_marketSell;
 
 		diag_log "+Market+ Event turtlep Sell";
-	};
+	};*/
 	//Augmentation du prix du pétrole (6%)
 	case (_rand <= 30):
 	{
 		[["notification", "Market System", "[News]","Pénurie de SP 95 !! Augmentation du prix du pétrole!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
-		["oilpy", [1000,3000] call life_fnc_randomRound, true] call life_fnc_marketBuy;
+		["plastiquep", [1000,3000] call life_fnc_randomRound, true] call life_fnc_marketBuy;
 
-		diag_log "+Market+ Event oilpy";
+		diag_log "+Market+ Event plastiquep";
 	};
 	//Baisse du prix du pétrole (6%)
-	case (_rand <= 36):
+	case (_rand <= 40):
 	{
 		[["notification", "Market System", "[News]","L'OPEP rouvre les vannes, baisse du prix du pétrole!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
-		["oilpy", [500,2000] call life_fnc_randomRound, true] call life_fnc_marketSell;
+		["plastiquep", [500,2000] call life_fnc_randomRound, true] call life_fnc_marketSell;
 
-		diag_log "+Market+ Event oilpy";
+		diag_log "+Market+ Event plastiquep";
 	};
 	//Augmentation du prix des matériaux (6%)
-	case (_rand <= 42):
+	case (_rand <= 50):
 	{
 		[["notification", "Market System", "[News]","Attentat sur l'usine de compote des MT, augmentation du prix des matières de construction!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -140,7 +140,7 @@ switch(true) do
 		diag_log "+Market+ Event wcc";
 	};
 	//Baisse du prix des matériaux (6%)
-	case (_rand <= 48):
+	case (_rand <= 60):
 	{
 		[["notification", "Market System", "[News]","Attentat sur l'usine de compote des MT, augmentation du prix des matières de construction!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -149,7 +149,7 @@ switch(true) do
 
 		diag_log "+Market+ Event wcc";
 	};
-	case (_rand <= 54): //6% Archéologie
+	case (_rand <= 70): //6% Archéologie
 	{
 		[["notification", "Market System", "[News]","Disparition d'Indiana Jones, les prix de l'archéologie sont en hausse!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -157,7 +157,7 @@ switch(true) do
 
 		diag_log "+Market+ Event archeo";
 	};
-	case (_rand <= 60): //6% Archéologie
+	case (_rand <= 80): //6% Archéologie
 	{
 		[["notification", "Market System", "[News]","Vol de musées, le marché est saturé, les prix de l'archéologie sont en baisse!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -165,7 +165,7 @@ switch(true) do
 
 		diag_log "+Market+ Event archeo";
 	};
-	case (_rand <= 66): //6% Diamant
+	case (_rand <= 90): //6% Diamant
 	{
 		[["notification", "Market System", "[News]","Visite d'un Prince Saoudien, le prix du diamant est en hausse!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -173,7 +173,7 @@ switch(true) do
 
 		diag_log "+Market+ Event archeo";
 	};
-	case (_rand <= 72): //6% Diamant
+	case (_rand <= 100): //6% Diamant
 	{
 		[["notification", "Market System", "[News]","Vol de musées, le marché est saturé, les prix de l'archéologie sont en baisse!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -181,7 +181,7 @@ switch(true) do
 
 		diag_log "+Market+ Event archeo";
 	};
-	case (_rand <= 78): //6% uraniump
+	case (_rand <= 110): //6% uraniump
 	{
 		[["notification", "Market System", "[News]","L'uranium se fait rare ... Augmentation du prix !"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -189,7 +189,7 @@ switch(true) do
 
 		diag_log "+Market+ Event uraniump";
 	};
-	case (_rand <= 84): //6% uraniump
+	case (_rand <= 120): //6% uraniump
 	{
 		[["notification", "Market System", "[News]","Un gisement d'uranium a été trouvé ! Diminution du prix"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -197,7 +197,7 @@ switch(true) do
 
 		diag_log "+Market+ Event uraniump";
 	};
-	case (_rand <= 90): //6% tissup
+	case (_rand <= 130): //6% tissup
 	{
 		[["notification", "Market System", "[News]","Les chinois en grève! Le prix du textile monte !"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -205,7 +205,7 @@ switch(true) do
 
 		diag_log "+Market+ Event tissup";
 	};
-	case (_rand <= 96): //6% tissup
+	case (_rand <= 140): //6% tissup
 	{
 		[["notification", "Market System", "[News]","Les chinois on enfin repris le travail! Le prix du textile baisse !"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -213,7 +213,7 @@ switch(true) do
 
 		diag_log "+Market+ Event tissup";
 	};
-	case (_rand <= 102): 
+	case (_rand <= 150):
 	{
 		[["notification", "Market System", "[News]","Les pompes funébres ont fermés, augmentation du prix des organes!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
@@ -221,7 +221,7 @@ switch(true) do
 
 		diag_log "+Market+ Event organ";
 	};
-	case (_rand <= 108): 
+	case (_rand <= 160):
 	{
 		[["notification", "Market System", "[News]","L'hiver a été trés froid, beaucoups de vieux sont décédés, diminution du prix des organes!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
