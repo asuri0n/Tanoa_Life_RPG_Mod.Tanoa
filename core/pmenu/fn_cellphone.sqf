@@ -12,20 +12,20 @@ if (VACA_SERV_DEBUG) then
 {
 	diag_log "[VACA_DEBUG] ===== CELLPHONE =====";
 };
-	
+
 _cell = false;
-{  
-	_name = [_x,14] call KRON_StrLeft;  
+{
+	_name = [_x,14] call KRON_StrLeft;
 	diag_log format ["_name %1",_name];
-	if(_name == "tf_anprc148jem" || _name == "ItemRadio")then  
-	{  
-		_cell = true;  
+	if(_name == "tf_anprc148jem" || _name == "ItemRadio")then
+	{
+		_cell = true;
 	};
 }foreach assignedItems player;
 
 if (VACA_SERV_DEBUG) then
 {
-	diag_log format ["_cell %1",_cell]; 
+	diag_log format ["_cell %1",_cell];
 };
 
 _countCommTowers = 0;
@@ -75,7 +75,7 @@ if(!_cell) then {
 	ctrlEnable [3031, false];		//Depanneuse
 };
 
-if(player getVariable ["FAR_isUnconscious", false]) then {
+if(player getVariable ["FAR_isUnconscious", 1] == 0) then {
 	hint parseText format ["<t size='1.30' font='puristaMedium' align='center' color='#0D82DF'>Vous êtes blessé</t><br/><br/><t size='0.90 'font='puristaLight' align='left'>Vous ne pouvez pas envoyer de messages lorsque vous êtes inconscient, excepté aux services médicaux</t><br/><br/>Vous pouvez cependant toujours recevoir/envoyer des messages aux administrateurs et médecins."];
 	ctrlEnable [3022, false];		//Fast reply
 	ctrlEnable [3015, false];		//Bouton envoyer
