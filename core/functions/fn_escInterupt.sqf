@@ -41,10 +41,7 @@ _escSync = {
 };
 
 _canUseControls = {
-
-
-	if((player getVariable["restrained",FALSE]) OR (player getVariable["Escorting",FALSE]) OR (player getVariable["transporting",FALSE]) OR ((life_is_arrested) AND (!invo_canSuicide)) OR (life_istazed) OR ((player getVariable ["FAR_isUnconscious", 1] == 0) AND (!invo_canSuicide))) then {false} else {true};
-
+	if((player getVariable["restrained",FALSE]) OR (player getVariable["Escorting",FALSE]) OR (player getVariable["transporting",FALSE]) OR ((life_is_arrested) AND (!invo_canSuicide)) OR (life_istazed) OR ((player getVariable ["FAR_isUnconscious", 1] == 1) AND (!invo_canSuicide))) then {false} else {true};
 };
 
 while {true} do
