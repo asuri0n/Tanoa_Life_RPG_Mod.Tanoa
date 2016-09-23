@@ -54,7 +54,7 @@ if (INVO_radio_canUseRadio) then	//vehicle player != player
 
 switch (_code) do
 {
-	//Space key for Jumping	
+	//Space key for Jumping
 	case 57:
 	{
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
@@ -64,7 +64,7 @@ switch (_code) do
 			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution
 			_handled = true;
 		};
-	};	
+	};
 
 	//Map Key
 	case _mapKey:
@@ -238,7 +238,7 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{
@@ -310,9 +310,9 @@ switch (_code) do
 
 		*/
 
-		/*switch(true) do
+		switch(true) do
 		{
-			/*case (_shift && playerSide == west) :
+			case (_shift && playerSide == west) :
 			{
 				if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","C_Offroad_01_repair_F","C_Offroad_01_repair_f","B_MRAP_01_F","C_SUV_01_F","I_Truck_02_medical_F","O_Truck_03_medical_F","B_Truck_01_medical_F","B_Quadbike_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","I_MRAP_03_F"]) then {
 					if(!isNil {vehicle player getVariable "lights"}) then {
@@ -338,7 +338,7 @@ switch (_code) do
 			default
 			{
 			};
-		};*/
+		};
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 	//Y Player Menu
@@ -663,7 +663,7 @@ switch (_code) do
 	//===================================
 	//======= CHIFFRES TOP ==============
 	//===================================
-	
+
 	// SwitchWeapon 1
     case 2:
 	{
