@@ -15,7 +15,7 @@ class playerSettings {
 			w = 1;
 			h = 1.28;
 		};
-		
+
 		/*class life_RscTitleBackground:life_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
@@ -201,7 +201,7 @@ class playerSettings {
 		class DropButton : life_RscButtonMenu {
 
 			idc = 2002;
-			
+
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
@@ -223,7 +223,7 @@ class playerSettings {
 
 		class UseButton : life_RscButtonMenu {
 
-			
+
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
@@ -343,7 +343,7 @@ class playerSettings {
 			h = 0.1;
 		};
 
-		
+
 
 		class Licenses_Menu : Life_RscControlsGroup
 		{
@@ -352,7 +352,7 @@ class playerSettings {
 			h = 0.38;
 			x = 0.34+(0.079/2);
 			y = 0.27;
-			
+
 			class Controls
 			{
 				class Life_Licenses : Life_RscStructuredText
@@ -568,7 +568,7 @@ class playerSettings {
 			// w = (6.25 / 40);
 			// h = (1 / 25);
 		// };
-		class ProfButton : life_RscButtonMenu { 
+		class ProfButton : life_RscButtonMenu {
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
@@ -581,12 +581,12 @@ class playerSettings {
 			color2[] = {1, 1, 1, 0};
 			colorText[] = {1, 1, 1, 0};
 			colorDisabled[] = {1, 1, 1, 0};
-			onButtonClick = "[] call life_fnc_profSetup;";	
-			tooltip = "Expériences";		
+			onButtonClick = "[] call life_fnc_profSetup;";
+			tooltip = "Expériences";
 			x = 0.115;
 			y = 0.68;
 			w = (5.75 / 40)+0.02;
-			h = (1 / 25); 
+			h = (1 / 25);
 		};
 	};
 };

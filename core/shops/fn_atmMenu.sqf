@@ -27,7 +27,11 @@ _text = _display displayCtrl 2701;
 _units = _display displayCtrl 2703;
 
 lbClear _units;
-_text ctrlSetStructuredText parseText format["<img size='1.7' image='icons\bank.paa'/> $%1<br/><img size='1.6' image='icons\money.paa'/> $%2",[life_dabliquide] call life_fnc_numberText,[life_liquide] call life_fnc_numberText];
+_text ctrlSetStructuredText parseText format["
+	<t size='1px'>%1€</t>
+	<br/>
+	<t size='1'>%2€</t>
+	",[life_dabliquide] call life_fnc_numberText,[life_liquide] call life_fnc_numberText];
 
 {
 	if(alive _x) then

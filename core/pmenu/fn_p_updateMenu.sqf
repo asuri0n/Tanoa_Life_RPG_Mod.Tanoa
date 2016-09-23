@@ -46,11 +46,9 @@ lbSort [_near, "ASC"];
 lbSort [_near_i, "ASC"];
 
 _mstatus ctrlSetStructuredText parseText format["
-	<img size='1.3' image=''/>
-	<t size='1px'>$%1</t>
+	<t size='1px'>%1€</t>
 	<br/>
-	<img size='1.3' image=''/>
-	<t size='1'>$%2</t>
+	<t size='1'>%2€</t>
 ",[life_dabliquide] call life_fnc_numberText,[life_liquide] call life_fnc_numberText];
 
 ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];

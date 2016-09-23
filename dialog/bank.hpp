@@ -5,114 +5,187 @@ class Life_atm_management {
 	enableSimulation = true;
 
 	class controlsBackground {
-		class fondATM: Life_RscPicture {
-			idc = -1;
+		class fondBank: Life_RscPicture {
+			idc = 9090909;
 			text = "textures\ATM.paa";
-			x = 0.125;
-			y = 0;
-			w = 0.777298;
-			h = 1;
+		    x = 0.25963 * safezoneW + safezoneX;
+		    y = 0.0749805 * safezoneH + safezoneY;
+		    w = 0.495203 * safezoneW;
+		    h = 0.850039 * safezoneH;
 		};
 	};
 
 	class controls {
 
-		class bank: Life_RscStructuredText
+		class CashTitle : Life_RscStructuredText
 		{
 			idc = 2701;
-			text = "0";
+			text = "";
 			x = 0.484805 * safezoneW + safezoneX;
 			y = 0.188777 * safezoneH + safezoneY;
+			w = 0.3;
+			h = 0.14;
+		};
+
+		class moneyEdit : Life_RscEdit {
+
+			idc = 2702;
+
+			text = "1";
+			sizeEx = 0.030;
+			x = 0.484805 * safezoneW + safezoneX;
+			y = 0.38-(0.0235845 * safezoneH);
 			w = 0.0649965 * safezoneW;
 			h = 0.0235845 * safezoneH;
+
 		};
-		class liquide: Life_RscStructuredText
-		{
-			idc = 1601;
-			x = 0.483253 * safezoneW + safezoneX;
-			y = 0.218872 * safezoneH + safezoneY;
-			w = 0.0649965 * safezoneW;
-			h = 0.0235845 * safezoneH;
-		};
-		class retraitGang: Life_RscButtonMenu
-		{
+/*
+		class Title : Life_RscTitle {
+			colorBackground[] = {0, 0, 0, 0};
 			idc = -1;
-			onButtonClick = "[] call life_fnc_gangWithdraw";
-			x = 0.339265 * safezoneW + safezoneX;
-			y = 0.19659 * safezoneH + safezoneY;
-			w = 0.0461417 * safezoneW;
-			h = 0.040731 * safezoneH;
-		};
-		class depotGang: Life_RscButtonMenu
-		{
-			idc = -1;
-			onButtonClick = "[] call life_fnc_gangDeposit";
-			x = 0.340729 * safezoneW + safezoneX;
-			y = 0.346993 * safezoneH + safezoneY;
-			w = 0.0461417 * safezoneW;
-			h = 0.040731 * safezoneH;
-		};
-		class retrait: Life_RscButtonMenu
+			text = "$STR_ATM_Title";
+			x = 0.35;
+			y = 0.2;
+			w = 0.6;
+			h = (1 / 25);
+		};*/
+
+		class WithdrawButton : life_RscButtonMenu
 		{
 			idc = -1;
 			onButtonClick = "[] call life_fnc_bankWithdraw";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+			colorBackground[] = {0, 0, 0, 0};
+			colorBackground2[] = {1, 1, 1, 0};
+			color[] = {0, 0, 0, 1};
+			color2[] = {0, 0, 0, 1};
+			colorText[] = {0, 0, 0, 1};
+
 			x = 0.627416 * safezoneW + safezoneX;
 			y = 0.346993 * safezoneH + safezoneY;
 			w = 0.0476055 * safezoneW;
 			h = 0.0446374 * safezoneH;
 		};
-		class Transferer: Life_RscButtonMenu
-		{
-			idc = -1;
-			onButtonClick = "[] call life_fnc_bankTransfer";
-			x = 0.627416 * safezoneW + safezoneX;
-			y = 0.2685 * safezoneH + safezoneY;
-			w = 0.0490694 * safezoneW;
-			h = 0.0420331 * safezoneH;
-		};
-		class deposerATM: Life_RscButtonMenu
+
+		class DepositButton : life_RscButtonMenu
 		{
 			idc = -1;
 			onButtonClick = "[] call life_fnc_bankDeposit";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+			colorBackground[] = {0, 0, 0, 0};
+			colorBackground2[] = {1, 1, 1, 0};
+			color[] = {0, 0, 0, 1};
+			color2[] = {0, 0, 0, 1};
+			colorText[] = {0, 0, 0, 1};
+
 			x = 0.627416 * safezoneW + safezoneX;
 			y = 0.193986 * safezoneH + safezoneY;
 			w = 0.0461416 * safezoneW;
 			h = 0.0446374 * safezoneH;
 		};
-		class annuler: Life_RscButtonMenu
-		{
-			idc = -1;
-			onButtonClick = "closeDialog 0;";
-			x = 0.540989 * safezoneW + safezoneX;
-			y = 0.64584 * safezoneH + safezoneY;
-			w = 0.0541931 * safezoneW;
-			h = 0.0511481 * safezoneH;
-		};
-		class entrer: Life_RscButtonMenu
-		{
-			idc = -1;
-			x = 0.543917 * safezoneW + safezoneX;
-			y = 0.753918 * safezoneH + safezoneY;
-			w = 0.0578528 * safezoneW;
-			h = 0.0459395 * safezoneH;
-		};
-		class players: Life_RscCombo
+
+		class PlayerList : Life_RscCombo
 		{
 			idc = 2703;
+
 			x = 0.4;
 			y = 0.38;
 			w = 0.223;
 			h = 0.04;
 		};
-		class edit: Life_RscEdit
+
+		class TransferButton : life_RscButtonMenu
 		{
-			idc = 2702;
-			text = "1";
-			sizeEx = 0.030;
-			x = 16.05 * GUI_GRID_W + GUI_GRID_X;
-			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 8.87132 * GUI_GRID_W;
-			h = 1.00643 * GUI_GRID_H;
+			idc = -1;
+			onButtonClick = "[] call life_fnc_bankTransfer";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+			colorBackground[] = {0, 0, 0, 0};
+			colorBackground2[] = {1, 1, 1, 0};
+			color[] = {0, 0, 0, 1};
+			color2[] = {0, 0, 0, 1};
+			colorText[] = {0, 0, 0, 1};
+
+			x = 0.627416 * safezoneW + safezoneX;
+			y = 0.2685 * safezoneH + safezoneY;
+			w = 0.0490694 * safezoneW;
+			h = 0.0420331 * safezoneH;
+		};
+
+		class GangDeposit : TransferButton
+		{
+			idc = 2705;
+			onButtonClick = "[] call life_fnc_gangDeposit";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+			colorBackground[] = {0, 0, 0, 0};
+			colorBackground2[] = {1, 1, 1, 0};
+			color[] = {0, 0, 0, 1};
+			color2[] = {0, 0, 0, 1};
+			colorText[] = {0, 0, 0, 1};
+			x = 0.340729 * safezoneW + safezoneX;
+			y = 0.346993 * safezoneH + safezoneY;
+			w = 0.0461417 * safezoneW;
+			h = 0.040731 * safezoneH;
+		};
+
+		class GangWithdraw : TransferButton
+		{
+			idc = 2706;
+			onButtonClick = "[] call life_fnc_gangWithdraw";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+			colorBackground[] = {0, 0, 0, 0};
+			colorBackground2[] = {1, 1, 1, 0};
+			color[] = {0, 0, 0, 1};
+			color2[] = {0, 0, 0, 1};
+			colorText[] = {0, 0, 0, 1};
+			x = 0.339265 * safezoneW + safezoneX;
+			y = 0.19659 * safezoneH + safezoneY;
+			w = 0.0461417 * safezoneW;
+			h = 0.040731 * safezoneH;
+		};
+
+		class CloseButtonKey : Life_RscButtonMenu {
+			idc = -1;
+			onButtonClick = "closeDialog 0;";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,0)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,0)";
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,0)";
+			colorBackground[] = {0, 0, 0, 0};
+			colorBackground2[] = {1, 1, 1, 0};
+			color[] = {0, 0, 0, 1};
+			color2[] = {0, 0, 0, 1};
+			colorText[] = {0, 0, 0, 1};
+			x = 0.540989 * safezoneW + safezoneX;
+			y = 0.64584 * safezoneH + safezoneY;
+			w = 0.0541931 * safezoneW;
+			h = 0.0511481 * safezoneH;
 		};
 	};
 };
