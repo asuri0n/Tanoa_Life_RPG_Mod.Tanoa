@@ -31,7 +31,7 @@ switch (_vehicle) do
 			["textures\vehicules\cop\Milice_Hunter.paa","cop","textures\vehicules\cop\hunter.paa"]
 		];
 	};
-	
+
 	case "C_Offroad_01_F":
 	{
 		_ret =
@@ -49,7 +49,7 @@ switch (_vehicle) do
 			["textures\vehicules\emt\Med_Offroad.paa","med"]
 		];
 	};
-	
+
  	case "O_Truck_02_Ammo_F":
 	{
  		_ret =
@@ -59,8 +59,8 @@ switch (_vehicle) do
 			["\A3\soft_f_epc\Truck_03\Data\truck_03_ammo_co.paa","civ"],
  			["\A3\soft_f_epc\Truck_03\Data\truck_03_ammo_co.paa","reb"]
  		];
- 	};	
-	
+ 	};
+
  	case "B_Truck_01_mover_F":
 	{
  		_ret =
@@ -68,7 +68,7 @@ switch (_vehicle) do
  			["textures\vehicules\emt\Dep_HEMTT_1.paa","med","textures\vehicules\emt\Dep_HEMTT_2.paa"]
  		];
  	};
-	
+
  	case "O_Heli_Transport_04_box_F":
 	{
  		_ret =
@@ -77,7 +77,7 @@ switch (_vehicle) do
 			["\a3\Air_F_Heli\Heli_Transport_04\Scripts\Heli_Transport_04_pods_camo.sqf","reb"]
  		];
  	};
-	
+
  	case "O_Heli_Transport_04_covered_F":
 	{
  		_ret =
@@ -127,7 +127,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["textures\vehicules\civ\SUV_taxi.paa","civ"],
-			["textures\vehicules\emt\Med_SUV.paa","med"],
+			["textures\vehicules\SMT\SUVSMT.paa","med"],
 			["textures\vehicules\civ\SUV_kitty.paa","civ"],
 			["textures\vehicules\civ\SUV_fast.paa","civ"],
 			["textures\vehicules\civ\SUV_camo.paa","civ"],
@@ -138,12 +138,12 @@ switch (_vehicle) do
 			["textures\vehicules\civ\SUV_homer.paa","civ"],
 			["textures\vehicules\civ\SUV_poly.paa","civ"],
 			["textures\vehicules\civ\SUV_bfm.paa","civ"],
-			["textures\vehicules\reb\SUV_camo.paa","reb"],			
+			["textures\vehicules\reb\SUV_camo.paa","reb"],
 			["textures\vehicules\civ\SUV_noir.paa","civ"],
 			["textures\vehicules\civ\SUV_vert.paa","civ"]
 		];
 	};
-	
+
 	case "C_Van_01_box_F":
 	{
 		_ret =
@@ -153,7 +153,7 @@ switch (_vehicle) do
 			["textures\vehicules\emt\Med_Van_1.paa","med","textures\vehicules\emt\Med_Van_1.paa"]
 		];
 	};
-	
+
 	case "C_Van_01_transport_F":
 	{
 		_ret =
@@ -205,7 +205,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","bac"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","bac"],
 			["textures\vehicules\reb\Bird_2.paa","bac"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","civ"],			
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","civ"],
 			["textures\vehicules\civ\Bird_cookie.paa","civ"],
 			["textures\vehicules\civ\Bird_hawai.paa","civ"],
 			["textures\vehicules\civ\Bird_stickerbomb.paa","civ"]
@@ -238,7 +238,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","bac"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","bac"],
 			["textures\vehicules\reb\Bird_2.paa","bac"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","civ"],			
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","civ"],
 			["textures\vehicules\civ\Bird_cookie.paa","civ"],
 			["textures\vehicules\civ\Bird_hawai.paa","civ"],
 			["textures\vehicules\civ\Bird_stickerbomb.paa","civ"],
@@ -307,12 +307,12 @@ switch (_vehicle) do
 			["textures\vehicules\civ\Zamak_truck_kab_coca.paa","civ","textures\vehicules\civ\Zamak_truck_kuz_coca.paa"],
 			["textures\vehicules\civ\Zamak_weed.paa","civ","textures\vehicules\civ\Zamak_weed_back.paa"],
 			["textures\vehicules\civ\Zamak_red_front.paa","civ","textures\vehicules\civ\Zamak_red_back.paa"],
-			["textures\vehicules\civ\Zamak_yellow_front.paa","civ","textures\vehicules\civ\Zamak_yellow_back.paa"], 
+			["textures\vehicules\civ\Zamak_yellow_front.paa","civ","textures\vehicules\civ\Zamak_yellow_back.paa"],
 			["\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa","bac","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"],
 			["textures\vehicules\civ\Zamak_weed.paa","bac","textures\vehicules\civ\Zamak_weed_back.paa"]
 		];
 	};
-	
+
 	case "B_G_Offroad_01_armed_F":
 	{
 		_ret =
@@ -330,7 +330,7 @@ switch (_vehicle) do
 			["\a3\soft_f_bootcamp\Offroad_01\Data\offroad_01_ext_ig_02_co.paa","reb"]
 		];
 	};
-	
+
 	case "I_Heli_Transport_02_F":
 	{
 		_path = "\a3\air_f_beta\Heli_Transport_02\Data\Skins\";
@@ -341,8 +341,8 @@ switch (_vehicle) do
 			["textures\vehicules\civ\CH49_USMC_1.paa","civ","textures\vehicules\civ\CH49_USMC_2.paa","textures\vehicules\civ\CH49_USMC_3.paa"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","civ","#(argb,8,8,3)color(0.05,0.05,0.05,1)"]
 		];
-	};	
-	
+	};
+
 	case "C_Offroad_02_unarmed_F":
 	{
 		_ret =
@@ -357,6 +357,6 @@ switch (_vehicle) do
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa","civ"],
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","civ"]
 		];
-	};	
+	};
 };
 _ret;
