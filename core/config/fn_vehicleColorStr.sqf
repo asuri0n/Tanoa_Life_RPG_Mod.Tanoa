@@ -21,9 +21,10 @@ switch (_vehicle) do
 			case 2: {_color = "Night"};
 			case 3: {_color = "Youtube"};
 			case 4: {_color = "Poly"};
+			case 5: {_color = "SMT"};
 		};
 	};
-	
+
 	case "B_MRAP_01_F":
 	{
 		switch (_index) do
@@ -49,7 +50,7 @@ switch (_vehicle) do
 			case 10: {_color = "Medecin"};
 		};
 	};
-	
+
 	case "O_Truck_02_Ammo_F" :
 	{
 		switch (_index) do
@@ -60,7 +61,7 @@ switch (_vehicle) do
 			case 3: {_color = "Camouflage";};
 		};
 	};
-	
+
 	case "B_Truck_01_mover_F" :
 	{
 		switch (_index) do
@@ -68,7 +69,7 @@ switch (_vehicle) do
 			case 0: {_color = "Dépanneur";};
 		};
 	};
-	
+
 	case "O_Heli_Transport_04_box_F" :
 	{
 		switch (_index) do
@@ -77,7 +78,7 @@ switch (_vehicle) do
 			case 1: {_color = "Rebelle";};
 		};
 	};
-	
+
 	case "O_Heli_Transport_04_covered_F" :
 	{
 		switch (_index) do
@@ -118,7 +119,7 @@ switch (_vehicle) do
 			//case 0: {_color = "Gendarmerie"};
 		};
 	};
-	
+
 	case "C_SUV_01_F":
 	{
 		switch (_index) do
@@ -131,7 +132,7 @@ switch (_vehicle) do
 			case 5: {_color = "Hello Kitty";};
 			case 6: {_color = "Vert Speed";};
 			case 7: {_color = "Camouflé";};
-			case 8: {_color = "Staff";};			
+			case 8: {_color = "Staff";};
 			case 9: {_color = "Ferrari";};
 			case 10: {_color = "Vacation";};
 			case 11: {_color = "Cube";};
@@ -148,17 +149,17 @@ switch (_vehicle) do
 			case 22: {_color = "Banalisée Grise";};
 		};
 	};
-	
+
 	case "C_Van_01_box_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Blanc"};
 			case 1: {_color = "Rouge"};
-			case 2: {_color = "SAMU"};
+			case 2: {_color = "SMT"};
 		};
 	};
-	
+
 	case "C_Van_01_transport_F":
 	{
 		switch (_index) do
@@ -181,6 +182,7 @@ switch (_vehicle) do
 			case 6: {_color = "Digital Vert"};
 			case 7: {_color = "Hunter Camo"};
 			case 8: {_color = "Rebel Camo"};
+			case 9: {_color = "SMT"};
 		};
 	};
 
@@ -204,7 +206,7 @@ switch (_vehicle) do
 			case 13: {_color = "Rebel Digital"};
 			case 14: {_color = "Rebel Army"};
 			case 15: {_color = "Rebel Camo"};
-			case 16: {_color = "Medic"};
+			case 16: {_color = "SMT"};
 			case 17: {_color = "Tigre"};
 			case 18: {_color = "Dépanneur"};
 			case 19: {_color = "Banalisé Bleu"};
@@ -237,7 +239,7 @@ switch (_vehicle) do
 			case 13: {_color = "Rebel Digital"};
 			case 14: {_color = "Rebel Army"};
 			case 15: {_color = "Rebel Camo"};
-			case 16: {_color = "Medic"};
+			case 16: {_color = "SMT"};
 			case 17: {_color = "Tigre"};
 			case 18: {_color = "Dépanneur"};
 			case 19: {_color = "Banalisé Bleu"};
@@ -260,10 +262,8 @@ switch (_vehicle) do
 			case 2: {_color = "Digi Vert"};
 			case 3: {_color = "Desert Digi"};
 			case 4: {_color = "Rebel Camo"};
-			case 5: {_color = "Medic"};
-			case 6: {_color = "Shield"};
+			case 5: {_color = "SMT"};
 			case 7: {_color = "Gendarmerie"};
-			case 8: {_color = "Dépanneur"};
 			case 9: {_color = "Camouflé Noir"};
 			case 10: {_color = "Noir"};
 		};
@@ -302,7 +302,7 @@ switch (_vehicle) do
 		};
 	};
 
-	
+
 	case "I_Truck_02_covered_F":
 	{
 		switch (_index) do
@@ -318,7 +318,7 @@ switch (_vehicle) do
 			case 8: {_color = "Camouflage Weed"};
 		};
 	};
-	
+
 	case "B_G_Offroad_01_armed_F":
 	{
 		switch (_index) do
@@ -336,7 +336,7 @@ switch (_vehicle) do
 			case 10: {_color = "Camo 10"};
 		};
 	};
-	
+
 	case "I_Heli_Transport_02_F":
 	{
 		switch (_index) do
@@ -345,9 +345,10 @@ switch (_vehicle) do
 			case 1: {_color = "Dahoman"};
 			case 2: {_color = "USMC"};
 			case 3: {_color = "Noir"};
+			case 4: {_color = "EMT"};
 		};
 	};
-	
+
 	case "C_Offroad_02_unarmed_F":
 	{
 		switch (_index) do
@@ -363,5 +364,5 @@ switch (_vehicle) do
 			case 8: {_color = "Olive"};
 		};
 	};
-};	
+};
 _color;
