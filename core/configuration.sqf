@@ -16,7 +16,7 @@ if (VACA_SERV_DEBUG) then
 	diag_log "##/!\ VACA_SERV_DEBUG IS ACTIVATED /!\##";
 	diag_log "########-----------------------#########";
 };
-	
+
 /*
 *****************************
 ***** Backend Variables *****
@@ -134,7 +134,7 @@ __CONST__(life_revive_fee,250); //Fee for players to pay when revived.
 __CONST__(life_houseLimit,5);
 
 //Gang related stuff?
-__CONST__(life_gangPrice,1000000);
+__CONST__(life_gangPrice,600000);
 __CONST__(life_gangUpgradeBase,300000);
 __CONST__(life_gangUpgradeMultipler,2.5);
 
@@ -290,8 +290,8 @@ switch (playerSide) do
 			["501","Sabotage"],
 			["213","Utilisation d'Explosif"],
 			["901","Evasion de Prison"]
-			];		
-		
+			];
+
 		life_dabliquide = 50000; //@see InsertRequest l13
 		life_dabliquide_before = 50000;
 		life_paycheck = 0;
@@ -414,36 +414,36 @@ life_inv_items =
 	"life_inv_uranium3b",
 	"life_inv_uranium4b",
 	"life_inv_uranium5b",
-	
+
 	//**************************
 	//********* NEW ************
 	//**************************
 	"life_inv_goldp",
-	"life_inv_goldbarp",	
+	"life_inv_goldbarp",
 	"life_inv_clayp",
 	"life_inv_briquep",
 	"life_inv_diamantp",
-	"life_inv_diamantpurp",	
+	"life_inv_diamantpurp",
 	"life_inv_ironorep",
-	"life_inv_ironp",	
+	"life_inv_ironp",
 	"life_inv_charbonp",
 	"life_inv_souffrep",
-	"life_inv_poudrenoirp",	
+	"life_inv_poudrenoirp",
 	"life_inv_uraniump1",
 	"life_inv_uraniump2",
 	"life_inv_uraniump3",
 	"life_inv_uraniump4",
-	"life_inv_uraniumpurp",	
+	"life_inv_uraniumpurp",
 	"life_inv_oilpy",
-	"life_inv_plastiquep",	
+	"life_inv_plastiquep",
 	"life_inv_boisp",
 	"life_inv_planchep",
 	"life_inv_linp",
-	"life_inv_tissup",		
+	"life_inv_tissup",
 	"life_inv_cocainp",
-	"life_inv_cocainpurp",	
+	"life_inv_cocainpurp",
 	"life_inv_heroinpy",
-	"life_inv_heroinpurp",	
+	"life_inv_heroinpurp",
 	"life_inv_marip",
 	"life_inv_maripurp",
 	"life_inv_ossilp",
@@ -457,13 +457,13 @@ life_licenses =
 [
 	// EMT
 	["license_med_air","med"],
-	
+
 	//GENDARMES
 	["license_cop_air","cop"],
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
 	["license_cop_bac","cop"],
-	
+
 	//PERMIS
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
@@ -474,7 +474,7 @@ life_licenses =
 	["license_civ_permrebel","civ"],
 	["license_civ_transport","civ"],
 	["license_civ_dive","civ"],
-		
+
 	//RESSOURCES
 	//legal
 	["license_civ_iron","civ"],
@@ -486,7 +486,7 @@ life_licenses =
 	["license_civ_plastique","civ"], //Vendeur chez LegoGroup
 	["license_civ_joaillier","civ"],  //Joaillier
 	["license_civ_diamantaire","civ"], //Diamantaire
-	
+
 	//illegal
 	["license_civ_heroine","civ"],
 	["license_civ_canabis","civ"],
@@ -494,12 +494,12 @@ life_licenses =
 	["license_civ_uranium","civ"],
 	["license_civ_archeologie","civ"],
 	["license_civ_organ","civ"],
-	
+
 	//autre
 	["license_civ_gun","civ"],
 	["license_civ_rebel","civ"],
 	["license_civ_gangster","civ"],
-	
+
 	// ANCIENNE VERSION
 	["license_civ_depanneur","civ"],
 	["license_civ_diamond","civ"],
@@ -520,10 +520,10 @@ life_licenses =
 	["license_civ_turtle","civ"],
 	["license_civ_gang","civ"],
 	["license_civ_bounty_hunter","civ"],
-	
-	//ENTREPRISES	
+
+	//ENTREPRISES
 	["license_civ_bonbeur","civ"]
-	
+
 ];
 
 //Setup License Variables
@@ -540,20 +540,20 @@ life_prof =[
 	["Plastique_Prof","civ"],
 	["Joaillier_Prof","civ"],
 	["Diamantaire_Prof","civ"],
-	["Forgeron_Prof","civ"],	
+	["Forgeron_Prof","civ"],
 	["Heroine_Prof","civ"],
 	["Canabis_Prof","civ"],
 	["Cocaine_Prof","civ"],
 	["Uranium_Prof","civ"]
-	
+
 	//gendarme
 	//["Ticket_Prof","cop"],
 	//["Arrest_Prof","cop"],
-	//["Impound_Prof","cop"],	
-	
+	//["Impound_Prof","cop"],
+
 	//emt
-	//["Revive_Prof","med"]	
-	
+	//["Revive_Prof","med"]
+
 	/*
 	["Oil_Prof","civ"],
 	["Iron_Prof","civ"],
@@ -567,10 +567,10 @@ life_prof =[
 	["Rock_Prof","civ"],
 	["Sand_Prof","civ"],
 	*/
-];  
+];
 
 
-//Setup License Variables 
+//Setup License Variables
 {
 	missionNamespace setVariable[(_x select 0),[0,0]];
 } foreach life_prof;
@@ -771,7 +771,7 @@ sell_array =
 	["uranium3b",10000],
 	["uranium4b",10000],
 	["ipuranium",10000],
-	
+
 ["fishp",150],
 ["boisp",1],
 ["planchep",500],
@@ -1712,7 +1712,7 @@ life_maskingUniforms = [
             "ARC_PL_Pantera_Uniform_Light",
             "ARC_UK_DPM_Uniform_Light",
             "U_I_CombatUniform_tshirt",
-			
+
 			"U_B_Wetsuit",
 			"U_OG_Guerilla1_1",
 			"U_BG_leader",
@@ -1783,26 +1783,26 @@ life_maskingUniforms = [
             "V_TacVest_camo",
             "V_PlateCarrierIAGL_dgtl",
             "gign_BlackVest",
-			
+
 			"V_RebreatherB",
-			
+
 			"V_BandollierB_oli",
 			"V_Rangemaster_belt",
 			"V_BandollierB_blk",
 			"V_BandollierB_ghex_F",
-			
+
 			"V_HarnessO_ghex_F",
 			"V_HarnessOGL_ghex_F",
-			
+
 			"V_HarnessOGL_brn",
 			"V_HarnessOGL_gry",
 			"V_Chestrig_khk",
 			"V_Chestrig_oli",
-			"V_Chestrig_rgr",			
+			"V_Chestrig_rgr",
 			"V_HarnessO_gry",
 			"V_HarnessO_brn",
 			"V_Chestrig_blk",
-			
+
 			"V_PlateCarrier1_rgr",
 			"V_PlateCarrier_Kerry",
 			"V_PlateCarrierIA1_dgtl",
@@ -1975,7 +1975,7 @@ life_maskingUniforms = [
 			"H_HelmetO_ghex_F",
 			"H_HelmetCrew_O_ghex_F",
 			"H_MilCap_ghex_F"
-			
+
     ];
 life_rebelweapons = [
 		"srifle_mas_m24_v",
