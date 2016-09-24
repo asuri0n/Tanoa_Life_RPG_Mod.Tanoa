@@ -134,7 +134,7 @@ player setVariable ["saveContact",ObjNull,true];
 player setVariable ["invisible",false,true];
 player setVariable ["isknocked",false,true];
 // FIN AJOUT SERRAT
-	
+
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
 diag_log "Executing client.fsm";
@@ -210,49 +210,9 @@ if(life_firstSpawn AND invo_play_intro) then
 	0 fadeMusic 1;
 	[5,""] spawn INVO_fnc_cameraFadeIn;
 	[270,900,150] call INVO_fnc_sequenceIntro;
-	//[] spawn {sleep 20; 8 fadeSound 0;};
-
 	waitUntil {INVO_introEnded};
-
-	switch (playerSide) do
-	{
-	    case west:
-	    {
-			[] call life_fnc_welcomeNotification_bluefor;
-	    };
-
-	    case civilian:
-	    {
-	        [] call life_fnc_welcomeNotification;
-	    };
-
-	    case independent:
-	    {
-	        [] call life_fnc_welcomeNotification_independant;
-	    };
-	};
 	life_firstSpawn = false;
 };
-switch (playerSide) do
-	{
-	    case west:
-	    {
-			[] call life_fnc_welcomeNotification_bluefor;
-	    };
-
-	    case civilian:
-	    {
-	        [] call life_fnc_welcomeNotification;
-	    };
-
-	    case independent:
-	    {
-	        [] call life_fnc_welcomeNotification_independant;
-	    };
-	};
-
-
-
 
 [1] call SOCK_fnc_updateRequestCivGear; //Silent Sync to avoid duplication. We only fill in variables, sync to db will either be handled by next sync data or during disconnection (by any means, even a crash!)
 
@@ -286,8 +246,8 @@ switch (playerSide) do
 //player setVariable ["AGM_Name","Inconnu",true]; //Komodo: anti meta gaming
 
 // NO FATIGUE
-if(local player) then 
-{ 
-    player enableFatigue false; 
+if(local player) then
+{
+    player enableFatigue false;
 	1 fadeSound 1;
 };
