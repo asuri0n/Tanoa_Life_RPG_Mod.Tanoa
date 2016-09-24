@@ -8,6 +8,9 @@
 private["_spCfg","_sp","_spawnPos"];
 closeDialog 0;
 cutText ["","BLACK IN"];
+
+[] call life_fnc_welcomeNotification;
+
 if(count life_spawn_point == 0) then
 {
 	private["_sp","_spCfg"];

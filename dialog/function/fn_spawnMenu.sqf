@@ -1,7 +1,7 @@
 /*
 	File: fn_spawnMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Initializes the spawn point selection menu.
 */
@@ -9,7 +9,7 @@ private["_spCfg","_sp","_ctrl"];
 disableSerialization;
 
 if(life_is_arrested) exitWith {
-	//[] call life_fnc_respawned;
+	[] call life_fnc_onRespawn;
 };
 
 if(life_respawned) then {
