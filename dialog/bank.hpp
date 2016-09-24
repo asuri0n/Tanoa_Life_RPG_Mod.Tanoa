@@ -53,7 +53,7 @@ class Life_atm_management {
 		class WithdrawButton : life_RscButtonMenu
 		{
 			idc = -1;
-			onButtonClick = "[] call life_fnc_bankWithdraw";
+			onButtonClick = "[] call life_fnc_gangWithdraw";
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
@@ -150,7 +150,7 @@ class Life_atm_management {
 		class GangWithdraw : TransferButton
 		{
 			idc = 2706;
-			onButtonClick = "[] call life_fnc_gangWithdraw";
+			onButtonClick = "[] call life_fnc_bankWithdraw";
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureOver = "#(argb,8,8,3)color(1,1,1,0)";
