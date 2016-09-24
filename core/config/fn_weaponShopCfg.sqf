@@ -341,7 +341,7 @@ switch(_shop) do
 				["Magasin de la communauté",
 					[
 					// Soins
-						["medikit",nil,35000],
+						//["medikit",nil,35000],
 						//["AGM_Bloodbag",nil,8600],
 						//["AGM_Bandage",nil,130],
 					// Armes
