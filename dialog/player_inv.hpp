@@ -450,7 +450,7 @@ class playerSettings {
 			color2[] = {1, 1, 1, 0};
 			colorText[] = {1, 1, 1, 0};
 			colorDisabled[] = {1, 1, 1, 0};
-			onButtonClick = "[] call life_fnc_helpHint;";
+			onButtonClick = "[] call life_fnc_welcomeNotification;"; //AVANT : [] call life_fnc_helpHint;
 			tooltip = "Aide raccourcies";
 
 			x = 0.1 + (0.079*9);

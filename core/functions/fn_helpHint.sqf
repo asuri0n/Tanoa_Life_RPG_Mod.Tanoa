@@ -3,6 +3,18 @@
 
 	Description:
 	Hint d'aide.
+
+
+
+
+
+	NOT USED -> [] call life_fnc_welcomeNotification;
+
+
+
+
+
+
 */
 _rappelToucheInteraction = parseText format ["<t size='1.30' font='puristaMedium' align='center' color='#0D82DF'>Rappel des touches spéciales</t><br/>
 	<br/>
