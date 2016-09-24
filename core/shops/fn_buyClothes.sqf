@@ -21,5 +21,6 @@ life_liquide = life_liquide - _price;
 ["receiveMoney", false, -1 * _price] call life_fnc_antiCheatCash;
 
 life_clothesPurchased = true;
+[] call life_fnc_playerSkins;
 closeDialog 0;
 [1] call SOCK_fnc_updateRequestCivGear; //Silent Sync to avoid duplication. We only fill in variables, sync to db will either be handled by next sync data or during disconnection (by any means, even a crash!)
