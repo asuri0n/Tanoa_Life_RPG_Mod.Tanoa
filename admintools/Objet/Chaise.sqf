@@ -16,7 +16,7 @@ ActionDeplaceObjet = player addaction ["Pauser",{PauserObjet = 1},""];
 
 waituntil {PauserObjet ==1};
 
-[[DeplaceObjet,"<t color='#0099FF'>S'asseoir</t>","scripts\Chair\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
+[[DeplaceObjet,"<t color='#0099FF'>S'asseoir</t>","addons\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
 
 if (PauserObjet == 1) exitWith {detach DeplaceObjet; player removeAction ActionDeplaceObjet};
 

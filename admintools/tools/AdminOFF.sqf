@@ -2,7 +2,7 @@ invo_godmod = false;
 cutText ["Admin God Mod OFF", "PLAIN"];
 player setDamage 0;
 player allowDamage true;
-player setVariable ["AGM_allowDamage", True, True];
+//player setVariable ["AGM_allowDamage", True, True];
 detach sphereAdmin;
 deleteVehicle sphereAdmin;
 //player removeEventHandler ["Fired", 0];
