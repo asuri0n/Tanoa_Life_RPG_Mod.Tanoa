@@ -412,8 +412,8 @@ switch (_shop) do
     {
         _return =
         [
-            ["B_Heli_Light_01_F",333333],
-            ["C_Heli_Light_01_civil_F",333333],
+            ["B_Heli_Light_01_F",666666],
+            ["C_Heli_Light_01_civil_F",666666],
             ["C_Plane_Civil_01_F",500000],
             ["O_Heli_Light_02_unarmed_F",666666]
         ];
@@ -469,7 +469,8 @@ switch (_shop) do
             ["I_G_Offroad_01_armed_F",400000],
             //["DAR_MK27",433333],
             //["DAR_MK27T",500000],
-            ["O_MRAP_02_F",533333]
+            ["I_MRAP_03_F",1000000],
+            ["O_MRAP_02_F",666666]
 
         ];
     };
@@ -478,9 +479,9 @@ switch (_shop) do
     {
         _return =
         [
-            ["B_Heli_Light_01_F",300000],
-            ["O_Heli_Light_02_unarmed_F",400000],
-            ["I_Heli_Transport_02_F",533333]
+            ["B_Heli_Light_01_F",666666], //20
+            ["O_Heli_Light_02_unarmed_F",1866666], //75
+            ["I_Heli_Transport_02_F",3333333] //150
         ];
     };
 
