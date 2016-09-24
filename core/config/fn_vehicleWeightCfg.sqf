@@ -148,8 +148,8 @@ switch (_className) do
 	case "B_Truck_01_covered_F": {350};
 	case "O_Truck_03_device_F": {350};
 	case "A3L_Dumptruck": {400};
-	case "B_Truck_01_box_F": {500};
-	case "B_Truck_01_fuel_F": {500};
+	case "B_Truck_01_box_F": {700};
+	case "B_Truck_01_fuel_F": {700};
 	case "O_Truck_02_Ammo_F": {750};
 	case "Mrshounka_a3_iveco_f": {600};
 	case "shounka_a3_spr_civ": {150};

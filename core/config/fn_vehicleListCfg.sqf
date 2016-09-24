@@ -401,8 +401,8 @@ switch (_shop) do
             ["B_Truck_01_transport_F",266667],
             ["B_Truck_01_covered_F",300000],
             //["shounka_a3_renaultmagnum_f",333333],
-            ["B_Truck_01_box_F",466667],
-            ["B_Truck_01_fuel_F",466667],
+            ["B_Truck_01_box_F",733333],
+            ["B_Truck_01_fuel_F",733333],
             ["O_Truck_03_device_F",500000]
             //["O_Truck_02_Ammo_F",5333333]
         ];
