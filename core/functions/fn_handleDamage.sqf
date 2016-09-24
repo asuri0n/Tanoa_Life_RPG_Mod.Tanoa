@@ -28,6 +28,8 @@ if(!isNull _source) then {
 			_isVehicle = if(vehicle player != player) then {true} else {false};
 			_isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
 
+			player setDamage 0;
+
 			_damage = false;
 			if(_unit distance _source < _distance) then {
 				if(!life_istazed && !(_unit getVariable["restrained",false])) then {
