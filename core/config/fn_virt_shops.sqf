@@ -10,9 +10,9 @@ _shop = _this select 0;
 
 switch (_shop) do
 {
-	case "market": {["Marché",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","machete","fuelF","peach","planchep","boltcutter","storagesmall","storagebig","cornmeal","bottles","tissup"]]};
+	case "market": {["Marché",["water","rabbit","apple","redgull","tbacon","pickaxe","machete","fuelF","peach","planchep","boltcutter","storagesmall","storagebig","cornmeal","bottles","tissup"]]};
 	case "hunter": {["Marché",["water","rabbit","apple","redgull","tbacon","pickaxe","machete","fuelF","peach","hood"]]};
-	case "rebel": {["Marché Rebelle",["ziptie","boltcutter","blastingcharge","hood"]]};
+	case "rebel": {["Marché Rebelle",["ziptie","boltcutter","blastingcharge","hood","lockpick"]]};
 	case "gang": {["Marché Gang", ["blastingcharge","boltcutter","hood"]]};
 	case "wongs": {["Marché donateur", ["blastingcharge","boltcutter","hood"]]};
 	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
@@ -39,7 +39,7 @@ switch (_shop) do
 	case "wine": {["Acheteur d'Alcool",["wine","bottledbeer","bottledwhiskey"]]};
 	case "compote": {["Négociant en Compote",["applecompote","peachcompote"]]};
 	case "organ": {["Acheteur d'organes",["organp"]]};
-	case "mcuranium": {["Acheteur Uranium",["uraniump"]]};	
+	case "mcuranium": {["Acheteur Uranium",["uraniump"]]};
 	case "iuranium": {["Marchant Purificateur",["puranium"]]};
 	// Nouveaux by Pytha (28/08)
 	case "joaillier": {["Joaillier",["goldbarp"]]};
