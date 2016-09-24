@@ -6,7 +6,7 @@
 player addEventHandler["Killed", {_this spawn life_fnc_onDeath}];
 
 /* player removeAllEventHandlers "handleDamage"; */
-//player addEventHandler["handleDamage",{_this call life_fnc_handleDamage;}];
+player addEventHandler["handleDamage",{_this call life_fnc_handleDamage;}];
 
 /* AGM */
 //[player, "AGM_wokeUp", {[_this select 0] call INVO_fnc_AGM_wokeUp;}] call AGM_Core_fnc_addCustomEventHandler;
