@@ -30,11 +30,11 @@ _exit = false;
 _playersInGroupCount = count (units (group player));
 if (_playersInGroupCount <= 4) then
 {
-	_vehiclesLimit = 1;
+	_vehiclesLimit = 2;
 }
 else
 {
-	_vehiclesLimit = 1;
+	_vehiclesLimit = 3;
 };
 /* diag_log format ["DEBUG: - unimpound - veh: %1, type: %2",_vehicle, _vehicleType]; */
 if (_vehicleType in invo_limited_vehicles) then

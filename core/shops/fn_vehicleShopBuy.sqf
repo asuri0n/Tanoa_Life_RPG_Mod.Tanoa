@@ -6,7 +6,7 @@
 	Description:
 	Does something with vehicle purchasing.
 */
-private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_answer","_vehiclesLimit"];
+private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_answer","_vehiclesLimit","_playersInGroupCount"];
 _mode = _this select 0;
 if((lbCurSel 2302) == -1) exitWith {hint "Tu n'as pas choisi de véhicule"};
 
@@ -40,23 +40,31 @@ _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
 if(_mode) then {
 	_basePrice = ((_vehicleList select _vIndex) select 1)*1.5;
 } else {
-	_basePrice = (_vehicleList select _vIndex) select 1;	
+	_basePrice = (_vehicleList select _vIndex) select 1;
 };
 
-if(__GETC__(life_donator) == 1)then { 
-	_basePrice = round(_basePrice - (_basePrice*(5/100))); 
+if(__GETC__(life_donator) == 1)then {
+	_basePrice = round(_basePrice - (_basePrice*(5/100)));
 };
-if(__GETC__(life_donator) == 2)then { 
-	_basePrice = round(_basePrice - (_basePrice*(10/100))); 
+if(__GETC__(life_donator) == 2)then {
+	_basePrice = round(_basePrice - (_basePrice*(10/100)));
 };
-if(__GETC__(life_donator) == 3)then { 
+if(__GETC__(life_donator) == 3)then {
 	_basePrice = round(_basePrice - (_basePrice*(15/100)));
 };
-if(__GETC__(life_donator) == 0)then { 
+if(__GETC__(life_donator) == 0)then {
 	_basePrice = _basePrice;
 };
- 
-_vehiclesLimit = 1;
+
+_playersInGroupCount = count (units (group player));
+if (_playersInGroupCount <= 4) then
+{
+	_vehiclesLimit = 2;
+}
+else
+{
+	_vehiclesLimit = 3;
+};
 
 if (_className in invo_limited_vehicles) then
 {
