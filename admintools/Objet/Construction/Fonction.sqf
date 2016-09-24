@@ -68,7 +68,7 @@ _Objet2 setdir Rotation;
 detach _Objet2;
 };
 if (OptionObject == 1 ) then {
-[[_Objet2,"<t color='#0099FF'>S'asseoir</t>","addons\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
+[[_Objet2,"<t color='#0099FF'>S'asseoir</t>","scripts\Chair\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
 };
 };
 

@@ -185,7 +185,7 @@ Objet2 setdir Rotation;
 detach Objet2;
 };
 if (OptionObject == 1 ) then {
-[[Objet2,"<t color='#0099FF'>S'asseoir</t>","addons\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
+[[Objet2,"<t color='#0099FF'>S'asseoir</t>","scripts\Chair\sitdown.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
 };
 if (OptionObject == 2 ) then {
 nul = [Objet2,45,60,"Mobile"] execVM "fnc_radar.sqf"; Objet2 allowDamage false;
@@ -195,7 +195,7 @@ if (OptionObject == 3 ) then {
 [[Objet2,"<t color='#8899FF'>Ouvrir</t>","admintools\Objet\Construction\OuvrirCible.sqf"],"Fock_addactionMP",true,true] spawn BIS_fnc_MP;
 };
 if (OptionObject == 4 ) then {
-Objet2 SetObjectTextureGlobal [0,textures\Atrium-Info.paa"];
+Objet2 SetObjectTextureGlobal [0,Textures\\Atrium-Info.paa"];
 };
 if (OptionObject == 5 ) then {
 Objet2 enableSimulation false ;
