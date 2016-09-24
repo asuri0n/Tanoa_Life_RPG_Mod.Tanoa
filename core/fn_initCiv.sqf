@@ -47,17 +47,22 @@ if (VACA_SERV_DEBUG) then
 };
 
 if (life_is_alive == 0 || (typeName _playerPosition != "ARRAY")) then {
-	[] call life_fnc_spawnMenu;	
-	waitUntil{!isNull (findDisplay 38500)}; 	
-	waitUntil{isNull (findDisplay 38500)};
+	if(life_is_arrested) then {
+		life_is_arrested = false;
+		[player,true] spawn life_fnc_jail;
+	} else {
+		[] call life_fnc_spawnMenu;
+		waitUntil{!isNull (findDisplay 38500)};
+		waitUntil{isNull (findDisplay 38500)};
+	};
 	life_is_alive = true;
 } else {
 	if(life_is_arrested) then {
 		life_is_arrested = false;
 		[player,true] spawn life_fnc_jail;
 	} else {
-		player setPos _playerPosition;						
-		hint format["Vous êtes toujours en vie. Vous avez réapparu au même endroit."];						
+		player setPos _playerPosition;
+		hint format["Vous êtes toujours en vie. Vous avez réapparu au même endroit."];
 	};
 	life_is_alive = true;
 };

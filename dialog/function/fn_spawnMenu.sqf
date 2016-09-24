@@ -9,7 +9,7 @@ private["_spCfg","_sp","_ctrl"];
 disableSerialization;
 
 if(life_is_arrested) exitWith {
-	[] call life_fnc_onRespawn;
+	[] call life_fnc_respawned;
 };
 
 if(life_respawned) then {
