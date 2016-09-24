@@ -829,7 +829,7 @@ buy_array =
 	["donuts",120],
 	["coffee",10],
 	["tbacon",75],
-	["lockpick",150],
+	["lockpick",3000],
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
@@ -1579,12 +1579,12 @@ __CONST__(life_price_insurance,life_price_insurance);
 
 //Komodo: véhicules dont le nombre est limité par rapport à la quantité de joueurs dans un groupe (gang)
 invo_limited_vehicles = [
+	"I_MRAP_03_F",
 	"O_MRAP_02_F"
 ];
 
 invo_limited_vehicles_armed = [
-	"B_G_Offroad_01_armed_F",
-	"O_MRAP_02_F"
+	"B_G_Offroad_01_armed_F"
 ];
 
 //Komodo: ajouté pour lister les véhicules supprimés
