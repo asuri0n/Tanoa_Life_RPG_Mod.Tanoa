@@ -21,14 +21,4 @@ if (_closePlayers > 1) then
 
 if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {[_unit, _container] spawn life_fnc_inventoryClosed;};
 
-switch(playerSide) do
-{
-	case west: {}; //Blah
-	case civilian: {
-		//Currently stoping the civilians from taking the indep clothing from medics.
-		if(_item in ["U_Dep"]) then {
-			[_item,false,false,false,false] call life_fnc_handleItem;
-		};
-	};
-	case independent: {};
-};
+[] call life_fnc_playerSkins;

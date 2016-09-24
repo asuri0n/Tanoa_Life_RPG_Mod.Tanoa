@@ -310,6 +310,7 @@ class Life_Client_Core
 		class isnumeric {};
 		class escInterupt {};
 		class onTakeItem {};
+		class playerSkins{};
 		class fetchVehInfo {};
 		class pushObject {};
 		class onFired {};

@@ -67,21 +67,21 @@ if((str(player) in ["cop_1","cop_2","cop_3","cop_4","cop_5","cop_6","cop_7","cop
 player setVariable["coplevel", __GETC__(life_coplevel), true]; // Rang Anzeige
 player setVariable ["life_ZamakSearch", false, true];
 
-if (life_is_alive == 0 || (typeName _playerPosition != "ARRAY")) then{	
-	[] call life_fnc_spawnMenu;	
-	waitUntil{!isNull (findDisplay 38500)}; 	
+if (life_is_alive == 0 || (typeName _playerPosition != "ARRAY")) then{
+	[] call life_fnc_spawnMenu;
+	waitUntil{!isNull (findDisplay 38500)};
 	//Wait for the spawn selection to be open.
-	
-	waitUntil{isNull (findDisplay 38500)}; 
+
+	waitUntil{isNull (findDisplay 38500)};
 	//Wait for the spawn selection to be done.
-	
-	life_is_alive = true; 
-	// Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
-} else {				
-	player setPos _playerPosition;						
-	hint format["Vous êtes toujours en vie. Vous avez réapparu au même endroit."];			
+
 	life_is_alive = true;
-}; 
+	// Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
+} else {
+	player setPos _playerPosition;
+	hint format["Vous êtes toujours en vie. Vous avez réapparu au même endroit."];
+	life_is_alive = true;
+};
 
 [] execVM "admintools\activate.sqf";
 
@@ -100,39 +100,43 @@ invo_faction = "cop";
 player setVariable ["invo_faction","cop",true];
 [] spawn life_fnc_updateInvoAllies;
 
-[] spawn  
-{  
-	while {true} do  
-    {  
-        waitUntil {uniform player == "U_Rangemaster"};  
-        player setObjectTextureGlobal [0,"textures\tenues\cop\Tenue-gendarme.paa"];  
-        waitUntil {uniform player != "U_Rangemaster"};  
-    };  
-};  
-[] spawn  
-{  
-	while {true} do  
-    {  
-        waitUntil {uniform player == "U_B_GEN_Commander_F"};  
-        player setObjectTextureGlobal [0,"textures\tenues\cop\PulloverUniform.paa"];  
-        waitUntil {uniform player != "U_B_GEN_Commander_F"};  
-    };  
+[] call life_fnc_playerSkins;
+
+/*
+[] spawn
+{
+	while {true} do
+    {
+        waitUntil {uniform player == "U_Rangemaster"};
+        player setObjectTextureGlobal [0,"textures\tenues\cop\Tenue-gendarme.paa"];
+        waitUntil {uniform player != "U_Rangemaster"};
+    };
 };
-[] spawn  
-{  
-	while {true} do  
-    {  
-        waitUntil {uniform player == "U_B_GEN_Soldier_F"};  
-        player setObjectTextureGlobal [0,"textures\tenues\cop\U_B_GEN_Soldier_F.paa"];  
-        waitUntil {uniform player != "U_B_GEN_Soldier_F"};  
-    };  
+[] spawn
+{
+	while {true} do
+    {
+        waitUntil {uniform player == "U_B_GEN_Commander_F"};
+        player setObjectTextureGlobal [0,"textures\tenues\cop\PulloverUniform.paa"];
+        waitUntil {uniform player != "U_B_GEN_Commander_F"};
+    };
 };
-[] spawn  
-{  
-	while {true} do  
-    {  
-        waitUntil {uniform player == "U_O_T_Officer_F"};  
-        player setObjectTextureGlobal [0,"textures\tenues\cop\U_O_T_Officer_Gend.paa"];  
-        waitUntil {uniform player != "U_O_T_Officer_F"};  
-    };  
+[] spawn
+{
+	while {true} do
+    {
+        waitUntil {uniform player == "U_B_GEN_Soldier_F"};
+        player setObjectTextureGlobal [0,"textures\tenues\cop\U_B_GEN_Soldier_F.paa"];
+        waitUntil {uniform player != "U_B_GEN_Soldier_F"};
+    };
 };
+[] spawn
+{
+	while {true} do
+    {
+        waitUntil {uniform player == "U_O_T_Officer_F"};
+        player setObjectTextureGlobal [0,"textures\tenues\cop\U_O_T_Officer_Gend.paa"];
+        waitUntil {uniform player != "U_O_T_Officer_F"};
+    };
+};
+*/

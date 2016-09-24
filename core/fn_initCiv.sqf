@@ -97,3 +97,5 @@ switch (true) do {
     //case license_civ_bounty_hunter: {invo_faction = "bounty_hunter"; player setVariable ["invo_faction","bounty_hunter",true];};
     default {invo_faction = "civilian"; player setVariable ["invo_faction","civilian",true];};
 };
+
+[] call life_fnc_playerSkins;

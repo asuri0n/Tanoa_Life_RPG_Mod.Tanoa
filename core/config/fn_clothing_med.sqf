@@ -31,6 +31,7 @@ switch (_filter) do
 		_ret =
 		[
 			["H_PilotHelmetHeli_O",nil,0],
+			["H_Cap_headphones",nil,0],
 			["H_RacingHelmet_1_white_F",nil,0],
 			["H_MilCap_gry",nil,0]
 		];
@@ -54,7 +55,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["V_BandollierB_cbr",nil,0],
+			["V_TacVestIR_blk",nil,5000],
 			["V_RebreatherB",nil,0]
 		];
 	};
@@ -63,17 +64,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["B_AssaultPack_rgr",nil,0],
-			["B_AssaultPack_blk",nil,0],
-			["B_Kitbag_mcamo",nil,0],
-			["B_Bergen_blk",nil,0],
-			["B_Bergen_mcamo",nil,0],
-			["B_TacticalPack_mcamo",nil,0],
-			["B_TacticalPack_blk",nil,0],
-			["B_TacticalPack_rgr",nil,0],
-			["B_Carryall_mcamo",nil,0],
-			["B_Carryall_khk",nil,0],
-			["B_Parachute",nil,0]
+			["B_ViperHarness_blk_F",nil,0]
 		];
 	};
 };
