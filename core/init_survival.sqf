@@ -169,6 +169,7 @@
 };
 
 // delete animals when far from hunting zone
+/*
 [] spawn {
 	while {true} do {
     	private["_agents"];
@@ -182,6 +183,7 @@
 		sleep 30;
 	};
 };
+*/
 
 // change les panneaux de pub toutes les 5 min
 /*
