@@ -36,11 +36,13 @@ life_versionInfo = "Tanoa Life RPG v3.1.3.5";
 /* ===================== */
 /* ====== ADDONS ======= */
 /* ===================== */
-[] execVM "briefing.sqf"; //Load Briefing
+//Load Briefing
+[] execVM "briefing.sqf";
 [] execVM "KRON_Strings.sqf";
-//Attention, réduis les FPS : TODO : Optimize  with no while(true)
+// Attention, réduis les FPS : TO DO : Optimize with no while(true)
 //[] execVM "addons\anti-hack.sqf";
 [] execVM "addons\fastrope.sqf";
+// WTF ??
 //[] execVM "core\inventory\init.sqf";
 
 StartProgress = true;
