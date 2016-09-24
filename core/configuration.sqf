@@ -9,7 +9,7 @@
 ********* DEBUG VAR *********
 *****************************
 */
-VACA_SERV_DEBUG = true;
+VACA_SERV_DEBUG = false;
 if (VACA_SERV_DEBUG) then
 {
 	diag_log "########-----------------------#########";

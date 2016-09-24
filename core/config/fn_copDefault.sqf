@@ -21,12 +21,12 @@ removeHeadGear player;
 //Load player with default cop gear.
 player addUniform "U_Rangemaster";
 player addVest "V_TacVest_gen_F";
-player addWeapon "DDOPP_X26_b";
-player addMagazine "DDOPP_1Rnd_X26";
-player addMagazine "DDOPP_1Rnd_X26";
-player addMagazine "DDOPP_1Rnd_X26";
-player addMagazine "DDOPP_1Rnd_X26";
-player addMagazine "DDOPP_1Rnd_X26";
+player addWeapon "hgun_P07_snds_F";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
+player addMagazine "16Rnd_9x21_Mag";
 player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
