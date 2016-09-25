@@ -30,7 +30,7 @@ switch (_item) do
 	case "copper_r": {4};
 	case "ironore": {5};
 	case "iron_r": {4};
-	
+
 	case "apple": {1};
 	case "water": {1};
 	case "rabbit": {1};
@@ -63,7 +63,7 @@ switch (_item) do
 	case "crystalmeth": {4};
 	case "crystalmethpur": {4};
 	case "archeologie": {4};
-	case "archeologieillegale": {5};	
+	case "archeologieillegale": {5};
 	case "barriere": {10};
 	case "barriereStop": {15};
 	case "ziptie": {15};
@@ -93,7 +93,7 @@ switch (_item) do
 	case "peachcompote": {0.5};
 	case "masonry_kit" : {20};
 	case "cargo_hemtt" : {450};
-	
+
 	case "puranium": {2}; // <--------You Can Change the Pound of the Item(s) in Game
 	case "ipuranium": {2}; // <--------You Can Change the Pound of the Item(s) in Game
 	case "uranium1": {2}; // <--------You Can Change the Pound of the Item(s) in Game
@@ -105,11 +105,11 @@ switch (_item) do
 	case "uranium3b": {4}; // <--------You Can Change the Pound of the Item(s) in Game
 	case "uranium4b": {4}; // <--------You Can Change the Pound of the Item(s) in Game
 	case "uranium5b": {4}; // <--------You Can Change the Pound of the Item(s) in Game
-	
+
 	case "fishp" : {1};
 	case "boisp" : {5};
 	case "planchep" : {3};
-	case "linp" : {1};
+	case "linp" : {2};
 	case "tissup" : {1};
 	case "charbonp" : {1};
 	case "poudrenoirp" : {1};
@@ -132,18 +132,18 @@ switch (_item) do
 	case "diamantpurp" : {3};
 	case "oilpy" : {5};
 	case "plastiquep" : {3};
-	
+
 	case "uraniump2" : {3};
 	case "uraniump3" : {3};
 	case "uraniump4" : {3};
-	
+
 	case "organp" : {5};
 	case "organ" : {5};
-	
+
 	case "osslp" : {5};
 	case "ossillp" : {5};
-	
+
 	case "gpstracker": {25};
-	
+
 	default {1};
 };

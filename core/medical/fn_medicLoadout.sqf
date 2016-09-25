@@ -14,4 +14,4 @@ removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
 player forceAddUniform "U_Rangemaster";
-player addBackpack "B_Carryall_mcamo";
+player addBackpack "B_ViperHarness_blk_F";

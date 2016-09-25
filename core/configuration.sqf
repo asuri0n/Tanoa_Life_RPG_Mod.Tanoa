@@ -703,7 +703,7 @@ sell_array =
 	["turtle",9865],
 	["crystalmethpur",10279],//added by asurion
 	["archeologie",4078], //added by asurion
-	["grapejuice",1000],
+	["grapejuice",350],
 	["wine",1950],
 	["moonshine",4000],
 	["applecompote",187],

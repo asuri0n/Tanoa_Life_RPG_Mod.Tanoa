@@ -1,7 +1,7 @@
 /*
 	File: fn_colorVehicle.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Reskins the vehicle
 */
@@ -40,20 +40,20 @@ if(local _vehicle) then
 
 waitUntil{!isNil {_vehicle getVariable "Life_VEH_color"}};
 
-_vehicle setObjectTexture[0,_texture];
+_vehicle setObjectTextureGlobal[0,_texture];
 if(!isNil "_texture2") then
 {
-	_vehicle setObjectTexture[1,_texture2];
+	_vehicle setObjectTextureGlobal[1,_texture2];
 };
 if(!isNil "_texture3") then
 {
-	_vehicle setObjectTexture[2,_texture3];
+	_vehicle setObjectTextureGlobal[2,_texture3];
 };
 
 if(typeOf _vehicle == "C_Offroad_01_F") then
 {
 	if(_index < 5) then
 	{
-		_vehicle setObjectTexture[1,_texture];
+		_vehicle setObjectTextureGlobal[1,_texture];
 	};
 };
