@@ -19,7 +19,7 @@ player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 
 titleText["Vous avez été arrêté, attendez la fin du temps. Si vous tentez de réapparaître ou reconnecter votre temps va augmenter!","PLAIN"];
-//hint "Pour avoir été arreté, vous avez perdu les licences suivantes\n\nLicence d'armes\nLicence gangster";
+
 player setPos (getMarkerPos "jail_marker");
 
 if(_bad) then
@@ -47,5 +47,6 @@ life_is_arrested = true;
 removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
 
-[[player,_bad,_time],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
+diag_log "JAIL GO TO JAILSYS";
+[[player,_bad,_time],"INVO_fnc_jailSys",false,false] spawn life_fnc_MP;
 [1] call SOCK_fnc_updateRequestCivGear;

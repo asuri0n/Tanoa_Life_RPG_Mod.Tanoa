@@ -9,6 +9,7 @@ private["_ret","_bad","_time","_bail","_esc","_glitch","_countDown","_time2"];
 _ret = [_this,0,[],[[]]] call BIS_fnc_param;
 _bad = [_this,1,false,[false]] call BIS_fnc_param;
 _time2 = [_this,2,-1,[0]] call BIS_fnc_param;
+diag_log "JAILME";
 if(_time2 == (-1)) then {_time2 = 30;};
 if(_bad) then { _time = time + 1100; } else { _time = time + (_time2 * 60); };
 
@@ -16,6 +17,8 @@ if(count _ret > 0) then { life_bail_amount = [getPlayerUID player] call INVO_fnc
 _esc = false;
 _bail = false;
 _glitch = false;
+
+hint format["Vous allez rester en prison pendant %1 minutes. Vous avez perdu votre permis de port d'arme.",_time2];
 
 RemoveAllWeapons player;
 {player removeMagazine _x;} foreach (magazines player);
@@ -25,7 +28,7 @@ removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
 removeAllAssignedItems player;
-player addUniform "U_prisoner";
+//player addUniform "U_prisoner";
 
 
 [_bad, _time2] spawn
