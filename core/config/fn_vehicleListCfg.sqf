@@ -402,7 +402,7 @@ switch (_shop) do
             //["shounka_a3_renaultmagnum_f",333333],
             ["B_Truck_01_box_F",733333],
             ["B_Truck_01_fuel_F",733333],
-            ["O_Truck_03_device_F",500000]
+            ["O_Truck_03_device_F",666666]
             //["O_Truck_02_Ammo_F",5333333]
         ];
     };
@@ -1097,7 +1097,6 @@ switch (_shop) do
             {
                 _return =
                 [
-                    ["B_UAV_02_F", 10000],
                     ["C_Offroad_01_F", 10800],
                     ["C_SUV_01_F", 26000],
                     ["C_Van_01_box_F", 40000],
@@ -1111,7 +1110,6 @@ switch (_shop) do
             {
                 _return =
                 [
-                    ["B_UAV_02_F", 10000],
                     ["C_Offroad_01_F", 10800],
                     ["C_SUV_01_F", 26000],
                     ["C_Van_01_box_F", 40000],
@@ -1125,7 +1123,6 @@ switch (_shop) do
             {
                 _return =
                 [
-                    ["B_UAV_02_F", 10000],
                     ["C_Offroad_01_F", 10800],
                     ["C_SUV_01_F", 26000],
                     ["C_Van_01_box_F", 40000],
@@ -1135,39 +1132,38 @@ switch (_shop) do
                     //["shounka_a3_pompier_sprinter",52000],
 
                     //NEW
-					//["Mrshounka_corbillard_c",15686],
-					//["Mrshounka_corbillard_c_noir",15686],
-					//["Mrshounka_corbillard_c_bleufonce",15686],
-					//["Mrshounka_corbillard_c_rouge",15686],
-					//["Mrshounka_corbillard_c_jaune",15686],
-					//["Mrshounka_corbillard_c_rose",15686],
-					//["Mrshounka_corbillard_c_grise",15686],
-					//["Mrshounka_corbillard_c_violet",15686],
-					//["Mrshounka_corbillard_c_orange",15686]
+			//["Mrshounka_corbillard_c",15686],
+			//["Mrshounka_corbillard_c_noir",15686],
+			//["Mrshounka_corbillard_c_bleufonce",15686],
+			//["Mrshounka_corbillard_c_rouge",15686],
+			//["Mrshounka_corbillard_c_jaune",15686],
+			//["Mrshounka_corbillard_c_rose",15686],
+			//["Mrshounka_corbillard_c_grise",15686],
+			//["Mrshounka_corbillard_c_violet",15686],
+			//["Mrshounka_corbillard_c_orange",15686]
                 ];
             };
             case 4 :
             {
-                _return =
-                [
-                    ["B_UAV_02_F", 10000],
-                    ["C_Offroad_01_F", 10800],
-                    ["C_SUV_01_F", 26000],
-                    ["C_Van_01_box_F", 40000],
-                    ["C_Hatchback_01_F", 50000],
-                    ["O_T_Truck_03_medical_ghex_F",50000]
+                  _return =
+                  [
+                        ["C_Offroad_01_F", 10800],
+                        ["C_SUV_01_F", 26000],
+                        ["C_Van_01_box_F", 40000],
+                        ["C_Hatchback_01_F", 50000],
+                        ["O_T_Truck_03_medical_ghex_F",50000]
 
-                    //NEW
-					//["Mrshounka_corbillard_c",15686],
-					//["Mrshounka_corbillard_c_noir",15686],
-					//["Mrshounka_corbillard_c_bleufonce",15686],
-					//["Mrshounka_corbillard_c_rouge",15686],
-					//["Mrshounka_corbillard_c_jaune",15686],
-					//["Mrshounka_corbillard_c_rose",15686],
-					//["Mrshounka_corbillard_c_grise",15686],
-					//["Mrshounka_corbillard_c_violet",15686],
-					//["Mrshounka_corbillard_c_orange",15686]
-                ];
+                        //NEW
+            	      //["Mrshounka_corbillard_c",15686],
+            	      //["Mrshounka_corbillard_c_noir",15686],
+            		//["Mrshounka_corbillard_c_bleufonce",15686],
+            		//["Mrshounka_corbillard_c_rouge",15686],
+            		//["Mrshounka_corbillard_c_jaune",15686],
+            		//["Mrshounka_corbillard_c_rose",15686],
+            		//["Mrshounka_corbillard_c_grise",15686],
+            		//["Mrshounka_corbillard_c_violet",15686],
+		            //["Mrshounka_corbillard_c_orange",15686]
+                 ];
             };
             default
             {
@@ -1186,16 +1182,16 @@ switch (_shop) do
             {
                 _return =
                 [
-                    ["I_Heli_Transport_02_F",500000],
-                    ["C_Heli_Light_01_civil_F",500000]
+                    ["I_Heli_Transport_02_F",60000],
+                    ["C_Heli_Light_01_civil_F",80000]
                 ];
             };
             case 2 :
             {
                 _return =
                 [
-                    ["I_Heli_Transport_02_F",500000],
-                    ["C_Heli_Light_01_civil_F",500000]
+                    ["I_Heli_Transport_02_F",60000],
+                    ["C_Heli_Light_01_civil_F",80000]
                 ];
             };
             case 3 :
@@ -1203,15 +1199,16 @@ switch (_shop) do
                 _return =
                 [
                     ["I_Heli_Transport_02_F",500000],
-                    ["C_Heli_Light_01_civil_F",500000]
+                    ["I_Heli_Transport_02_F",60000],
+                    ["C_Heli_Light_01_civil_F",80000]
                 ];
             };
             case 4 :
             {
                 _return =
                 [
-                    ["I_Heli_Transport_02_F",500000],
-                    ["C_Heli_Light_01_civil_F",500000]
+                    ["I_Heli_Transport_02_F",60000],
+                    ["C_Heli_Light_01_civil_F",80000]
                 ];
             };
             default

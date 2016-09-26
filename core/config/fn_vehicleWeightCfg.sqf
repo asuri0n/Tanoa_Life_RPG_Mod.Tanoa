@@ -131,7 +131,7 @@ switch (_className) do
 	case "B_Heli_Light_01_F": {20};
 	case "C_Heli_Light_01_civil_F": {20};
 	case "O_Heli_Light_02_unarmed_F": {75};
-	case "I_Heli_Transport_02_F": {150};
+	case "I_Heli_Transport_02_F": {50};
 
 	case "atm_C130_HEC": {10};
 	case "atm_C130_JC": {10};

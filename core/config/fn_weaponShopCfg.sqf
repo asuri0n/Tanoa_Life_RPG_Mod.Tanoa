@@ -24,6 +24,7 @@ switch(_shop) do
 	{
 		["Carrefour Mini Market",
 			[
+				["ItemRadio",nil,200],
 				["ItemMap",nil,500],
 				["ItemGPS",nil,500],
 				["ItemCompass",nil,500],
@@ -64,6 +65,7 @@ switch(_shop) do
 						["ItemMap",nil,50],
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
+						["ItemRadio",nil,200],
 						["ToolKit",nil,250],
 						["NVGoggles",nil,2000],
 						["Chemlight_yellow",nil,255],
@@ -89,6 +91,8 @@ switch(_shop) do
 						//["AGM_Bloodbag",nil,0],
 						//["AGM_Bandage",nil,0],
 						//["AGM_Morphine",nil,0],
+						["ItemRadio",nil,200],
+						["FirstAidKit","Trousse de soin",500],
 						["medikit",nil,0],
 						["ItemMap",nil,50],
 						["ItemGPS",nil,100],
@@ -97,6 +101,7 @@ switch(_shop) do
 						["NVGoggles",nil,2000],
 						["Chemlight_yellow",nil,255],
 						["Rangefinder",nil,2000],
+						["ItemRadio",nil,200],
 						["ItemCompass",nil,200],
 						["ItemWatch",nil,50]
 					]
@@ -289,7 +294,6 @@ switch(_shop) do
 							["30Rnd_9x21_Mag",nil,500],
 
 						["arifle_Mk20_plain_F",nil,60000],
-						["arifle_TRG21_F",nil,80000],
 						["arifle_SDAR_F",nil,60000],
 							["30Rnd_556x45_Stanag",nil,500],
 
@@ -390,6 +394,7 @@ switch(_shop) do
 				["ItemGPS",nil,200],
 				["ItemCompass",nil,200],
 				["ItemWatch",nil,50],
+				["ItemRadio",nil,200],
 				["Binocular",nil,1500],
 				["NVGoggles","Night Vision",2000],
 				["ToolKit",nil,2000],
@@ -431,6 +436,7 @@ switch(_shop) do
 						["NVGoggles_tna_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500]
 					]
 				];
@@ -491,6 +497,7 @@ switch(_shop) do
 						["O_NVGoggles_ghex_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500],
 
 					//Chemlight
@@ -569,6 +576,7 @@ switch(_shop) do
 						["O_NVGoggles_ghex_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500],
 
 					//Chemlight
@@ -659,6 +667,7 @@ switch(_shop) do
 						["O_NVGoggles_ghex_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500],
 
 					//Chemlight
@@ -762,6 +771,7 @@ switch(_shop) do
 						["O_NVGoggles_ghex_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500],
 
 					//Chemlight
@@ -871,6 +881,7 @@ switch(_shop) do
 						["O_NVGoggles_ghex_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500],
 
 					//Chemlight
@@ -983,7 +994,9 @@ switch(_shop) do
 						["O_NVGoggles_ghex_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500],
+
 
 					//Chemlight
 						["Chemlight_green","Chemlight vert",500],
@@ -1094,6 +1107,7 @@ switch(_shop) do
 						["O_NVGoggles_ghex_F",nil,0],
 						["ToolKit","Kit de reparation",0],
 						["Rangefinder","Telemetre",0],
+						["ItemRadio",nil,0],
 						["FirstAidKit","Trousse de soin",500],
 
 					//Chemlight
