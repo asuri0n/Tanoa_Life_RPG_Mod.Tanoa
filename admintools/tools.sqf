@@ -1,3 +1,5 @@
+#include <macro.h>
+
 _pathtotools = "admintools\tools\";
 _pathtolife= "admintools\life\";
 _pathtoweapon = "admintools\weapons\";
