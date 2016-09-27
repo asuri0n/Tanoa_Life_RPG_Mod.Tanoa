@@ -5,7 +5,7 @@ joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 1;
 disabledAI = 1;
-disableChannels[]={0,1,2};
+disableChannels[]={0,1,2,6};
 enableDebugConsole = 1;
 loadScreen = "textures\loading.paa";
 respawnDialog = 0;
@@ -369,7 +369,7 @@ class CfgDebriefing
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
-	};	
+	};
 	class scriptKiddie
 	{
 		title = "No more cancer";
