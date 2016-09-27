@@ -58,7 +58,7 @@ switch (playerSide) do {
 };
 
 _indexConfig = ([(typeOf _vehicle),__GETC__(life_price_insurance)] call life_fnc_index);
-if(_indexConfig != -1){
+if(_indexConfig != -1) then {
      _insurePrice = (((__GETC__(life_price_insurance)) select _indexConfig) select 1);
 };
 
