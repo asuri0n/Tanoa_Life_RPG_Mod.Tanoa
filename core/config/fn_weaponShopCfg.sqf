@@ -147,79 +147,77 @@ switch(_shop) do
 				["Mohammed's Jihadi Shop",
 					[
 						//ARMES
-						["hgun_P07_F",nil,20000],
-						["hgun_Rook40_F",nil,20000],
+						["hgun_P07_F",nil,45000],
+						["hgun_Rook40_F",nil,45000],
 							["16Rnd_9x21_Mag",nil,500],
 
-						["hgun_ACPC2_F",nil,20000],
+						["hgun_ACPC2_F",nil,45000],
 							["9Rnd_45ACP_Mag",nil,500],
 
-						["hgun_Pistol_heavy_01_F",nil,20000],
+						["hgun_Pistol_heavy_01_F",nil,45000],
 							["11Rnd_45ACP_Mag",nil,500],
 
-						["hgun_Pistol_heavy_02_F",nil,35000],
+						["hgun_Pistol_heavy_02_F",nil,45000],
 							["6Rnd_45ACP_Cylinder",nil,500],
 
-						["srifle_DMR_01_F",nil,150000],
+						["srifle_DMR_01_F",nil,422500],
 							["10Rnd_762x54_Mag",nil,5000],
 
-						["LMG_Zafir_F",nil,400000],
+						["LMG_Zafir_F",nil,650000],
 							["150Rnd_762x54_Box",nil,5000],
 
-						["arifle_Katiba_C_F",nil,150000],
-						["arifle_ARX_ghex_F",nil,175000],
-						["arifle_ARX_hex_F",nil,175000],
+						["arifle_Katiba_C_F",nil,332500],
+						["arifle_ARX_ghex_F",nil,330000],
+						["arifle_ARX_hex_F",nil,330000],
 							["30Rnd_65x39_caseless_green",nil,500],
 
-						//
-						//["srifle_GM6_camo_F",nil,712500],
-							//["5Rnd_127x108_Mag",nil,2500],
+						["srifle_GM6_camo_F",nil,712500],
+							["5Rnd_127x108_Mag",nil,2500],
 
-						["srifle_DMR_06_camo_F",nil,200000],
-						["srifle_DMR_06_olive_F",nil,200000],
-						["srifle_DMR_03_woodland_F",nil,200000],
-						["arifle_SPAR_03_khk_F",nil,200000],
-						["arifle_SPAR_03_snd_F",nil,200000],
+						["srifle_DMR_06_camo_F",nil,455000],
+						["srifle_DMR_06_olive_F",nil,455000],
+						["srifle_DMR_03_woodland_F",nil,455000],
+						["arifle_SPAR_03_khk_F",nil,455000],
+						["arifle_SPAR_03_snd_F",nil,455000],
 							["20Rnd_762x51_Mag",nil,500],
 
-						["arifle_CTAR_hex_F",nil,150000],
+						["arifle_CTAR_hex_F",nil,275000],
 							["30Rnd_580x42_Mag_F",nil,500],
 
-						["srifle_DMR_07_ghex_F",nil,175000],
+						["srifle_DMR_07_ghex_F",nil,350000],
 							["20Rnd_650x39_Cased_Mag_F",nil,500],
 
-						//CYRUS
-						//["srifle_DMR_05_tan_f",nil,600000],
-							//["10Rnd_93x64_DMR_05_Mag",nil,5000],
+						["srifle_DMR_05_tan_f",nil,600000],
+							["10Rnd_93x64_DMR_05_Mag",nil,5000],
 
-						//["LMG_03_F",nil,380000],
-							//["200Rnd_556x45_Box_F",nil,3500],
+						["LMG_03_F",nil,380000],
+							["200Rnd_556x45_Box_F",nil,3500],
 
-						//["arifle_Mk20_F",nil,60000],
+						["arifle_Mk20_F",nil,60000],
 						["arifle_SDAR_F",nil,60000],
 						["arifle_SPAR_01_khk_F",nil,120000],
 						["arifle_SPAR_01_snd_F",nil,120000],
 							["30Rnd_556x45_Stanag",nil,500],
 
-						["arifle_AK12_F",nil,225000],
-						["arifle_AKM_F",nil,175000],
-						["arifle_AKM_FL_F",nil,175000],
+						["arifle_AK12_F",nil,425000],
+						["arifle_AKM_F",nil,350000],
+						["arifle_AKM_FL_F",nil,350000],
 							["30Rnd_762x39_Mag_F",nil,500],
 
-						["arifle_AKS_F",nil,80000],
+						["arifle_AKS_F",nil,100000],
 							["30Rnd_545x39_Mag_F",nil,500],
 
-						//["arifle_MX_khk_F",nil,300000],
-						//["arifle_MXC_khk_F",nil,300000],
-						//["arifle_MXM_khk_F",nil,300000],
-							//["30Rnd_65x39_caseless_mag",nil,500],
+						["arifle_MX_khk_F",nil,300000],
+						["arifle_MXC_khk_F",nil,300000],
+						["arifle_MXM_khk_F",nil,300000],
+							["30Rnd_65x39_caseless_mag",nil,500],
 
-						["arifle_MX_SW_khk_F",nil,225000],
+						["arifle_MX_SW_khk_F",nil,475000],
 							["100Rnd_65x39_caseless_mag",nil,3500],
 
-						//["arifle_SPAR_02_khk_F",nil,325000],
-						//["arifle_SPAR_02_snd_F",nil,325000],
-							//["150Rnd_556x45_Drum_Mag_F",nil,3000],
+						["arifle_SPAR_02_khk_F",nil,325000],
+						["arifle_SPAR_02_snd_F",nil,325000],
+							["150Rnd_556x45_Drum_Mag_F",nil,3000],
 
 					//VISEURS
 						["optic_MRCO",nil,10000],
@@ -228,7 +226,7 @@ switch(_shop) do
 						["optic_ACO_grn",nil,10000],
 						["optic_Aco",nil,10000],
 						["optic_Holosight",nil,10000],
-						["optic_DMS",nil,17000],
+						["optic_DMS",nil,50000],
 						["optic_NVS","Night Vision",10000],
 
 					//SILENCIEUX
@@ -241,9 +239,7 @@ switch(_shop) do
 
 					//ACCESSOIRES
 						//["AGM_Bloodbag",nil,10000],
-						["NVGoggles_INDEP",nil,2000],
-						["O_NVGoggles_hex_F",nil,3000],
-						["O_NVGoggles_urb_F",nil,3000],
+						["NVGoggles","Night Vision",2000],
 						["ToolKit","Kit de reparation",2000],
 						["Rangefinder",nil,8000],
 						["FirstAidKit","Trousse de soin",500],
