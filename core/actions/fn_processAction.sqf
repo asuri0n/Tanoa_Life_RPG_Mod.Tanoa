@@ -22,18 +22,18 @@ _itemInfo = switch (_type) do
 	case "gold": {["goldp","goldbarp",1200,"Transformation de l'or","Minerai d'or",false, false];};
 	case "clay": {["clayp","briquep",1200,"Transformation de l'argile","Argile",false, false];};
 	case "diamant": {["diamantp","diamantpurp",1200,"Transformation du diamant","Minerai de diamant",false, false];};
-	case "iron": {["ironorep","ironp",1120,"Fonte du Fer","Minerai de Fer",false, false]};	
-	case "powder": {["charbonp","poudrenoirp",1200,"Traitement charbon",false,false]};	
-	case "uraniump1": {["uraniump1","uraniump2",6000,"Nettoyage de l'Uranium","Uranium Nettoyé",false, false]};	
-	case "uraniump2": {["uraniump2","uraniump3",6000,"Dissolution Uranium Légal",false,true,"puranium"]};	
-	case "uraniump3": {["uraniump3","uraniump4",6000,"Separation Uranium Légal",false,false, false]};	
+	case "iron": {["ironorep","ironp",1120,"Fonte du Fer","Minerai de Fer",false, false]};
+	case "powder": {["charbonp","poudrenoirp",1200,"Traitement charbon",false,false]};
+	case "uraniump1": {["uraniump1","uraniump2",6000,"Nettoyage de l'Uranium","Uranium Nettoyé",false, false]};
+	case "uraniump2": {["uraniump2","uraniump3",6000,"Dissolution Uranium Légal",false,true,"puranium"]};
+	case "uraniump3": {["uraniump3","uraniump4",6000,"Separation Uranium Légal",false,false, false]};
 	case "uraniump4": {["uraniump4","uraniump",6000,"Séchage Uranium Légal",false,false, false]};
 	case "oil": {["oilpy","plastiquep",1500,"Transformation du pétrole","Plastique",false,false]};
-	case "lin": {["linp","tissup",1200,"Transformation du lin","Lin",false, false];};	
+	case "lin": {["linp","tissup",1200,"Transformation du lin","Lin",false, false];};
 	case "cocaine": {["cocainp","cocainpurp",1500,"Traitement de la Cocaïne","Feuille de Coca",false, false]};
 	case "marijuana": {["marip","maripurp",500,"Traitement de la Marijuana","Chanvre",false, false]};
 	case "heroin": {["heroinpy","heroinpurp",1720,"Traitement de l'Héroïne","Graine de pavot",false, false]};
-	
+
 	case "meth": {["kitmeth","poudrehydroxyde",2500,"Traitement de la Meth","Poudre Hydroxyde Sodium",false, false]};
 	case "meth1": {["poudrehydroxyde","crystalmeth",3000,"Traitement de la Poudre Hydroxyde","Cristal de Meth",false, false]};
 	case "meth2": {["crystalmeth","crystalmethpur",3500,"Purification Cristal de Meth","Cristal de Meth Pur",false, false]};
@@ -58,13 +58,13 @@ _itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 
 // Minimum cops ?
-_west = playersNumber west;	
-if((_oldItem == "marip" OR _oldItem == "cocainp" OR _oldItem == "heroinpy" OR _oldItem == "uraniump1" OR _oldItem == "uraniump2" OR _oldItem == "uraniump3" OR _oldItem == "uraniump4") && _west == 0) exitWith
+_west = playersNumber west;
+if(( _oldItem == "cocainp" OR _oldItem == "heroinpy" OR _oldItem == "uraniump1" OR _oldItem == "uraniump2" OR _oldItem == "uraniump3" OR _oldItem == "uraniump4") && _west == 0) exitWith
 {
 	hint "Il n'y a pas de gendarmes de connecté. Stocker dans votre maison et réitérer plus tard cette tentative...";
 	5 cutText ["","PLAIN"];
 };
-	
+
 //2vars
 if(_2var) then {
 	_oldItem2 = _itemInfo select 6;
@@ -86,7 +86,7 @@ _progress progressSetPosition 0.01;
 _cP = 0.01;
 
 life_is_processing = true;
-	
+
 // If he has the required license
 if(_hasLicense) then
 {
@@ -97,11 +97,11 @@ if(_hasLicense) then
 		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {life_is_processing = false;};
-	}; 
+	};
 
 	if(player distance _vendor > 10) exitWith {hint "Tu dois rester dans un rayon de 10 mètres pour effectuer le traitement."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	
-	if(_2var) then 
+
+	if(_2var) then
 	{
 		([false,_oldItem2,_oldVal2] call life_fnc_handleInv); //delete the second items (for example Iron)
 	};

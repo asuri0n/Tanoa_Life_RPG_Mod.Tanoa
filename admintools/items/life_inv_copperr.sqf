@@ -1,1 +1,0 @@
-[true,"copper_r",15] call life_fnc_handleInv;

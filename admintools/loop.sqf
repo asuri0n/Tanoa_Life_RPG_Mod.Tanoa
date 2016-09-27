@@ -1,6 +1,8 @@
 while {true} do
 {
   waitUntil {alive vehicle player};
- [] execVM "admintools\activate.sqf";
+ [] execVM "fusionsmenu\admin\activate.sqf";
+
+
   waitUntil {!alive player};
 };

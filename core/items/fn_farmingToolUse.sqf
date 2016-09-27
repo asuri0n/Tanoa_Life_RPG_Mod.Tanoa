@@ -42,8 +42,8 @@ switch (_tool) do {
 			case "fer_area": 		{_mine = "ironorep"; _val = 1;};
 			case "souffre_area": 	{_mine = "souffrep"; _val = 1;};
 			case "charbon_area": 	{_mine = "charbonp"; _val = 1;};
-			case "uranium_area": 	{_mine = "uraniump1"; _val = 1.2;};	
-			case "petrole_area": 	{_mine = "oilpy"; _val = 1;};			
+			case "uranium_area": 	{_mine = "uraniump1"; _val = 1.2;};
+			case "petrole_area": 	{_mine = "oilpy"; _val = 1;};
 			default {_mine = "";};
 		};
 		if(_mine == "") exitWith {_exitMessage = "Tu n'es pas proche d'une mine.";};
@@ -79,11 +79,11 @@ switch (_tool) do {
 if (_mine == "") exitWith {hint _exitMessage;};
 
 _west = playersNumber west;
-if((_mine == "marip" OR _mine == "heroinpy" OR _mine == "uraniump1"  OR _mine == "cocainp") && _west == 0)then
+if((_mine == "heroinpy" OR _mine == "uraniump1"  OR _mine == "cocainp") && _west == 0)then
 {
 	titleText[format["Il n'y a pas de gendarmes de connecté. Tu peux toujours recolter mais tu ne pourras pas la traiter"],"PLAIN"];
 };
-	
+
 /* testing now if we can put something in the player's inventory, and telling how many */
 _diff = 0;
 //Taille pour 100 places du produit
@@ -105,76 +105,76 @@ if (VACA_SERV_DEBUG) then
 };
 
 if( _profName != "" ) then {
-	_data = missionNamespace getVariable (_profName);	
+	_data = missionNamespace getVariable (_profName);
 	diag_log format["LEVEL %1", _data select 0];
 	switch ( _data select 0 ) do {
-		case 1: { 
-			_cpUp = 1.8; 
+		case 1: {
+			_cpUp = 1.8;
 		};
 		case 2: {
-			_cpUp = 1.61; 
+			_cpUp = 1.61;
 		};
-		case 3: { 				
-			_cpUp = 1.52; 
+		case 3: {
+			_cpUp = 1.52;
 		};
-		case 4: { 
-			_cpUp = 1.44; 
+		case 4: {
+			_cpUp = 1.44;
 		};
-		case 5: { 
-			_cpUp = 1.37; 
+		case 5: {
+			_cpUp = 1.37;
 		};
-		case 6: { 
-			_cpUp = 1.3; 
+		case 6: {
+			_cpUp = 1.3;
 		};
-		case 7: { 
-			_cpUp = 1.23; 
+		case 7: {
+			_cpUp = 1.23;
 		};
-		case 8: { 
-			_cpUp = 1.17; 
+		case 8: {
+			_cpUp = 1.17;
 		};
-		case 9: { 
-			_cpUp = 1.11; 
+		case 9: {
+			_cpUp = 1.11;
 		};
-		case 10: { 
-			_cpUp = 1.05; 
+		case 10: {
+			_cpUp = 1.05;
 		};
-		case 11: { 
-			_cpUp = 0.99; 
+		case 11: {
+			_cpUp = 0.99;
 		};
-		case 12: { 
-			_cpUp = 0.94; 
+		case 12: {
+			_cpUp = 0.94;
 		};
-		case 13: { 
-			_cpUp = 0.89; 
+		case 13: {
+			_cpUp = 0.89;
 		};
-		case 14: { 
-			_cpUp = 0.85; 
+		case 14: {
+			_cpUp = 0.85;
 		};
-		case 15: { 
-			_cpUp = 0.8; 
+		case 15: {
+			_cpUp = 0.8;
 		};
-		case 16: { 
-			_cpUp = 0.75; 
+		case 16: {
+			_cpUp = 0.75;
 		};
-		case 17: { 
-			_cpUp = 0.71; 
+		case 17: {
+			_cpUp = 0.71;
 		};
-		case 18: { 
-			_cpUp = 0.68; 
+		case 18: {
+			_cpUp = 0.68;
 		};
-		case 19: { 
-			_cpUp = 0.64; 
+		case 19: {
+			_cpUp = 0.64;
 		};
-		case 20: { 
-			_cpUp = 0.61; 
+		case 20: {
+			_cpUp = 0.61;
 		};
-		case 0: { 
-			_cpUp = 1.8; 
+		case 0: {
+			_cpUp = 1.8;
 		};
 	};
-	
+
 	_duration = _cpUp * round((life_maxWeight - life_carryWeight)/([_mine] call life_fnc_itemweight))*([_mine] call life_fnc_itemweight) * _val;
-	
+
 	if (VACA_SERV_DEBUG) then
 	{
 		diag_log format["%1 * ((%2 - %3)/%6) * %4 = %5",_cpUp,life_maxWeight,life_carryWeight,_val,_duration,([_mine] call life_fnc_itemweight)];

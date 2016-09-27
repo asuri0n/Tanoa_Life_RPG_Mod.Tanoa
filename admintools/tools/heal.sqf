@@ -1,4 +1,4 @@
-hint format ["Soins en cours..."];
-sleep 1;
+hint format ["Healing..."];
+sleep 2;
 player setDamage 0;
-hint format ["Vous êtes en forme !"];
+hint format ["Done"];

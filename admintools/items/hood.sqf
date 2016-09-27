@@ -1,1 +1,0 @@
-[true,"hood",1] call life_fnc_handleInv;

@@ -29,17 +29,17 @@ zlt_fnc_tossropes = {
     if ( count (_heli getVariable ["zlt_ropes",[]]) != 0 ) exitWith { zlt_mutexAction = false; };
     switch (typeOf _heli) do {
         case "O_Heli_Light_02_unarmed_F": {};
-
+        
         case "I_Heli_Transport_02_F": {
             _heli animateDoor ['Door_Back_L', 1];
             _heli animateDoor ['Door_Back_R', 1];
         };
-
+        
         case "B_Heli_Transport_01_F": {
             _heli animateDoor ['door_R', 1];
             _heli animateDoor ['door_L', 1];
         };
-
+        
         case "B_Heli_Transport_03_unarmed_F": {
             _heli animateDoor ['Door_R_source', 1];
             _heli animateDoor ['Door_L_source', 1];
@@ -48,7 +48,7 @@ zlt_fnc_tossropes = {
     _rope = ropeCreate [vehicle player, "slingload0", (getPosATL player select 2) + 3, (getPosATL player select 2) + 3, true];
     _oropes = _oropes + [_rope];
     _heli setVariable ["zlt_ropes",_oropes,true];
-
+    
     _heli spawn {
         private ["_heli","_ropes"];
         _heli = _this;
@@ -102,20 +102,20 @@ zlt_fnc_cutropes = {
     _ropes = (_veh getVariable ["zlt_ropes", []]);
     {ropeDestroy _x} forEach _ropes;
     _veh setVariable ["zlt_ropes", [], true];
-
+    
     switch (typeOf _veh) do {
         case "O_Heli_Light_02_unarmed_F": {};
-
+        
         case "I_Heli_Transport_02_F": {
             _veh animateDoor ['Door_Back_L', 0];
             _veh animateDoor ['Door_Back_R', 0];
         };
-
+        
         case "B_Heli_Transport_01_F": {
             _veh animateDoor ['door_R', 0];
             _veh animateDoor ['door_L', 0];
         };
-
+        
         case "B_Heli_Transport_03_unarmed_F": {
             _veh animateDoor ['Door_R_source', 0];
             _veh animateDoor ['Door_L_source', 0];

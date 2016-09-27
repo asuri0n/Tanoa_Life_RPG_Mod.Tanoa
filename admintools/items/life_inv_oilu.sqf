@@ -1,1 +1,0 @@
-[true,"oilu",15] call life_fnc_handleInv;

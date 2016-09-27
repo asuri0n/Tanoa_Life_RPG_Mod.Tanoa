@@ -1,9 +1,0 @@
-player addBackpack "B_Bergen_sgg";
-player addHeadgear "H_Shemag_khk";
-player addUniform "U_O_CombatUniform_oucamo";
-player addVest "V_TacVest_khk";
-player addItem 'Medikit';
-player addItem 'ItemGPS';
-player addItem 'ItemMap';
-player assignItem 'ItemGPS';
-player assignItem 'ItemMap';

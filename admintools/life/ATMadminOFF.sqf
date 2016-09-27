@@ -1,1 +1,0 @@
-player removeAction ATMadmintools;

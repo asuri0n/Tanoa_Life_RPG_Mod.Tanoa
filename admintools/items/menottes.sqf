@@ -1,1 +1,0 @@
-[true,"ziptie",1] call life_fnc_handleInv;

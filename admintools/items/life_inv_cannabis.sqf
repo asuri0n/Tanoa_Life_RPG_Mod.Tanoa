@@ -1,1 +1,0 @@
-[true,"cannabis",15] call life_fnc_handleInv;

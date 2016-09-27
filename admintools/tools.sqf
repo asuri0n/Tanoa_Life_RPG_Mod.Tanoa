@@ -1,6 +1,3 @@
-// Copyright 2014 Altis-azura.fr
-#include <macro.h>
-
 _pathtotools = "admintools\tools\";
 _pathtolife= "admintools\life\";
 _pathtoweapon = "admintools\weapons\";
@@ -31,16 +28,12 @@ _EXECscriptFiltres = 'player execVM "'+_pathtoFiltres+'%1"';
 _EXECscript3 = 'player execVM "'+_pathAlerts+'%1"';
 _EXECscriptVehicleNew = 'player execVM "'+_pathVehiclesNew+'%1"';
 
-// vince : 76561198121812116
-// ideo : 76561198126618319
-// serrat : 76561198071185106
-// croate : 76561198121816443
 
-	//if ((getPlayerUID player) in ["76561198121812116","76561198126618319","76561198071185106","76561198121816443","76561198087243419"]) then
-	if (__GETC__(life_adminlevel) != 0) then {
-		admintools =
+//if ((getPlayerUID player) in ["123456789","987654321"]) then  { //all admins
+	//if ((getPlayerUID player) in ["123456789","987654321"]) then  { //Admins Go Here aswell
+		adminmenu =
 		[
-			["Serrat Admin Menu",true],
+			["Admin Menu",true],
 				["Téléportations/Surveillance", [2], "#USER:Teleportations", -5, [["expression", ""]], "1", "1"],
 				["Remboursements", [3], "#USER:MoneyMenu", -5, [["expression", ""]], "1", "1"],
 				["God mods", [4], "#USER:GodMenu", -5, [["expression", ""]], "1", "1"],
@@ -50,10 +43,17 @@ _EXECscriptVehicleNew = 'player execVM "'+_pathVehiclesNew+'%1"';
 				["Equipements", [8], "#USER:GearMenu", -5, [["expression", ""]], "1", "1"],
 				["Events", [9], "#USER:EventMenu", -5, [["expression", ""]], "1", "1"],
 				["Construction", [10], "#USER:ConstructionMenu", -5, [["expression", ""]], "1", "1"],
-				["", [-1], "", -5, [["expression", ""]], "1", "0"],
-				["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
+			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 		];
-	};
+	//};
+/*} else {
+	adminmenu =
+	[
+		["Fusions Menu",true],
+			//["Toggle Debug", [2], "", -5, [["expression", format[_execdebug,"playerstats.sqf"]]], "1", "1"],
+		["Exit", [11], "", -3, [["expression", ""]], "1", "1"]
+	];
+};*/
 
 Teleportations =
 [
@@ -520,6 +520,4 @@ Animals1 =
 		["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 
-
-
-showCommandingMenu "#USER:admintools";
+showCommandingMenu "#USER:adminmenu";
