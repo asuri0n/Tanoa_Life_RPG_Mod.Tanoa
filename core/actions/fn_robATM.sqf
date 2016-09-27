@@ -10,7 +10,7 @@ Idea developed by PEpwnzya v1.0
 private["_robber","_shop","_kassa","_ui","_progress","_pgText","_cP","_rip","_pos"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param; //The object that has the action attached to it is _this. ,0, is the index of object, ObjNull is the default should there be nothing in the parameter or it's broken
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param; //Can you guess? Alright, it's the player, or the "caller". The object is 0, the person activating the object is 1
-_kassa = 50000; //The amount the shop has to rob, you could make this a parameter of the call (https://community.bi.../wiki/addAction). Give it a try and post below 
+_kassa = 50000; //The amount the shop has to rob, you could make this a parameter of the call (https://community.bi.../wiki/addAction). Give it a try and post below
 _action = [_this,2] call BIS_fnc_param;//Action name
 _rip = false;
 
@@ -19,7 +19,7 @@ if(_robber distance _shop > 2) exitWith { hint "Vous devez etre a 2m de l'ATM!" 
 if (_rip) exitWith { hint "Vole en cours!" };
 if (vehicle player != _robber) exitWith { hint "Sortez de votre véhicule!" };
 _nbCops = {(side _x == west)} count allUnits;
-if (_nbCops < 5) exitWith {hint "Pas assez de Gendarmes sur l'île pour autoriser cette action, il en faut 4 minimum.";};
+if (_nbCops < 3) exitWith {hint "Pas assez de Gendarmes sur l'île pour autoriser cette action, il en faut 3 minimum.";};
 
 //if(!(license_civ_gangster)) exitWith { hint "Vous ne pouvez pas voler cette ATM!" };
 if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith { hint "Vous n'avez pas de pince coupante"};
@@ -34,7 +34,7 @@ _answer = [
 	"Non"
 ] call BIS_fnc_guiMessage;
 if (!_answer) exitWith {hint "Tapette !"};
-	
+
 _rip = true;
 _kassa = _kassa + round(random 50000);
 _shop removeAction _action;
@@ -78,7 +78,7 @@ if(_rip) then
 		if(_robber distance _shop > 2.5) exitWith { };
 		if!(alive _robber) exitWith {};
 	};
-	
+
 	if!(alive _robber) exitWith { _rip = false; };
 	if(_robber distance _shop > 2.5) exitWith { deleteMarker "Marker200"; _shop switchMove ""; hint "Vous devez etre dans un rayon de 2m pour voler l'ATM! - Maintenant l'ATM est verrouillé."; 5 cutText ["","PLAIN"]; _rip = false; };
 	5 cutText ["","PLAIN"];
@@ -86,7 +86,7 @@ if(_rip) then
 	titleText[format["Vous avez voler $%1, Maintenant il faut partir avent que la milice arrive!",[_kassa] call life_fnc_numberText],"PLAIN"];
 	deleteMarker "Marker200"; // by ehno delete maker
 	life_liquide = life_liquide + _kassa;
-	
+
 	_rip = false;
 	life_use_atm = false;
 	sleep (30 + random(180));
