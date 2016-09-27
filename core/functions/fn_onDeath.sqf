@@ -14,7 +14,7 @@ if(isNull _unit) exitWith {};
 
 //if(playerSide != civilian) then //Ancienne ligne
 if(playerSide != west) then //ajout serrat pour ambu
-	{
+{
 	removeAllContainers _unit;
 	removeAllWeapons _unit;
 	removeHeadgear _unit;
@@ -99,12 +99,12 @@ if (playerSide == west) then {
 	/*life_dabliquide = life_dabliquide - __GETC__(life_paycheck)*2;
 	if (life_dabliquide < 0) then {life_dabliquide = 0;};
 	["onDeath", true, -2 * __GETC__(life_paycheck)] call life_fnc_antiCheatCash;*/
-	
+
 	//SYSTEME DE SPAWN COP DEFAUT QUAND IL MEURT ?
 	_handle = [] spawn life_fnc_stripDownPlayer;
 	waitUntil {scriptDone _handle};
 	[] call life_fnc_copDefault;
-	
+
 };
 
 life_is_arrested = false; //Komodo: on répète pour éviter que certains se retrouvent en taule pour rien.
