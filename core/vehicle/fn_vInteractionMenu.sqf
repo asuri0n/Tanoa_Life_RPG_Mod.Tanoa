@@ -122,9 +122,14 @@ if(playerSide == west) then {
 			_Btn9 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
 			if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn9 ctrlEnable true;} else {_Btn9 ctrlEnable false};
 		};
-		_Btn9 ctrlSetText localize "STR_vInAct_Unflip";
-		_Btn9 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
-		if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn9 ctrlEnable false;} else {_Btn9 ctrlEnable true;};
+		if(_curTarget isKindOf "LandVehicle") then {
+			hint "dedant";			_Btn9 ctrlSetText localize "STR_vInAct_Unflip";
+			_Btn9 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
+			if(count crew _curTarget == 0 && {canMove _curTarget}) then {
+				_Btn9 ctrlEnable false;
+			} else {
+				_Btn9 ctrlEnable true;
+			};
+		};
 	};
-
 };
