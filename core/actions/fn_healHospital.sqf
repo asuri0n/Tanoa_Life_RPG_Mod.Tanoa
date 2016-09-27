@@ -7,7 +7,7 @@
 */
 private["_nearPlayers","_medics"];
 
-_independent = playersNumber independent;	
+_independent = playersNumber independent;
 if(_independent > 0) exitWith {hint "Il y a des EMT sur l'île qui peuvent te soigner ! Action annulé";};
 if(life_liquide < 500) exitWith {hint format[localize "STR_NOTF_HS_NoCash",500];};
 hint "Patiente un peu le temps que l'on te soigne.";
@@ -38,12 +38,15 @@ hint "Pas de médecins sur l'île, on va regarder si tu nous as amené des bless
 sleep 10;
 
 _nearPlayers = player nearEntities ["Man", 3];
-if (count _nearPlayers > 0) then {hint "Ok, on va s'occuper de ce(s) blessé(s)!";}
-else {hint "Pas de blessé autour de toi.";};
+if (count _nearPlayers > 0) then {
+	hint "Ok, on va s'occuper de ce(s) blessé(s)!";
+} else {
+	hint "Pas de blessé autour de toi.";
+};
 
 {
 	if (_x getvariable["FAR_isUnconscious",0] == 1/* && {!(_x getVariable["AGM_isBleeding",false])}*/) then
-	//{
+	{
 		//revive
 		//_x setVariable ["AGM_isUnconscious", False, True];
 		//_x setVariable ["AGM_Blood", 1, True];
@@ -52,6 +55,6 @@ else {hint "Pas de blessé autour de toi.";};
 		//_x setVariable ["AGM_Pain", 0, True];
 		//[_x] call AGM_Medical_fnc_wakeUp;
 		[_x] spawn FAR_HandleRevive;
-	//};
+	};
 	_x setDamage 0;
 } forEach _nearPlayers;
