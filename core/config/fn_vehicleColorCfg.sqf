@@ -47,7 +47,8 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["textures\vehicules\civ\Offroad_Cyan.paa","civ"],
 			["textures\vehicules\emt\Dep_Offroad.paa","med"],
-			["textures\vehicules\smt\OFFROADSMT.paa","med"]
+			["textures\vehicules\smt\OFFROADSMT.paa","med"],
+			["textures\vehicules\cop\offroad.paa","cop"]
 		];
 	};
 
