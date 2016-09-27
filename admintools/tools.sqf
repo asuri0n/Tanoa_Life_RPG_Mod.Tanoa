@@ -28,12 +28,11 @@ _EXECscriptFiltres = 'player execVM "'+_pathtoFiltres+'%1"';
 _EXECscript3 = 'player execVM "'+_pathAlerts+'%1"';
 _EXECscriptVehicleNew = 'player execVM "'+_pathVehiclesNew+'%1"';
 
-
-//if ((getPlayerUID player) in ["123456789","987654321"]) then  { //all admins
-	//if ((getPlayerUID player) in ["123456789","987654321"]) then  { //Admins Go Here aswell
+if (__GETC__(life_adminlevel) != 0) then {
+	if (__GETC__(life_adminlevel) > 1) then {
 		adminmenu =
 		[
-			["Admin Menu",true],
+			["Admin Max Menu",true],
 				["Téléportations/Surveillance", [2], "#USER:Teleportations", -5, [["expression", ""]], "1", "1"],
 				["Remboursements", [3], "#USER:MoneyMenu", -5, [["expression", ""]], "1", "1"],
 				["God mods", [4], "#USER:GodMenu", -5, [["expression", ""]], "1", "1"],
@@ -45,15 +44,18 @@ _EXECscriptVehicleNew = 'player execVM "'+_pathVehiclesNew+'%1"';
 				["Construction", [10], "#USER:ConstructionMenu", -5, [["expression", ""]], "1", "1"],
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 		];
-	//};
-/*} else {
+	};
+} else {
 	adminmenu =
 	[
-		["Fusions Menu",true],
-			//["Toggle Debug", [2], "", -5, [["expression", format[_execdebug,"playerstats.sqf"]]], "1", "1"],
+		["Admin Lite Menu",true],
+			["Téléportations/Surveillance", [2], "#USER:Teleportations", -5, [["expression", ""]], "1", "1"],
+			["Remboursements", [3], "#USER:MoneyMenu", -5, [["expression", ""]], "1", "1"],
+			["God mods", [4], "#USER:GodMenu", -5, [["expression", ""]], "1", "1"],
+			["Life menu", [5], "#USER:LifeMenu", -5, [["expression", ""]], "1", "1"],
 		["Exit", [11], "", -3, [["expression", ""]], "1", "1"]
 	];
-};*/
+};
 
 Teleportations =
 [
