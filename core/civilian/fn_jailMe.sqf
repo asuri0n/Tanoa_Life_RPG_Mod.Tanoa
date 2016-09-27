@@ -28,8 +28,9 @@ removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
 removeAllAssignedItems player;
-//player addUniform "U_prisoner";
 
+player addUniform "U_B_HeliPilotCoveralls";
+player setObjectTextureGlobal [0,"textures\tenues\prisonier.paa"];
 
 [_bad, _time2] spawn
 {

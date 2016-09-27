@@ -6,7 +6,9 @@ switch(playerSide) do
 		};
 	};
 	case civilian: {
-
+		if(uniform player == "U_B_HeliPilotCoveralls") then {
+        	player setObjectTextureGlobal [0,"textures\tenues\prisonier.paa"];
+		};
 	};
 	case independent: {
 		if(uniform player == "U_Rangemaster") then {
