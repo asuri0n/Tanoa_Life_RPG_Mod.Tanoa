@@ -1,0 +1,14 @@
+removeAllActions player;
+ActionContruction00 = player addaction ["Retour",ScriptConstructionMenu];
+ActionContruction77 = player addaction [item77 select 0,ScriptConstruction,[item77 select 1,item77 select 0,item77 select 2]];
+ActionContruction93 = player addaction [item93 select 0,ScriptConstruction,[item93 select 1,item93 select 0,item93 select 2]];
+ActionContruction78 = player addaction [item78 select 0,ScriptConstruction,[item78 select 1,item78 select 0,item78 select 2]];
+ActionContruction79 = player addaction [item79 select 0,ScriptConstruction,[item79 select 1,item79 select 0,item79 select 2]];
+ActionContruction80 = player addaction [item80 select 0,ScriptConstruction,[item80 select 1,item80 select 0,item80 select 2]];
+ActionContruction81 = player addaction [item81 select 0,ScriptConstruction,[item81 select 1,item81 select 0,item81 select 2]];
+ActionContruction82 = player addaction [item82 select 0,ScriptConstruction,[item82 select 1,item82 select 0,item82 select 2]];
+ActionContruction92 = player addaction [item92 select 0,ScriptConstruction,[item92 select 1,item92 select 0,item92 select 2]];
+ActionContruction94 = player addaction [item94 select 0,ScriptConstruction,[item94 select 1,item92 select 0,item94 select 2]];
+ActionContruction89 = player addaction [item89 select 0,ScriptConstruction,[item89 select 1,item89 select 0,item89 select 2]];
+ActionContruction90 = player addaction [item90 select 0,ScriptConstruction,[item90 select 1,item90 select 0,item90 select 2]];
+ActionContruction95 = player addaction [item95 select 0,ScriptConstruction,[item95 select 1,item95 select 0,item95 select 2]];

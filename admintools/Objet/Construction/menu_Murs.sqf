@@ -1,0 +1,31 @@
+removeAllActions player;
+ActionContruction00 = player addaction ["Retour",ScriptConstructionMenu];
+ActionContruction01 = player addaction [item01 select 0,ScriptConstruction,[item01 select 1,item01 select 0,item01 select 2]];
+ActionContruction02 = player addaction [item02 select 0,ScriptConstruction,[item02 select 1,item02 select 0,item02 select 2]];
+ActionContruction03 = player addaction [item03 select 0,ScriptConstruction,[item03 select 1,item03 select 0,item03 select 2]];
+ActionContruction04 = player addaction [item04 select 0,ScriptConstruction,[item04 select 1,item04 select 0,item04 select 2]];
+ActionContruction05 = player addaction [item05 select 0,ScriptConstruction,[item05 select 1,item05 select 0,item05 select 2]];
+ActionContruction06 = player addaction [item06 select 0,ScriptConstruction,[item06 select 1,item06 select 0,item06 select 2]];
+ActionContruction07 = player addaction [item07 select 0,ScriptConstruction,[item07 select 1,item07 select 0,item07 select 2]];
+ActionContruction08 = player addaction [item08 select 0,ScriptConstruction,[item08 select 1,item08 select 0,item08 select 2]];
+ActionContruction09 = player addaction [item09 select 0,ScriptConstruction,[item09 select 1,item09 select 0,item09 select 2]];
+
+ActionContruction10 = player addaction [item10 select 0,ScriptConstruction,[item10 select 1,item10 select 0,item10 select 2]];
+ActionContruction11 = player addaction [item11 select 0,ScriptConstruction,[item11 select 1,item11 select 0,item11 select 2]];
+ActionContruction12 = player addaction [item12 select 0,ScriptConstruction,[item12 select 1,item12 select 0,item12 select 2]];
+ActionContruction13 = player addaction [item13 select 0,ScriptConstruction,[item13 select 1,item13 select 0,item13 select 2]];
+ActionContruction14 = player addaction [item14 select 0,ScriptConstruction,[item14 select 1,item14 select 0,item14 select 2]];
+ActionContruction15 = player addaction [item15 select 0,ScriptConstruction,[item15 select 1,item15 select 0,item15 select 2]];
+ActionContruction16 = player addaction [item16 select 0,ScriptConstruction,[item16 select 1,item16 select 0,item16 select 2]];
+ActionContruction17 = player addaction [item17 select 0,ScriptConstruction,[item17 select 1,item17 select 0,item17 select 2]];
+ActionContruction18 = player addaction [item18 select 0,ScriptConstruction,[item18 select 1,item18 select 0,item18 select 2]];
+ActionContruction19 = player addaction [item19 select 0,ScriptConstruction,[item19 select 1,item19 select 0,item19 select 2]];
+
+ActionContruction20 = player addaction [item20 select 0,ScriptConstruction,[item20 select 1,item20 select 0,item20 select 2]];
+ActionContruction21 = player addaction [item21 select 0,ScriptConstruction,[item21 select 1,item21 select 0,item21 select 2]];
+ActionContruction22 = player addaction [item22 select 0,ScriptConstruction,[item22 select 1,item22 select 0,item22 select 2]];
+ActionContruction23 = player addaction [item23 select 0,ScriptConstruction,[item23 select 1,item23 select 0,item23 select 2]];
+ActionContruction24 = player addaction [item24 select 0,ScriptConstruction,[item24 select 1,item24 select 0,item24 select 2]];
+ActionContruction25 = player addaction [item25 select 0,ScriptConstruction,[item25 select 1,item25 select 0,item25 select 2]];
+ActionContruction26 = player addaction [item26 select 0,ScriptConstruction,[item26 select 1,item26 select 0,item26 select 2]];
+ActionContruction27 = player addaction [item27 select 0,ScriptConstruction,[item27 select 1,item27 select 0,item27 select 2]];

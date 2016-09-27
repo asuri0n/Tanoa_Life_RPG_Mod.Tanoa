@@ -1,0 +1,15 @@
+_x = cursorTarget;
+RemoveVest _x;
+RemoveBackpack _x;
+RemoveHeadGear _x;
+removeallweapons _x;
+_x addVest "V_TacVest_blk";
+_x addMagazineGlobal "30Rnd_9x21_Mag";
+_x addMagazineGlobal "30Rnd_9x21_Mag";
+_x addMagazineGlobal "30Rnd_9x21_Mag";
+_x addMagazineGlobal "30Rnd_9x21_Mag";
+_x addMagazineGlobal "30Rnd_9x21_Mag";
+_x addMagazineGlobal "30Rnd_9x21_Mag";
+_x addMagazineGlobal "30Rnd_9x21_Mag";
+_x addWeaponGlobal "hgun_PDW2000_Holo_snds_F";
+hint format["%1 est equipé",_x];

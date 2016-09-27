@@ -1,0 +1,11 @@
+GearAdd = (vehicle player);
+GearAdd addWeapon 'arifle_Mk20_GL_ACO_F';
+GearAdd addMagazine '30Rnd_556x45_Stanag_Tracer_Yellow';
+GearAdd addMagazine '30Rnd_556x45_Stanag_Tracer_Yellow';
+GearAdd addMagazine '30Rnd_556x45_Stanag_Tracer_Yellow';
+GearAdd addMagazine '30Rnd_556x45_Stanag_Tracer_Yellow';
+GearAdd addMagazine '30Rnd_556x45_Stanag_Tracer_Yellow';
+GearAdd addMagazine '30Rnd_556x45_Stanag_Tracer_Yellow';
+GearAdd addMagazine '1Rnd_HE_Grenade_shell';
+GearAdd addMagazine '1Rnd_HE_Grenade_shell';
+GearAdd addMagazine '1Rnd_HE_Grenade_shell';
