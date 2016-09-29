@@ -69,19 +69,6 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 			[1] call SOCK_fnc_updateRequestCivGear; //Silent Sync to avoid duplication. We only fill in variables, sync to db will either be handled by next sync data or during disconnection (by any means, even a crash!)
 		};
 	} else {
-		if(__GETC__(life_donator) == 1)then { 
-			_price = round(_price - (_price*(5/100))); 
-		};
-		if(__GETC__(life_donator) == 2)then { 
-			_price = round(_price - (_price*(5/100))); 
-		};
-		if(__GETC__(life_donator) == 3)then { 
-			_price = round(_price - (_price*(10/100)));
-		};
-		if(__GETC__(life_donator) == 0)then { 
-			_price = _price;
-		};
-
 		if(_price > life_liquide) exitWith {hint "Tu n'as pas assez d'argent !"};
 		hint parseText format["Tu as acheté %1 pour <t color='#8cff9b'>$%2</t>",_itemInfo select 1,[_price] call life_fnc_numberText];
 

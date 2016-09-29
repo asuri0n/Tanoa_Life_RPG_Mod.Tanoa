@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_weaponShopFilter.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -5,7 +6,7 @@
 	Description:
 	Applies the filter selected and changes the list.
 */
-private["_itemList","_index","_config","_priceTag"];
+private["_itemList","_index","_config","_priceTag","_price"];
 _index = [_this,1,-1,[0]] call BIS_fnc_param;
 _shop = uiNamespace getVariable ["Weapon_Shop",""];
 if(_index == -1 OR _shop == "") exitWith {systemChat "Bad Data Filter"; closeDialog 0;}; //Bad data passing.
@@ -29,7 +30,23 @@ switch (_index) do
 			//diag_log format ["INVO DEBUG - weaponShopFilter - _itemInfo: %1", _itemInfo];
 			_itemList lbSetData[(lbSize _itemList)-1,_itemInfo select 0];
 			_itemList lbSetPicture[(lbSize _itemList)-1,_itemInfo select 2];
-			_itemList lbSetValue[(lbSize _itemList)-1,_x select 2];
+
+			// Reduction selon le grade donateur
+			_price = "";
+			if(__GETC__(life_donator) == 1)then {
+				_price = round((_x select 2) - ((_x select 2)*((call vaca_don_1)/100)));
+			};
+			if(__GETC__(life_donator) == 2)then {
+				_price = round((_x select 2) - ((_x select 2)*((call vaca_don_2)/100)));
+			};
+			if(__GETC__(life_donator) == 3)then {
+				_price = round((_x select 2) - ((_x select 2)*((call vaca_don_3)/100)));
+			};
+			if(__GETC__(life_donator) == 0)then {
+				_price = (_x select 2);
+			};
+
+			_itemList lbSetValue[(lbSize _itemList)-1,_price];
 		} foreach (_config select 1);
 
 		((findDisplay 38400) displayCtrl 38405) ctrlSetText "Buy";
