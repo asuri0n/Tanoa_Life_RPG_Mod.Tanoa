@@ -31,14 +31,16 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
 
 	_profName = [_type] call life_fnc_profType;
-	
-	// Nombre d'XP gagné = nombre d'items récupérés * 2 
+
+	// Nombre d'XP gagné = nombre d'items récupérés * 2
 	_gainXp = _amount*2;
 	diag_log format["_profName %1",_profName];
-	titleText[format["Tu as vendu %1 %2 pour $%3 et gagné %4 point(s) d'expérience",_amount,_name,[_price] call life_fnc_numberText, _gainXp],"PLAIN"];
 	if( _profName != "" ) then {
 		[_profName,_gainXp] call life_fnc_addExp;
-	};	
+		titleText[format["Tu as vendu %1 %2 pour $%3 et gagné %4 point(s) d'expérience",_amount,_name,[_price] call life_fnc_numberText, _gainXp],"PLAIN"];
+	} else {
+		titleText[format["Tu as vendu %1 %2 pour $%3",_amount,_name,[_price] call life_fnc_numberText],"PLAIN"];
+	};
 	life_liquide = life_liquide + _price;
 	["virt_sell", false, _price] call life_fnc_antiCheatCash;
 	_tax = round (_price * 0.1);
