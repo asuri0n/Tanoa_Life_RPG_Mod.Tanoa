@@ -39,7 +39,6 @@ life_is_processing = false;
 life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
-/*player setVariable ["AGM_canTreat", true, true];*/
 life_action_gather = false;
 life_spikestrip = ObjNull;
 life_has_insurance = true;
@@ -120,25 +119,16 @@ invo_vaults = [
 	fed_bank_2,
 	fed_bank_3
 ];
+
 invo_bank_buildings = [
 	fed_building_office,
+	fed_building_dome,
 	fed_building_cargo,
 	fed_building_shed
 ];
 
-//Revive constant variables.
-__CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,250); //Fee for players to pay when revived.
-
-//House Limit
-__CONST__(life_houseLimit,5);
-
-//Gang related stuff?
-__CONST__(life_gangPrice,600000);
-__CONST__(life_gangUpgradeBase,300000);
-__CONST__(life_gangUpgradeMultipler,2.5);
-
 player setDamage 0;
+/*player setVariable ["AGM_canTreat", true, true];*/
 //player setVariable ["AGM_Blood", 1, True];
 //player setVariable ["AGM_isBleeding", False, True];
 //player setVariable ["AGM_Painkiller", 1, True];
@@ -188,32 +178,53 @@ life_delivery_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
-__CONST__(life_paycheck_period,5); //Five minutes
 life_liquide = 0;
 life_liquide_delta = 0;
 life_liquide_before = 0;
 life_dabliquide_delta = 0;
 life_dabliquide_before = 0;
-life_dab_last_withdraw = time; //Komodo: variable stockant le dernier retrait/dépot d'argent afin de mettre un place un timer de 5 secondes pour éviter le flood de requêtes.
-__CONST__(life_impound_car_dep,3500); //add john pas sur de lui
-__CONST__(life_impound_boat_dep,5000);//add john pas sur de lui
-__CONST__(life_impound_air_dep,8000); //add john pas sur de lui
+life_dab_last_withdraw = time;
+life_istazed = false;
+life_my_gang = ObjNull;
+life_inv_allowed = false;
+life_insure_val = 0;
+life_insure_veh = ObjNull;
+life_msg_cost = 0;
+life_msg_pub = "";
+Action_Revived = false;
+life_vehicles = [];
+bank_robber = [];
+
+/*
+******************************
+****** Life Constantes *******
+******************************
+*/
+__CONST__(life_revive_cops,TRUE);
+__CONST__(life_revive_fee,250);
+__CONST__(life_houseLimit,5);
+__CONST__(life_gangPrice,600000);
+__CONST__(life_gangUpgradeBase,300000);
+__CONST__(life_gangUpgradeMultipler,2.5);
+__CONST__(life_paycheck_period,5);
+__CONST__(life_impound_car_dep,3500);
+__CONST__(life_impound_boat_dep,5000);
+__CONST__(life_impound_air_dep,8000);
 __CONST__(life_impound_car,350);
 __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
-life_istazed = false;
-life_my_gang = ObjNull;
 
-life_inv_allowed = false;//added bloopis
-life_insure_val = 0;//added bloopis
-life_insure_veh = ObjNull;//added bloopis
-life_msg_cost = 0;//added bloopis
-life_msg_pub = "";//added bloopis
-Action_Revived = false;
+/*
+****************************
+****** Life Vacation *******
+****************************
+*/
+__CONST__(vaca_don_1,5);
+__CONST__(vaca_don_2,10);
+__CONST__(vaca_don_3,15);
+__CONST__(resell_diviseur,0.5); // Diviseur pour avoir le prix de vente d'une vhlau ChopShop
+__CONST__(rentToBuy,1.5); // Multiplicateur pour avoir le prix d'achat d'un vhl
 
-
-life_vehicles = [];
-bank_robber = [];
 switch (playerSide) do
 {
 	case west:
@@ -671,7 +682,7 @@ list_commercial_items =
 */
 sell_array =
 [
-	["apple",50],
+	["apple",80],
 	["peach",20],
 	["heroinu",2700],
 	["heroinp",4700],
@@ -801,7 +812,7 @@ __CONST__(sell_array,sell_array);
 
 buy_array =
 [
-	["apple",65],
+	["apple",50],
     ["rabbit",75],
     ["salema",1550],
     ["ornate",1500],
@@ -1052,27 +1063,11 @@ life_garage_sell =
 __CONST__(life_garage_sell,life_garage_sell);
 
 //Added by komodo for vehicle resseling prices to control the rules.
-life_vehicle_resell =
+/*life_vehicle_resell =
 [
 	["B_Quadbike_01_F",950],
-	["C_Hatchback_01_F",4500],
-	["C_Offroad_01_F", 10500],
-	["B_G_Offroad_01_F",10500],
-	["C_SUV_01_F",27000],
-	["C_Van_01_transport_F",40000],
-	["C_Van_01_fuel_F",45000],
-	["C_Van_01_box_F",60000],
-	["I_Truck_02_transport_F",49800],
-	["I_Truck_02_covered_F",75000],
-	["O_Truck_02_covered_F",75000],
-	//cart et moto
-	["C_Kart_01_F",14000],
-	["C_Kart_01_Fuel_F",14000],
-	["C_Kart_01_Blu_F",14000],
-	["C_Kart_01_Red_F",14000],
-	["C_Kart_01_Vrana_F",14000]
 ];
-__CONST__(life_vehicle_resell,life_vehicle_resell);
+__CONST__(life_vehicle_resell,life_vehicle_resell);*/
 
 /**
 * Liste des véhicules dont l'assurance a un prix fixe
