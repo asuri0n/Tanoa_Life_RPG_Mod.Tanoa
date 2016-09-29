@@ -3,7 +3,7 @@
 	Author: Bryan "Tonic" Boardwine
 
 	Description:
-	Master configuration file for Reb shop.	
+	Master configuration file for Reb shop.
 */
 private["_filter","_ret"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
@@ -17,13 +17,12 @@ switch (_filter) do
 {
 	//Uniforms
 	case 0:
-	{		
-		_ret pushBack["U_B_Wetsuit",nil,10000]; 
-		_ret pushBack["U_I_Wetsuit",nil,10000]; 
-		_ret pushBack["U_O_Wetsuit",nil,10000]; 
+	{
+		_ret pushBack["U_B_Wetsuit",nil,10000];
+		_ret pushBack["U_O_Wetsuit",nil,10000];
 
-		
-		_ret pushBack["U_BG_leader",nil,17000];				
+
+		_ret pushBack["U_BG_leader",nil,17000];
 		_ret pushBack["U_I_CombatUniform_shortsleeve",nil,17000];
 		_ret pushBack["U_B_CombatUniform_mcam_worn",nil,17000];
 		_ret pushBack["U_I_OfficerUniform",nil,17000];
@@ -49,7 +48,7 @@ switch (_filter) do
 		_ret pushBack["U_B_CTRG_1",nil,17000];
 		_ret pushBack["U_B_CTRG_2",nil,17000];
 		_ret pushBack["U_BG_Guerilla2_3",nil,17000];
-		
+
 		_ret pushBack["U_O_T_Sniper_F",nil,100000];
 		_ret pushBack["U_B_T_Sniper_F",nil,100000];
 		_ret pushBack["U_I_GhillieSuit",nil,100000];
@@ -68,7 +67,7 @@ switch (_filter) do
 
 		_ret pushBack["U_B_T_FullGhillie_tna_F",nil,150000];
 		_ret pushBack["U_O_T_FullGhillie_tna_F",nil,150000];
-		
+
 		// if(primaryWeapon player == "srifle_GM6_camo_F" OR primaryWeapon player == "srifle_mas_lrr" OR primaryWeapon player == "srifle_mas_svd") then
 		// {
 		// 	_ret pushBack["U_O_FullGhillie_ard",nil,200000];
@@ -117,10 +116,12 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			["G_I_Diving",nil,5000],
+			["G_O_Diving",nil,5000],
 			["G_Balaclava_blk",nil,5000],
 			["G_Balaclava_lowprofile",nil,5000],
 			["G_Balaclava_combat",nil,5000],
-			["G_Balaclava_oli",nil,5000],			
+			["G_Balaclava_oli",nil,5000],
 			["G_Bandanna_aviator",nil,5000],
 			["G_Bandanna_beast",nil,5000],
 			["G_Bandanna_tan",nil,5000],
@@ -128,8 +129,8 @@ switch (_filter) do
 			["G_Bandanna_blk",nil,5000],
 			["G_Bandanna_oli",nil,5000],
 			["G_Bandanna_shades",nil,5000],
-			["G_Bandanna_khk",nil,5000],			
-            ["G_Combat",nil,5000] 
+			["G_Bandanna_khk",nil,5000],
+            ["G_Combat",nil,5000]
 		];
 	};
 
@@ -137,29 +138,28 @@ switch (_filter) do
 	case 3:
 	{
 		_ret =
-		[	
+		[
 			["V_RebreatherB",nil,10000],
 			["V_RebreatherIR",nil,10000],
-			["V_RebreatherIA",nil,10000],
-			
+
 			["V_BandollierB_oli",nil,4500],
 			["V_Rangemaster_belt",nil,4500],
 			["V_BandollierB_blk",nil,4500],
 			["V_BandollierB_ghex_F",nil,4500],
-			
+
 			["V_HarnessO_ghex_F",nil,7500],
 			["V_HarnessOGL_ghex_F",nil,7500],
-			
-			
+
+
 			["V_HarnessOGL_brn",nil,12500],
 			["V_HarnessOGL_gry",nil,12500],
 			["V_Chestrig_khk",nil,12500],
 			["V_Chestrig_oli",nil,12500],
-			["V_Chestrig_rgr",nil,12500],			
+			["V_Chestrig_rgr",nil,12500],
 			["V_HarnessO_gry",nil,12500],
 			["V_HarnessO_brn",nil,12500],
 			["V_Chestrig_blk",nil,12500],
-			
+
 			["V_PlateCarrierL_CTRG",nil,17500],
 			["V_PlateCarrierH_CTRG",nil,17500],
 			["V_PlateCarrier_Kerry",nil,17500],
@@ -180,7 +180,7 @@ switch (_filter) do
 		_ret =
 		[
 			["B_Parachute",nil,5000],
-		
+
 			["B_AssaultPack_khk",nil,2500],
 			["B_AssaultPack_dgtl",nil,2500],
 			["B_AssaultPack_rgr",nil,2500],
@@ -188,33 +188,33 @@ switch (_filter) do
 			["B_AssaultPack_blk",nil,2500],
 			["B_AssaultPack_cbr",nil,2500],
 			["B_AssaultPack_mcamo",nil,2500],
-			
+
 			["B_FieldPack_blk",nil,5000],
 			["B_FieldPack_ocamo",nil,5000],
 			["B_FieldPack_oucamo",nil,5000],
 			["B_FieldPack_cbr",nil,5000],
 			["B_Bergen_blk",nil,5000],
 			["B_FieldPack_ghex_F",nil,5000],
-			
+
 			["B_Kitbag_cbr",nil,7000],
 			["B_Kitbag_mcamo",nil,7000],
 			["B_Kitbag_sgg",nil,7000],
 			["B_Carryall_khk",nil,7000],
-			
+
 			["B_ViperHarness_hex_F",nil,10000],
 			["B_ViperLightHarness_khk_F",nil,10000],
 			["B_ViperLightHarness_hex_F",nil,10000],
 			["B_ViperLightHarness_oli_F",nil,10000],
 			["B_ViperLightHarness_ghex_F",nil,10000],
 			["B_ViperHarness_khk_F",nil,10000],
-			["B_ViperHarness_ghex_F",nil,10000],			
+			["B_ViperHarness_ghex_F",nil,10000],
 			["B_Carryall_ocamo",nil,10000],
 			["B_Carryall_oucamo",nil,10000],
 			["B_Carryall_mcamo",nil,10000],
 			["B_Carryall_oli",nil,10000],
 			["B_Carryall_cbr",nil,10000],
 			["B_Carryall_ghex_F",nil,10000],
-			
+
 			["B_Bergen_hex_F",nil,15000],
 			["B_Bergen_dgtl_F",nil,15000],
 			["B_Bergen_mcamo_F",nil,15000]

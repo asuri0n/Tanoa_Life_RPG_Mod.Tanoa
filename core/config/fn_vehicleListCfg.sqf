@@ -45,6 +45,7 @@ switch (_shop) do
             //["Mrshounka_twingo_p_o",20000],
 
             ["C_Offroad_01_F", 30000],
+            ["C_Hatchback_01_F",31000],
 
             ["C_SUV_01_F", 32000],
 
@@ -120,11 +121,15 @@ switch (_shop) do
             //["DAR_FusionCiv",60000],
 
             //["shounka_a3_ds4_civ",60000],
-            ["C_Hatchback_01_F",60000],
 
             ["C_Van_01_transport_F",65333],
+            ["I_C_Van_01_transport_F",65333],
             ["I_C_Van_01_transport_brown_F",65333],
             ["I_C_Van_01_transport_olive_F",65333],
+
+            ["C_Van_01_box_F",73333],
+
+            ["C_Hatchback_01_sport_F",100000]
 
             //["shounka_a3_peugeot508_civ",66667],
             //["shounka_a3_peugeot508_civ_noir",66667],
@@ -147,8 +152,6 @@ switch (_shop) do
             //["Mrshounka_mercedes_190_p_grise",70000],
             //["Mrshounka_mercedes_190_p_violet",70000],
             //["Mrshounka_mercedes_190_p_orange",70000],
-
-            ["C_Van_01_box_F",73333]
 
             //["shounka_a3_spr_civ",80000],
 
@@ -393,17 +396,14 @@ switch (_shop) do
     {
         _return =
         [
-            //["shounka_a3_dafxf_euro6_f",153333],
             ["C_Truck_02_fuel_F",186667],
             ["C_Truck_02_transport_F",166667],
             ["C_Truck_02_covered_F",186667],
             ["B_Truck_01_transport_F",266667],
             ["B_Truck_01_covered_F",300000],
-            //["shounka_a3_renaultmagnum_f",333333],
             ["B_Truck_01_box_F",733333],
             ["B_Truck_01_fuel_F",733333],
             ["O_Truck_03_device_F",666666]
-            //["O_Truck_02_Ammo_F",5333333]
         ];
     };
 
@@ -424,7 +424,7 @@ switch (_shop) do
         [
             ["C_Rubberboat",33333],
             ["I_C_Boat_Transport_02_F",50000],
-            ["C_Boat_Civil_01_F",100000]
+            ["C_Boat_Civil_01_F",150000]
         ];
     };
 
@@ -492,8 +492,7 @@ switch (_shop) do
                 _return =
                 [
 
-			["I_Heli_Transport_02_F",333333],
-			["C_Hatchback_01_sport_F",250000]
+			["I_Heli_Transport_02_F",333333]
 
 
             //["Skyline_Bus_10_F",20000],
@@ -1078,8 +1077,8 @@ switch (_shop) do
     {
         _return =
         [
+            ["C_Rubberboat",5000],
             ["C_Boat_Civil_01_police_F",20000],
-            ["C_Rubberboat",3000],
             ["O_SDV_01_F",100000],
             ["B_Boat_Armed_01_minigun_F",250000]
         ];
@@ -1182,33 +1181,32 @@ switch (_shop) do
             {
                 _return =
                 [
-                    ["I_Heli_Transport_02_F",60000],
-                    ["C_Heli_Light_01_civil_F",80000]
+                    ["C_Heli_Light_01_civil_F",60000],
+                    ["I_Heli_Transport_02_F",80000]
                 ];
             };
             case 2 :
             {
                 _return =
                 [
-                    ["I_Heli_Transport_02_F",60000],
-                    ["C_Heli_Light_01_civil_F",80000]
+                    ["C_Heli_Light_01_civil_F",60000],
+                    ["I_Heli_Transport_02_F",80000]
                 ];
             };
             case 3 :
             {
                 _return =
                 [
-                    ["I_Heli_Transport_02_F",500000],
-                    ["I_Heli_Transport_02_F",60000],
-                    ["C_Heli_Light_01_civil_F",80000]
+                    ["C_Heli_Light_01_civil_F",60000],
+                    ["I_Heli_Transport_02_F",80000]
                 ];
             };
             case 4 :
             {
                 _return =
                 [
-                    ["I_Heli_Transport_02_F",60000],
-                    ["C_Heli_Light_01_civil_F",80000]
+                    ["C_Heli_Light_01_civil_F",60000],
+                    ["I_Heli_Transport_02_F",80000]
                 ];
             };
             default

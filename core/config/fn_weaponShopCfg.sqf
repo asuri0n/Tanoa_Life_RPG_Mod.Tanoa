@@ -289,12 +289,12 @@ switch(_shop) do
 						["hgun_PDW2000_F",nil,38000],
 							["30Rnd_9x21_Mag",nil,500],
 
-						["arifle_Mk20_plain_F",nil,60000],
-						["arifle_SDAR_F",nil,60000],
-							["30Rnd_556x45_Stanag",nil,500],
+						//["arifle_Mk20_plain_F",nil,60000],
+						//["arifle_SDAR_F",nil,60000],
+							//["30Rnd_556x45_Stanag",nil,500],
 
-						["SMG_05_F",nil,40000],
-							["30Rnd_9x21_Mag_SMG_02",nil,500],
+						//["SMG_05_F",nil,40000],
+							//["30Rnd_9x21_Mag_SMG_02",nil,500],
 
 					//ACCESSOIRES
 						//["Skyline_C_Remote_Cam",nil,60000],

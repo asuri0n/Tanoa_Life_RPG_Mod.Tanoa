@@ -341,7 +341,7 @@ switch (_vehicle) do
 			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
 			["textures\vehicules\civ\CH49_USMC_1.paa","civ","textures\vehicules\civ\CH49_USMC_2.paa","textures\vehicules\civ\CH49_USMC_3.paa"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","civ","#(argb,8,8,3)color(0.05,0.05,0.05,1)"],
-			["textures\vehicules\smt\MOHAWK1SMT.paa","civ","textures\vehicules\smt\MOHAWK2SMT.paa","textures\vehicules\smt\MOHAWK3SMT.paa"]
+			["textures\vehicules\smt\MOHAWK1SMT.paa","med","textures\vehicules\smt\MOHAWK2SMT.paa","textures\vehicules\smt\MOHAWK3SMT.paa"]
 		];
 	};
 
