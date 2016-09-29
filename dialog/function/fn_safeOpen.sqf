@@ -11,7 +11,7 @@ if(isNull life_safeObj) exitWith {};
 if(playerSide != civilian) exitWith {};
 if((life_safeObj getVariable["safe",-1]) < 1) exitWith {hint "Le coffre est vide!";};
 if((life_safeObj getVariable["inUse",false])) exitWith {hint "Quelqu'un est déja en train de fouiller le coffre.."};
-if({side _x == west} count playableUnits < 5) exitWith {hint "Il doit y avoir 5 Gendarmes sur l'île pour que les coffres soient remplis"};
+if({side _x == west} count playableUnits < 3) exitWith {hint "Il doit y avoir 3 Gendarmes sur l'île pour que les coffres soient remplis"};
 if(!createDialog "Federal_Safe") exitWith {"Couldn't create the dialog, report it."};
 disableSerialization;
 ctrlSetText[3501,"Safe Inventory"];

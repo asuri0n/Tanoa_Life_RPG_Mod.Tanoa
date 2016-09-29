@@ -12,12 +12,12 @@ if(_vault getVariable["chargeplaced",false]) exitWith {hint "Il y a déja une ch
 if(_vault getVariable["safe_open",false]) exitWith {hint "Le coffre est déjà ouvert."};
 if(!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
 if(!(_vault in invo_vaults)) exitWith {hint "Impossible de poser une charge ici.";};
-if({side _x == west} count playableUnits < 2) exitWith {hint "Il doit y avoir 5 Gendarmes sur l'île pour que les coffres soient remplis"};
+if({side _x == west} count playableUnits < 3) exitWith {hint "Il doit y avoir 3 Gendarmes sur l'île pour que les coffres soient remplis"};
 
 _vault setVariable["chargeplaced",true,true];
 [[0,format["Une charge a été posé sur un coffre de la banque !",profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 [[1,"Une charge d'explosifs a été posée sur le coffre de la banque, tu as jusqu'à la fin du temps pour désarmer la bombe!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-hint "Le décompte a commencé! Tuez tous les flics !!";
+hint "Le décompte a commencé ! Il s'actualise toutes les 10 secondes";
 _handle = [_vault] spawn life_fnc_demoChargeTimer;
 [[_vault],"life_fnc_demoChargeTimer",west,false] spawn life_fnc_MP;
 
