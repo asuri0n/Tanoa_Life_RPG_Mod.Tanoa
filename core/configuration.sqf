@@ -222,7 +222,7 @@ __CONST__(life_impound_air,850);
 __CONST__(vaca_don_1,5);
 __CONST__(vaca_don_2,10);
 __CONST__(vaca_don_3,15);
-__CONST__(resell_diviseur,0.5); // Diviseur pour avoir le prix de vente d'une vhlau ChopShop
+__CONST__(resell_diviseur,0.5); // Diviseur pour avoir le prix de vente d'une vhl
 __CONST__(rentToBuy,1.5); // Multiplicateur pour avoir le prix d'achat d'un vhl
 
 switch (playerSide) do
@@ -1000,74 +1000,14 @@ __CONST__(life_garage_prices,life_garage_prices);
 
 life_garage_sell =
 [
-	//Véhicules armés
-	["B_G_Offroad_01_armed_F",187500],
-	["B_Boat_Armed_01_minigun_F",21000],
-	["B_Heli_Transport_01_F",250000],
-	["B_Heli_Transport_03_F",150000],
-
-	//Véhicules légers
-	["B_Quadbike_01_F",2500],
-	["C_Offroad_01_F",12500],
-	["C_SUV_01_F",35000],
-	["C_Van_01_transport_F",40000],
-	["B_G_Offroad_01_F",9000],
-
-	//Véhicules blindés
-	["O_MRAP_02_F",131000],
-	["B_MRAP_01_F",90000],
-	["I_MRAP_03_F",225000],
-
-	//Camions
-	["C_Van_01_fuel_F",3850],
-	["C_Van_01_box_F",35000],
-	["I_Truck_02_transport_F",49800],
-	["I_Truck_02_covered_F",62000],
-	["B_Truck_01_transport_F",135000],
-	["B_Truck_01_covered_F",150000],
-	["B_Truck_01_fuel_F",150000], //Komodo: added for fuel truck
-	["B_Truck_01_box_F", 150000],
-	["O_Truck_03_device_F",140625],
-
-
-	//Hélicos
-	["I_Heli_Transport_02_F",125000],
-	["B_Heli_Light_01_F",107000],
-	["O_Heli_Light_02_unarmed_F",125000],		// fix lambert revente
-	["O_Heli_Transport_04_covered_F",287500],
-	["O_Heli_Transport_04_box_F",287500],
-	["PMC_MH9",150000],
-	["C_Heli_Light_01_civil_F",150000],
-	["GNT_C185F",45000],
-	["GNT_C185",45000],
-
-	//Bateaux
-	["C_Rubberboat",950],
-	["C_Boat_Civil_01_F",6800],
-	["B_Boat_Transport_01_F",850],
-	["C_Boat_Civil_01_police_F",4950],
-	["B_SDV_01_F",45000],
-
-	//AJOUT VEHICULES MODS JOHNNY
-	["DAR_TahoeCiv",10000],
-	["DAR_TaurusCiv",10000],
-	["DAR_ImpalaCiv",10000],
-	["DAR_ImpalaPolice",10000],
-	["DAR_TahoePolice",10000],
-	["DAR_4x4",95750],
-	["DAR_MK23",150000],
-	["DAR_MK27",262500],
-	["DAR_MK27T",375000],
-	["DAR_LHS_16",450000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
 
 //Added by komodo for vehicle resseling prices to control the rules.
-/*life_vehicle_resell =
+life_vehicle_resell =
 [
-	["B_Quadbike_01_F",950],
 ];
-__CONST__(life_vehicle_resell,life_vehicle_resell);*/
+__CONST__(life_vehicle_resell,life_vehicle_resell);
 
 /**
 * Liste des véhicules dont l'assurance a un prix fixe

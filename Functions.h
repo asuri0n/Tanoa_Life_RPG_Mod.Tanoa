@@ -366,6 +366,8 @@ class Life_Client_Core
 		class addExp {}; //papabear pesistent system 27/08/2016
 		class getLevelXp {}; //asurion : Get level for a given amount of exp 26/08/2016
 		class firstViewCombat {};
+
+		class getPriceVeh {};
 	};
 
 	class Network

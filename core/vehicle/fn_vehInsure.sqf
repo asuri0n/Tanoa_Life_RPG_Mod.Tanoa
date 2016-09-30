@@ -32,30 +32,8 @@ switch (__GETC__(life_donator)) do {
 		_insureCoef = 0.5;
     };
 };
-_vehicleList = [];
 
-//Komodo: construction de la liste de véhicule, à drastiquement modifier plus tard vu la méthode...
-switch (playerSide) do {
-    case independent: {
-    	_vehicleList = [];
-    };
-    case civilian: {
-    	_vehicleList = (["kart_shop"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["donateur"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["civ_car"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["gang_car"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["civ_luxecar"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["civ_truck"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["reb_car"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["civ_air"] call life_fnc_vehicleListCfg);
-    	_vehicleList = _vehicleList + (["civ_ship"] call life_fnc_vehicleListCfg);
-
-    	{
-    		if (_x select 0 == typeOf _vehicle) exitWith {_insurePrice = round((_x select 1) * 1.5 * _insureCoef);};
-    	} count _vehicleList;
-
-	};
-};
+_insurePrice = round(([_className] call life_fnc_getPriceVeh) * 1.5 * _insureCoef);
 
 _indexConfig = ([(typeOf _vehicle),__GETC__(life_price_insurance)] call life_fnc_index);
 if(_indexConfig != -1) then {
