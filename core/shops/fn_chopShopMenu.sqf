@@ -41,7 +41,7 @@ _control = ((findDisplay 39400) displayCtrl 39402);
 		_ind = [_className,_vehicleList] call life_fnc_index;
 
 		if(_ind != -1 && count crew _x == 0) then {
-			_price = ((_vehicleList select _ind) select 1)*(call resell_diviseur);
+			_price = ((_vehicleList select _ind) select 1)*(call resellCoef);
 			_control lbAdd _displayName;
 			_control lbSetData [(lbSize _control)-1,str(_forEachIndex)];
 			_control lbSetPicture [(lbSize _control)-1,_picture];

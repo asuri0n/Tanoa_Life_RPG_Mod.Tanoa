@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=130;
+	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=16345;
+		nextID=16466;
 	};
 	class MarkerIDProvider
 	{
-		nextID=578;
+		nextID=582;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1475;
+		nextID=1555;
 	};
 	class Camera
 	{
-		pos[]={9936.8535,101.68621,558.52167};
-		dir[]={-0.23567724,-0.47467476,-0.84808546};
-		up[]={-0.12711203,0.88011444,-0.457414};
-		aside[]={-0.96354097,3.0451338e-007,0.26776209};
+		pos[]={5730.8652,116.69977,10565.247};
+		dir[]={0.52126026,-0.83841008,-0.15944128};
+		up[]={0.80176806,0.54499263,-0.24524271};
+		aside[]={-0.29250777,-1.587614e-007,-0.95629227};
 	};
 };
 binarizationWanted=0;
@@ -151,7 +151,10 @@ addons[]=
 	"A3_Data_F_Curator_Intel",
 	"A3_Rocks_F_Exp_Cliff",
 	"A3_Rocks_F_Water",
-	"A3_Rocks_F_Sharp"
+	"A3_Rocks_F_Sharp",
+	"A3_Structures_F_Exp_Civilian_Slum_05",
+	"A3_Structures_F_Exp_Civilian_Slum_03",
+	"A3_Structures_F_Exp_Civilian_Slum_04"
 };
 class AddonsMetaData
 {
@@ -467,7 +470,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3867;
+		items=3886;
 		class Item0
 		{
 			dataType="Marker";
@@ -15690,13 +15693,14 @@ class Mission
 		class Item685
 		{
 			dataType="Marker";
-			position[]={7802.6177,158.06367,11311.502};
+			position[]={9647.6172,9.8997251e+017,10003.957};
 			name="gun_store_1";
-			text="Armurerie légale";
+			text="Armurerie";
 			type="loc_Bunker";
 			colorName="ColorRed";
 			angle=24.586987;
 			id=4234;
+			atlOffset=9.8997251e+017;
 		};
 		class Item686
 		{
@@ -15722,11 +15726,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7800.9282,158.70688,11311.764};
-				angles[]={0,0.31808627,0};
+				position[]={9646.3086,49.644897,10002.435};
+				angles[]={0,5.5046306,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -15734,14 +15737,15 @@ class Mission
 			};
 			id=5970;
 			type="Land_PaperBox_closed_F";
+			atlOffset=0.33237076;
 		};
 		class Item688
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7802.7251,158.67072,11311.209};
-				angles[]={0,0.31808627,0};
+				position[]={9647.6221,49.608738,10003.78};
+				angles[]={0,5.5046306,0};
 			};
 			side="Empty";
 			flags=4;
@@ -15758,8 +15762,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7804.4282,158.67201,11310.57};
-				angles[]={0,0.31808627,0};
+				position[]={9648.9678,49.610035,10005.004};
+				angles[]={0,5.5046306,0};
 			};
 			side="Empty";
 			flags=4;
@@ -15770,7 +15774,7 @@ class Mission
 			};
 			id=5973;
 			type="Land_PaperBox_open_full_F";
-			atlOffset=0.00033569336;
+			atlOffset=0.0010757446;
 		};
 		class Item690
 		{
@@ -20900,7 +20904,7 @@ class Mission
 			colorName="ColorBlue";
 			angle=358.09689;
 			id=5409;
-			atlOffset=18.46884;
+			atlOffset=36.366505;
 		};
 		class Item831
 		{
@@ -20911,7 +20915,6 @@ class Mission
 				angles[]={0,4.8260317,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.2;
@@ -20920,7 +20923,7 @@ class Mission
 			};
 			id=5410;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.028648853;
+			atlOffset=1.0213137;
 		};
 		class Item832
 		{
@@ -22013,14 +22016,14 @@ class Mission
 		class Item891
 		{
 			dataType="Marker";
-			position[]={9976.0781,52.453892,13452.435};
+			position[]={9976.0781,-8.5255417e-019,13452.435};
 			name="car2_5";
 			text="Concessionnaire";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=0.75305289;
+			angle=0.7529999;
 			id=5403;
-			atlOffset=43.702839;
+			atlOffset=-2.8399999;
 		};
 		class Item892
 		{
@@ -24671,7 +24674,7 @@ class Mission
 			};
 			id=6946;
 			type="Land_BakedBeans_F";
-			atlOffset=0.52391434;
+			atlOffset=0.52418804;
 		};
 		class Item1026
 		{
@@ -24687,7 +24690,7 @@ class Mission
 			};
 			id=6947;
 			type="Land_Canteen_F";
-			atlOffset=0.52419567;
+			atlOffset=0.52479935;
 		};
 		class Item1027
 		{
@@ -24704,7 +24707,7 @@ class Mission
 			};
 			id=6948;
 			type="Land_CerealsBox_F";
-			atlOffset=0.52780819;
+			atlOffset=0.52854443;
 		};
 		class Item1028
 		{
@@ -24721,7 +24724,7 @@ class Mission
 			};
 			id=6950;
 			type="Land_Can_V1_F";
-			atlOffset=0.87681961;
+			atlOffset=0.87700558;
 		};
 		class Item1029
 		{
@@ -24738,7 +24741,7 @@ class Mission
 			};
 			id=6951;
 			type="Land_Can_V3_F";
-			atlOffset=0.87713909;
+			atlOffset=0.87732983;
 		};
 		class Item1030
 		{
@@ -24755,7 +24758,7 @@ class Mission
 			};
 			id=6952;
 			type="Land_Can_V2_F";
-			atlOffset=0.87691784;
+			atlOffset=0.87710857;
 		};
 		class Item1031
 		{
@@ -24820,7 +24823,7 @@ class Mission
 			};
 			id=6956;
 			type="Land_Tableware_01_stackOfNapkins_F";
-			atlOffset=0.18955326;
+			atlOffset=0.18973637;
 		};
 		class Item1035
 		{
@@ -24836,7 +24839,7 @@ class Mission
 			};
 			id=6957;
 			type="Land_BottlePlastic_V1_F";
-			atlOffset=0.16791248;
+			atlOffset=0.16837597;
 		};
 		class Item1036
 		{
@@ -24852,7 +24855,7 @@ class Mission
 			};
 			id=6958;
 			type="Land_FoodContainer_01_F";
-			atlOffset=0.32348967;
+			atlOffset=0.32300043;
 		};
 		class Item1037
 		{
@@ -24862,13 +24865,14 @@ class Mission
 				position[]={5770.6367,8.1246376,10339.002};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false;  this enableSimulation false;";
 			};
 			id=6959;
 			type="Land_FoodContainer_01_F";
-			atlOffset=0.33248949;
+			atlOffset=0.0002989769;
 		};
 		class Item1038
 		{
@@ -24884,7 +24888,7 @@ class Mission
 			};
 			id=6960;
 			type="Land_FoodContainer_01_F";
-			atlOffset=0.44241047;
+			atlOffset=0.44290447;
 		};
 		class Item1039
 		{
@@ -30329,8 +30333,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6851.7783,3.2555273,7272.5244};
-				angles[]={0,3.8132834,6.2826972};
+				position[]={6851.7783,3.2552581,7272.5239};
+				angles[]={0,3.8132825,6.2826962};
 			};
 			side="Empty";
 			flags=4;
@@ -30342,7 +30346,7 @@ class Mission
 			};
 			id=7849;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.015269279;
+			atlOffset=0.015000105;
 		};
 		class Item1242
 		{
@@ -31028,8 +31032,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6920.5771,3.3495035,7359.8159};
-				angles[]={0,5.0596137,0};
+				position[]={6920.5771,3.3492579,7359.8159};
+				angles[]={0,5.0596218,0};
 			};
 			side="Empty";
 			flags=4;
@@ -31041,6 +31045,7 @@ class Mission
 			};
 			id=7888;
 			type="Land_InfoStand_V2_F";
+			atlOffset=0.10899997;
 		};
 		class Item1261
 		{
@@ -35612,12 +35617,13 @@ class Mission
 		class Item1432
 		{
 			dataType="Marker";
-			position[]={8043.1382,23.955606,9839.293};
+			position[]={8043.1382,-3.1625584e-024,9839.293};
 			name="marker_541";
-			text="Tisserand";
+			text="Tisseur";
 			type="mil_box";
 			colorName="ColorWhite";
 			id=9580;
+			atlOffset=-23.955606;
 		};
 		class Item1433
 		{
@@ -39199,7 +39205,7 @@ class Mission
 			};
 			id=10248;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.23329926;
+			atlOffset=0.2332077;
 		};
 		class Item1550
 		{
@@ -43197,7 +43203,7 @@ class Mission
 			};
 			id=10481;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.60279465;
+			atlOffset=0.59999847;
 		};
 		class Item1763
 		{
@@ -50269,7 +50275,7 @@ class Mission
 			type="rectangle";
 			a=140;
 			b=30;
-			angle=222.25687;
+			angle=222.25674;
 			id=11218;
 			atlOffset=10.633752;
 		};
@@ -51172,7 +51178,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=356.5018;
 			id=11444;
-			atlOffset=4.1657619;
+			atlOffset=4.3516283;
 		};
 		class Item2210
 		{
@@ -51202,7 +51208,7 @@ class Mission
 			};
 			id=11446;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.18621087;
+			atlOffset=0.18621063;
 		};
 		class Item2212
 		{
@@ -69927,7 +69933,7 @@ class Mission
 			};
 			id=13187;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.18688536;
+			atlOffset=0.16899967;
 		};
 		class Item3135
 		{
@@ -83261,6 +83267,354 @@ class Mission
 			id=16344;
 			type="Land_PierLadder_F";
 			atlOffset=59.696331;
+		};
+		class Item3867
+		{
+			dataType="Marker";
+			position[]={11370.777,49.303711,12336.495};
+			name="gang_spawn";
+			type="Empty";
+			angle=26.589258;
+			id=16345;
+			atlOffset=-63.665207;
+		};
+		class Item3868
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11362.938,117.50259,12310.749};
+				angles[]={0,3.4210525,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false;  this allowDamage false;  this addAction[""Magasin vêtements"",life_fnc_clothingMenu,""gangster"",0,false,false,"""",' license_civ_gangster && playerSide == civilian'];  this addAction[""Magasin d'armes gangster"",life_fnc_weaponShopMenu,""gangster"",0,false,false,"""",' license_civ_gangster && playerSide == civilian'];  this addAction[format[""%1 ($%2)"",[""license_civ_gangster""] call life_fnc_varToStr,[([""gangster""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""gangster"",0,false,false,"""",' !license_civ_gangster && !license_civ_rebel && playerSide == civilian '];";
+				name="vendor_gangster_frini_1";
+			};
+			id=16389;
+			type="Land_InfoStand_V2_F";
+			atlOffset=1.2610321;
+		};
+		class Item3869
+		{
+			dataType="Marker";
+			position[]={11388.834,113.22626,12317.492};
+			name="civ_gar_1_3_12";
+			text="Garage";
+			type="o_service";
+			angle=0.099999957;
+			id=16391;
+			atlOffset=-0.74404144;
+		};
+		class Item3870
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11440.478,107.58594,12368.853};
+				angles[]={0,1.9283445,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Garage véhicule"",  { [""gang_v_1_2""] call life_fnc_openGarage; }];  this addAction[""Ranger un véhicule au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+				name="garage_kavala_2";
+			};
+			id=16392;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.0033416748;
+		};
+		class Item3871
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11407.856,107.68207,12360.703};
+				angles[]={0,5.2511692,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=16400;
+			type="Land_Slum_05_F";
+			atlOffset=0.35327148;
+		};
+		class Item3872
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11442.449,107.65845,12367.854};
+				angles[]={0,1.9770906,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=16401;
+			type="Land_Slum_03_F";
+			atlOffset=0.71972656;
+		};
+		class Item3873
+		{
+			dataType="Marker";
+			position[]={11423.187,61441200,12378.803};
+			name="gang_v_1_2";
+			type="Empty";
+			angle=344.38098;
+			id=16402;
+			atlOffset=61441096;
+		};
+		class Item3874
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11422.8,104.04442,12379.146};
+				angles[]={0,2.8797932,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.2;
+				init="this allowDamage false; this enableSimulation false;";
+			};
+			id=16404;
+			type="Land_HelipadCircle_F";
+			atlOffset=0.7239151;
+		};
+		class Item3875
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11443.228,103.64124,12387.16};
+				angles[]={0,1.1279539,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire aérien"",life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""gang_v_1_2""],""civ"",""Carl's Airial Auto's""]]; this addAction[""Garage véhicules Aériens"",  { [""gang_v_1_2""] call life_fnc_openGarage; }];  " \n "this addAction[""Ranger un véhicule au garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+				name="gang_carshop_1";
+			};
+			id=16405;
+			type="Land_InfoStand_V2_F";
+			atlOffset=-0.0019989014;
+		};
+		class Item3876
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11446.768,103.05345,12391.753};
+				angles[]={0,1.0963868,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=16406;
+			type="Land_Slum_04_F";
+			atlOffset=0.74742126;
+		};
+		class Item3877
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11397.203,111.39526,12346.974};
+				angles[]={0,2.1125977,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this addAction[""<t color='#ADFF2F'>Acceder a son compte courant</t>"",life_fnc_atmMenu];";
+				name="dab_georgetown_bank_18";
+			};
+			id=16407;
+			type="Land_Atm_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item3878
+		{
+			dataType="Marker";
+			position[]={11397.373,4.9301809e+036,12347.074};
+			name="marker_69";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			alpha=0.7457512;
+			a=0.69999999;
+			b=0.69999999;
+			angle=192.48917;
+			id=16408;
+			atlOffset=4.9301809e+036;
+		};
+		class Item3879
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11384.421,117.00093,12300.989};
+				angles[]={0,4.1163096,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Carrouf Market"",life_fnc_weaponShopMenu,""genstore""];";
+				name="gearshop_kavala_6";
+			};
+			id=16410;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item3880
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11335.554,119.7227,12314.468};
+				angles[]={0,4.4506235,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this allowDamage false; this enableSimulation false; this addAction[""Marché"",life_fnc_virt_menu,""market""];";
+				name="market_kavala_22";
+			};
+			id=16413;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item3881
+		{
+			dataType="Marker";
+			position[]={11373.675,1.1850002e+031,12351.983};
+			name="marker_580";
+			type="hd_warning";
+			colorName="ColorOrange";
+			id=16416;
+			atlOffset=1.1850002e+031;
+		};
+		class Item3882
+		{
+			dataType="Trigger";
+			position[]={11358.232,114.45825,12326.789};
+			class Attributes
+			{
+				name="respawn_civilian_3_1";
+				text="message avertissement gangster";
+				condition="player in thislist OR (vehicle player) in thislist && license_civ_gangster";
+				onActivation="hint ""Vous entrez dans une zone gangster"";";
+				sizeA=100;
+				sizeB=100;
+				timeout[]={4,4,4};
+				repeatable=1;
+				activationBy="ANY";
+			};
+			id=16439;
+			type="EmptyDetector";
+		};
+		class Item3883
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11347.005,114.50825,12351.137};
+				angles[]={0,5.5907784,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Magasin général"",life_fnc_weaponShopMenu,""genstore"",0,false,false,"""",' license_civ_gangster && playerSide == civilian'];";
+				name="gearshop_frini_1";
+			};
+			id=16463;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.56699371;
+		};
+		class Item3884
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11409.384,106.27288,12363.896};
+				angles[]={0,3.6330774,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire voitures"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""gang_v_1_2""],""civ"",""Bruce's New & Used Auto's""]];";
+				name="carshop_kavala_5";
+			};
+			id=16397;
+			type="Land_InfoStand_V2_F";
+			atlOffset=-0.021003723;
+		};
+		class Item3885
+		{
+			dataType="Marker";
+			position[]={19633.396,0.16570647,8388.0947};
+			name="marker_581";
+			type="mil_objective";
+			id=16465;
+			atlOffset=59.347153;
 		};
 	};
 };
