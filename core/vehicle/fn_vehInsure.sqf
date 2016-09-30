@@ -51,7 +51,7 @@ switch (playerSide) do {
     	_vehicleList = _vehicleList + (["civ_ship"] call life_fnc_vehicleListCfg);
 
     	{
-    		if (_x select 0 == typeOf _vehicle) exitWith {_insurePrice = (_x select 1) * 1.5 * _insureCoef;};
+    		if (_x select 0 == typeOf _vehicle) exitWith {_insurePrice = round((_x select 1) * 1.5 * _insureCoef);};
     	} count _vehicleList;
 
 	};
