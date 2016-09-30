@@ -33,17 +33,19 @@ switch (_index) do
 
 			// Reduction selon le grade donateur
 			_price = "";
-			if(__GETC__(life_donator) == 1)then {
-				_price = round((_x select 2) - ((_x select 2)*((call vaca_don_1)/100)));
-			};
-			if(__GETC__(life_donator) == 2)then {
-				_price = round((_x select 2) - ((_x select 2)*((call vaca_don_2)/100)));
-			};
-			if(__GETC__(life_donator) == 3)then {
-				_price = round((_x select 2) - ((_x select 2)*((call vaca_don_3)/100)));
-			};
-			if(__GETC__(life_donator) == 0)then {
-				_price = (_x select 2);
+			switch (__GETC__(life_donator)) do {
+			    case 1: {
+					_price = round((_x select 2) - ((_x select 2)*(call vaca_don_1)));
+				};
+			    case 2: {
+					_price = round((_x select 2) - ((_x select 2)*(call vaca_don_2)));
+				};
+			    case 3: {
+					_price = round((_x select 2) - ((_x select 2)*(call vaca_don_3)));
+				};
+			    case 0: {
+					_price = (_x select 2);
+				};
 			};
 
 			_itemList lbSetValue[(lbSize _itemList)-1,_price];

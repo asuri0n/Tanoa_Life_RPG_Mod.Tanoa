@@ -38,22 +38,24 @@ _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
 
 if(_mode) then {
-	_basePrice = ((_vehicleList select _vIndex) select 1)*1.5;
+	_basePrice = ((_vehicleList select _vIndex) select 1)*(call rentToBuy);
 } else {
 	_basePrice = (_vehicleList select _vIndex) select 1;
 };
 
-if(__GETC__(life_donator) == 1)then {
-	_basePrice = round(_basePrice - (_basePrice*(5/100)));
-};
-if(__GETC__(life_donator) == 2)then {
-	_basePrice = round(_basePrice - (_basePrice*(10/100)));
-};
-if(__GETC__(life_donator) == 3)then {
-	_basePrice = round(_basePrice - (_basePrice*(15/100)));
-};
-if(__GETC__(life_donator) == 0)then {
-	_basePrice = _basePrice;
+switch (__GETC__(life_donator)) do {
+    case 1: {
+		_basePrice = round(_basePrice - (_basePrice*(call vaca_don_1)));
+	};
+	case 2: {
+		_basePrice = round(_basePrice - (_basePrice*(call vaca_don_2)));
+	};
+	case 3: {
+		_basePrice = round(_basePrice - (_basePrice*(call vaca_don_3)));
+	};
+	case 0: {
+		_basePrice = _basePrice;
+	};
 };
 
 _playersInGroupCount = count (units (group player));
