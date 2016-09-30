@@ -30,6 +30,7 @@ _message = "
     <br/><br/>
 
     <t size='1.30' font='puristaMedium' color='#594BD5'>IMPORTANT</t><br/>
+    - <t color='#FF0000'>Il vous faut une machette pour récolter certaines ressources, notament les pommes et le bois !</t><br/>
     - <t color='#b67e2a'>Touche Y</t> pour accéder au menu joueur<br/>
     - Un bouton <t color='#b67e2a'>AIDE</t> vous permettra de connaitre l'ensemble des raccourcis!<br/>
     - L'argent <t color='#b67e2a'>ne reste pas</t> sur vous quand vous vous déconnectez<br/>
