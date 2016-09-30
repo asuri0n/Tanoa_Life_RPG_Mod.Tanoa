@@ -15,7 +15,7 @@ switch (_className) do
 	case "B_Quadbike_01_F": {35}; 				// Quad
 	case "C_Hatchback_01_F": {50};				// Hayon
 	case "C_Hatchback_01_sport_F": {50};		// Hayon sport
-	case "C_SUV_01_F": {50};					// SUV
+	case "C_SUV_01_F": {55};					// SUV
 	case "C_Offroad_01_F": {60};				// Pickup
 	case "B_G_Offroad_01_F": {60};				// Pickup Rebelle
 	case "C_Offroad_02_unarmed_F": {70};		// MB 4WD

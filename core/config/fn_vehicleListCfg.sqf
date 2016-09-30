@@ -28,7 +28,7 @@ switch (_shop) do
     {
         _return =
         [
-            ["B_Quadbike_01_F",1667],
+            ["B_Quadbike_01_F",2750],
 
             //["Mrshounka_a3_smart_civ",3333],
             //["Mrshounka_a3_smart_civ_noir",3333],
@@ -44,10 +44,9 @@ switch (_shop) do
             //["Mrshounka_twingo_p_v",20000],
             //["Mrshounka_twingo_p_o",20000],
 
-            ["C_Offroad_01_F", 30000],
-            ["C_Hatchback_01_F",31000],
-
-            ["C_SUV_01_F", 32000],
+            ["C_Hatchback_01_F",35000],
+            ["C_Offroad_01_F", 40000],
+            ["C_SUV_01_F", 45000],
 
             //["Mrshounka_207_civ",36667],
             //["Mrshounka_207_noir",36667],
@@ -122,12 +121,12 @@ switch (_shop) do
 
             //["shounka_a3_ds4_civ",60000],
 
-            ["C_Van_01_transport_F",65333],
-            ["I_C_Van_01_transport_F",65333],
-            ["I_C_Van_01_transport_brown_F",65333],
-            ["I_C_Van_01_transport_olive_F",65333],
+            ["C_Van_01_transport_F",60000],
+            ["I_C_Van_01_transport_F",60000],
+            ["I_C_Van_01_transport_brown_F",60000],
+            ["I_C_Van_01_transport_olive_F",60000],
 
-            ["C_Van_01_box_F",73333],
+            ["C_Van_01_box_F",75000],
 
             ["C_Hatchback_01_sport_F",100000]
 
