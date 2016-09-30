@@ -7,7 +7,7 @@
 private["_rand","_modifier","_price", "_globalchange","_defaultprice","_shortname","_difference","_line","_startTime"];
 
 _startTime = diag_ticktime;
-_rand = [0,160] call life_fnc_randomRound; //0-200
+_rand = [0,180] call life_fnc_randomRound; //0-180
 
 /*
 
@@ -217,7 +217,7 @@ switch(true) do
 	{
 		[["notification", "Market System", "[News]","Les pompes funébres ont fermés, augmentation du prix des organes!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
 
-		["organp", [1000,2000] call life_fnc_randomRound, true] call life_fnc_marketBuy;
+		["organp", [500,2000] call life_fnc_randomRound, true] call life_fnc_marketBuy;
 
 		diag_log "+Market+ Event organ";
 	};
@@ -228,6 +228,22 @@ switch(true) do
 		["organp", [500,2000] call life_fnc_randomRound, true] call life_fnc_marketSell;
 
 		diag_log "+Market+ Event organ";
+	};
+	case (_rand <= 170):
+	{
+		[["notification", "Market System", "[News]","Une mine d'or a été épuisé, augmentation du prix d'or!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
+
+		["goldbarp", [500,2000] call life_fnc_randomRound, true] call life_fnc_marketBuy;
+
+		diag_log "+Market+ Event goldbarp";
+	};
+	case (_rand <= 180):
+	{
+		[["notification", "Market System", "[News]","Un nouveau filon a été découvert, diminution du prix de l'or!"],"INVO_fnc_addNotification",civilian,false] spawn life_fnc_MP;
+
+		["goldbarp", [500,2000] call life_fnc_randomRound, true] call life_fnc_marketSell;
+
+		diag_log "+Market+ Event goldbarp";
 	};
 };
 
