@@ -219,11 +219,17 @@ __CONST__(life_impound_air,850);
 ****** Life Vacation *******
 ****************************
 */
-__CONST__(vaca_don_1,5);
-__CONST__(vaca_don_2,10);
-__CONST__(vaca_don_3,15);
-__CONST__(resell_diviseur,0.5); // Diviseur pour avoir le prix de vente d'une vhl
-__CONST__(rentToBuy,1.5); // Multiplicateur pour avoir le prix d'achat d'un vhl
+__CONST__(vaca_don_1,0.05);		// _price = round((_x select 2) - ((_x select 2)*(call vaca_don_1)));
+__CONST__(vaca_don_2,0.1);		// _price = round((_x select 2) - ((_x select 2)*(call vaca_don_2)));
+__CONST__(vaca_don_3,0.15);		// _price = round((_x select 2) - ((_x select 2)*(call vaca_don_3)));
+__CONST__(insureCoef,0.75);		// default { _insureCoef = (call insureCoef3); }
+__CONST__(insureCoef1,0.65);	// case 1 { _insureCoef = (call insureCoef3); }
+__CONST__(insureCoef2,0.60);	// case 2 { _insureCoef = (call insureCoef3); }
+__CONST__(insureCoef3,0.50); 	// case 3 { _insureCoef = (call insureCoef3); }
+__CONST__(resellCoef,0.5); 		// _sellPrice = round(_vehPrice * (call resell_diviseur));
+__CONST__(sellCoef,0.5); 		// _sellPrice = round(_vehPrice * (call sellCoef));
+__CONST__(rentToBuy,1.5);		// _basePrice = ((_vehicleList select _vIndex) select 1)*(call rentToBuy);
+__CONST__(sortieVhlCoef,0.01);
 
 switch (playerSide) do
 {
@@ -955,46 +961,6 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
 life_garage_prices =
 [
-	["B_Quadbike_01_F",1000],
-	["C_Hatchback_01_F",2000],
-	["C_Offroad_01_F", 2000],
-	["B_G_Offroad_01_F",2000],
-	["C_SUV_01_F",2000],
-	["C_Hatchback_01_sport_F",3000],
-	["InvolvedMegane",3000],
-	["C_Van_01_transport_F",3000],
-	["C_Van_01_fuel_F",3000],
-	["C_Van_01_box_F",3000],
-	["I_Heli_Transport_02_F",7000],
-	["B_Heli_Light_01_F",7000],
-	["O_Heli_Light_02_unarmed_F",6000],
-	["I_Truck_02_transport_F",4000],
-	["I_Truck_02_covered_F",4000],
-	["B_Truck_01_transport_F",4000],
-	["B_Truck_01_box_F", 4000],
-	["B_Truck_01_fuel_F", 4000], //Komodo: added for Fuel truck
-	["B_MRAP_01_F",8000],     //hunter
-	["O_MRAP_02_F",2000],   //ifrit
-	["I_MRAP_03_F",2000],     //strider
-	["C_Rubberboat",1000],
-	["C_Boat_Civil_01_F",2000],
-	["B_Boat_Transport_01_F",2000],
-	["C_Boat_Civil_01_police_F",2000],
-	["B_Boat_Armed_01_minigun_F",150000],
-	["B_G_Offroad_01_armed_F",20000],
-	["DAR_MK23ADT",20000],
-	["DAR_MK23AD",20000],
-	["BAF_Offroad_W_HMG",20000],
-	["BAF_Offroad_D_HMG",20000],
-	["O_Truck_03_transport_F",4000],
-	["B_SDV_01_F",20000],
-	["GNT_C185F",20000],
-	["GNT_C185",20000],
-	["O_Heli_Transport_04_covered_F",7000], //dlc
-	["O_Heli_Transport_04_repair_F",7000],
-	["O_Heli_Transport_04_medevac_F",7000],
-	["O_Heli_Transport_04_F",7000],
-	["O_Heli_Transport_04_box_F",7000] //dlc
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 

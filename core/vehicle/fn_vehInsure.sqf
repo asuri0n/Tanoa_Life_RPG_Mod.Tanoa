@@ -16,24 +16,24 @@ if (typeOf _vehicle in ["O_MRAP_02_F","I_MRAP_03_F","I_G_Offroad_01_armed_F"]) e
 _insured = _vehicle getVariable ["insured",false];
 if (_insured) exitWith {hint "Ce véhicule est déjà assuré";};
 
-_insurePrice = 0;
-_insureCoef = 0;
+_insurePrice = 1000;
+_insureCoef = 1;
 switch (__GETC__(life_donator)) do {
     case 1: {
-    	_insureCoef = 0.5;
+    	_insureCoef = (call insureCoef1);
     };
     case 2: {
-    	_insureCoef = 0.33;
+    	_insureCoef = (call insureCoef2);
     };
     case 3: {
-    	_insureCoef = 0.15;
+    	_insureCoef = (call insureCoef3);
     };
     case 0: {
-		_insureCoef = 0.5;
+		_insureCoef = (call insureCoef);
     };
 };
 
-_insurePrice = round(([_className] call life_fnc_getPriceVeh) * 1.5 * _insureCoef);
+_insurePrice = round(([(typeOf _vehicle)] call life_fnc_getPriceVeh) * (call rentToBuy) * _insureCoef);
 
 _indexConfig = ([(typeOf _vehicle),__GETC__(life_price_insurance)] call life_fnc_index);
 if(_indexConfig != -1) then {

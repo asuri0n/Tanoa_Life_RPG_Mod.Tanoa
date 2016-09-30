@@ -19,34 +19,41 @@ _vehicleColor = [_className,_dataArr select 1] call life_fnc_vehicleColorStr;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
-_retrievePrice = [_className,__GETC__(life_garage_prices)] call life_fnc_index;
+// get vehicule buy price
 _vehPrice = [_className] call life_fnc_getPriceVeh;
-_sellPrice = [_className,__GETC__(life_garage_sell)] call life_fnc_index;
-_retrievePrice = if(_retrievePrice == -1) then {1000} else {(__GETC__(life_garage_prices) select _retrievePrice) select 1;};
 
+// Get vehicle garage price
+_retrievePrice = [_className,__GETC__(life_garage_prices)] call life_fnc_index;
+if(_retrievePrice == -1) then {
+	_retrievePrice =  round(_vehPrice* (call sortieVhlCoef));
+} else {
+	_retrievePrice =  (__GETC__(life_garage_prices) select _retrievePrice) select 1;
+};
+// Get vehicle sell price
+_sellPrice = [_className,__GETC__(life_garage_sell)] call life_fnc_index;
+if(_sellPrice == -1) then {
+	_sellPrice = round(_vehPrice * (call sellCoef));
+} else {
+	_sellPrice =  (__GETC__(life_garage_sell) select _sellPrice) select 1;
+};
+//Get vehicle assurance price
 _assurPrice = 1000;
 _insureCoef = 1;
 switch (__GETC__(life_donator)) do {
     case 1: {
-    	_insureCoef = 0.5;
+    	_insureCoef = (call insureCoef1);
     };
     case 2: {
-    	_insureCoef = 0.33;
+    	_insureCoef = (call insureCoef2);
     };
     case 3: {
-    	_insureCoef = 0.15;
+    	_insureCoef = (call insureCoef3);
     };
     case 0: {
-		_insureCoef = 0.5;
+		_insureCoef = (call insureCoef);
     };
 };
-_assurPrice = round(_vehPrice * 1.5 * _insureCoef);
-
-if(_sellPrice == -1) then {
-	_sellPrice = round(_vehPrice * (call resell_diviseur));
-} else {
-	_sellPrice =  (__GETC__(life_garage_sell) select _sellPrice) select 1;
-};
+_assurPrice = round(_vehPrice * (call rentToBuy) * _insureCoef);
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format["
 	Prix de sortie: <t color='#8cff9b'>$%1</t><br/>
@@ -66,10 +73,10 @@ if(_sellPrice == -1) then {
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
-if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
+if(_trunkSpace == -1) then {"Vide"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleColor,
-if(_assur == 1) then {"<t color='#8cff9b'>Assuré</t>"} else {"<t color='#FF0000'>Pas d'assurance</t>"},
+if(_assur == 1) then {"<t color='#8cff9b'>Assuré</t>"} else {"<t color='#FF0000'>Non assuré</t>"},
 [_assurPrice] call life_fnc_numberText
 ];
 

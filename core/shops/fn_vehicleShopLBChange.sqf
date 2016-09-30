@@ -17,40 +17,34 @@ _className = _control lbData _index;
 _vIndex = _control lbValue _index;
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
 _basePrice = (_vehicleList select _vIndex) select 1;
-_vehPrice = [_className] call life_fnc_getPriceVeh;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
- if(__GETC__(life_donator) == 1)then {
-	_basePrice = round(_basePrice - (_basePrice*(5/100)));
- };
- if(__GETC__(life_donator) == 2)then {
-	_basePrice = round(_basePrice - (_basePrice*(10/100)));
- };
- if(__GETC__(life_donator) == 3)then {
-	_basePrice = round(_basePrice - (_basePrice*(15/100)));
- };
- if(__GETC__(life_donator) == 0)then {
-	_basePrice = _basePrice;
- };
+// get vehicule buy price (another one to be sync with other price assurance)
+_vehPrice = [_className] call life_fnc_getPriceVeh;
 
+// Prix reduis selon donateur lvl
 _assurPrice = 1000;
 _insureCoef = 1;
 switch (__GETC__(life_donator)) do {
     case 1: {
-    	_insureCoef = 0.5;
+		_basePrice = round(_basePrice - (_basePrice*(call vaca_don_1)));
+    	_insureCoef = (call insureCoef1);
     };
     case 2: {
-    	_insureCoef = 0.33;
+		_basePrice = round(_basePrice - (_basePrice*(call vaca_don_2)));
+    	_insureCoef = (call insureCoef2);
     };
     case 3: {
-    	_insureCoef = 0.15;
+		_basePrice = round(_basePrice - (_basePrice*(call vaca_don_3)));
+    	_insureCoef = (call insureCoef3);
     };
     case 0: {
-		_insureCoef = 0.5;
+		_basePrice = _basePrice;
+		_insureCoef = (call insureCoef);
     };
 };
-_assurPrice = round(_vehPrice * 1.5 * _insureCoef);
+_assurPrice = round(_vehPrice * (call rentToBuy) * _insureCoef);
 
 ctrlShow [2330,true];
 (getControl(2300,2303)) ctrlSetStructuredText parseText format[
@@ -66,11 +60,11 @@ ctrlShow [2330,true];
 	Prix assurance: <t color='#8cff9b'>%9€</t><br/>
 ",
 [_basePrice] call life_fnc_numberText,
-[round(_basePrice * 1.5)] call life_fnc_numberText,
+[round(_basePrice * (call rentToBuy))] call life_fnc_numberText,
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
-if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
+if(_trunkSpace == -1) then {"Vide"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleInfo select 9,
 [_assurPrice] call life_fnc_numberText
