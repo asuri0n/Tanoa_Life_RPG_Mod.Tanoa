@@ -59,7 +59,7 @@ _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 
 // Minimum cops ?
 _west = playersNumber west;
-if(( _oldItem == "cocainp" OR _oldItem == "heroinpy" OR _oldItem == "uraniump1" OR _oldItem == "uraniump2" OR _oldItem == "uraniump3" OR _oldItem == "uraniump4") && _west == 0) exitWith
+if(( _oldItem == "cocainp" OR _oldItem == "heroinpy" OR _oldItem == "uraniump1" OR _oldItem == "uraniump2" OR _oldItem == "uraniump3" OR _oldItem == "uraniump4" OR _oldItem == "organ") && _west == 0) exitWith
 {
 	hint "Il n'y a pas de gendarmes de connecté. Stocker dans votre maison et réitérer plus tard cette tentative...";
 	5 cutText ["","PLAIN"];
