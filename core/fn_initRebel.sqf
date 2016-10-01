@@ -12,7 +12,7 @@ private["_spawnPos","_allVeh","_pUID","_playerPosition"];
 _playerPosition = civ_position;
 if (VACA_SERV_DEBUG) then
 {
-	diag_log format ["initciv pos: %1",_playerPosition]; //For debugging
+	diag_log format ["initciv reb: %1",_playerPosition]; //For debugging
 };
 
 // Liste des spawns
@@ -24,20 +24,10 @@ civ_spawn_5 = nearestObjects[getMarkerPos  "civ_spawn_5", ["Land_Shop_City_02_F"
 
 waitUntil {!(isNull (findDisplay 46))};
 
-//if(str(player) in ["civ_1","civ_2","civ_3","civ_4","civ_5","civ_6","civ_7","civ_8","civ_9","civ_10","civ_11","civ_12","civ_13","civ_14","civ_15","civ_16","civ_17","civ_18","civ_19","civ_20","civ_21","civ_22","civ_23","civ_24","civ_25","civ_26","civ_27","civ_28","civ_29","civ_30"]) then {
-if(str(player) in ["don_1","don_2","don_3","don_4","don_5","don_6","don_7","don_8","don_9","don_10"]) then {
-	if((__GETC__(life_donator) < 1)) then
-	{
-		player enableSimulation false;
-		["NotPremium",false,true] call BIS_fnc_endMission;
-		sleep 35;
-	};
-};
-
-if(license_civ_rebel) then
+if(!license_civ_rebel) then
 {
 	player enableSimulation false;
-	["noRebelCiv",false,true] call BIS_fnc_endMission;
+	["noRebel",false,true] call BIS_fnc_endMission;
 	sleep 35;
 };
 
@@ -48,7 +38,7 @@ SAUVEGARDE DE LA POSITION
 if (VACA_SERV_DEBUG) then
 {
 	diag_log "------------- Life is alive -------------";
-	diag_log format["civ position: %1",civ_position];
+	diag_log format["reb position: %1",civ_position];
 	diag_log format["Life is alive: %1",life_is_alive];
 	diag_log "------------------------------------------------";
 };
@@ -98,10 +88,6 @@ _name = name player;
 [] spawn life_fnc_updateInvoAllies;
 [] spawn life_fnc_antiAFK;
 
-switch (true) do {
-    case license_civ_gangster: {invo_faction = "gangster"; player setVariable ["invo_faction","gangster",true];};
-    //case license_civ_bounty_hunter: {invo_faction = "bounty_hunter"; player setVariable ["invo_faction","bounty_hunter",true];};
-    default {invo_faction = "civilian"; player setVariable ["invo_faction","civilian",true];};
-};
+invo_faction = "rebel"; player setVariable ["invo_faction","rebel",true];
 
 [] call life_fnc_playerSkins;

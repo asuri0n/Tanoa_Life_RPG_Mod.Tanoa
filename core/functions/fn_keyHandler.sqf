@@ -74,6 +74,7 @@ switch (_code) do
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 			case civilian: {if(!visibleMap) then {[] spawn life_fnc_civilmarkers;}};
+			case east: {if(!visibleMap) then {[] spawn life_fnc_civilmarkers;}};
 
 		};
 	};
@@ -215,7 +216,7 @@ switch (_code) do
 			}
 			else
 			{
-				if((playerSide == civilian) && (license_civ_bounty_hunter) && (!(license_civ_rebel))) then
+				if(((playerSide == civilian) OR (playerSide == east)) && (license_civ_bounty_hunter) && (!(license_civ_rebel))) then
 				{
 					//chasseur de prime et non rebel !
 					[] call INVO_fnc_restrainAction;
@@ -691,7 +692,7 @@ switch (_code) do
 	//Touche 4
 	case 5:
 	{
-		if((playerSide == west) OR ((playerSide == civilian) AND (license_civ_bounty_hunter))) then
+		if((playerSide == west) OR (((playerSide == civilian) OR (playerSide == east)) AND (license_civ_bounty_hunter))) then
 		{
 			[] call life_fnc_p_openMenu;
 			[] call life_fnc_wantedMenu;

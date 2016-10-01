@@ -42,7 +42,7 @@ if((_curTarget getVariable["Escorting",false])) then {
 _Btn3 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
-if(((playerSide == civilian) AND (license_civ_bounty_hunter)) AND (!(([_curTarget] call INVO_fnc_wantedPerson) isEqualTo []))) then
+if((((playerSide == civilian) OR (playerSide == east)) AND (license_civ_bounty_hunter)) AND (!(([_curTarget] call INVO_fnc_wantedPerson) isEqualTo []))) then
 {
 	_Btn4 ctrlSetText localize "STR_pInAct_Arrest";
 	_Btn4 buttonSetAction "[life_pInact_curTarget,30] call life_fnc_arrestAction; closeDialog 0;";

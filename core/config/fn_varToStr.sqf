@@ -111,66 +111,66 @@ switch (_var) do
 	case "life_inv_masonry_kit" : {"Kit de maçonnerie"};
 	case "life_inv_cargo_hemtt" : {"Cargaison HEMTT"};
 	case "life_inv_sake" : {"Saké"}; //On oublie pas les asiatiques //Johnny
-	case "life_inv_nem" : {"Nem au Porc"}; //On oublie pas les asiatiques //Johnny	
+	case "life_inv_nem" : {"Nem au Porc"}; //On oublie pas les asiatiques //Johnny
 	case "life_inv_ipuranium": {"Purificateur Uranium Illegal "}; //Product Illegal
-	
+
 	// By Pytha
 	//**************************
 	//********* NEW ************
 	//**************************
-	case "life_inv_goldp": {"Minerai d'or"};	
-	case "life_inv_goldbarp": {"Pépite d'or"};	
-	case "life_inv_clayp": {"Argile"};	
-	case "life_inv_briquep": {"Brique"};	
-	case "life_inv_diamantp": {"Minerai de diamant"};	
-	case "life_inv_diamantpurp": {"Diamant"};		
-	case "life_inv_ironorep": {"Minerai de fer"};	
-	case "life_inv_ironp": {"Lingot de fer"};		
-	case "life_inv_charbonp": {"Charbon"};	
+	case "life_inv_goldp": {"Minerai d'or"};
+	case "life_inv_goldbarp": {"Pépite d'or"};
+	case "life_inv_clayp": {"Argile"};
+	case "life_inv_briquep": {"Brique"};
+	case "life_inv_diamantp": {"Minerai de diamant"};
+	case "life_inv_diamantpurp": {"Diamant"};
+	case "life_inv_ironorep": {"Minerai de fer"};
+	case "life_inv_ironp": {"Lingot de fer"};
+	case "life_inv_charbonp": {"Charbon"};
 	case "life_inv_souffrep": {"Souffre"};
-	case "life_inv_poudrenoirp": {"Poudre noire"};	
+	case "life_inv_poudrenoirp": {"Poudre noire"};
 	case "life_inv_puranium": {"Purificateur Uranium illégal"};
 	case "life_inv_uraniump1": {"Minerai Uranium"};
-	case "life_inv_uraniump2": {"Uranium Brut"}; 
+	case "life_inv_uraniump2": {"Uranium Brut"};
 	case "life_inv_uraniump3": {"Uranium Purifié"};
 	case "life_inv_uraniump4": {"Uranium Concentré"};
-	case "life_inv_uraniumpurp": {"Uranium"};				
-	case "life_inv_oilpy": {"Baril de pétrole"};	
-	case "life_inv_plastiquep": {"Plastique"};	
+	case "life_inv_uraniumpurp": {"Uranium"};
+	case "life_inv_oilpy": {"Baril de pétrole"};
+	case "life_inv_plastiquep": {"Plastique"};
 	case "life_inv_boisp": {"Bois"};
-	case "life_inv_planchep": {"Planche"};	
-	case "life_inv_linp": {"Lin"};	
-	case "life_inv_tissup": {"Tissu"};		
-	case "life_inv_cocainp": {"Feuilles de coca"};	
-	case "life_inv_cocainpurp": {"Cocaïne"};	
-	case "life_inv_heroinpy": {"Feuilles de pavot"};	
-	case "life_inv_heroinpurp": {"Heroïne"};	
+	case "life_inv_planchep": {"Planche"};
+	case "life_inv_linp": {"Lin"};
+	case "life_inv_tissup": {"Tissu"};
+	case "life_inv_cocainp": {"Feuilles de coca"};
+	case "life_inv_cocainpurp": {"Cocaïne"};
+	case "life_inv_heroinpy": {"Feuilles de pavot"};
+	case "life_inv_heroinpurp": {"Heroïne"};
 	case "life_inv_marip": {"Feuilles de chanvre"};
-	case "life_inv_maripurp": {"Marijuana"};	
+	case "life_inv_maripurp": {"Marijuana"};
 	case "life_inv_organp" : {"Organes enpaquetés"};
-	case "life_inv_organ" : {"Organes frais"}; 
-	case "life_inv_ossillp" : {"Ossements illégaux"}; 
-	case "life_inv_osslp" : {"Ossements légaux"}; 
+	case "life_inv_organ" : {"Organes frais"};
+	case "life_inv_ossillp" : {"Ossements illégaux"};
+	case "life_inv_osslp" : {"Ossements légaux"};
 
 	//License Block
-		
+
 	// new licences
 	case "license_civ_bucheron": {"Licence de Bucheron"};
 	case "license_civ_joaillier": {"Licence de Joaillier"};
 	case "license_civ_brique": {"Licence de Briquetier"};
-	case "license_civ_diamantaire": {"Licence de Diamantaire"};	
-	case "license_civ_iron": {"Licence de Forgeron"};			
+	case "license_civ_diamantaire": {"Licence de Diamantaire"};
+	case "license_civ_iron": {"Licence de Forgeron"};
 	case "license_civ_tissu": {"Licence de Designer Textile"};
 	case "license_civ_plastique": {"Licence de Vendeur de légo"};
-	case "license_civ_poudre": {"Licence de Vendeur de poudre"};		
+	case "license_civ_poudre": {"Licence de Vendeur de poudre"};
 	case "license_civ_heroine": {"Licence de Producteur héroine"};
 	case "license_civ_canabis": {"Licence de Producteur canabis"};
-	case "license_civ_cocaine": {"Licence de Producteur cocaine"};		
+	case "license_civ_cocaine": {"Licence de Producteur cocaine"};
 	case "license_civ_uranium": {"Licence de Producteur Uranium"};
 	case "license_civ_archeologie": {"Licence de Formation Archeologie"};
-	case "license_civ_organ": {"Licence de Vendeur d'organes"};	
-			
-			
+	case "license_civ_organ": {"Licence de Vendeur d'organes"};
+
+
 	//xp system
 	//Prof Block
 	case "Peche_Prof": {"Pecheur"};
@@ -180,14 +180,14 @@ switch (_var) do
 	case "Brique_Prof": {"Vendeur chez Gedimat"};
 	case "Plastique_Prof": {"Vendeur chez Lego"};
 	case "Joaillier_Prof": {"Joaillier"};
-	case "Diamantaire_Prof": {"Diamantaire"};	
+	case "Diamantaire_Prof": {"Diamantaire"};
 	case "Heroine_Prof": {"Producteur d'héroine"};
 	case "Canabis_Prof": {"Producteur de canabis"};
 	case "Cocaine_Prof": {"Producteur de cocaine"};
 	case "Uranium_Prof": {"Producteur d'uranium"};
 	case "Forgeron_Prof": {"Forgeron"};
-	
-	
+
+
 	case "license_civ_driver": {"Permis de conduire"};
 	case "license_civ_truck": {"Permis Poids Lourd"};
 	case "license_civ_air": {"Brevet de Pilote"};
@@ -218,7 +218,7 @@ switch (_var) do
 	//case "license_civ_moonshine": {"Licence de distilleur illégal"};
 	//case "license_civ_applecompote": {"Producteur de Compote de Pommes"};
 	//case "license_civ_peachcompote": {"Producteur de Compote de Pêches"};
-	//case "license_civ_gangster": {"Licence Gangster"};
+	case "license_civ_gangster": {"Licence Gangster"};
 	//case "license_civ_luxecar": {"Permis Véhicule Luxe"};
 	//case "license_civ_bounty_hunter": {"Licence de chasseur de prime"};
 	//case "license_civ_permrebel": {"Permission licence rebelle"};
@@ -227,11 +227,11 @@ switch (_var) do
 	//case "license_cop_fusiller_lourd": {"Permission Fusiller lourd"};
 	//case "license_cop_tireur_precision": {"Permission Tireur de précision"};
 	//case "license_cop_tireur_elite": {"Permission Tireur d'élite"};
-	
+
 	case "license_cop_bac": {"Membre de la Brigade Anti Criminalité"}; //Ajout Bac 11/10/14 Jo
-	case "license_civ_busDriver": {"Licence de transport de personnes"};	
-	
-	case "license_civ_transport": {"Licence de transport"};	
-	case "license_civ_bonbeur": {"Entreprise Bonbeur"};	
+	case "license_civ_busDriver": {"Licence de transport de personnes"};
+
+	case "license_civ_transport": {"Licence de transport"};
+	case "license_civ_bonbeur": {"Entreprise Bonbeur"};
 
 };

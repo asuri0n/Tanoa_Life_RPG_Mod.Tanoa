@@ -23,7 +23,7 @@ if (locked _veh > 1) Then
 	_nop = false;
 };
 
-if (((playerSide == civilian) && (license_civ_rebel)) && (cursortarget getvariable["FAR_isUnconscious",0] == 1)or (cursortarget getVariable "restrained") or (group cursortarget == group player) or (cursortarget getVariable "playerSurrender")) then {
+if ((((playerSide == civilian) OR (playerSide == east)) && (license_civ_rebel)) && (cursortarget getvariable["FAR_isUnconscious",0] == 1)or (cursortarget getVariable "restrained") or (group cursortarget == group player) or (cursortarget getVariable "playerSurrender")) then {
 	hint "Ouverture du sac !";
 } else {
 	hint "Impossible de voler dans les sacs !";
@@ -34,7 +34,7 @@ if (((playerSide == civilian) && (license_civ_rebel)) && (cursortarget getvariab
 	_nop = false;
 };
 
-if(((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) && (playerSide == civilian)) exitWith {
+if(((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) && ((playerSide == civilian) OR (playerSide == east))) exitWith {
 	_house = nearestBuilding (getPosATL player);
 	if(!(_house in life_vehicles) && {(_house getVariable ["locked",false])}) then {
 		hint "Tu n'as pas acces à cette caisse car le propriétaire a verrouiller celui ci";

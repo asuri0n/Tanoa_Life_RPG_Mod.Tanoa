@@ -23,6 +23,12 @@ switch (playerSide) do
 		_packet pushBack civ_gear;
 		_packet pushBack life_is_arrested;
 	};
+	case east:
+	{
+		[] call life_fnc_civFetchGear;
+		_packet pushBack civ_gear;
+		_packet pushBack life_is_arrested;
+	};
 };
 
 if (_packet isEqualTo invo_last_update_request_civgear) exitWith {diag_log format["----- updateRequestCivGear NO UPDATE NEEDED. packet: %1", _packet];};

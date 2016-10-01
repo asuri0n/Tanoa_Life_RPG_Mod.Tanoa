@@ -15,7 +15,24 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["<t color='#00FF00'>Montrer son insigne de police</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && player distance cursorTarget < 3.5']];
 
 	};
-	
+
+	case east:
+	{
+		//Passport System
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Montrer son passport</t>",life_fnc_civShowPassport,"",1,false,true,"",' playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && player distance cursorTarget < 3.5']];
+		//Drop fishing net
+		life_actions = [player addAction["Drop Fishing Net",life_fnc_dropFishingNet,"",0,false,false,"",'
+		(surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];
+		//Rob person
+		life_actions = life_actions + [player addAction["Rob Person",life_fnc_robAction,"",0,false,false,"",'
+		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
+		/* Komodo: remplacé par addActions sur les objets.
+		//Archeology
+		life_actions set [count life_actions,player addAction["Cueillir Des Echantillons",life_fnc_gatherArcheologie,"",0,false,false,"",'
+		!life_action_in_use && (typeOf cursorTarget) == "Land_HumanSkull_F" && player distance cursorTarget < 5']];
+		*/
+	};
+
 	case civilian:
 	{
 		//Passport System

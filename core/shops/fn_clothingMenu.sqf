@@ -16,10 +16,6 @@ if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "Tu dois êtr
 if((_this select 3) == "gangster" && !license_civ_gangster) exitWith {hint "Tu dois être un gangster pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "bac" && !license_cop_bac) exitWith {hint "Tu dois être membre de la BAC pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "hunter" && !license_civ_bounty_hunter) exitWith {hint "Tu dois être membre des chasseurs de primes pour utiliser ce vendeur!"; closeDialog 0;};
-//if((_this select 3) == "xxx" && !license_civ_xxx) exitWith {hint "Tu ne fais pas partie des xXx!"; closeDialog 0;};
-//if((_this select 3) == "sscp" && !license_civ_sscp) exitWith {hint "Tu ne fais pas partie des SSCP!"; closeDialog 0;};
-//if((_this select 3) == "presse" && !license_civ_presse) exitWith {hint "Tu n'as pas ta carte de presse pour utiliser ce vendeur!"; closeDialog 0;};
-//if((_this select 3) == "wt" && !license_civ_wt) exitWith {hint "Tu n'as pas ta carte de vendeur War Trader!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint "Tu dois être un gendarme pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) in ["med"] && playerSide != independent) exitWith {hint "Seul l'effectif du SAMU peut utiliser ce vendeur!"; closeDialog 0;};//ajout serrat
 

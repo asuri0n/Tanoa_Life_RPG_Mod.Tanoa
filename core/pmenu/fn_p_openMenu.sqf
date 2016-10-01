@@ -26,6 +26,16 @@ switch(playerSide) do
 			ctrlShow[2030,false];		//interpol pour bounty hunter (ladis)
 		};
 	};
+
+	case east:
+	{
+		ctrlShow[2012,false];		//interpol?
+		if(!(license_civ_bounty_hunter)) then
+		{
+			ctrlShow[2030,false];		//interpol pour bounty hunter (ladis)
+		};
+	};
+
 	case independent:
 	{
 		ctrlShow[2011,false];		//Gang

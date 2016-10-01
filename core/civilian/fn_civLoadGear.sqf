@@ -7,7 +7,8 @@
 */
 private["_itemArray","_uniform","_vest","_backpack","_goggles","_headgear","_items","_prim","_seco","_hgun","_uItems","_bItems","_vItems","_pItems","_sItems","_hItems","_yItems","_uMags","_bMags","_vMags","_handle"];
 
-if (playerSide == civilian) then {_itemArray = civ_gear;};
+if ((playerSide == civilian) OR (playerSide == east)) then {_itemArray = civ_gear;};
+if (playerSide == east) then {_itemArray = civ_gear;};
 if (playerSide == independent) then {_itemArray = indep_gear;};
 
 waitUntil {!(isNull (findDisplay 46))};

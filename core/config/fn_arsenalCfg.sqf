@@ -31,7 +31,7 @@ if (_shop == "gang") then
 };
 
 //default equipment available for all civilian factions.
-if (playerSide == civilian) then
+if ((playerSide == civilian) OR (playerSide == east)) then
 {
 	//General Store
 	_items = _items + [
@@ -41,9 +41,9 @@ if (playerSide == civilian) then
 		["ItemWatch",50],
 		["ItemGPS",100],
 		["ToolKit",2000],
-		["ItemRadio",50],		
+		["ItemRadio",50],
 		["NVGoggles",2000],
-		
+
 		//Uniforms
 		["U_C_Poloshirt_salmon",175],
 		["U_C_Poloshirt_redwhite",150],
@@ -64,7 +64,7 @@ if (playerSide == civilian) then
 		["U_NikosBody",1500],
 		["U_NikosAgedBody",1500],
 		["U_C_WorkerCoveralls",2500],
-		
+
 		//Hats
 		["H_Cap_red",50],
 		["H_Cap_blu",50],
@@ -1385,7 +1385,7 @@ switch(_shop) do
 //Donator & gang area discount
 
 _coef = 1;
-if (playerSide == civilian) then
+if ((playerSide == civilian) OR (playerSide == east)) then
 {
 	switch (__GETC__(life_donator)) do {
     	case 0: {_coef = 1;};

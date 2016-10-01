@@ -39,14 +39,14 @@ if(count (_this select 6) > 0) then {
 
 //Parse side specific information.
 switch(playerSide) do {
-	case west: {	
+	case west: {
 		//ProfLicences
 		if(count (_this select 10) > 0) then {
 			{
 				missionNamespace setVariable [(_x select 0),[_x select 1, _x select 2]];
 			} foreach (_this select 10);
-		}; 
-		
+		};
+
 		diag_log "------------- Request Received -------------";
 		diag_log "----REQUETE RECU DE LA BASE DE DONNEE ------";
 		diag_log format["1: %1",_this select 1]; //nom
@@ -62,11 +62,11 @@ switch(playerSide) do {
 		diag_log format["11: %1",_this select 11]; //position
 		diag_log format["12: %1",_this select 12]; //isalive
 		diag_log "------------------------------------------------";
-		
+
 		// Saving player position
 		cop_position = _this select 11;
 		life_is_alive = _this select 12;
-		
+
 		__CONST__(life_coplevel,parseNumber(_this select 7));
 		cop_gear = _this select 8;
 		[] spawn life_fnc_loadGear;
@@ -82,9 +82,9 @@ switch(playerSide) do {
 			{
 				missionNamespace setVariable [(_x select 0),[_x select 1, _x select 2]];
 			} foreach (_this select 15);
-		}; 
+		};
 
-		diag_log "------------- Request Received -------------";		
+		diag_log "------------- Request Received -------------";
 		diag_log "----REQUETE RECU DE LA BASE DE DONNEE ------";
 		diag_log format["1: %1",_this select 1]; //nom
 		diag_log format["2: %1",_this select 2]; //cash
@@ -104,7 +104,7 @@ switch(playerSide) do {
 		diag_log format["16: %1",_this select 16]; //keys
 		diag_log format["17: %1",_this select 17]; //gangs
 		diag_log "------------------------------------------------";
-		
+
 		life_is_arrested = _this select 7;
 		//life_is_arrested = call compile format["%1", _this select 7];
 		civ_gear = _this select 8;
@@ -113,7 +113,7 @@ switch(playerSide) do {
 		player setVariable ["playerAge",_this select 10];
 		player setVariable ["playerSexe",_this select 11];
 		player setVariable ["playerNationalite",_this select 12];
-		
+
 		// Saving player position
 		civ_position = _this select 13;
 		life_is_alive = _this select 14;
@@ -143,18 +143,18 @@ switch(playerSide) do {
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
-		[] spawn life_fnc_initHouses;		
+		[] spawn life_fnc_initHouses;
 	};
 
-	case independent: {	
+	case independent: {
 
 		//ProfLicences
 		if(count (_this select 10) > 0) then {
 			{
 				missionNamespace setVariable [(_x select 0),[_x select 1, _x select 2]];
 			} foreach (_this select 10);
-		}; 
-		
+		};
+
 		diag_log "------------- Request Received -------------";
 		diag_log "----REQUETE RECU DE LA BASE DE DONNEE ------";
 		diag_log format["1: %1",_this select 1]; //nom
@@ -170,27 +170,97 @@ switch(playerSide) do {
 		diag_log format["11: %1",_this select 11]; //position
 		diag_log format["12: %1",_this select 12]; //isalive
 		diag_log "------------------------------------------------";
-		
+
 		// Saving player position
 		med_position = _this select 11;
 		life_is_alive = _this select 12;
-		
+
 		__CONST__(life_medicLevel,parseNumber(_this select 7));
 		player setVariable ["life_mediclevel", parseNumber(_this select 7), true];
 		__CONST__(life_depanLevel,parseNumber(_this select 8));
 		__CONST__(life_copLevel,0);
 		indep_gear = _this select 9;
 	};
+
+	case east: {
+		//ProfLicences
+		if(count (_this select 15) > 0) then {
+			{
+				missionNamespace setVariable [(_x select 0),[_x select 1, _x select 2]];
+			} foreach (_this select 15);
+		};
+
+		diag_log "------------- Request Received -------------";
+		diag_log "----REQUETE RECU DE LA BASE DE DONNEE ------";
+		diag_log format["1: %1",_this select 1]; //nom
+		diag_log format["2: %1",_this select 2]; //cash
+		diag_log format["3: %1",_this select 3]; //bank
+		diag_log format["4: %1",_this select 4]; //adminlvl
+		diag_log format["5: %1",_this select 5]; //donatorlvl
+		diag_log format["6: %1",_this select 6]; //licences
+		diag_log format["7: %1",_this select 7]; //coplevel
+		diag_log format["8: %1",_this select 8]; //stuff
+		diag_log format["9: %1",_this select 9];
+		diag_log format["10: %1",_this select 10]; //age
+		diag_log format["11: %1",_this select 11]; //sexe
+		diag_log format["12: %1",_this select 12]; //nationalite
+		diag_log format["13: %1",_this select 13]; //position
+		diag_log format["14: %1",_this select 14]; //
+		diag_log format["15: %1",_this select 15]; //licences
+		diag_log format["16: %1",_this select 16]; //keys
+		diag_log format["17: %1",_this select 17]; //gangs
+		diag_log "------------------------------------------------";
+
+		life_is_arrested = _this select 7;
+		//life_is_arrested = call compile format["%1", _this select 7];
+		civ_gear = _this select 8;
+
+		// Role Play informations about player
+		player setVariable ["playerAge",_this select 10];
+		player setVariable ["playerSexe",_this select 11];
+		player setVariable ["playerNationalite",_this select 12];
+
+		// Saving player position
+		civ_position = _this select 13;
+		life_is_alive = _this select 14;
+
+		//Komodo: Wanted List retrieval
+		if (!((_this select 9) isEqualTo [])) then
+		{
+			if (([getPlayerUID player, 0, invo_wanted_list] call life_fnc_indexInTable) == -1) then
+			{
+				invo_wanted_list pushBack [getPlayerUID player, (_this select 9)];
+				publicVariable "invo_wanted_list";
+			};
+		};
+
+		__CONST__(life_coplevel,0);
+		__CONST__(life_medicLevel,0);
+		__CONST__(life_depanLevel,0);
+		life_houses = _this select 16;
+		[] spawn life_fnc_civLoadGear;
+
+		{
+			_house = nearestBuilding (call compile format["%1", _x select 0]);
+			life_vehicles pushBack _house;
+		} foreach life_houses;
+
+		life_gangData = _This select 17;
+		if(count life_gangData != 0) then {
+			[] spawn life_fnc_initGang;
+		};
+		[] spawn life_fnc_initHouses;
+	};
 };
 
 /* késako ??
-if(count (_this select 16) > 0) then 
+if(count (_this select 16) > 0) then
 {
 	{
 		life_vehicles pushBack _x;
 	} foreach (_this select 16);
-}; 
-*/  
+};
+*/
 
 
 switch (playerSide) do
@@ -232,6 +302,11 @@ switch (playerSide) do
 		life_paycheck = life_paycheck + 1500;
 	};
 
+	case east:
+	{
+		life_paycheck = life_paycheck + 1500;
+	};
+
 	case independent:
 	{
 		if (__GETC__(life_medicLevel) == 1) then
@@ -252,7 +327,7 @@ switch (playerSide) do
 		};
 	};
 };
-	
+
 switch(__GETC__(life_donator)) do
 {
 //DONATEUR 1
@@ -263,12 +338,12 @@ switch(__GETC__(life_donator)) do
 //DONATEUR 2
 	case 2:
 	{
-		life_paycheck = life_paycheck + 1500;	
+		life_paycheck = life_paycheck + 1500;
 	};
 //DONATEUR 3
 	case 3:
 	{
-		life_paycheck = life_paycheck + 2000;	
+		life_paycheck = life_paycheck + 2000;
 	};
 };
 

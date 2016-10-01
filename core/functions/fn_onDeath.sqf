@@ -78,7 +78,7 @@ if(side _source == west && vehicle _source == _source && playerSide == civilian)
 }
 	else
 {
-	if(playerSide == civilian) then
+	if((playerSide == civilian) OR (playerSide == east)) then
 	{
 		[getPlayerUID _unit] call INVO_fnc_wantedRemove;
 	};

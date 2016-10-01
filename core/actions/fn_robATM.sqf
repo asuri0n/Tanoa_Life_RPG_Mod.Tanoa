@@ -21,7 +21,7 @@ if (vehicle player != _robber) exitWith { hint "Sortez de votre véhicule!" };
 _nbCops = {(side _x == west)} count allUnits;
 if (_nbCops < 3) exitWith {hint "Pas assez de Gendarmes sur l'île pour autoriser cette action, il en faut 3 minimum.";};
 
-//if(!(license_civ_gangster)) exitWith { hint "Vous ne pouvez pas voler cette ATM!" };
+if(!(license_civ_gangster)) exitWith { hint "Vous devez être un gangster pour voler cette ATM!" };
 if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith { hint "Vous n'avez pas de pince coupante"};
 if (_kassa == 0) exitWith { hint "Il n'y a pas de tresorerie dans la machine!" };
 

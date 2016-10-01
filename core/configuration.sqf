@@ -313,6 +313,46 @@ switch (playerSide) do
 		life_dabliquide_before = 50000;
 		life_paycheck = 0;
 	};
+	case east:
+	{
+
+		//----------------------------------------------------
+		//section added 13/11/2014
+		//init crimes array, it must be change if the crimes change !
+		life_crimes = [
+			["480","Délit de Fuite"],
+			["187","Homicide"],
+			// ["187V","Homicide Involontaire Véhicules"],
+			["187T","Tentative d'Homicide"],
+			["188","Homicide sur Agent"],
+			["188T","Tentative d'Homicide sur Agent"],
+			["208","Séquestration de Civil"],
+			["209","Séquestration de Gendarme"],
+			["207A","Tentative d'Enlèvement"],
+			["207","Enlèvement"],
+			["261A","Tentative de Viol"],
+			["261","Viol"],
+			["211","Braquage à main armée"],
+			["483","Trafic de Drogues"],
+			["481","Possession de Drogue"],
+			["482","Distribution de Drogue"],
+			["490","Consommation de Stupéfiants"],
+			["215","Tentative de Vol de Véhicule"],
+			["487","Vol de Véchicule"],
+			["216","Tentative de démenottage"],
+			["489","Crochetage de menottes"],
+			["488","Larcin"],
+			["491","Stationnement Gênant"],
+			["492","Conduite Dangereuse"],
+			["501","Sabotage"],
+			["213","Utilisation d'Explosif"],
+			["901","Evasion de Prison"]
+			];
+
+		life_dabliquide = 50000; //@see InsertRequest l13
+		life_dabliquide_before = 50000;
+		life_paycheck = 0;
+	};
 
 	case independent: {
 		life_dabliquide = 50000;

@@ -49,6 +49,28 @@ switch(playerSide) do
 		if(goggles player != "") then {removeGoggles player;};
 		//if (license_civ_depanneur && (str player) in ["Depanneur_1","Depanneur_2","Depanneur_3","Depanneur_4","Depanneur_5"]) Then {[] execVM "core\initDepaneur.sqf"};
 	};
+
+	case east:
+	{
+		_unit setVariable["restrained",false,true];
+		_unit setVariable["ziptiesOwners",[],true];
+		_unit setVariable["Escorting",false,true];
+		_unit setVariable["transporting",false,true];
+		_unit setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
+		_unit setVariable ["civrestrained",false,true];
+// AJOUT SERRAT
+
+		_unit setVariable ["playerSurrender", false, true];
+		_unit setVariable ["FAR_isUnconscious", 0, true];
+
+		_unit setVariable ["saveContact",ObjNull,true];
+		_unit setVariable ["invisible",false,true];
+		_unit setVariable ["isknocked",false,true];
+		life_istazed = false;//added 04/26/2014
+		if(headGear player != "") then {removeHeadgear player;};
+		if(goggles player != "") then {removeGoggles player;};
+		//if (license_civ_depanneur && (str player) in ["Depanneur_1","Depanneur_2","Depanneur_3","Depanneur_4","Depanneur_5"]) Then {[] execVM "core\initDepaneur.sqf"};
+	};
 	case independent:
 	{
 		_unit setVariable["restrained",false,true];

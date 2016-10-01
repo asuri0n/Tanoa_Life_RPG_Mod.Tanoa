@@ -379,6 +379,24 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
+	class noRebel
+	{
+		title = "Non rebelle";
+		subtitle = "Tu n'es pas un rebelle";
+		description = "Fait ta demande de rebellion sur le forum";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	class noRebelciv
+	{
+		title = "Rebelle";
+		subtitle = "Tu es rebelle, utilise les slots prévu pour vous !";
+		description = "Ce slot est interdit aux rebelles";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
 };
 
 class CfgNotifications

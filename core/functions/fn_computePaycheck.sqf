@@ -16,10 +16,10 @@ if((!alive player) OR (player getVariable "restrained") OR (player getVariable "
 {
 	_extra = 0;
 	switch (playerSide) do
-	{		
-		case civilian:
+	{
+		case east:
 		{
-			if (license_civ_rebel) then {_extra = 300;};
+			_extra = 300;
 		};
 	};
 

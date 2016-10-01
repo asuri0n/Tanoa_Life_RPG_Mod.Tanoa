@@ -11,7 +11,7 @@ _index = lbCurSel 2302;
 lbClear 2303;
 _veh = lbData[2302,_index];
 _c_arr = [_veh] call life_fnc_vehicleColorCfg;
-_id = switch(playerSide) do {case civilian: {"civ"}; case west:{"cop"}; default {"civ"};};
+_id = switch(playerSide) do {case civilian: {"civ"}; case east: {"civ"}; case west:{"cop"}; default {"civ"};};
 _colorcost = 100;
 for "_i" from 0 to (count _c_arr)-1 do
 {

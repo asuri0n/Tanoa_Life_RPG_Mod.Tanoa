@@ -34,6 +34,9 @@ switch(playerSide) do
 	case civilian: {
 		[] call life_fnc_civFetchGear;
 	};
+	case east: {
+		[] call life_fnc_civFetchGear;
+	};
 	case independent: {
 		[] call life_fnc_medicLoadout;
 	};

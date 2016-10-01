@@ -21,7 +21,7 @@ ctrlSetText[2404,"Etablissement de la connexion..."];
 
 ctrlShow[2411,false];//unvisible text manually add
 
-if((__GETC__(life_coplevel) < 7 && __GETC__(life_adminlevel) == 0) OR (playerSide == civilian)) then
+if((__GETC__(life_coplevel) < 7 && __GETC__(life_adminlevel) == 0) OR ((playerSide == civilian) OR (playerSide == east))) then
 {
 
 	//restric vision for some buttons to low cops

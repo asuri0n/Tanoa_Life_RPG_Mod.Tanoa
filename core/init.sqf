@@ -104,6 +104,13 @@ switch (playerSide) do
 		};
 
 	};
+
+	case east:
+	{
+		diag_log "Initialize Rebel Settings";
+		_handle = [] spawn life_fnc_initRebel;
+		waitUntil {scriptDone _handle};
+	};
 /* ZEUS? Désactivé pour tester...
 	case sideLogic:
 

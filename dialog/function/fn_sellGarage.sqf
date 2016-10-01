@@ -33,8 +33,13 @@ _unit = player;
 if(isNil "_vehicle") exitWith {hint "ERREUR..."};
 if (invo_last_sold_vehicle == _vid) exitWith {}; //Dans le cul les gros cheateurs.
 
-_price = [_vehicle,__GETC__(life_garage_sell)] call life_fnc_index;
-if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell) select _price) select 1;};
+// Get vehicle sell price
+_price = [_className,__GETC__(life_garage_sell)] call life_fnc_index;
+if(_price == -1) then {
+	_price = round(_vehPrice * (call sellCoef));
+} else {
+	_price = (__GETC__(life_garage_sell) select _price) select 1;
+};
 
 [] call life_fnc_changeInVehicleGarage;
 [[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleDelete",false,false] spawn life_fnc_MP;

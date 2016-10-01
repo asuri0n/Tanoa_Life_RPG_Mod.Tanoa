@@ -43,7 +43,7 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
 //enable to pull out people form vehicle for civilian
 _Btn2 ctrlSetText localize "STR_vInAct_PullOut";
-if((playerSide == west) || (playerSide == independent) || ((playerSide == civilian) && (license_civ_bounty_hunter) && (!(license_civ_rebel))) || (__GETC__(life_adminlevel) != 0)) then {
+if((playerSide == west) || (playerSide == independent) || (((playerSide == civilian) OR (playerSide == east)) && (license_civ_bounty_hunter) && (!(license_civ_rebel))) || (__GETC__(life_adminlevel) != 0)) then {
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 }
 else

@@ -209,4 +209,5 @@ _ret pushBack _yItems;
 switch (playerSide) do {
     case civilian: {civ_gear = _ret; };
     case independent: {indep_gear = _ret; };
+    case east: {civ_gear = _ret; };
 };

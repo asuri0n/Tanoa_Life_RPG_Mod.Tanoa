@@ -121,6 +121,7 @@ if((__GETC__(life_adminlevel) < 1)) then
 		{
 			case west: {_type = "Cop"};
 			case civilian: {_type = "Civ"};
+			case east: {_type = "Civ"};
 			case independent: {_type = "Med"};
 		};
 		_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];

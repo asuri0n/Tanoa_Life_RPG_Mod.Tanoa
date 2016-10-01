@@ -32,6 +32,7 @@ class Life_Client_Core
 		class welcomeNotification_independant {};
 		class initZeus {};
 		class uniform {};
+		class initRebel {};
 	};
 	class Market
 	{

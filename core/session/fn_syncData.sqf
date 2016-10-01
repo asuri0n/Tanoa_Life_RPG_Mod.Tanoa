@@ -26,7 +26,7 @@ switch (typeName life_fnc_MP_packet) do
 if(!isNil "_exit") exitWith {hint "Un cheater a stopé le chargement de la mission.\n\nEssayer dans quelques minutes.";};
 
 [] call SOCK_fnc_updateRequest;
-hint "Sauvegarde du joueur dans la base de données.\n\nAttendez minimum 20 secondes.";
+hint parseText format["<t size='1.1px'>Sauvegarde du joueur dans la base de données.\n\nAttendez minimum 20 secondes.<br><t color='#FF0000' size='1.3px' align='center'>Attention</t><br><t size='1.3px'>L'argent liquide ne se sauvegarde pas après votre déconnection"];
 [] spawn
 {
 	life_session_time = true;

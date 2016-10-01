@@ -6,7 +6,7 @@
 	Looks like weird but radar?
 */
 
-if((playerSide == civilian) AND ((license_civ_rebel) OR (license_civ_gangster) OR (!(license_civ_bounty_hunter)))) exitWith {};
+if(((playerSide == civilian) OR (playerSide == east)) AND ((license_civ_rebel) OR (license_civ_gangster) OR (!(license_civ_bounty_hunter)))) exitWith {};
 private ["_speed","_vehicle","_primary","_handgun","_curWep"];
 _vehicle = cursorTarget;
 _speed = round speed _vehicle;

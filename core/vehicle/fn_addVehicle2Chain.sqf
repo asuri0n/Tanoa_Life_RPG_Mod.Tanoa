@@ -15,7 +15,7 @@ if(!(_vehicle in life_vehicles)) then
 };
 //Ajout Serrat, à tester
 if(_vehicle isKindof "Air") exitWith {};
-if((typeOf _vehicle) in ["I_MRAP_03_F","B_MRAP_01_F","O_MRAP_02_F","B_MRAP_01_hmg_F","I_G_Offroad_01_armed_F","B_G_Offroad_01_armed_F","O_G_Offroad_01_armed_F"] && (!license_civ_rebel) && (playerSide == Civilian)) exitWith
+if((typeOf _vehicle) in ["I_MRAP_03_F","B_MRAP_01_F","O_MRAP_02_F","B_MRAP_01_hmg_F","I_G_Offroad_01_armed_F","B_G_Offroad_01_armed_F","O_G_Offroad_01_armed_F"] && (!license_civ_rebel) && ((playerSide == civilian) OR (playerSide == east))) exitWith
 {
 	if((count crew _vehicle) == 0) then
 	{
