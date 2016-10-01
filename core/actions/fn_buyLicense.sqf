@@ -26,7 +26,7 @@ switch (_license select 0) do
 		PlaySound "caching";
 	};
 	case "license_civ_rebel": {
-		//if(!(license_civ_permrebel)) exitWith { hint "Vous devez être dans la whiteliste rebelle"};
+		if(!(license_civ_permrebel)) exitWith { hint "Vous devez être dans la whiteliste rebelle"};
 		invo_faction = "rebel"; player setVariable ["invo_faction","rebel",true]; license_civ_gangster = false;
 		life_liquide = life_liquide - _price;
 		["Achat Licence", false, -1 * _price] call life_fnc_antiCheatCash;

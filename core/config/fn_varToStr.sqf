@@ -221,7 +221,7 @@ switch (_var) do
 	case "license_civ_gangster": {"Licence Gangster"};
 	//case "license_civ_luxecar": {"Permis Véhicule Luxe"};
 	//case "license_civ_bounty_hunter": {"Licence de chasseur de prime"};
-	//case "license_civ_permrebel": {"Permission licence rebelle"};
+	case "license_civ_permrebel": {"Permission licence rebelle"};
 	//case "license_cop_fusiller_leger": {"Permission Fusiller léger"};
 	//case "license_cop_medecin": {"Permission Medeçin"};
 	//case "license_cop_fusiller_lourd": {"Permission Fusiller lourd"};

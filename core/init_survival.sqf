@@ -178,7 +178,7 @@
 	_illegalmarkers = _illegalmarkers + ["morgue","organ_trait"]; // Organs
 	_illegalmarkers = _illegalmarkers + ["uranium_1","uranium_area","uranium_2","uranium_3","uranium_4","uranium_5","uranium_6"]; // Uranium
 	_illegalmarkers = _illegalmarkers + ["dealer_1","dealer_ura","dealer_2","dealer_organ"]; // Dealers
-	_illegalmarkers = _illegalmarkers + ["marker_rebel_camp"]; // Camp rebelle
+	_illegalmarkers = _illegalmarkers + ["marker_rebel","marker_gangster"]; // Camp rebelle
 
 	if (playerSide == west) then {
 		{ deleteMarkerLocal _x; } forEach _illegalmarkers;

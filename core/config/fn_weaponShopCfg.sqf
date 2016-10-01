@@ -117,19 +117,16 @@ switch(_shop) do
 		{
 			case (playerSide != civilian): {"Vous n'etes pas un civil !"};
 			case (!license_civ_rebel): {"Tu n'as pas ta licence d'entrainement Rebelle!"};
-			case (__GETC__(life_donator) != 0) :
-			{
-				["Membre Donateur Capture 5%",
-					[
-
-					]
-				];
-			};
 			default
 			{
 				["Arsenal Zone de Capture",
 					[
 
+						["srifle_GM6_camo_F",nil,712500],
+							["5Rnd_127x108_Mag",nil,2500],
+
+						["LMG_Zafir_F",nil,650000],
+							["150Rnd_762x54_Box",nil,5000]
 					]
 				];
 			};
@@ -140,7 +137,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Accessible qu'aux rebelles !"};
+			case (playerSide != east): {"Accessible qu'aux rebelles !"};
 			case (!license_civ_rebel): {"Tu n'as pas ta licence d'entrainement Rebelle!"};
 			default
 			{
@@ -163,16 +160,10 @@ switch(_shop) do
 						["srifle_DMR_01_F",nil,422500],
 							["10Rnd_762x54_Mag",nil,5000],
 
-						["LMG_Zafir_F",nil,650000],
-							["150Rnd_762x54_Box",nil,5000],
-
 						["arifle_Katiba_C_F",nil,332500],
 						["arifle_ARX_ghex_F",nil,330000],
 						["arifle_ARX_hex_F",nil,330000],
 							["30Rnd_65x39_caseless_green",nil,500],
-
-						["srifle_GM6_camo_F",nil,712500],
-							["5Rnd_127x108_Mag",nil,2500],
 
 						["srifle_DMR_06_camo_F",nil,455000],
 						["srifle_DMR_06_olive_F",nil,455000],
@@ -312,19 +303,46 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Interdit aux civils !"};
 			case (!license_civ_gangster): {"Tu n'es pas gangster!"};
-			case (__GETC__(life_donator) != 0) :
-			{
-				["Membre Donateur Gangster 5%",
-					[
-					]
-				];
-			};
 			default
 			{
-				["Magasin Gangster",
+				["Magasin d'armes gangster",
 					[
+						["hgun_P07_F",nil,17000],
+						["hgun_Rook40_F",nil,17000],
+							["16Rnd_9x21_Mag",nil,430],
+
+						["hgun_ACPC2_F",nil,17000],
+							["9Rnd_45ACP_Mag",nil,430],
+
+						["hgun_Pistol_heavy_01_F",nil,17000],
+							["11Rnd_45ACP_Mag",nil,430],
+
+						["hgun_Pistol_heavy_02_F",nil,17000],
+							["6Rnd_45ACP_Cylinder",nil,430],
+
+						["hgun_PDW2000_F",nil,33000],
+							["30Rnd_9x21_Mag",nil,430],
+
+						["arifle_Mk20_plain_F",nil,52000],
+						["arifle_TRG21_F",nil,69000],
+						["arifle_SDAR_F",nil,52000],
+							["30Rnd_556x45_Stanag",nil,430],
+
+						["SMG_05_F",nil,34500],
+							["30Rnd_9x21_Mag_SMG_02",nil,430],
+
+						["arifle_AKS_F",nil,100000],
+							["30Rnd_545x39_Mag_F",nil,500],
+
+						["arifle_SPAR_02_khk_F",nil,325000],
+						["arifle_SPAR_02_snd_F",nil,325000],
+							["150Rnd_556x45_Drum_Mag_F",nil,3000],
+
+						["arifle_Katiba_C_F",nil,332500],
+							["30Rnd_65x39_caseless_green",nil,500],
+						["LMG_03_F",nil,380000],
+							["200Rnd_556x45_Box_F",nil,3500]
 					]
 				];
 			};

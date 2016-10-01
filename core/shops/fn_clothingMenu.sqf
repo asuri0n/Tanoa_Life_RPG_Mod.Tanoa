@@ -11,7 +11,8 @@ createDialog "Life_Clothing";
 disableSerialization;
 
 //Cop / Civ Pre Check
-if((_this select 3) in ["bruce","dive","reb","kart","donator"] && playerSide != civilian) exitWith {hint "Tu dois être un civil pour utiliser ce vendeur!"; closeDialog 0;};
+if((_this select 3) in ["bruce","dive","kart","donator"] && playerSide != civilian) exitWith {hint "Tu dois être un civil pour utiliser ce vendeur!"; closeDialog 0;};
+if((_this select 3) in ["reb"] && playerSide != east) exitWith {hint "Tu dois être rebelle pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "Tu dois être un rebelle pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "gangster" && !license_civ_gangster) exitWith {hint "Tu dois être un gangster pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "bac" && !license_cop_bac) exitWith {hint "Tu dois être membre de la BAC pour utiliser ce vendeur!"; closeDialog 0;};

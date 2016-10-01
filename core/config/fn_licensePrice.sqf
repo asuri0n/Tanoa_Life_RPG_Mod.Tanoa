@@ -56,13 +56,11 @@ switch (_type) do
 	case "turtle": {0};
 	case "meth": {0};
 	case "medmarijuana": {1500}; //Medical Marijuana processing license cost
-	case "rebel": {3000000}; //Rebel license cost
 	case "home": {150000}; // license proprietaire
 	case "stiller":{30000};
 	case "liquor":{100000};
 	case "bottler":{100000};
 	case "mash":{100000};
-	case "gangster":{1000000};
 	case "luxecar":{15000};
 	case "busdriver":{50000}; //Ajout prix licence busdriver
 	case "bountyhunter": {500000}; //added by Ladislas 09/11/2014
@@ -74,6 +72,8 @@ switch (_type) do
 	case "ef":{0};
 	case "wt":{0};
 	case "permrebel":{0};
+	case "rebel": {5000000};
+	case "gangster":{2500000};
 	case "bac":{0};
 	case "umb":{0};
 

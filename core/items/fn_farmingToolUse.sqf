@@ -12,7 +12,7 @@ _tool = _this select 0; //use to get the selected tool
 closeDialog 0; //Close the interaction menu.
 if(vehicle player != player) exitWith {hint "Tu ne peux pas miner a partir d'une voiture";};
 
-_resourceZones = ["or_area","argile_area","diamant_area","fer_area","souffre_area","charbon_area","uranium_area","petrole_area","foret_area_1","foret_area_2","foret_area_3","foret_area_4","lin_area","heroine_area","coke_area","cannabis_area","apple_area_1","apple_area_2","apple_area_3","apple_area_4","apple_area_5","apple_area_6","apple_area_7"];
+_resourceZones = ["or_area","argile_area","diamant_area","fer_area","souffre_area","charbon_area","uranium_area","petrole_area","foret_area_1","foret_area_2","foret_area_3","foret_area_4","lin_area","heroine_area","cocaine_area","marijuana_area","apple_area_1","apple_area_2","apple_area_3","apple_area_4","apple_area_5","apple_area_6","apple_area_7"];
 _zone = "";
 _mine = "";
 
@@ -58,8 +58,8 @@ switch (_tool) do {
     		case "foret_area_4": 	{_mine = "boisp"; _val = 0.66;};
 			case "lin_area": 		{_mine = "linp"; _val = 1;};
 			case "heroine_area": 	{_mine = "heroinpy"; _val = 1.2;};
-			case "coke_area": 		{_mine = "cocainp"; _val = 1.2;};
-			case "cannabis_area": 	{_mine = "marip"; _val = 1.2;};
+			case "cocaine_area": 	{_mine = "cocainp"; _val = 1.2;};
+			case "marijuana_area": 	{_mine = "marip"; _val = 1.2;};
 			case "apple_area_1": 	{_mine = "apple"; _val = 0.66;};
 			case "apple_area_2": 	{_mine = "apple"; _val = 0.66};
 			case "apple_area_3": 	{_mine = "apple"; _val = 0.66;};
