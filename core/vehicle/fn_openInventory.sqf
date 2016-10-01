@@ -103,7 +103,7 @@ if(_veh_data select 0 == -1 && {!(_vehicle isKindOf "House_F")}) exitWith
 	closeDialog 0;
 	_vehicle setVariable["trunk_in_use",false,true];
 	_vehicle setVariable["trunk_in_use_by","",true];
-	hint "Impossible de mettre des objets virtuels dans ce véhicule.";
+	hint "Ce véhicule ne posséde pas de coffre :/";
 };
 
 ctrlSetText[3504,format["Weight: %1/%2",_veh_data select 1,_veh_data select 0]];

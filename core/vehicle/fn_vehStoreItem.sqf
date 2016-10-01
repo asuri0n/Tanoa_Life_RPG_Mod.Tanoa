@@ -19,9 +19,8 @@ if (isNull life_vehicle_transfer_from) exitWith {hint "le véhicule source a dis
 if (isNull life_vehicle_transfer_to) exitWith {hint "le véhicule cible a disparu!";};
 if(!alive player) exitwith {[] call life_fnc_vehInventoryClose;};
 
-if(_ctrl == "organ" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F" OR life_trunk_vehicle isKindOf "Ship")}) exitWith {hint "You cannot store that in anything but a land vehicle!"};
-if(_ctrl == "uranium1" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F" OR life_trunk_vehicle isKindOf "Ship")}) exitWith {hint "You can't Add Uranium In Elicopter For Somes Reasons."};
-
+if(_ctrl == "organ" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F" OR life_trunk_vehicle isKindOf "Ship")}) exitWith {hint "Tu ne peux pas mettre d'organes dans ce véhicule :/"};
+if(_ctrl == "uranium1" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F" OR life_trunk_vehicle isKindOf "Ship")}) exitWith {hint "Tu ne peux pas mettre d'uranium dans ce véhicule :/"};
 
 [life_vehicle_transfer_from, life_vehicle_transfer_to, _ctrl, _num] call life_fnc_vehTransferItems;
 [] call life_fnc_vehInventory;
