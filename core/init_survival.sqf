@@ -168,6 +168,22 @@
     };
 };
 
+[] spawn
+{
+    private["_illegalmarkers"];
+	_illegalmarkers = ["cocaine_1","cocaine_area","trait_pavot"]; // Héroine
+	_illegalmarkers = _illegalmarkers + ["heroine_1","heroine_area","trait_coca"]; // Cocaine
+	_illegalmarkers = _illegalmarkers + ["marijuana_1","marijuana_area","trait_marijuana"]; // Majiruana
+	_illegalmarkers = _illegalmarkers + ["Vend_archeologie","archeologie_1","turle_dealer_1"]; // Ossements
+	_illegalmarkers = _illegalmarkers + ["morgue","organ_trait"]; // Organs
+	_illegalmarkers = _illegalmarkers + ["uranium_1","uranium_area","uranium_2","uranium_3","uranium_4","uranium_5","uranium_6"]; // Uranium
+	_illegalmarkers = _illegalmarkers + ["dealer_1","dealer_ura","dealer_2","dealer_organ"]; // Dealers
+	_illegalmarkers = _illegalmarkers + ["marker_rebel_camp"]; // Camp rebelle
+
+	if (playerSide == west) then {
+		{ deleteMarkerLocal _x; } forEach _illegalmarkers;
+	};
+};
 // delete animals when far from hunting zone
 /*
 [] spawn {
