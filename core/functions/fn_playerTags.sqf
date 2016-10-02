@@ -106,15 +106,15 @@ if (_hooded != 1) then
 					/* list of equipement that hide the identity of the player cf , configuration.sqf */
 
 					//if unit is masked, hide his name
-					if ( ( _goggles in life_maskingGoggles ) || ( _headGear in life_maskingHeadgear) || ( _uniform in life_maskingUniforms)) then
-					{
+					//if ( ( _goggles in life_maskingGoggles ) || ( _headGear in life_maskingHeadgear) || ( _uniform in life_maskingUniforms)) then
+					//{
 						//if in the group ---> don't hide
 						if ( !(_x in (units group player))) then
 						{
-							_name = "** Masqué **";
+							_name = "**Inconnue**";
 							_masked = true;
 						};
-					};
+					//};
 
 					if ((!isnil {(group _x) getVariable "gang_name"}) && (side _x != west)) Then {
 						_position2 = visiblePosition _x;
