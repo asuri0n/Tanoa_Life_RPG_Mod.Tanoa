@@ -55,10 +55,8 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Jaune";};
-			case 1: {_color = "Jaune";};
-			case 2: {_color = "Camouflage";};
-			case 3: {_color = "Camouflage";};
+			case 0: {_color = "Breaking Bad";};
+			case 1: {_color = "Camouflage";};
 		};
 	};
 

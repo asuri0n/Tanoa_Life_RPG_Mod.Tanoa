@@ -57,8 +57,6 @@ switch (_vehicle) do
  		_ret =
  		[
  			["textures\vehicules\reb\Zamaklab_Jaune_1.paa","reb","textures\vehicules\reb\Zamaklab_Jaune_2.paa","textures\vehicules\reb\Zamaklab_Jaune_3.paa"],
- 			["textures\vehicules\reb\Zamaklab_Jaune_1.paa","civ","textures\vehicules\reb\Zamaklab_Jaune_2.paa","textures\vehicules\reb\Zamaklab_Jaune_3.paa"],
-			["\A3\soft_f_epc\Truck_03\Data\truck_03_ammo_co.paa","civ"],
  			["\A3\soft_f_epc\Truck_03\Data\truck_03_ammo_co.paa","reb"]
  		];
  	};
