@@ -202,7 +202,7 @@ bank_robber = [];
 */
 __CONST__(life_revive_cops,TRUE);
 __CONST__(life_revive_fee,250);
-__CONST__(life_houseLimit,5);
+__CONST__(life_houseLimit,6);
 __CONST__(life_gangPrice,600000);
 __CONST__(life_gangUpgradeBase,300000);
 __CONST__(life_gangUpgradeMultipler,2.5);

@@ -13,10 +13,10 @@ if(isNull _house) exitWith {life_action_inUse = false; /*player setVariable ["AG
 if(!(_house isKindOf "House_F")) exitWith {life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 if((_house getVariable["house_owned",false])) exitWith {hint "Cette maison n'est pas a vendre, pour l'instant"; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
-if((count life_houses == 1) && (__GETC__(life_donator) < 1)) exitWith {hint format["Tu ne peux avoir que seulement 1 maison en non donateur."]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if((count life_houses == 2) && (__GETC__(life_donator) == 0)) exitWith {hint format["Tu ne peux avoir que seulement 2 maison en non donateur."]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 if((count life_houses == 3) && (__GETC__(life_donator) == 1)) exitWith {hint format["Tu ne peux avoir que seulement 3 maison en donateur 1."]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
-if((count life_houses == 4) && (__GETC__(life_donator) == 2)) exitWith {hint format["Tu ne peux avoir que seulement 4 maison en donateur 2."]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
-if((count life_houses == 5) && (__GETC__(life_donator) == 3)) exitWith {hint format["Tu ne peux avoir que seulement 5 maison en donateur 3."]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if((count life_houses == 5) && (__GETC__(life_donator) == 2)) exitWith {hint format["Tu ne peux avoir que seulement 5 maison en donateur 2."]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
+if((count life_houses == 6) && (__GETC__(life_donator) == 3)) exitWith {hint format["Tu ne peux avoir que seulement 6 maison en donateur 3."]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
 if((count life_houses >= (__GETC__(life_houseLimit)))&& (__GETC__(life_donator) > 0)) exitWith {hint format["Tu ne peux avoir que seulement %1 maisons et garages à la fois.",__GETC__(life_houseLimit)]; life_action_inUse = false; /*player setVariable ["AGM_canTreat", true, true];*/};
 
