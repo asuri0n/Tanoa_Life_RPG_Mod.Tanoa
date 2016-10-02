@@ -477,6 +477,7 @@ switch(_shop) do
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
+							["20Rnd_556x45_UW_mag",nil,500],
 
 						["arifle_CTAR_blk_F",nil,27500],
 							["30Rnd_580x42_Mag_F",nil,500],
@@ -495,11 +496,20 @@ switch(_shop) do
 						["optic_NVS","Night Vision",2500],
 
 					//SILENCIEUX
+						["muzzle_snds_M",nil,2500],
+						["muzzle_snds_H",nil,2500],
+						["muzzle_snds_L",nil,2500],
+						["muzzle_snds_58_blk_F",nil,2500],
+						["muzzle_snds_93mmg",nil,2500],
+						["muzzle_snds_B",nil,2500],
+
 						["muzzle_snds_58_wdm_F",nil,2500],
 						["muzzle_snds_B_snd_F",nil,2500],
-						["muzzle_snds_B_khk_F",nil,25000],
+						["muzzle_snds_B_khk_F",nil,2500],
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
+
+						["acc_flashlight",nil,2500],
 
 					//Items
 						["ItemMap","Carte",0],
@@ -553,6 +563,7 @@ switch(_shop) do
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
+							["20Rnd_556x45_UW_mag",nil,500],
 
 						["arifle_CTAR_blk_F",nil,27500],
 							["30Rnd_580x42_Mag_F",nil,500],
@@ -574,11 +585,20 @@ switch(_shop) do
 						["optic_NVS","Night Vision",2500],
 
 					//SILENCIEUX
+						["muzzle_snds_M",nil,2500],
+						["muzzle_snds_H",nil,2500],
+						["muzzle_snds_L",nil,2500],
+						["muzzle_snds_58_blk_F",nil,2500],
+						["muzzle_snds_93mmg",nil,2500],
+						["muzzle_snds_B",nil,2500],
+
 						["muzzle_snds_58_wdm_F",nil,2500],
 						["muzzle_snds_B_snd_F",nil,2500],
-						["muzzle_snds_B_khk_F",nil,25000],
+						["muzzle_snds_B_khk_F",nil,2500],
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
+
+						["acc_flashlight",nil,2500],
 
 					//Items
 						["ItemMap","Carte",0],
@@ -633,6 +653,7 @@ switch(_shop) do
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
+							["20Rnd_556x45_UW_mag",nil,500],
 
 						["arifle_CTAR_blk_F",nil,27500],
 							["30Rnd_580x42_Mag_F",nil,500],
@@ -665,11 +686,20 @@ switch(_shop) do
 						["optic_NVS","Night Vision",2500],
 
 					//SILENCIEUX
+						["muzzle_snds_M",nil,2500],
+						["muzzle_snds_H",nil,2500],
+						["muzzle_snds_L",nil,2500],
+						["muzzle_snds_58_blk_F",nil,2500],
+						["muzzle_snds_93mmg",nil,2500],
+						["muzzle_snds_B",nil,2500],
+
 						["muzzle_snds_58_wdm_F",nil,2500],
 						["muzzle_snds_B_snd_F",nil,2500],
-						["muzzle_snds_B_khk_F",nil,25000],
+						["muzzle_snds_B_khk_F",nil,2500],
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
+
+						["acc_flashlight",nil,2500],
 
 					//Items
 						["ItemMap","Carte",0],
@@ -724,6 +754,7 @@ switch(_shop) do
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
+							["20Rnd_556x45_UW_mag",nil,500],
 
 						["arifle_CTAR_blk_F",nil,27500],
 							["30Rnd_580x42_Mag_F",nil,500],
@@ -767,11 +798,20 @@ switch(_shop) do
 						["optic_NVS","Night Vision",2500],
 
 					//SILENCIEUX
+						["muzzle_snds_M",nil,2500],
+						["muzzle_snds_H",nil,2500],
+						["muzzle_snds_L",nil,2500],
+						["muzzle_snds_58_blk_F",nil,2500],
+						["muzzle_snds_93mmg",nil,2500],
+						["muzzle_snds_B",nil,2500],
+
 						["muzzle_snds_58_wdm_F",nil,2500],
 						["muzzle_snds_B_snd_F",nil,2500],
-						["muzzle_snds_B_khk_F",nil,25000],
+						["muzzle_snds_B_khk_F",nil,2500],
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
+
+						["acc_flashlight",nil,2500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
@@ -828,6 +868,7 @@ switch(_shop) do
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
+							["20Rnd_556x45_UW_mag",nil,500],
 
 						["arifle_CTAR_blk_F",nil,27500],
 							["30Rnd_580x42_Mag_F",nil,500],
@@ -877,11 +918,20 @@ switch(_shop) do
 						["optic_NVS","Night Vision",2500],
 
 					//SILENCIEUX
+						["muzzle_snds_M",nil,2500],
+						["muzzle_snds_H",nil,2500],
+						["muzzle_snds_L",nil,2500],
+						["muzzle_snds_58_blk_F",nil,2500],
+						["muzzle_snds_93mmg",nil,2500],
+						["muzzle_snds_B",nil,2500],
+
 						["muzzle_snds_58_wdm_F",nil,2500],
 						["muzzle_snds_B_snd_F",nil,2500],
-						["muzzle_snds_B_khk_F",nil,25000],
+						["muzzle_snds_B_khk_F",nil,2500],
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
+
+						["acc_flashlight",nil,2500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
@@ -940,6 +990,7 @@ switch(_shop) do
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
+							["20Rnd_556x45_UW_mag",nil,500],
 
 						["arifle_CTAR_blk_F",nil,27500],
 							["30Rnd_580x42_Mag_F",nil,500],
@@ -988,13 +1039,23 @@ switch(_shop) do
 						["optic_Holosight",nil,2500],
 						["optic_DMS",nil,2500],
 						["optic_NVS","Night Vision",2500],
+						["optic_LRPS",nil,2500],
 
 					//SILENCIEUX
+						["muzzle_snds_M",nil,2500],
+						["muzzle_snds_H",nil,2500],
+						["muzzle_snds_L",nil,2500],
+						["muzzle_snds_58_blk_F",nil,2500],
+						["muzzle_snds_93mmg",nil,2500],
+						["muzzle_snds_B",nil,2500],
+
 						["muzzle_snds_58_wdm_F",nil,2500],
 						["muzzle_snds_B_snd_F",nil,2500],
-						["muzzle_snds_B_khk_F",nil,25000],
+						["muzzle_snds_B_khk_F",nil,2500],
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
+
+						["acc_flashlight",nil,2500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
@@ -1103,11 +1164,20 @@ switch(_shop) do
 						["optic_NVS","Night Vision",2500],
 
 					//SILENCIEUX
+						["muzzle_snds_M",nil,2500],
+						["muzzle_snds_H",nil,2500],
+						["muzzle_snds_L",nil,2500],
+						["muzzle_snds_58_blk_F",nil,2500],
+						["muzzle_snds_93mmg",nil,2500],
+						["muzzle_snds_B",nil,2500],
+
 						["muzzle_snds_58_wdm_F",nil,2500],
 						["muzzle_snds_B_snd_F",nil,2500],
-						["muzzle_snds_B_khk_F",nil,25000],
+						["muzzle_snds_B_khk_F",nil,2500],
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
+
+						["acc_flashlight",nil,2500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
