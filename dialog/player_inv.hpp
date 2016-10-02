@@ -370,17 +370,6 @@ class playerSettings {
 			};
 		};
 
-		class ButtonGangList : Life_RscButtonMenu {
-			idc = 2012;
-			text = "$STR_PM_WantedList";
-			tooltip = "Interpol";
-			onButtonClick = "[] call life_fnc_wantedMenu";
-			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.7 - (1 / 25);
-			w = (6.25 / 40);
-			h = (1 / 25);
-		};
-
 		class Life_RscButtonInvisible10 : Life_RscButtonMenu { //menu clés
 			animTextureNormal = "#(argb,8,8,3)color(1,1,1,0)";
 			animTextureDisabled = "#(argb,8,8,3)color(1,1,1,0)";
@@ -585,6 +574,28 @@ class playerSettings {
 			tooltip = "Expériences";
 			x = 0.115;
 			y = 0.68;
+			w = (5.75 / 40)+0.02;
+			h = (1 / 25);
+		};
+
+		class ButtonGangList : Life_RscButtonMenu {
+			idc = 2012;
+			text = "$STR_PM_WantedList";
+			tooltip = "Interpol";
+			onButtonClick = "[] call life_fnc_wantedMenu";
+			x = 0.115;
+			y = 0.63;
+			w = (5.75 / 40)+0.02;
+			h = (1 / 25);
+		};
+
+		class profilVoir : Life_RscButtonMenu {
+			idc = -1;
+			text = "Profil";
+			tooltip = "Mon profil";
+			onButtonClick = "[] call life_fnc_civShowPassport";
+			x = 0.115;
+			y = 0.58;
 			w = (5.75 / 40)+0.02;
 			h = (1 / 25);
 		};

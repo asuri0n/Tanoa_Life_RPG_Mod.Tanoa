@@ -18,18 +18,10 @@ _alt = _this select 4;
 _speed = speed cursorTarget;
 _handled = false;
 
-_interactionKey = 35;//_interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
+//_interactionKey = 35;
+_interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
+_interactionKeyAlternative = if(count (actionKeys "User10") == 0) then {220} else {(actionKeys "User10") select 0};
 
-_interactionKeyAlternative = "";
-
-if(count (actionKeys "User10") == 0) then
-{
-	_interactionKeyAlternative = 219;
-}
-else
-{
-	_interactionKeyAlternative = ((actionKeys "User10") select 0) ;
-};
 _mapKey = actionKeys "ShowMap" select 0;
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
@@ -75,10 +67,65 @@ switch (_code) do
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 			case civilian: {if(!visibleMap) then {[] spawn life_fnc_civilmarkers;}};
 			case east: {if(!visibleMap) then {[] spawn life_fnc_civilmarkers;}};
-
 		};
 	};
 
+	//H Key
+	case 35 :
+	{
+		if (vehicle player != player) exitWith {};
+		if(_shift && !_ctrlKey && currentWeapon player != "") then {
+			life_curWep_h = currentWeapon player;
+			player action ["SwitchWeapon", player, player, 100];
+			player switchcamera cameraView;
+		} else {
+			if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
+				if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
+					player selectWeapon life_curWep_h;
+				};
+			};
+		};
+
+	};
+
+	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
+	case _interactionKey:
+	{
+		//Holster weapon
+		if (vehicle player != player) exitWith {};
+		if(!life_action_inUse) then {
+			[] spawn
+			{
+				private["_handle"];
+				_handle = [] spawn life_fnc_actionKeyHandler;
+				waitUntil {scriptDone _handle};
+				life_action_inUse = false;
+				/*player setVariable ["AGM_canTreat", true, true];*/
+			};
+			if((missionNamespace getVariable (["pickaxe",0] call life_fnc_varHandle)) > 0) then {
+				["pickaxe"] spawn life_fnc_farmingToolUse;
+			} else {
+				if((missionNamespace getVariable (["machete",0] call life_fnc_varHandle)) > 0) then {
+					["machete"] spawn life_fnc_farmingToolUse;
+				};
+			};
+		};
+	};
+
+	//alternativeInteractionKey - transition to new interaction system (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
+	case _interactionKeyAlternative:
+	{
+		if(!life_action_inUse) then {
+			[] spawn
+			{
+				private["_handle"];
+				_handle = [] spawn life_fnc_actionKeyHandlerAlternative;
+				waitUntil {scriptDone _handle};
+				life_action_inUse = false;
+				/*player setVariable ["AGM_canTreat", true, true];*/
+			};
+		};
+	};
 
 	// ALT J Se rendre
 	case 36:
@@ -107,55 +154,6 @@ switch (_code) do
 				};
 			};
 			_handled = true;
-		};
-	};
-	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-	case _interactionKey:
-	{
-		//Holster weapon
-		if (vehicle player != player) exitWith {};
-		if(_shift && !_ctrlKey && currentWeapon player != "") then {
-			life_curWep_h = currentWeapon player;
-			player action ["SwitchWeapon", player, player, 100];
-			player switchcamera cameraView;
-		}
-		else
-		{
-			/// recall weapon.
-			if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
-				if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
-					player selectWeapon life_curWep_h;
-				};
-			}
-			else
-			{
-				if(!life_action_inUse) then {
-					[] spawn
-					{
-						private["_handle"];
-						_handle = [] spawn life_fnc_actionKeyHandler;
-						waitUntil {scriptDone _handle};
-						life_action_inUse = false;
-						/*player setVariable ["AGM_canTreat", true, true];*/
-
-					};
-				};
-			};
-		};
-	};
-
-	//alternativeInteractionKey - transition to new interaction system (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-	case _interactionKeyAlternative:
-	{
-		if(!life_action_inUse) then {
-			[] spawn
-			{
-				private["_handle"];
-				_handle = [] spawn life_fnc_actionKeyHandlerAlternative;
-				waitUntil {scriptDone _handle};
-				life_action_inUse = false;
-				/*player setVariable ["AGM_canTreat", true, true];*/
-			};
 		};
 	};
 

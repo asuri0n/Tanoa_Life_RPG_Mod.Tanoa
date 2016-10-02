@@ -24,7 +24,6 @@ civ_spawn_5 = nearestObjects[getMarkerPos  "civ_spawn_5", ["Land_Shop_City_02_F"
 
 waitUntil {!(isNull (findDisplay 46))};
 
-//if(str(player) in ["civ_1","civ_2","civ_3","civ_4","civ_5","civ_6","civ_7","civ_8","civ_9","civ_10","civ_11","civ_12","civ_13","civ_14","civ_15","civ_16","civ_17","civ_18","civ_19","civ_20","civ_21","civ_22","civ_23","civ_24","civ_25","civ_26","civ_27","civ_28","civ_29","civ_30"]) then {
 if(str(player) in ["don_1","don_2","don_3","don_4","don_5","don_6","don_7","don_8","don_9","don_10"]) then {
 	if((__GETC__(life_donator) < 1)) then
 	{
@@ -34,7 +33,7 @@ if(str(player) in ["don_1","don_2","don_3","don_4","don_5","don_6","don_7","don_
 	};
 };
 
-if(license_civ_rebel) then
+if(license_civ_rebel AND __GETC__(life_adminlevel) == 0) then
 {
 	player enableSimulation false;
 	["noRebelCiv",false,true] call BIS_fnc_endMission;

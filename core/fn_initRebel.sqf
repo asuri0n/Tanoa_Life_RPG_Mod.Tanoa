@@ -1,10 +1,10 @@
 #include <macro.h>
 /*
-	File: fn_initCiv.sqf
+	File: fn_initRebel.sqf
 	Author: Bryan "Tonic" Boardwine
 
 	Description:
-	Initializes the civilian.
+	Initializes the rebels.
 */
 private["_spawnPos","_allVeh","_pUID","_playerPosition"];
 
@@ -24,7 +24,7 @@ civ_spawn_5 = nearestObjects[getMarkerPos  "civ_spawn_5", ["Land_Shop_City_02_F"
 
 waitUntil {!(isNull (findDisplay 46))};
 
-if(!license_civ_rebel) then
+if(!license_civ_rebel AND __GETC__(life_adminlevel) == 0) then
 {
 	player enableSimulation false;
 	["noRebel",false,true] call BIS_fnc_endMission;

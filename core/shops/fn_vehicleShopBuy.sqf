@@ -115,6 +115,7 @@ playSound "caching";
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
+	if(_className == "I_MRAP_03_F") then {_vehicle disableTIEquipment true;}; // Disable Thermal for Strider
 	_vehicle lock 2;
 	_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 	_vehicle setDir (markerDir _spawnPoint);

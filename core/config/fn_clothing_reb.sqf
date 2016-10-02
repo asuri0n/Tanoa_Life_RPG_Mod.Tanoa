@@ -18,6 +18,8 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
+		_ret pushBack["U_C_Scientist","Protection Contre Les Radiations",10000];
+
 		_ret pushBack["U_B_Wetsuit",nil,10000];
 		_ret pushBack["U_O_Wetsuit",nil,10000];
 

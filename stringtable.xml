@@ -88,7 +88,7 @@
 			<French>compétence d'huile</French>
 			<Italian>Proficiency olio</Italian>
 			<Portuguese>Proficiência Oil</Portuguese>
-		</Key> 
+		</Key>
 	</Package>
 
 	<Package name="Global">
@@ -249,7 +249,7 @@
 			<Original>Frais de stockage</Original>
 		</Key>
 		<Key ID="STR_Garage_NoVehicles">
-			<Original>Aucun véhicule n'est disponible dans votre garage.</Original>
+			<Original>Aucun véhicule disponible.</Original>
 		</Key>
 		<Key ID="STR_Garage_CashError">
 			<Original>Vous n'avez pas %1€ en banque</Original>
@@ -291,7 +291,7 @@
 		</Key>
 	</Package>
 	<Package name="Player_Menu">
-	
+
 		<Key ID="STR_PM_Craft">
 			<Original>Craft</Original>
 			<English>Craft</English>

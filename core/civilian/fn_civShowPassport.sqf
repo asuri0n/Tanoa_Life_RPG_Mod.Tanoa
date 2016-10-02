@@ -7,13 +7,13 @@ Edit : Deathblade
 private["_target", "_message","_queryResult","_playerNationalite","_sexe"];
 
 _target = cursorTarget;
+if(isNull _target) then {_target = player;};
+
 _playerNationalite = player getVariable ["playerNationalite",0];
 
-if(playerSide != civilian) exitWith { hint "Vous n'êtes pas un civil !";};
+if(playerSide != civilian AND playerSide != east) exitWith { hint "Vous n'êtes pas un civil !";};
 
 if(_playerNationalite == "Clandestin") exitWith { hint "Tu n'as pas de passport ...";};
-
-if(isNull _target) then {_target = player;};
 
 if(!(_target isKindOf "Man") ) then {_target = player;};
 
