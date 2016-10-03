@@ -230,6 +230,7 @@ __CONST__(resellCoef,0.5); 		// _sellPrice = round(_vehPrice * (call resell_divi
 __CONST__(sellCoef,0.5); 		// _sellPrice = round(_vehPrice * (call sellCoef));
 __CONST__(rentToBuy,1.5);		// _basePrice = ((_vehicleList select _vIndex) select 1)*(call rentToBuy);
 __CONST__(sortieVhlCoef,0.01);
+__CONST__(coefPerquisition,0.25);
 
 switch (playerSide) do
 {

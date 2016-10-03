@@ -33,7 +33,7 @@ _value = 0;
 if(_value > 0) then
 {
 	[[0,format["Le véhicule a été fouillé et $%1 kilos de drogues ont été perquisitionnés.",[_value] call life_fnc_numberText]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-	life_dabliquide = life_dabliquide + _value;
+	life_dabliquide = life_dabliquide + (_value*(call coefPerquisition));
 	["vehInventorySearch", true, _value] call life_fnc_antiCheatCash;
 	_vehicle setVariable["Trunk",[],true];
 }
