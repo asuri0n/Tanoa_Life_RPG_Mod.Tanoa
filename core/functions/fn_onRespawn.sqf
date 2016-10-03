@@ -34,20 +34,15 @@ switch(playerSide) do
 		_unit setVariable["ziptiesOwners",[],true];
 		_unit setVariable["Escorting",false,true];
 		_unit setVariable["transporting",false,true];
-		_unit setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
-		_unit setVariable ["civrestrained",false,true];
-// AJOUT SERRAT
-
-		_unit setVariable ["playerSurrender", false, true];
 		_unit setVariable ["FAR_isUnconscious", 0, true];
-
+		_unit setVariable ["civrestrained",false,true];
+		_unit setVariable ["playerSurrender", false, true];
 		_unit setVariable ["saveContact",ObjNull,true];
 		_unit setVariable ["invisible",false,true];
 		_unit setVariable ["isknocked",false,true];
-		life_istazed = false;//added 04/26/2014
+		life_istazed = false;
 		if(headGear player != "") then {removeHeadgear player;};
 		if(goggles player != "") then {removeGoggles player;};
-		//if (license_civ_depanneur && (str player) in ["Depanneur_1","Depanneur_2","Depanneur_3","Depanneur_4","Depanneur_5"]) Then {[] execVM "core\initDepaneur.sqf"};
 	};
 
 	case east:
@@ -56,34 +51,28 @@ switch(playerSide) do
 		_unit setVariable["ziptiesOwners",[],true];
 		_unit setVariable["Escorting",false,true];
 		_unit setVariable["transporting",false,true];
-		_unit setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
-		_unit setVariable ["civrestrained",false,true];
-// AJOUT SERRAT
-
-		_unit setVariable ["playerSurrender", false, true];
 		_unit setVariable ["FAR_isUnconscious", 0, true];
-
+		_unit setVariable ["civrestrained",false,true];
+		_unit setVariable ["playerSurrender", false, true];
 		_unit setVariable ["saveContact",ObjNull,true];
 		_unit setVariable ["invisible",false,true];
 		_unit setVariable ["isknocked",false,true];
-		life_istazed = false;//added 04/26/2014
+		life_istazed = false;
 		if(headGear player != "") then {removeHeadgear player;};
 		if(goggles player != "") then {removeGoggles player;};
-		//if (license_civ_depanneur && (str player) in ["Depanneur_1","Depanneur_2","Depanneur_3","Depanneur_4","Depanneur_5"]) Then {[] execVM "core\initDepaneur.sqf"};
 	};
 	case independent:
 	{
 		_unit setVariable["restrained",false,true];
-		_unit setVariable ["ziptiesOwners",[],true];
+		_unit setVariable["ziptiesOwners",[],true];
 		_unit setVariable["Escorting",false,true];
 		_unit setVariable["transporting",false,true];
-		player setVariable ["FAR_isUnconscious", 0, true];//added 04/26/2014
-		life_istazed = false;//added 04/26/2014
+		player setVariable ["FAR_isUnconscious", 0, true];
+		life_istazed = false;
 		switch(true) do
 		{
 			case (__GETC__(life_medicLevel) > 0) :
 			{
-				//player setVariable ["AGM_IsMedic", true, true]; //Komodo: nécessaire pour @AGM
 				life_actions = life_actions + [player addAction["Voir les inconscient",life_fnc_med,"",0,false,false,"",' playerside == independent ']];
 				[] spawn life_fnc_medicLoadout;
 				3 radioChannelAdd [player];
