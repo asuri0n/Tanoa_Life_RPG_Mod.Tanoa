@@ -75,7 +75,8 @@ if(_rip) then
 	   "Marker200" setMarkerText "!ATTENTION! vole ATM !ATTENTION!";
 	   "Marker200" setMarkerType "mil_warning";
 		if(_cP >= 1) exitWith {};
-		if(_robber distance _shop > 2.5) exitWith { };
+		if(_robber distance _shop > 2.5) exitWith {};
+		if(_robber getVariable "FAR_isUnconscious" == 1) exitWith {};
 		if!(alive _robber) exitWith {};
 	};
 
