@@ -369,6 +369,7 @@ class Life_Client_Core
 		class firstViewCombat {};
 
 		class getPriceVeh {};
+		class refuelPump {};
 	};
 
 	class Network
