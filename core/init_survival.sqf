@@ -2,12 +2,12 @@
 	private["_fnc_food","_fnc_water"];
 	_fnc_food =
 	{
-		if(life_hunger < 2) then {player setDamage 1; hint "Tu es mort de faim";}
+		if(life_hunger < 2) then {player setDamage 1; hint "Tu es mort de faim"; diag_log "Tu es mort de faim";}
 		else
 		{
 		life_hunger = life_hunger - 10;
 		[] call life_fnc_hudUpdate;
-		if(life_hunger < 2) then {player setDamage 1; hint "Tu es mort de faim";};
+		if(life_hunger < 2) then {player setDamage 1; hint "Tu es mort de faim"; diag_log "Tu es mort de faim";};
 		switch(life_hunger) do {
 			case 30: {hint "Tu n'as rien mangé depuis un bon bout de temps !";};
 			case 20: {hint "Tu as des troubles, tu vas mourrir dans quelques minutes.";};
@@ -170,7 +170,7 @@
 
 [] spawn
 {
-    private["_illegalmarkers"];
+    private["_illegalmarkers","_copmarkers"];
 	_illegalmarkers = ["cocaine_1","cocaine_area","trait_pavot"]; // Héroine
 	_illegalmarkers = _illegalmarkers + ["heroine_1","heroine_area","trait_coca"]; // Cocaine
 	_illegalmarkers = _illegalmarkers + ["marijuana_1","marijuana_area","trait_marijuana"]; // Majiruana
@@ -180,11 +180,16 @@
 	_illegalmarkers = _illegalmarkers + ["uranium_1","uranium_area","uranium_2","uranium_3","uranium_4","uranium_5","uranium_6"]; // Uranium
 	_illegalmarkers = _illegalmarkers + ["dealer_1","dealer_ura","dealer_2","dealer_organ","meth_dealer"]; // Dealers
 	_illegalmarkers = _illegalmarkers + ["marker_rebel","marker_gangster"]; // Camp rebelle
-
 	if (playerSide == west) then {
 		{ deleteMarkerLocal _x; } forEach _illegalmarkers;
 	};
+
+	_copmarkers = ["marker1"];
+	if (playerSide != west) then {
+		{ deleteMarkerLocal _x; } forEach _copmarkers;
+	};
 };
+
 // delete animals when far from hunting zone
 /*
 [] spawn {
