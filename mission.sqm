@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=16757;
+		nextID=16770;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11408.981,193.47978,5196.1387};
-		dir[]={-0.48523623,-0.73417979,0.4749347};
-		up[]={-0.52468449,0.67895341,0.51354641};
-		aside[]={0.69949198,2.1373853e-007,0.71466446};
+		pos[]={11931.433,162.97375,13205.087};
+		dir[]={-0.28039062,-0.65868729,-0.69823056};
+		up[]={-0.24546011,0.75241685,-0.61124647};
+		aside[]={-0.92797899,2.2689346e-007,0.37265152};
 	};
 };
 binarizationWanted=0;
@@ -465,7 +465,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4021;
+		items=4032;
 		class Item0
 		{
 			dataType="Marker";
@@ -31650,7 +31650,6 @@ class Mission
 			};
 			id=8091;
 			type="Land_InfoStand_V2_F";
-			atlOffset=0.079497337;
 		};
 		class Item1300
 		{
@@ -32674,13 +32673,14 @@ class Mission
 		class Item1334
 		{
 			dataType="Marker";
-			position[]={11776.203,5.0885839,3121.759};
+			position[]={11775.688,7.9792262e+026,3121.449};
 			name="airshop_2";
-			text="Magasin d'hélico";
+			text="Magasin d'hélico / avions";
 			type="mil_dot";
 			colorName="Color1_FD_F";
-			angle=190.45041;
+			angle=190.44998;
 			id=8289;
+			atlOffset=7.9792262e+026;
 		};
 		class Item1335
 		{
@@ -86409,6 +86409,173 @@ class Mission
 			};
 			id=16756;
 			type="Land_Addon_05_F";
+		};
+		class Item4021
+		{
+			dataType="Marker";
+			position[]={6912.7607,0,7403.3306};
+			name="airshop_3";
+			text="Magasin d'avions";
+			type="mil_dot";
+			colorName="Color1_FD_F";
+			angle=348.97299;
+			id=16757;
+			atlOffset=-2.6600001;
+		};
+		class Item4022
+		{
+			dataType="Marker";
+			position[]={6948.542,7.9792262e+026,7411.8682};
+			name="civ_plane_1";
+			type="Empty";
+			angle=163.39299;
+			id=16758;
+			atlOffset=7.9792262e+026;
+		};
+		class Item4023
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6912.1318,3.240258,7402.7612};
+				angles[]={0,5.0596218,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire aérien"",life_fnc_vehicleShopMenu,[""civ_plane"",civilian,""civ_plane_1"",""civ"",""Carl's Airial Auto's""]];";
+				name="heliport_airport_7";
+			};
+			id=16760;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item4024
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6948.5381,2.6600001,7411.7871};
+				angles[]={0,2.96596,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				name="air_sp_12";
+			};
+			id=16761;
+			type="Land_JumpTarget_F";
+		};
+		class Item4025
+		{
+			dataType="Marker";
+			position[]={11752.142,-1.8665973e-037,3086.8921};
+			name="civ_plane_2";
+			type="Empty";
+			angle=300.81897;
+			id=16763;
+			atlOffset=-4.8600001;
+		};
+		class Item4026
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11776.223,5.6597891,3122.375};
+				angles[]={0,0.58173573,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire aérien"",life_fnc_vehicleShopMenu,[""civ_plane"",civilian,""civ_plane_2"",""civ"",""Carl's Airial Auto's""]];";
+				name="heliport_airport_8";
+			};
+			id=16764;
+			type="Land_InfoStand_V2_F";
+			atlOffset=0.21000004;
+		};
+		class Item4027
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11752.089,7.5259094,3086.9539};
+				angles[]={0,5.3645043,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.2;
+				name="air_sp_15";
+			};
+			id=16765;
+			type="Land_JumpTarget_F";
+			atlOffset=2.6659093;
+		};
+		class Item4028
+		{
+			dataType="Marker";
+			position[]={11884.256,4.2875705,13047.886};
+			name="airshop_4";
+			text="Magasin d'avions";
+			type="mil_dot";
+			colorName="Color1_FD_F";
+			angle=251.6898;
+			id=16766;
+			atlOffset=-2.6624293;
+		};
+		class Item4029
+		{
+			dataType="Marker";
+			position[]={11886.917,-1.8220642e-037,13067.988};
+			name="civ_plane_3";
+			type="Empty";
+			angle=17.757999;
+			id=16767;
+			atlOffset=-6.9499998;
+		};
+		class Item4030
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11884.915,7.5278587,13047.256};
+				angles[]={0,3.3617136,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire aérien"",life_fnc_vehicleShopMenu,[""civ_plane"",civilian,""civ_plane_3"",""civ"",""Carl's Airial Auto's""]];";
+				name="heliport_airport_9";
+			};
+			id=16768;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item4031
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11886.767,6.9500427,13067.885};
+				angles[]={0,0.23961259,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				name="air_sp_16";
+			};
+			id=16769;
+			type="Land_JumpTarget_F";
+			atlOffset=4.2915344e-005;
 		};
 	};
 };
