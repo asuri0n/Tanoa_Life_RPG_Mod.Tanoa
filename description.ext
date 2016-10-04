@@ -1,3 +1,7 @@
+disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};
+
+#include "config\Config_Master.hpp"
+
 author = "Tonic";
 onLoadName = "Tanoa Life Vacation Gaming";
 onLoadMission = "A RPG game mode developed by Tonic, modified by Vacation Gaming";
@@ -5,7 +9,6 @@ joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 10;
 disabledAI = 1;
-disableChannels[]={0,1,2,6};
 enableDebugConsole = 1;
 loadScreen = "textures\loading.paa";
 respawnDialog = 0;
