@@ -429,6 +429,7 @@ life_inv_items =
 	"life_inv_bottledshine",
 	"life_inv_bottledbeer",
 	"life_inv_bottledwhiskey",
+	"life_inv_defibrilateur",
 	"life_inv_mash",
 	"life_inv_barriere",//added by asurion
 	"life_inv_barriereStop",//added by asurion
@@ -920,6 +921,7 @@ buy_array =
 	// ["fishp",1],
 	// ["boisp",1],
 	["planchep",1000],
+	["defibrilateur",10000],
 	// ["sandp",1],
 	// ["glassp",1],
 	// ["laitp",1],
