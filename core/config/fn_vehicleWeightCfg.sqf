@@ -39,9 +39,9 @@ switch (_className) do
 	 * [REVIEWED] Civil - Camion
 	**/
     // zamak
-    case "O_Truck_02_transport_F": {180};
+    case "O_Truck_02_transport_F": {150};
     case "O_Truck_02_covered_F": {200};
-    case "O_Truck_02_fuel_F": {200};
+    case "O_Truck_02_fuel_F": {250};
     // Tempest
     case "O_Truck_03_transport_F": {300};
     case "O_Truck_03_covered_F": {350};
@@ -50,11 +50,11 @@ switch (_className) do
     // HEMTT
     case "B_Truck_01_transport_F": {500};
     case "B_Truck_01_covered_F": {550};
-    case "B_Truck_01_fuel_F": {650};
-    case "B_Truck_01_box_F": {750};
+    case "B_Truck_01_fuel_F": {600};
+    case "B_Truck_01_box_F": {650};
     // SPECIAL
-    case "O_Truck_03_device_F": {400};
-    case "O_Truck_02_Ammo_F": {400};
+    case "O_Truck_03_device_F": {350};
+    case "O_Truck_02_Ammo_F": {350};
 
 	/**
 	 * [REVIEWED] Civil - Hélicopters

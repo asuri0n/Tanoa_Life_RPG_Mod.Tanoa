@@ -30,14 +30,14 @@ _value = 0;
 		if(_vIndex != -1) then
 		{
 			_value = _value + (_val * _vIndex);
-			hint format["firstif _val : %1 ; _vIndex : %2 ; _value %3",_val, _vIndex, _value];
+			hint format["MARKET: %4 => %1*%2=%3",_val, _vIndex, _value, _var];
 		} else
 		{
 			// Sinon, si le prix est dans la liste sell_array
 			_vIndex = [_var,__GETC__(sell_array)] call life_fnc_index;
 			if(_vIndex != -1) then {
-				hint format["firstif _val : %1 ; _vIndex : %2 ; _value %3",_val, _vIndex, _value];
 				_value = _value + (_val * _vIndex);
+				hint format["CONFIG: %4 => %1*%2=%3",_val, _vIndex, _value, _var];
 			};
 		};
 	};

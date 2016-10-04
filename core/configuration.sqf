@@ -746,7 +746,6 @@ sell_array =
 	["cement",1700],
 	["marijuana",3680],
 	["turtle",9865],
-	["crystalmethpur",10279],//added by asurion
 	["archeologie",4078], //added by asurion
 	["grapejuice",350],
 	["wine",1950],
@@ -784,7 +783,6 @@ sell_array =
 	["cornmeal",200],
 	["bottles",75],
 	["hamburger",25],//added by asurion
-	["crystalmeth",5700],
 	["frites",5],//added by asurion
 	["cheeseburger",30],//added by asurion
 	["barriere",300],//added by asurion
@@ -793,29 +791,18 @@ sell_array =
 	["blocdesableLong",1500],//added by asurion
 	["ziptie",2000],//added by asurion
 	["defibrilateur",10000],//added by asurion
-	["acideahlorhydrique",1250],//added by asurion
-	["hydrogenchloride",125],//added by asurion
-	["hydroxydesodiumanhydre",50],//added by asurion
-	["kitmeth",2000],//added by asurion
 	["machete",50], //Added by Komodo
 	["conewithlight",100], //Added by Komodo conewithlight
 	["poison",5000],
 	["hood",15000],	//added by Kriss, hood system
 	["grapes",1000],
 	["sake",60],
-	["organp",5000],
 	["nem",5],
 	["gpstracker",1000],
 	["uranium",15000], //When You Sell (Uranium LEGAL)
 	["uranium5b",40000], //When You Sell (Uranium ILLEGAL
 	["blastingcharge",30000],
-	["archeologieillegale",2500],
-	["organ",3000],
 	["lockpick",100],
-	["uranium2b",10000],
-	["uranium3b",10000],
-	["uranium4b",10000],
-	["ipuranium",10000],
 
 ["fishp",150],
 ["boisp",1],
@@ -829,14 +816,27 @@ sell_array =
 ["charbonp",1],
 ["poudrenoirp",375],
 ["souffrep",1],
-["cocainp",1],
-["cocainpurp",9000],
-["heroinp",1],
-["heroinpurp",7000],
-["marip",1],
-["maripurp",8000],
-["uraniump",20000],
-["uraniumpurp",1],
+
+// Illégale new
+	["cocainp",4500],
+	["cocainpurp",9000],
+	["heroinp",3500],
+	["heroinpurp",7000],
+	["marip",22580],
+	["maripurp",5500],
+	["uraniump",1000],
+	["uraniump1",5000],
+	["uraniump2",10000],
+	["uraniump3",15000],
+	["uraniump4",20000],
+	["kitmeth",2500],
+	["poudrehydroxyde",5000],
+	["crystalmeth",10000],
+	["crystalmethpur",140000],
+	["archeologieillegale",7300],
+	["organ",6000],
+	["organp",11900],
+//-------------
 ["rockp",1],
 ["rocktaillep",1],
 ["copperorep",1],

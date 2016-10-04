@@ -47,21 +47,21 @@ switch (_shop) do
         _return =
         [
             // zamak
-            ["O_Truck_02_transport_F",170000],
-            ["O_Truck_02_covered_F",170000],
-            ["O_Truck_02_fuel_F",170000],
+            ["O_Truck_02_transport_F",200000],
+            ["O_Truck_02_covered_F",250000],
+            ["O_Truck_02_fuel_F",300000],
             // Tempest
-            ["O_Truck_03_transport_F",270000],
-            ["O_Truck_03_covered_F",300000],
-            ["O_Truck_03_fuel_F",350000],
-            ["O_Truck_03_ammo_F",400000],
+            ["O_Truck_03_transport_F",350000],
+            ["O_Truck_03_covered_F",400000],
+            ["O_Truck_03_fuel_F",450000],
+            ["O_Truck_03_ammo_F",500000],
             // HEMTT
-            ["B_Truck_01_transport_F",460000],
-            ["B_Truck_01_covered_F",520000],
-            ["B_Truck_01_fuel_F",730000],
-            ["B_Truck_01_box_F",1000000],
+            ["B_Truck_01_transport_F",666667],
+            ["B_Truck_01_covered_F",800000],
+            ["B_Truck_01_fuel_F",1000000],
+            ["B_Truck_01_box_F",1333334],
             // Spécial
-            ["O_Truck_03_device_F",833000],
+            ["O_Truck_03_device_F",1333000],
             ["O_Truck_02_Ammo_F",5000000]
         ];
     };
