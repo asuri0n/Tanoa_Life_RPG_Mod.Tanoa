@@ -143,4 +143,13 @@ _vehicle spawn
 	};
 	life_vehicle_transfer_to = Objnull;
 	life_vehicle_transfer_house = ObjNull;
+
+	if (LIFE_SETTINGS(getNumber,"save_vehicle_virtualItems") isEqualTo 1) then {
+        if ((_this isKindOf "Car") || (_this isKindOf "Air") || (_this isKindOf "Ship")) then {
+        	[[_this,2], "TON_fnc_vehicleUpdate",false,false] spawn life_fnc_MP;
+        };
+    };
+};
+
+
 };
