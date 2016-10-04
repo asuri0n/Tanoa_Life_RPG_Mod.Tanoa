@@ -14,13 +14,5 @@ if((_this select 1)) then {
 	[] execVM "core\jip.sqf";
 };
 
-[] spawn {
-    waitUntil {!isNil "life_pumps"};
-    scriptName "Refuel Pumps";
-    {
-    	_x addAction ["<t color='#00EB00'>Faire le plein</t>", life_fnc_refuelPump];
-    } foreach life_pumps;
-};
-
 [] execVM "core\functions\tm4_fuelUptake.sqf";
 //[] execVM "addons\vehicleManager.sqf";

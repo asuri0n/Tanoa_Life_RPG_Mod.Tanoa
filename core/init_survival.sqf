@@ -149,6 +149,7 @@
 };
 [] spawn
 {
+    scriptName "UraniumArea";
     while {true} do
     {
         private["_damage"];
@@ -170,6 +171,7 @@
 
 [] spawn
 {
+    scriptName "DelteMarkers";
     private["_illegalmarkers","_copmarkers"];
 	_illegalmarkers = ["cocaine_1","cocaine_area","trait_pavot"]; // Héroine
 	_illegalmarkers = _illegalmarkers + ["heroine_1","heroine_area","trait_coca"]; // Cocaine
@@ -188,6 +190,14 @@
 	if (playerSide != west) then {
 		{ deleteMarkerLocal _x; } forEach _copmarkers;
 	};
+};
+
+[] spawn {
+    scriptName "RefuelPumps";
+    waitUntil {!isNil "life_pumps"};
+    {
+    	_x addAction ["<t color='#00EB00'>Faire le plein</t>", life_fnc_refuelPump];
+    } foreach life_pumps;
 };
 
 // delete animals when far from hunting zone
