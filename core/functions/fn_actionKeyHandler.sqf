@@ -1,4 +1,5 @@
 #include <macro.h>
+#include "..\..\script_macros.hpp"
 /*
 	File: fn_actionKeyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -14,7 +15,12 @@ if (life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
 
-//hintSilent parsetext format["<t color='#000080' size='2' shadow='1' shadowColor='#000000' align='center'>ATTENTION</t><br/> <t color='#FF3B3E' size='1.5' shadow='1' shadowColor='#000000' align='center'>La touche d'interaction H est désormais obsolète, merci d'utiliser votre touche Windows par défaut afin d'utiliser ce menu déroulant. Si votre touche Windows ne fonctionne pas, vous devez l'assigner dans les commandes personnalisées => Util. Action 10. Merci de prendre en compte ce message.</t><br />"];
+if (LIFE_SETTINGS(getNumber,"global_ATM") isEqualTo 1) then{
+    //Check if the player is near an ATM.
+    if (((["atm_",str(cursorObject)] call BIS_fnc_inString) && player distance (cursorObject) < 2.3) && {!dialog}) exitWith {
+        [] call life_fnc_atmMenu;
+    };
+};
 
 if(isNull _curTarget) exitWith {
 	if(_isWater) then {
@@ -48,23 +54,6 @@ life_action_inUse = true;
 	/*player setVariable ["AGM_canTreat", true, true];*/
 
 };
-
-//Check if it's a dead body.
-//CORRIGE PAR ASURION LE 21/06 A 11H00
-/*
-if(_curTarget isKindOf "Man" && {alive _curTarget} && {playerSide == independent} && _curtarget getvariable["FAR_isUnconscious",0] == 1) exitWith {
-	switch(true) do
-	{
-		case (__GETC__(life_medicLevel) > 0) :
-		{
-			[] spawn life_fnc_defibrilateur;
-		};
-		case (__GETC__(life_depanLevel) > 0) :
-		{
-		};
-	};
-};
-*/
 
 //If target is a VR_object
 if( _curTarget getVariable ["INVO_VRObject",0] == 1) then

@@ -83,6 +83,8 @@ switch (_code) do
 				if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 					player selectWeapon life_curWep_h;
 				};
+			} else {
+				hintSilent parsetext format["<t color='#000080' size='2' shadow='1' shadowColor='#000000' align='center'>ATTENTION</t><br/> <t color='#FF3B3E' size='1.5' shadow='1' shadowColor='#000000' align='center'>La touche d'interaction H est désormais obsolète, merci d'utiliser votre touche Windows par défaut afin d'utiliser ce menu déroulant. Si votre touche Windows ne fonctionne pas, vous devez l'assigner dans les commandes personnalisées => Util. Action 10. Merci de prendre en compte ce message.</t><br />"];
 			};
 		};
 
