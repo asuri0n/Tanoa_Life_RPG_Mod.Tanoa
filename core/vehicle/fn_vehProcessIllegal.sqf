@@ -54,12 +54,16 @@ _space = _vInv select 1;
 
 //--------- Get the resource to be transformed in vehicle invetory. Each time a process is launched, only one type is process if there is several.
 _itemInfo = switch(true) do {
+	case (["uraniump1",_items] call life_fnc_index > -1): {["uraniump1","uraniump2",2500,"Traitement de la Meth","Poudre Hydroxyde Sodium",["uraniump1",_items] call life_fnc_index]};
+	case (["uraniump2",_items] call life_fnc_index > -1): {["uraniump2","uraniump3",2500,"Traitement de la Meth","Poudre Hydroxyde Sodium",["uraniump2",_items] call life_fnc_index]};
+	case (["uraniump3",_items] call life_fnc_index > -1): {["uraniump3","uraniump4",2500,"Traitement de la Meth","Poudre Hydroxyde Sodium",["uraniump3",_items] call life_fnc_index]};
+	case (["uraniump4",_items] call life_fnc_index > -1): {["uraniump4","uraniump",2500,"Traitement de la Meth","Poudre Hydroxyde Sodium",["uraniump4",_items] call life_fnc_index]};
 	case (["kitmeth",_items] call life_fnc_index > -1): {["kitmeth","poudrehydroxyde",2500,"Traitement de la Meth","Poudre Hydroxyde Sodium",["kitmeth",_items] call life_fnc_index]};
 	case (["poudrehydroxyde",_items] call life_fnc_index > -1): {["poudrehydroxyde","crystalmeth",3000,"Traitement de la Poudre Hydroxyde","Cristal de Meth",["poudrehydroxyde",_items] call life_fnc_index]};
 	case (["crystalmeth",_items] call life_fnc_index > -1): {["crystalmeth","crystalmethpur",3500,"Purification Cristal de Meth","Cristal de Meth Pur",["crystalmeth",_items] call life_fnc_index]};
-	case (["heroinu",_items] call life_fnc_index > -1): {["heroinu","heroinp",1720,"Traitement de l'Héroïne","Héroïne",["heroinu",_items] call life_fnc_index]};
-	case (["cannabis",_items] call life_fnc_index > -1): {["cannabis","marijuana",500,"Traitement de la Marijuana","Feuille de Cannabis",["cannabis",_items] call life_fnc_index]};
-	case (["cocaine",_items] call life_fnc_index > -1): {["cocaine","cocainep",1500,"Traitement de la Cocaïne","Feuille de Coca",["cocaine",_items] call life_fnc_index]};
+	case (["heroinpy",_items] call life_fnc_index > -1): {["heroinpy","heroinpurp",1720,"Traitement de l'Héroïne","Héroïne",["heroinpy",_items] call life_fnc_index]};
+	case (["marip",_items] call life_fnc_index > -1): {["marip","maripurp",500,"Traitement de la Marijuana","Feuille de Cannabis",["marip",_items] call life_fnc_index]};
+	case (["cocainp",_items] call life_fnc_index > -1): {["cocainp","cocainpurp",1500,"Traitement de la Cocaïne","Feuille de Coca",["cocainp",_items] call life_fnc_index]};
 	default {[]};
 };
 
