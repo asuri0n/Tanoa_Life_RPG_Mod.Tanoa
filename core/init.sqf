@@ -259,19 +259,29 @@ if(local player) then
 	1 fadeSound 1;
 };
 
-life_vehicleList =
+life_vehicleList = ([]);
+if(playerSide == independent) then {
+	life_vehicleList = life_vehicleList +
+	(["med_shop"] call life_fnc_vehicleListCfg) +
+	(["med_air_hs"] call life_fnc_vehicleListCfg) +
+	(["depan_car"] call life_fnc_vehicleListCfg);
+};
+if(playerSide == west) then {
+	life_vehicleList = life_vehicleList +
+	(["cop_car"] call life_fnc_vehicleListCfg) +
+	(["cop_air"] call life_fnc_vehicleListCfg) +
+	(["cop_ship"] call life_fnc_vehicleListCfg);
+};
+if(playerSide == east) then {
+	life_vehicleList = life_vehicleList +
+	(["reb_car"] call life_fnc_vehicleListCfg) +
+	(["reb_air"] call life_fnc_vehicleListCfg);
+};
+life_vehicleList = life_vehicleList +
 (["kart_shop"] call life_fnc_vehicleListCfg) +
 (["civ_car"] call life_fnc_vehicleListCfg) +
 (["civ_air"] call life_fnc_vehicleListCfg) +
 (["civ_truck"] call life_fnc_vehicleListCfg) +
 (["civ_ship"] call life_fnc_vehicleListCfg) +
 (["civ_luxe"] call life_fnc_vehicleListCfg) +
-(["reb_car"] call life_fnc_vehicleListCfg) +
-(["reb_air"] call life_fnc_vehicleListCfg) +
-(["donateur"] call life_fnc_vehicleListCfg) +
-(["cop_car"] call life_fnc_vehicleListCfg) +
-(["cop_air"] call life_fnc_vehicleListCfg) +
-(["cop_ship"] call life_fnc_vehicleListCfg) +
-(["depan_car"] call life_fnc_vehicleListCfg) +
-(["med_shop"] call life_fnc_vehicleListCfg) +
-(["med_air_hs"] call life_fnc_vehicleListCfg);
+(["donateur"] call life_fnc_vehicleListCfg);
