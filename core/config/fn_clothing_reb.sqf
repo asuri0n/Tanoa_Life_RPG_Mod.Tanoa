@@ -145,13 +145,8 @@ switch (_filter) do
 			["V_RebreatherIR",nil,10000],
 
 			["V_BandollierB_oli",nil,4500],
-			["V_Rangemaster_belt",nil,4500],
 			["V_BandollierB_blk",nil,4500],
 			["V_BandollierB_ghex_F",nil,4500],
-
-			["V_HarnessO_ghex_F",nil,7500],
-			["V_HarnessOGL_ghex_F",nil,7500],
-
 
 			["V_HarnessOGL_brn",nil,12500],
 			["V_HarnessOGL_gry",nil,12500],

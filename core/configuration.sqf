@@ -878,7 +878,7 @@ buy_array =
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
-	["peach",68],
+	["peach",50],
 	["spikeStrip",2500],
 	["bottledshine",15500],
 	["bottledwhiskey",10000],

@@ -974,6 +974,7 @@ switch(_shop) do
 						//["DDOPP_X26","Taser X26 Jaune",0],
 						//["DDOPP_X26_b","Taser X26 Noir",0],
 							//["DDOPP_1Rnd_X26","Munitions Taser X26",0],
+						["I_UavTerminal",nil,0],
 
 						["hgun_P07_snds_F",nil,0],
 							["16Rnd_9x21_Mag",nil,0],

@@ -34,11 +34,6 @@ switch (_filter) do
 				_ret pushBack["U_B_GEN_Commander_F","Uniforme de Gendarmerie",500];
 				_ret pushBack["U_I_pilotCoveralls","Uniforme de Gendarmerie",500];
 
-
-
-				_ret pushBack["U_B_T_Soldier_F",nil,500];
-				_ret pushBack["U_B_T_Soldier_AR_F",nil,500];
-				_ret pushBack["U_B_T_Soldier_SL_F",nil,500];
 			};
 
 			case (__GETC__(life_copLevel)  == 3):{
@@ -50,9 +45,6 @@ switch (_filter) do
 				_ret pushBack["U_B_GEN_Commander_F","Uniforme de Gendarmerie",500];
 				_ret pushBack["U_I_pilotCoveralls","Uniforme de Gendarmerie",500];
 
-				_ret pushBack["U_B_T_Soldier_F",nil,500];
-				_ret pushBack["U_B_T_Soldier_AR_F",nil,500];
-				_ret pushBack["U_B_T_Soldier_SL_F",nil,500];
 			};
 
 			case (__GETC__(life_copLevel)  == 4):{
@@ -172,17 +164,13 @@ switch (_filter) do
 			case (__GETC__(life_copLevel)  == 2):{
 				_ret pushBack["H_MilCap_gen_F",nil,100];
 				_ret pushBack["H_RacingHelmet_1_blue_F",nil,100];	// A
-				_ret pushBack["H_Booniehat_tna_F",nil,100];	 // A
-				_ret pushBack["H_MilCap_tna_F",nil,100];	// A
-				_ret pushBack["H_HelmetB_tna_F",nil,100];	// A
+
 			};
 
 			case (__GETC__(life_copLevel)  == 3):{
 				_ret pushBack["H_MilCap_gen_F",nil,100];
 				_ret pushBack["H_RacingHelmet_1_blue_F",nil,100];	// A
-				_ret pushBack["H_Booniehat_tna_F",nil,100];	 // A
-				_ret pushBack["H_MilCap_tna_F",nil,100];	// A
-				_ret pushBack["H_HelmetB_tna_F",nil,100];	// A
+
 			};
 
 			case (__GETC__(life_copLevel)  == 4):{
@@ -247,7 +235,6 @@ switch (_filter) do
 
 				_ret pushBack["G_Tactical_Clear",nil,100];
 				_ret pushBack["G_Tactical_Black",nil,100];
-				_ret pushBack["G_Combat",nil,100];
 			};
 
 			case (__GETC__(life_copLevel)  == 3):{
@@ -256,7 +243,6 @@ switch (_filter) do
 
 				_ret pushBack["G_Tactical_Clear",nil,100];
 				_ret pushBack["G_Tactical_Black",nil,100];
-				_ret pushBack["G_Combat",nil,100];
 			};
 
 			case (__GETC__(life_copLevel)  == 4):{
@@ -323,16 +309,12 @@ switch (_filter) do
 				_ret pushBack["V_RebreatherIA",nil,500];
 
 				_ret pushBack["V_TacVest_gen_F",nil,500];
-				_ret pushBack["V_PlateCarrier1_tna_F",nil,500];
-				_ret pushBack["V_PlateCarrier2_tna_F",nil,500];
 			};
 			case (__GETC__(life_copLevel)  == 3):{
 				_ret pushBack["V_RebreatherB",nil,500];
 				_ret pushBack["V_RebreatherIA",nil,500];
 
 				_ret pushBack["V_TacVest_gen_F",nil,500];
-				_ret pushBack["V_PlateCarrier1_tna_F",nil,500];
-				_ret pushBack["V_PlateCarrier2_tna_F",nil,500];
 			};
 			case (__GETC__(life_copLevel)  == 4):{
 				_ret pushBack["V_RebreatherB",nil,500];

@@ -335,20 +335,28 @@ switch (_shop) do
                 {
                     _return =
                     [
+                        ["B_UAV_AI",1],
+                        ["gunner",1],
+
                         ["B_Heli_Light_01_F",142000],
                         ["O_Heli_Light_02_unarmed_F",233333],
                         ["I_Heli_light_03_unarmed_F",245000],
                         ["B_Heli_Transport_01_F",225000],
-                        ["B_Heli_Transport_03_unarmed_F",200000]
+                        ["B_Heli_Transport_03_unarmed_F",200000],
+                        ["B_T_VTOL_01_infantry_F",300000]
                     ];
                 } else {
                     _return =
                     [
+                        ["B_UAV_AI",1],
+                        ["gunner",1],
+
                         ["B_Heli_Light_01_F",142000],
                         ["O_Heli_Light_02_unarmed_F",233333],
                         ["I_Heli_light_03_unarmed_F",245000],
                         ["B_Heli_Transport_01_F",225000],
-                        ["B_Heli_Transport_03_unarmed_F",200000]
+                        ["B_Heli_Transport_03_unarmed_F",200000],
+                        ["B_T_VTOL_01_infantry_F",300000]
                     ];
                 };
             };
