@@ -8,7 +8,7 @@ class Life_Settings {
     	save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
     	save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
     	save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
-    	global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
+    	global_ATM = false; //Allow users to access any ATM on the map (Marked & Unmarked).
 
 
 save_virtualItems = true; //Save Virtual items (all sides)?
