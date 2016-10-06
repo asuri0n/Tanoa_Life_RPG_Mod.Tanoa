@@ -281,6 +281,8 @@ life_vehicleList = life_vehicleList +
 (["kart_shop"] call life_fnc_vehicleListCfg) +
 (["civ_car"] call life_fnc_vehicleListCfg) +
 (["civ_air"] call life_fnc_vehicleListCfg) +
+(["civ_air"] call life_fnc_vehicleListCfg) +
+(["civ_plane"] call life_fnc_vehicleListCfg) +
 (["civ_truck"] call life_fnc_vehicleListCfg) +
 (["civ_ship"] call life_fnc_vehicleListCfg) +
 (["civ_luxe"] call life_fnc_vehicleListCfg) +

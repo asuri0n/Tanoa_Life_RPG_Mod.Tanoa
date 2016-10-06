@@ -6,7 +6,7 @@
 	Description:
 	Sells a vehicle from the garage.
 */
-private["_vehicle","_vid","_pid","_unit","_price","_answer"];
+private["_vehicle","_vid","_pid","_unit","_price","_answer","_vehicleType","_vehPrice"];
 
 disableSerialization;
 
@@ -30,12 +30,16 @@ closeDialog 0;
 _pid = getPlayerUID player;
 _unit = player;
 
+if (((_vehicle find "_") == -1)) then {_vehicleType = _vehicle select 0;}
+else {_vehicleType = _vehicle;};
+
 if(isNil "_vehicle") exitWith {hint "ERREUR..."};
 if (invo_last_sold_vehicle == _vid) exitWith {}; //Dans le cul les gros cheateurs.
 
 // Get vehicle sell price
-_price = [_className,__GETC__(life_garage_sell)] call life_fnc_index;
+_price = [_vehicleType,__GETC__(life_garage_sell)] call life_fnc_index;
 if(_price == -1) then {
+	_vehPrice = [_vehicleType] call life_fnc_getPriceVeh;
 	_price = round(_vehPrice * (call sellCoef));
 } else {
 	_price = (__GETC__(life_garage_sell) select _price) select 1;

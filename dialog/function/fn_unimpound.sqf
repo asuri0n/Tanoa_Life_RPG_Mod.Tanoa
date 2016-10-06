@@ -22,12 +22,12 @@ if(isNil "_vehicle") exitWith {hint "ERREUR..."};
 if (((_vehicle find "_") == -1)) then {_vehicleType = _vehicle select 0;}
 else {_vehicleType = _vehicle;};
 
-// get vehicule buy price
-_vehPrice = [_vehicleType] call life_fnc_getPriceVeh;
 
 // Get vehicle garage price
 _price = [_vehicleType,__GETC__(life_garage_prices)] call life_fnc_index;
 if(_price == -1) then {
+	// get vehicule buy price
+	_vehPrice = [_vehicleType] call life_fnc_getPriceVeh;
 	_price = _vehPrice*(call sortieVhlCoef);
 } else {
 	_price = (__GETC__(life_garage_prices) select _price) select 1;

@@ -80,8 +80,8 @@ switch (_shop) do
     {
         _return =
         [
-            ["C_Plane_Civil_01_F",750000],
-            ["C_Plane_Civil_01_F",1000000]
+            ["C_Plane_Civil_01_F",750000]
+            //["C_Plane_Civil_01_F",1000000]
         ];
     };
 

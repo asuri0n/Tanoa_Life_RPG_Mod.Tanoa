@@ -36,7 +36,7 @@ class Life_Client_Core
 	};
 	class Addons
 	{
-		file = "core\addons";
+		file = "addons";
 		class standup {};
 		class sitdown {};
 		class earthquake {};
