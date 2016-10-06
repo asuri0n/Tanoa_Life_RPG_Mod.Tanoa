@@ -34,6 +34,14 @@ class Life_Client_Core
 		class uniform {};
 		class initRebel {};
 	};
+	class Addons
+	{
+		file = "core\addons";
+		class standup {};
+		class sitdown {};
+		class earthquake {};
+		class nuke {};
+	};
 	class Market
 	{
 		file = "core\market";
