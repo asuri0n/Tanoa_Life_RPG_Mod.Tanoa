@@ -14,7 +14,6 @@ if([false,_food,1] call life_fnc_handleInv) then {
 	switch (_food) do
 	{
 		case "apple": {_val = 10};
-		case "rabbit":{ _val = 20};
 		case "salema": {_val = 30};
 		case "ornate": {_val = 25};
 		case "mackerel": {_val = 30};
@@ -24,12 +23,13 @@ if([false,_food,1] call life_fnc_handleInv) then {
 		case "turtle": {_val = 100};
 		case "turtlesoup": {_val = 100};
 		case "donuts": {_val = 10};
-		case "tbacon": {_val = 15};
 		case "peach": {_val = 10};
 		case "hamburger": {_val = 15};
 		case "frites": {_val = 5};
 		case "cheeseburger": {_val = 20};
 		case "grapes": {_val = 20};
+		case "rabbit": {_val = 30};
+		case "tbacon": {_val = 30};
 	};
 
 	_sum = life_hunger + _val;
