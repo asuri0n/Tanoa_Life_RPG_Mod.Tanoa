@@ -1,3 +1,4 @@
+#include "..\..\script_macros.hpp"
 /*
 	File: fn_openInventory.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -149,7 +150,4 @@ _vehicle spawn
         	[[_this,2], "TON_fnc_vehicleUpdate",false,false] spawn life_fnc_MP;
         };
     };
-};
-
-
 };
