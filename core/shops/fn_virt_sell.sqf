@@ -30,7 +30,7 @@ _price = (_price * _amount);
 _west = playersNumber west;
 if((_type == "organp" OR _type == "uraniump"  OR _type == "crystalmethpur"  OR _type == "cocainpurp"  OR _type == "heroinpurp") && _west == 0) then
 {
-	_price = _price*0.60;
+	_price = _price * 0.60;
 	hint "Vu qu'il n'y a pas de gendarmes actuellement, le prix a été diminué de 40%";
 };
 
