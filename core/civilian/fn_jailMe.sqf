@@ -126,6 +126,7 @@ switch (true) do
 		player setPos (getMarkerPos "jail_release");
 		removeUniform player;
 		player addUniform "U_C_Poloshirt_blue";
+		[] call life_fnc_playerSkins;
 		//[] call SOCK_fnc_updateRequest;
 		[1] call SOCK_fnc_updateRequestCivGear; //Silent Sync to avoid duplication. We only fill in variables, sync to db will either be handled by next sync data or during disconnection (by any means, even a crash!)
 	};

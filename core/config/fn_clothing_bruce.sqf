@@ -21,11 +21,11 @@ switch (_filter) do
 	{
 		[
 			["U_C_Scientist","Protection Contre Les Radiations",10000],
+			["U_C_Poloshirt_blue","Tenue Vacation Gaming",500],
 			["U_C_HunterBody_grn", "Chasseur", 1000],
 			["U_I_G_resistanceLeader_F", nil, 1000],
 			["U_Competitor", nil, 1000],
 			["U_C_Journalist", "Journaliste", 1000],
-			["U_C_Poloshirt_blue", nil, 1000],
 			["U_C_Poloshirt_burgundy", nil, 1000],
 			["U_C_Poloshirt_salmon", nil, 1000],
 			["U_C_Poloshirt_tricolour", nil, 1000],

@@ -7,12 +7,15 @@ switch(playerSide) do
 	};
 	case civilian: {
 		if(uniform player == "U_B_HeliPilotCoveralls") then {
-        	player setObjectTextureGlobal [0,"textures\tenues\prisonier.paa"];
+        	player setObjectTextureGlobal [0,"textures\tenues\civ\prisonier.paa"];
+		};
+		if(uniform player == "U_C_Poloshirt_blue") then {
+        	player setObjectTextureGlobal [0,"textures\tenues\civ\vacationgaming.paa"];
 		};
 	};
 	case east: {
 		if(uniform player == "U_B_HeliPilotCoveralls") then {
-        	player setObjectTextureGlobal [0,"textures\tenues\prisonier.paa"];
+        	player setObjectTextureGlobal [0,"textures\tenues\civ\prisonier.paa"];
 		};
 	};
 	case independent: {

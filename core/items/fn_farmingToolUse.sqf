@@ -66,7 +66,6 @@ switch (_tool) do {
 			case "apple_area_4": 	{_mine = "apple"; _val = 0.66;};
 			case "apple_area_5": 	{_mine = "apple"; _val = 0.66;};
 			case "apple_area_6": 	{_mine = "apple"; _val = 0.66;};
-
     	    default {_mine = "";};
     	};
     	if(_mine == "") exitWith {_exitMessage = "Tu n'es pas proche d'un champ.";};
@@ -78,13 +77,13 @@ switch (_tool) do {
 };
 if (_mine == "") exitWith {hint _exitMessage;};
 
-/*
+
 _west = playersNumber west;
-if((_mine == "heroinpy" OR _mine == "uraniump1"  OR _mine == "cocainp") && _west == 0)then
+if((_mine == "uraniump1"  OR _mine == "cocainp"  OR _mine == "heroinpy") && _west == 0) then
 {
-	titleText[format["Il n'y a pas de gendarmes de connecté. Tu peux toujours recolter mais tu ne pourras pas la traiter"],"PLAIN"];
+	titleText[format["Attention. Il n'y a pas de gendarmes sur l'île. "],"PLAIN"];
 };
-*/
+
 
 /* testing now if we can put something in the player's inventory, and telling how many */
 _diff = 0;

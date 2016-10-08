@@ -33,7 +33,6 @@ _itemInfo = switch (_type) do
 	case "cocaine": {["cocainp","cocainpurp",1500,"Traitement de la Cocaïne","Feuille de Coca",false, false]};
 	case "marijuana": {["marip","maripurp",500,"Traitement de la Marijuana","Chanvre",false, false]};
 	case "heroin": {["heroinpy","heroinpurp",1720,"Traitement de l'Héroïne","Graine de pavot",false, false]};
-
 	case "meth": {["kitmeth","poudrehydroxyde",2500,"Traitement de la Meth","Poudre Hydroxyde Sodium",false, false]};
 	case "meth1": {["poudrehydroxyde","crystalmeth",3000,"Traitement de la Poudre Hydroxyde","Cristal de Meth",false, false]};
 	case "meth2": {["crystalmeth","crystalmethpur",3500,"Purification Cristal de Meth","Cristal de Meth Pur",false, false]};
