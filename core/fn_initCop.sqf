@@ -15,12 +15,6 @@ player addRating 9999999;
 waitUntil {!(isNull (findDisplay 46))};
 _end = false;
 
-/*
-if((__GETC__(life_serveur)) == 0) exitWith {
-	["altis",FALSE,TRUE] call BIS_fnc_endMission;
-	sleep 30;
-};
-*/
 if(life_blacklisted) exitWith
 {
 	["Blacklisted",false,true] call BIS_fnc_endMission;

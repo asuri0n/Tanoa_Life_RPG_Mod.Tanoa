@@ -24,16 +24,16 @@ civ_spawn_5 = nearestObjects[getMarkerPos  "civ_spawn_5", ["Land_Shop_City_02_F"
 
 waitUntil {!(isNull (findDisplay 46))};
 
-if(str(player) in ["don_1","don_2","don_3","don_4","don_5","don_6","don_7","don_8","don_9","don_10"]) then {
+/*if(str(player) in ["don_1","don_2","don_3","don_4","don_5","don_6","don_7","don_8","don_9","don_10"]) then {
 	if((__GETC__(life_donator) < 1)) then
 	{
 		player enableSimulation false;
 		["NotPremium",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
-};
+};*/
 
-if(license_civ_rebel AND __GETC__(life_adminlevel) == 0) then
+if(license_civ_rebel) then
 {
 	player enableSimulation false;
 	["noRebelCiv",false,true] call BIS_fnc_endMission;

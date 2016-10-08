@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_unrestrain.sqf
 */
@@ -10,7 +11,7 @@ if(isNull _unit OR !(_unit getVariable["restrained",FALSE])) exitWith {}; //Erro
 
 _ziptiesOwners = _unit getVariable ["ziptiesOwners",[]];
 
-if (!(player in _ziptiesOwners)) exitWith {hint "Impossible de libérer cette personne, tu n'as pas les clefs de ses menottes.";};
+if (!(player in _ziptiesOwners) AND __GETC__(life_adminlevel) != 0) exitWith {hint "Impossible de libérer cette personne, tu n'as pas les clefs de ses menottes.";};
 
 _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
