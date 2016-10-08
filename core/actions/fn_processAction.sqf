@@ -58,38 +58,41 @@ _itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 
 // Minimum cops ?
+/*
 _west = playersNumber west;
 if(( _oldItem == "cocainp" OR _oldItem == "heroinpy" OR _oldItem == "uraniump1" OR _oldItem == "uraniump2" OR _oldItem == "uraniump3" OR _oldItem == "uraniump4" OR _oldItem == "organ") && _west == 0) exitWith
 {
 	hint "Il n'y a pas de gendarmes de connecté. Stocker dans votre maison et réitérer plus tard cette tentative...";
 	5 cutText ["","PLAIN"];
 };
-
-//2vars
-if(_2var) then {
-	_oldItem2 = _itemInfo select 6;
-	_oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle);
-};
-
-_cost = _cost * _oldVal;
-//Some more checks
-if(_oldVal == 0) exitWith {};
-
-//Setup our progress bar.
-disableSerialization;
-5 cutRsc ["life_progress","PLAIN"];
-_ui = uiNameSpace getVariable "life_progress";
-_progress = _ui displayCtrl 38201;
-_pgText = _ui displayCtrl 38202;
-_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
-_progress progressSetPosition 0.01;
-_cP = 0.01;
-
-life_is_processing = true;
+*/
 
 // If he has the required license
 if(_hasLicense) then
 {
+	//2vars
+	if(_2var) then {
+		_oldItem2 = _itemInfo select 6;
+		_oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle);
+	};
+
+	_cost = _cost * _oldVal;
+	//Some more checks
+	if(_oldVal == 0) exitWith {};
+
+	//Setup our progress bar.
+	disableSerialization;
+	5 cutRsc ["life_progress","PLAIN"];
+	_ui = uiNameSpace getVariable "life_progress";
+	_progress = _ui displayCtrl 38201;
+	_pgText = _ui displayCtrl 38202;
+	_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
+	_progress progressSetPosition 0.01;
+	_cP = 0.01;
+
+	life_is_processing = true;
+
+
 	while{true} do {
 		sleep 0.3;
 		_cP = _cP + 0.01;

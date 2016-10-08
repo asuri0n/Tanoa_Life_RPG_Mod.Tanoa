@@ -78,11 +78,13 @@ switch (_tool) do {
 };
 if (_mine == "") exitWith {hint _exitMessage;};
 
+/*
 _west = playersNumber west;
 if((_mine == "heroinpy" OR _mine == "uraniump1"  OR _mine == "cocainp") && _west == 0)then
 {
 	titleText[format["Il n'y a pas de gendarmes de connecté. Tu peux toujours recolter mais tu ne pourras pas la traiter"],"PLAIN"];
 };
+*/
 
 /* testing now if we can put something in the player's inventory, and telling how many */
 _diff = 0;

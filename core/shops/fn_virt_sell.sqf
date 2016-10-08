@@ -6,7 +6,7 @@
 	Description:
 	Sell a virtual item to the store / shop
 */
-private["_type","_index","_price","_var","_amount","_name","_marketprice","_tax","_gainXp","_profName"];
+private["_type","_index","_price","_var","_amount","_name","_marketprice","_tax","_gainXp","_profName","_west"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _index = [_type,__GETC__(sell_array)] call life_fnc_index;
@@ -26,10 +26,17 @@ _amount = parseNumber (_amount);
 if(_amount > (missionNameSpace getVariable _var)) exitWith {hint "Tu n'as pas assez d'objets a vendre!"};
 
 _price = (_price * _amount);
+
+_west = playersNumber west;
+if((_type == "organp" OR _type == "uraniump"  OR _type == "crystalmethpur"  OR _type == "cocainpurp"  OR _type == "heroinpurp") && _west == 0) then
+{
+	_price = _price*0.60;
+	hint "Vu qu'il n'y a pas de gendarmes actuellement, le prix a été diminué de 40%";
+};
+
 _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
-
 	_profName = [_type] call life_fnc_profType;
 
 	// Nombre d'XP gagné = nombre d'items récupérés * 2
