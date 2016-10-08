@@ -18,18 +18,30 @@ _action =
 	"Oui",
 	"Non"
 ] call BIS_fnc_guiMessage;
-
 if(!_action) exitWith {};
+
+if (life_action_inUse) exitWith {hint "Tu est déjà occupé, termine d'abord ce que tu as commencé!";};
+life_action_inUse = true;
 
 _title = "Diagnostique en cours ...";
 _duration = 10;
 _handle = [_duration,_title] spawn life_fnc_progressBar;
 waitUntil {scriptDone _handle};
 
-_title = "Application du gros pencement ...";
+if(!alive player) exitWith {};
+if(player != vehicle player) exitWith {life_action_inUse = false; hint "Action annulé"};
+if(life_interrupted) exitWith {life_interrupted = false; life_action_inUse = false; hint "Action annulé"};
+if(!life_action_inUse) exitWith {life_action_inUse = false; hint "Action annulé"};
+
+_title = "Application du gros pansement ...";
 _duration = 10;
 _handle = [_duration,_title] spawn life_fnc_progressBar;
 waitUntil {scriptDone _handle};
+
+if(!alive player) exitWith {};
+if(player != vehicle player) exitWith {life_action_inUse = false; hint "Action annulé"};
+if(life_interrupted) exitWith {life_interrupted = false; life_action_inUse = false; hint "Action annulé"};
+if(!life_action_inUse) exitWith {life_action_inUse = false; hint "Action annulé"};
 
 if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]};
 hint "Tu est maintenant soigné!";
@@ -53,29 +65,39 @@ _medics = {(side _x == independent) && {_x getVariable ["invo_faction",""] == "m
 if (_medics > 0) exitWith {};
 hint "Pas de médecins sur l'île, on va regarder si tu nous as amené des blessés.";
 
-_title = "Recherche de bléssés  ...";
+_title = "Recherche de blessés  ...";
 _duration = 10;
 _handle = [_duration,_title] spawn life_fnc_progressBar;
 waitUntil {scriptDone _handle};
 
+if(!alive player) exitWith {};
+if(player != vehicle player) exitWith {life_action_inUse = false; hint "Action annulé"};
+if(life_interrupted) exitWith {life_interrupted = false; life_action_inUse = false; hint "Action annulé"};
+if(!life_action_inUse) exitWith {life_action_inUse = false; hint "Action annulé"};
+
 _nearPlayers = player nearEntities ["Man", 3];
-if (count _nearPlayers > 0) then {
+if (count _nearPlayers > 1) then { // > 1 car le joueur actuel compte pour 1
 	hint "Ok, on va s'occuper de ce(s) blessé(s)!";
+
+	_title = "Prise en charge des blessés ...";
+	_duration = 10;
+	_handle = [_duration,_title] spawn life_fnc_progressBar;
+	waitUntil {scriptDone _handle};
+
+	if(!alive player) exitWith {};
+	if(player != vehicle player) exitWith {life_action_inUse = false; hint "Action annulé"};
+	if(life_interrupted) exitWith {life_interrupted = false; life_action_inUse = false; hint "Action annulé"};
+	if(!life_action_inUse) exitWith {life_action_inUse = false; hint "Action annulé"};
+
+	{
+		if (_x getvariable["FAR_isUnconscious",0] == 1) then
+		{
+			[_x] spawn FAR_HandleRevive;
+		};
+		_x setDamage 0;
+	} forEach _nearPlayers;
+
 } else {
 	hint "Pas de blessé autour de toi.";
 };
-
-{
-	if (_x getvariable["FAR_isUnconscious",0] == 1/* && {!(_x getVariable["AGM_isBleeding",false])}*/) then
-	{
-		//revive
-		//_x setVariable ["AGM_isUnconscious", False, True];
-		//_x setVariable ["AGM_Blood", 1, True];
-		//_x setVariable ["AGM_isBleeding", False, True];
-		//_x setVariable ["AGM_Painkiller", 1, True];
-		//_x setVariable ["AGM_Pain", 0, True];
-		//[_x] call AGM_Medical_fnc_wakeUp;
-		[_x] spawn FAR_HandleRevive;
-	};
-	_x setDamage 0;
-} forEach _nearPlayers;
+life_action_inUse = false;

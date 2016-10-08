@@ -18,7 +18,9 @@ _capacity = getNumber(configFile >> "CfgVehicles" >> (typeOf cursorTarget) >> "f
 if(_capacity == 0) then {_capacity = 60};
 _price = _price * _capacity;
 
-if(life_liquide < _price) exitWith {hint "Vous n'avez pas assez d'argent";};
+if(life_dabliquide < _price) exitWith {hint "Vous n'avez pas assez d'argent";};
+
+if (life_action_inUse) exitWith {hint "Tu est déjà occupé, termine d'abord ce que tu as commencé!";};
 
 _answer = [
 format["<t color='#8cff9b'>Etes vous sur de vouloir faire le plein pour %1€ ?</t>", _price],
@@ -28,10 +30,21 @@ format["<t color='#8cff9b'>Etes vous sur de vouloir faire le plein pour %1€ ?<
 ] call BIS_fnc_guiMessage;
 if (!_answer) exitWith {hint "Action annulée.";};
 
-hint format["Remplissage du réservoir en cours... Prix du baril actuellement : %1€",_oilPrice];
-sleep 15;
-if((vehicle player != player) || (_pos distance getPos player > 10)) exitWith {hint "Vous avez laché le pistolet, 2000€ d'essence s'est déversé sur le sol..."; life_liquide = life_liquide - 2000;};
+life_action_inUse = true;
 
-life_liquide = life_liquide - _price;
+_title = "Remplissage du réservoir en cours...";
+_duration = 15;
+_handle = [_duration,_title] spawn life_fnc_progressBar;
+waitUntil {scriptDone _handle};
+
+if(!alive player) exitWith {};
+if(player != vehicle player) exitWith {life_action_inUse = false; hint "Action annulé"};
+if(life_interrupted) exitWith {life_interrupted = false; life_action_inUse = false; hint "Action annulé"};
+if(!life_action_inUse) exitWith {life_action_inUse = false; hint "Action annulé"};
+
+hint format["Prix du baril actuellement : %1€",_oilPrice];
+if((vehicle player != player) || (_pos distance getPos player > 10)) exitWith {hint format["Vous avez laché le pistolet, %1€ d'essence s'est déversé sur le sol...",_price]; life_dabliquide = life_dabliquide - _price;};
+
+life_dabliquide = life_dabliquide - _price;
 _veh setFuel 1;
 hint format["Réservoir du véhicule rempli pour un total de %1€, merci et a bientôt !",_price];
