@@ -15,7 +15,8 @@ if(vehicle player != player) exitWith {hint "Vous ne pouvez pas effectuer cette 
 _pos = getPos player;
 _veh = _vehicles select 0;
 _capacity = getNumber(configFile >> "CfgVehicles" >> (typeOf cursorTarget) >> "fuelCapacity");
-if(_capacity == 0) then {_capacity = 60};
+if(_capacity == 0) then {_capacity = 100};
+
 _price = _price * _capacity;
 
 if(life_dabliquide < _price) exitWith {hint "Vous n'avez pas assez d'argent";};
@@ -48,3 +49,5 @@ if((vehicle player != player) || (_pos distance getPos player > 10)) exitWith {h
 life_dabliquide = life_dabliquide - _price;
 _veh setFuel 1;
 hint format["Réservoir du véhicule rempli pour un total de %1€, merci et a bientôt !",_price];
+
+life_action_inUse = false;
