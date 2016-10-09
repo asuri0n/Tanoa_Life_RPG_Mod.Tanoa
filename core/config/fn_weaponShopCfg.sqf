@@ -254,8 +254,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Interdit aux civils !"};
-			case (!license_civ_gun): {"Tu n'a pas le Permis de Port d'Armes !"};
+			case (playerSide != civilian): {"Accessible que aux civils !"};
+			case (!license_civ_natiosecuri): {"Tu n'a pas le Permis de Port d'Armes !"};
 			default
 			{
 				["Armes a Feu De Billy Joe",
@@ -1225,31 +1225,38 @@ switch(_shop) do
 	};
 	case "natiosecuri":
 	{
-		["National Security",
-			[
-				["hgun_Rook40_F",nil,20000],
-				["16Rnd_9x21_Mag",nil,100],
-				["arifle_CTAR_blk_F",nil,200000],
-				["30Rnd_580x42_Mag_F",nil,300],
-				["arifle_SPAR_01_blk_F",nil,455000],
-				["30Rnd_556x45_Stanag",nil,500],
+		switch(true) do
+		{
+			case (!license_civ_natiosecuri): {"Tu n'est pas salarié de l'entreprise National Security !"};
+			default
+			{
+				["National Security",
+					[
+						["hgun_Rook40_F",nil,20000],
+						["16Rnd_9x21_Mag",nil,100],
+						["arifle_CTAR_blk_F",nil,200000],
+						["30Rnd_580x42_Mag_F",nil,300],
+						["arifle_SPAR_01_blk_F",nil,455000],
+						["30Rnd_556x45_Stanag",nil,500],
 
-				["muzzle_snds_58_blk_F",nil,30000],
-				["muzzle_snds_M",nil,30000],
-				["optic_ERCO_blk_F",nil,10000],
-				["optic_DMS",nil,50000],
-				["optic_Holosight_smg_blk_F",nil,10000],
+						["muzzle_snds_58_blk_F",nil,30000],
+						["muzzle_snds_M",nil,30000],
+						["optic_ERCO_blk_F",nil,10000],
+						["optic_DMS",nil,50000],
+						["optic_Holosight_smg_blk_F",nil,10000],
 
-				["ItemRadio",nil,200],
-				["ItemMap",nil,500],
-				["ItemGPS",nil,500],
-				["ItemCompass",nil,500],
-				["ItemWatch",nil,150],
-				["Rangefinder",nil,1500],
-				["acc_flashlight",nil,2500],
-				["NVGoggles","Night Vision",5000],
-				["ToolKit",nil,5000]
-			]
-		];
+						["ItemRadio",nil,200],
+						["ItemMap",nil,500],
+						["ItemGPS",nil,500],
+						["ItemCompass",nil,500],
+						["ItemWatch",nil,150],
+						["Rangefinder",nil,1500],
+						["acc_flashlight",nil,2500],
+						["NVGoggles","Night Vision",5000],
+						["ToolKit",nil,5000]
+					]
+				];
+			};
+		};
 	};
 };
