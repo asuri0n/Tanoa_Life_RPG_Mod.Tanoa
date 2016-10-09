@@ -22,6 +22,7 @@ switch (_vehicle) do
 			case 3: {_color = "Youtube"};
 			case 4: {_color = "Poly"};
 			case 5: {_color = "SMT"};
+			case 6: {_color = "Gendarmerie"};
 		};
 	};
 
@@ -48,6 +49,7 @@ switch (_vehicle) do
 			case 8: {_color = "Cyan"};
 			case 9: {_color = "Depanneur"};
 			case 10: {_color = "Medecin"};
+			case 10: {_color = "Gendarmerie"};
 		};
 	};
 
@@ -110,14 +112,6 @@ switch (_vehicle) do
 		};
 	};
 
-	case "I_Heli_light_03_unarmed_F" :
-	{
-		switch (_index) do
-		{
-			//case 0: {_color = "Gendarmerie"};
-		};
-	};
-
 	case "C_SUV_01_F":
 	{
 		switch (_index) do
@@ -132,19 +126,15 @@ switch (_vehicle) do
 			case 7: {_color = "Camouflé";};
 			case 8: {_color = "Staff";};
 			case 9: {_color = "Ferrari";};
-			case 10: {_color = "Vacation";};
-			case 11: {_color = "Cube";};
-			case 12: {_color = "Donuts";};
-			case 13: {_color = "Homer jaune";};
-			case 14: {_color = "Polygone gris";};
-			case 15: {_color = "BFM TV";};
-			case 16: {_color = "Rebelle";};
-			case 17: {_color = "Noir";};
-			case 18: {_color = "Vert";};
-			case 19: {_color = "Banalisée Argent";};
-			case 20: {_color = "Banalisée Orange";};
-			case 21: {_color = "Banalisée Rebelle";};
-			case 22: {_color = "Banalisée Grise";};
+			case 10: {_color = "Cube";};
+			case 11: {_color = "Donuts";};
+			case 12: {_color = "Homer jaune";};
+			case 13: {_color = "Polygone gris";};
+			case 14: {_color = "BFM TV";};
+			case 15: {_color = "Rebelle";};
+			case 16: {_color = "Noir";};
+			case 17: {_color = "Vert";};
+			case 18: {_color = "Gendarmerie";};
 		};
 	};
 
@@ -171,16 +161,15 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Gendarmerie"};
-			case 1: {_color = "Digital desert"};
-			case 2: {_color = "Noir"};
-			case 3: {_color = "Bleu"};
-			case 4: {_color = "Rouge"};
-			case 5: {_color = "Blanc"};
-			case 6: {_color = "Digital Vert"};
-			case 7: {_color = "Hunter Camo"};
-			case 8: {_color = "Rebel Camo"};
-			case 9: {_color = "SMT"};
+			case 0: {_color = "Digital desert"};
+			case 1: {_color = "Noir"};
+			case 2: {_color = "Bleu"};
+			case 3: {_color = "Rouge"};
+			case 4: {_color = "Blanc"};
+			case 5: {_color = "Digital Vert"};
+			case 6: {_color = "Hunter Camo"};
+			case 7: {_color = "Rebel Camo"};
+			case 8: {_color = "SMT"};
 		};
 	};
 
@@ -261,9 +250,8 @@ switch (_vehicle) do
 			case 3: {_color = "Desert Digi"};
 			case 4: {_color = "Rebel Camo"};
 			case 5: {_color = "SMT"};
-			case 7: {_color = "Gendarmerie"};
-			case 9: {_color = "Camouflé Noir"};
-			case 10: {_color = "Noir"};
+			case 6: {_color = "Camouflé Noir"};
+			case 7: {_color = "Noir"};
 		};
 	};
 

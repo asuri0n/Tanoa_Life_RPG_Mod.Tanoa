@@ -21,7 +21,8 @@ switch (_vehicle) do
 			["textures\vehicules\civ\Hayon_Night.paa","civ"],
 			["textures\vehicules\civ\Hayon_youtube.paa","civ"],
 			["textures\vehicules\civ\Hayon_Poly.paa","civ"],
-			["textures\vehicules\smt\HAYONSMT.paa","med"]
+			["textures\vehicules\smt\HAYONSMT.paa","med"],
+			["textures\vehicules\cop\hayon.paa","cop"]
 		];
 	};
 
@@ -29,7 +30,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicules\cop\Milice_Hunter.paa","cop","textures\vehicules\cop\hunter.paa"]
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
 		];
 	};
 
@@ -111,14 +112,6 @@ switch (_vehicle) do
  		];
  	};
 
-	case "I_Heli_light_03_unarmed_F":
-	{
-		_ret =
-		[
-			//["textures\vehicules\cop\Milice_Hellcat.paa","cop"]
-		];
-	};
-
 	case "C_SUV_01_F":
 	{
 		_ret =
@@ -140,7 +133,8 @@ switch (_vehicle) do
 			["textures\vehicules\civ\SUV_bfm.paa","civ"],
 			["textures\vehicules\reb\SUV_camo.paa","reb"],
 			["textures\vehicules\civ\SUV_noir.paa","civ"],
-			["textures\vehicules\civ\SUV_vert.paa","civ"]
+			["textures\vehicules\civ\SUV_vert.paa","civ"],
+			["textures\vehicules\cop\suv.paa","cop"]
 		];
 	};
 
@@ -167,7 +161,6 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicules\cop\quad.paa","cop"],
 			["\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa","reb"],
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_black_co.paa","civ"],
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_blue_co.paa","civ"],
@@ -257,7 +250,6 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
 			["textures\vehicules\reb\Orca_rebel.paa","reb"],
 			["textures\vehicules\civ\Orca_Shield.paa","civ"],
-			["textures\vehicules\cop\orca.paa","cop"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa","bac"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa","civ"]
 		];
@@ -347,7 +339,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicules\cop\prowler.paa","cop"],
+			["textures\vehicules\cop\mb4wd.paa","cop"],
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_black_co.paa","civ"],
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_blue_co.paa","civ"],
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_green_co.paa","civ"],
@@ -356,6 +348,14 @@ switch (_vehicle) do
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_brown_co.paa","civ"],
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_white_co.paa","civ"],
 			["\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","civ"]
+		];
+	};
+
+	case "B_T_LSV_01_unarmed_F":
+	{
+		_ret =
+		[
+			["textures\vehicules\cop\prowler_1.paa","cop","textures\vehicules\cop\prowler_2.paa","textures\vehicules\cop\prowler_3.paa","textures\vehicules\cop\prowler_4.paa"]
 		];
 	};
 };
