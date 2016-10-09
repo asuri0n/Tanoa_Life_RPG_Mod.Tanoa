@@ -5,9 +5,9 @@ class LicenseShop {
 	enableSimulation = true;
 	onLoad = "uiNamespace setVariable [""LicenseShop"", _this select 0];";
 	objects[] = { };
-	
+
 	class controls {
-	
+
 		class RscTitleBackground : Life_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
@@ -17,7 +17,7 @@ class LicenseShop {
 			w = 0.775;
 			h = 0.04;
 		};
- 
+
 		class Mainbackground : Life_RscText {
 			colorBackground[] = {0,0,0,0.7};
 			idc = -1;
@@ -26,16 +26,16 @@ class LicenseShop {
 			w = 0.775;
 			h = 0.52;
 		};
-		
+
 		class listbox: Life_RscListBox {
 			idc = 55126;
 			sizeEx = 0.035;
 			x = 0.1125;
 			y = 0.3;
-			w = 0.3125;
+			w = 0.4;
 			h = 0.4;
 		};
-		
+
 		class ShowLicenseslistbox: Life_RscListBox {
 			idc = 55131;
 			x = 0.55;
@@ -43,7 +43,7 @@ class LicenseShop {
 			w = 0.3125;
 			h = 0.4;
 		};
-		
+
 		class MyLicenses : Life_RscText {
 			idc = 55130;
 			text = "$STR_My_Licenses";
@@ -52,7 +52,7 @@ class LicenseShop {
 			w = 0.1375;
 			h = 0.04;
 		};
-		
+
 		class ShowLicenses : Life_RscText {
 			idc = 55129;
 			text = "$STR_Show_Licenses";
@@ -61,7 +61,7 @@ class LicenseShop {
 			w = 0.1375;
 			h = 0.04;
 		};
-		
+
 		class buybutton: Life_RscButtonMenu {
 			idc = 55127;
 			text = "$STR_Global_Buy";
