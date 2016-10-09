@@ -29,14 +29,14 @@ _longname = ([_shortname, 0] call life_fnc_licenseType) select 0;
 _displayname = ([_shortname, 0] call life_fnc_licenseType) select 1;
 _price = [_shortname] call life_fnc_licensePrice;
 
-
+/*
 diag_log "------------------- licenses.sqf ------------------";
 diag_log format["_shortname %1",_shortname];
 diag_log format["_longname %1",_longname];
 diag_log format["_price: %1",_price];
 diag_log format["_displayname: %1",_displayname];
 diag_log "------------------------------------------------";
-
+*/
 
 _hasLicense = missionNamespace getVariable _longname;
 
