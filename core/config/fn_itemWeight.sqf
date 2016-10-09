@@ -58,10 +58,6 @@ switch (_item) do
 	case "goldbar": {12};
 
 //AJOUTE PAR RAPPORT A LA VERSION DE BASE
-	case "kitmeth": {5};
-	case "poudrehydroxyde": {4};
-	case "crystalmeth": {4};
-	case "crystalmethpur": {4};
 	case "archeologie": {4};
 	case "archeologieillegale": {5};
 	case "barriere": {10};
@@ -100,50 +96,61 @@ switch (_item) do
 	case "uranium2": {4}; // <--------You Can Change the Pound of the Item(s) in Game
 	case "uranium3": {4}; // <--------You Can Change the Pound of the Item(s) in Game
 	case "uranium4": {4}; // <--------You Can Change the Pound of the Item(s) in Game
-	case "uranium": {4}; // <--------You Can Change the Pound of the Item(s) in Game
-	case "uranium2b": {4}; // <--------You Can Change the Pound of the Item(s) in Game
-	case "uranium3b": {4}; // <--------You Can Change the Pound of the Item(s) in Game
-	case "uranium4b": {4}; // <--------You Can Change the Pound of the Item(s) in Game
-	case "uranium5b": {4}; // <--------You Can Change the Pound of the Item(s) in Game
 
 	case "fishp" : {1};
+
 	case "boisp" : {5};
 	case "planchep" : {3};
+
 	case "linp" : {2};
 	case "tissup" : {1};
+
 	case "charbonp" : {1};
 	case "poudrenoirp" : {1};
-	case "briquep" : {3};
+
 	case "clayp" : {5};
-	case "souffrep" : {5};
+	case "briquep" : {3};
+
 	case "cocainp" : {5};
 	case "cocainpurp" : {3};
+
 	case "heroinpy" : {5};
 	case "heroinpurp" : {3};
+
 	case "marip" : {5};
 	case "maripurp" : {3};
-	case "uraniump" : {2};
+
 	case "copperorep" : {5};
+
 	case "goldp" : {5};
 	case "goldbarp" : {3};
+
 	case "ironorep" : {5};
 	case "ironp" : {3};
+
 	case "diamantp" : {5};
 	case "diamantpurp" : {3};
+
 	case "oilpy" : {5};
 	case "plastiquep" : {3};
 
-	case "uraniump2" : {3};
-	case "uraniump3" : {3};
-	case "uraniump4" : {3};
+	case "uraniump1" : {5};
+	case "uraniump2" : {5};
+	case "uraniump3" : {5};
+	case "uraniump4" : {5};
+	case "uraniump" : {3};
 
 	case "organp" : {5};
-	case "organ" : {5};
+	case "organ" : {3};
 
 	case "osslp" : {5};
-	case "ossillp" : {5};
+	case "ossillp" : {3};
+
+	case "kitmeth": {5};
+	case "poudrehydroxyde": {3};
+	case "crystalmeth": {3};
+	case "crystalmethpur": {3};
 
 	case "gpstracker": {25};
-
 	default {1};
 };

@@ -771,7 +771,7 @@ sell_array =
 	["redgull",200],
 	["fuelF",500],
 	["spikeStrip",1500],
-	["goldbar",75000],
+	["goldbar",90000],
 	["bottledshine",10000],
 	["bottledwhiskey",9500],
 	["bottledbeer",9000],
