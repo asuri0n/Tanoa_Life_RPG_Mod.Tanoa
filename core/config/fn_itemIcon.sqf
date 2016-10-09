@@ -71,51 +71,44 @@ switch (_var) do
 	case "life_inv_bottledwhiskey": {("icons\items\whisky.paa")};
 	case "life_inv_puranium": {("icons\items\water.paa")};
 	case "life_inv_ipuranium": {("icons\items\water.paa")};
-
-	
-	
-	
-case "life_inv_fishp": {("icons\items\fish.paa")};	
-case "life_inv_boisp": {("icons\items\bois.paa")};
-case "life_inv_sandp": {("icons\items\sand.paa")};
-case "life_inv_glassp": {("icons\items\glass.paa")};
-case "life_inv_laitp": {("icons\items\lait.paa")};
-case "life_inv_caoutchoucp": {("icons\items\caoutchouc.paa")};
-case "life_inv_linp": {("icons\items\lin.paa")};
-case "life_inv_tissup": {("icons\items\tissu.paa")};
-case "life_inv_charbonp": {("icons\items\charbon.paa")};
-case "life_inv_poudrenoirp": {("icons\items\poudre_noir.paa")};
-case "life_inv_cocainp": {("icons\items\cocain_unprocessed.paa")};
-case "life_inv_cocainpurp": {("icons\items\cocain_unprocessed.paa")};
-case "life_inv_heroinpy": {("icons\items\heroin_unprocessed.paa")};
-case "life_inv_heroinpurp": {("icons\items\heroin_unprocessed.paa")};
-case "life_inv_marip": {("icons\items\marijuana.paa")};
-case "life_inv_maripurp": {("icons\items\marijuana.paa")};
-case "life_inv_uraniump1": {("icons\items\uranium.paa")};
-case "life_inv_uraniump2": {("icons\items\uranium.paa")};
-case "life_inv_uraniump3": {("icons\items\uranium.paa")};
-case "life_inv_uraniump4": {("icons\items\uranium.paa")};
-case "life_inv_uraniumpurp": {("icons\items\uranium.paa")};
-case "life_inv_rockp": {("icons\items\rock.paa")};	
-case "life_inv_rocktaillep": {("icons\items\rocktaillee.paa")};
-case "life_inv_copperorep": {("icons\items\copper_ore.paa")};
-case "life_inv_briquep": {("icons\items\sac.paa")};
-case "life_inv_goldp": {("icons\items\gold.paa")};
-case "life_inv_goldbarp": {("icons\items\goldbar.paa")};
-case "life_inv_ironorep": {("icons\items\iron_ore.paa")};
-case "life_inv_ironp": {("icons\items\iron.paa")};
-case "life_inv_diamantp": {("icons\items\diamond_unprocessed.paa")};
-case "life_inv_diamantpurp": {("icons\items\diamond.paa")};
-case "life_inv_oilpy": {("icons\items\oil_unprocessed.paa")};
-case "life_inv_plastiquep": {("icons\items\plastique.paa")};
-case "life_inv_calcairep": {("icons\items\salt_unprocessed.paa")};
-case "life_inv_cimentp": {("icons\items\cement.paa")};
-case "life_inv_planchep": {("icons\items\bois.paa")};
-case "life_inv_ossillp": {("icons\items\skull.paa")};
-case "life_inv_osslp": {("icons\items\skull.paa")};
-case "life_inv_clayp": {("icons\items\copper_ore.paa")};
-
-
-
-life_inv_planchep
+	case "life_inv_fishp": {("icons\items\fish.paa")};
+	case "life_inv_boisp": {("icons\items\bois.paa")};
+	case "life_inv_sandp": {("icons\items\sand.paa")};
+	case "life_inv_glassp": {("icons\items\glass.paa")};
+	case "life_inv_laitp": {("icons\items\lait.paa")};
+	case "life_inv_caoutchoucp": {("icons\items\caoutchouc.paa")};
+	case "life_inv_linp": {("icons\items\lin.paa")};
+	case "life_inv_tissup": {("icons\items\tissu.paa")};
+	case "life_inv_charbonp": {("icons\items\charbon.paa")};
+	case "life_inv_poudrenoirp": {("icons\items\poudre_noir.paa")};
+	case "life_inv_cocainp": {("icons\items\cocain_unprocessed.paa")};
+	case "life_inv_cocainpurp": {("icons\items\cocain_unprocessed.paa")};
+	case "life_inv_heroinpy": {("icons\items\heroin_unprocessed.paa")};
+	case "life_inv_heroinpurp": {("icons\items\heroin_unprocessed.paa")};
+	case "life_inv_marip": {("icons\items\marijuana.paa")};
+	case "life_inv_maripurp": {("icons\items\marijuana.paa")};
+	case "life_inv_uraniump1": {("icons\items\uranium.paa")};
+	case "life_inv_uraniump2": {("icons\items\uranium.paa")};
+	case "life_inv_uraniump3": {("icons\items\uranium.paa")};
+	case "life_inv_uraniump4": {("icons\items\uranium.paa")};
+	case "life_inv_uraniumpurp": {("icons\items\uranium.paa")};
+	case "life_inv_rockp": {("icons\items\rock.paa")};
+	case "life_inv_rocktaillep": {("icons\items\rocktaillee.paa")};
+	case "life_inv_copperorep": {("icons\items\copper_ore.paa")};
+	case "life_inv_briquep": {("icons\items\sac.paa")};
+	case "life_inv_goldp": {("icons\items\gold.paa")};
+	case "life_inv_goldbarp": {("icons\items\goldbar.paa")};
+	case "life_inv_ironorep": {("icons\items\iron_ore.paa")};
+	case "life_inv_ironp": {("icons\items\iron.paa")};
+	case "life_inv_diamantp": {("icons\items\diamond_unprocessed.paa")};
+	case "life_inv_diamantpurp": {("icons\items\diamond.paa")};
+	case "life_inv_oilpy": {("icons\items\oil_unprocessed.paa")};
+	case "life_inv_plastiquep": {("icons\items\plastique.paa")};
+	case "life_inv_calcairep": {("icons\items\salt_unprocessed.paa")};
+	case "life_inv_cimentp": {("icons\items\cement.paa")};
+	case "life_inv_planchep": {("icons\items\bois.paa")};
+	case "life_inv_ossillp": {("icons\items\skull.paa")};
+	case "life_inv_osslp": {("icons\items\skull.paa")};
+	case "life_inv_clayp": {("icons\items\copper_ore.paa")};
+	default {("icons\items\default.paa")};
 };
