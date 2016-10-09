@@ -219,10 +219,15 @@ switch (true) do
 		 	};
 		};
 	};
-	case (_item == "gpstracker"): 
+	case (_item == "gpstracker"):
 	{
 		[cursorTarget] spawn life_fnc_gpsTracker;
-	}; 
+	};
+	case (_item == "defibrilateur"):
+	{
+		[] spawn life_fnc_defibrilateur;
+	};
+
 	default
 	{
 		hint "Cet objet n'est pas utilisable";
