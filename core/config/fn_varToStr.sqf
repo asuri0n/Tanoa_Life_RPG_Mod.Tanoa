@@ -155,20 +155,20 @@ switch (_var) do
 	//License Block
 
 	// new licences
-	case "license_civ_bucheron": {"Licence de Bucheron"};
-	case "license_civ_joaillier": {"Licence de Joaillier"};
-	case "license_civ_brique": {"Licence de Briquetier"};
-	case "license_civ_diamantaire": {"Licence de Diamantaire"};
-	case "license_civ_iron": {"Licence de Forgeron"};
-	case "license_civ_tissu": {"Licence de Designer Textile"};
-	case "license_civ_plastique": {"Licence de Vendeur de légo"};
-	case "license_civ_poudre": {"Licence de Vendeur de poudre"};
-	case "license_civ_heroine": {"Licence de Producteur héroine"};
-	case "license_civ_canabis": {"Licence de Producteur canabis"};
-	case "license_civ_cocaine": {"Licence de Producteur cocaine"};
-	case "license_civ_uranium": {"Licence de Producteur Uranium"};
-	case "license_civ_archeologie": {"Licence de Formation Archeologie"};
-	case "license_civ_organ": {"Licence de Vendeur d'organes"};
+	case "license_civ_bucheron": {"Bucheron"};
+	case "license_civ_joaillier": {"Joaillier"};
+	case "license_civ_brique": {"Briquetier"};
+	case "license_civ_diamantaire": {"Diamantaire"};
+	case "license_civ_iron": {"Forgeron"};
+	case "license_civ_tissu": {"Designer Textile"};
+	case "license_civ_plastique": {"Vendeur de légo"};
+	case "license_civ_poudre": {"Vendeur de poudre"};
+	case "license_civ_heroine": {"Producteur héroine"};
+	case "license_civ_canabis": {"Producteur canabis"};
+	case "license_civ_cocaine": {"Producteur cocaine"};
+	case "license_civ_uranium": {"Producteur Uranium"};
+	case "license_civ_archeologie": {"Formation Archeologie"};
+	case "license_civ_organ": {"Vendeur d'organes"};
 
 
 	//xp system
@@ -200,7 +200,7 @@ switch (_var) do
 	case "license_cop_air": {"Brevet de Pilote"};
 	case "license_cop_swat": {"Diplôme des Forces Spéciales"};
 	case "license_cop_cg": {"Garde Cote"};
-	case "license_civ_rebel": {"Licence de rebellion"};
+	case "license_civ_rebel": {"rebellion"};
 	case "license_civ_marijuana": {"Producteur de Marijuana"};
 	case "license_civ_cement": {"Producteur de Ciment"};
     case "license_med_air": {"Brevet de Pilote du SAMU"};
@@ -210,17 +210,17 @@ switch (_var) do
 	//case "license_civ_depanneur": {"Brevet de Dépanneur"};
 	//case "license_civ_papiers": {"Papiers d'identitées"};
 	//case "license_civ_bornholm": {"Whitelist Bornholm"};
-	//case "license_civ_stiller": {"Licence de distilleur"};
+	//case "license_civ_stiller": {"distilleur"};
 	//case "license_civ_liquor": {"Fabriquant de liqueur"};
-	//case "license_civ_bottler": {"Licence de mise en bouteille"};
-	//case "license_civ_wine": {"Licence de producteur de Vin"};
-	//case "license_civ_pressjuice": {"Licence de producteur de Jus de Raisin"};
-	//case "license_civ_moonshine": {"Licence de distilleur illégal"};
+	//case "license_civ_bottler": {"mise en bouteille"};
+	//case "license_civ_wine": {"producteur de Vin"};
+	//case "license_civ_pressjuice": {"producteur de Jus de Raisin"};
+	//case "license_civ_moonshine": {"distilleur illégal"};
 	//case "license_civ_applecompote": {"Producteur de Compote de Pommes"};
 	//case "license_civ_peachcompote": {"Producteur de Compote de Pêches"};
 	case "license_civ_gangster": {"Licence Gangster"};
 	//case "license_civ_luxecar": {"Permis Véhicule Luxe"};
-	//case "license_civ_bounty_hunter": {"Licence de chasseur de prime"};
+	//case "license_civ_bounty_hunter": {"chasseur de prime"};
 	case "license_civ_permrebel": {"Permission licence rebelle"};
 	//case "license_cop_fusiller_leger": {"Permission Fusiller léger"};
 	//case "license_cop_medecin": {"Permission Medeçin"};
@@ -229,9 +229,9 @@ switch (_var) do
 	//case "license_cop_tireur_elite": {"Permission Tireur d'élite"};
 
 	case "license_cop_bac": {"Membre de la Brigade Anti Criminalité"}; //Ajout Bac 11/10/14 Jo
-	case "license_civ_busDriver": {"Licence de transport de personnes"};
+	case "license_civ_busDriver": {"transport de personnes"};
 
-	case "license_civ_transport": {"Licence de transport"};
+	case "license_civ_transport": {"transport"};
 	case "license_civ_bonbeur": {"Entreprise Bonbeur"};
 	case "license_civ_natiosecuri": {"National Security"};
 
