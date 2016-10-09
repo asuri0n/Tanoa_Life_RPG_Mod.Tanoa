@@ -1217,14 +1217,7 @@ switch(_shop) do
 			{
 				["Armurerie",
 					[
-					["SmokeShellOrange","Fumi orange",500]
-					//Weapons
-					//Ammo
-					//Optic
-					//Accessories
-					//Items
-					//Chemlight
-					//Smoke
+						["SmokeShellOrange","Fumi orange",500]
 					]
 				];
 			};
@@ -1236,16 +1229,15 @@ switch(_shop) do
 			[
 				["hgun_Rook40_F",nil,20000],
 				["16Rnd_9x21_Mag",nil,100],
-				["arifle_CTAR_blk_F",nil,27500],
+				["arifle_CTAR_blk_F",nil,200000],
 				["30Rnd_580x42_Mag_F",nil,300],
-				["arifle_Katiba_C_F",nil,332500],
-				["30Rnd_65x39_caseless_green",nil,500],
-				["arifle_SPAR_03_khk_F",nil,455000],
-				["20Rnd_762x51_Mag",nil,500],
+				["arifle_SPAR_01_blk_F",nil,455000],
+				["30Rnd_556x45_Stanag",nil,500],
 
 				["muzzle_snds_58_blk_F",nil,30000],
 				["muzzle_snds_M",nil,30000],
 				["optic_ERCO_blk_F",nil,10000],
+				["optic_DMS",nil,50000],
 				["optic_Holosight_smg_blk_F",nil,10000],
 
 				["ItemRadio",nil,200],
@@ -1253,7 +1245,8 @@ switch(_shop) do
 				["ItemGPS",nil,500],
 				["ItemCompass",nil,500],
 				["ItemWatch",nil,150],
-				["Binocular",nil,1500],
+				["Rangefinder",nil,1500],
+				["acc_flashlight",nil,2500],
 				["NVGoggles","Night Vision",5000],
 				["ToolKit",nil,5000]
 			]

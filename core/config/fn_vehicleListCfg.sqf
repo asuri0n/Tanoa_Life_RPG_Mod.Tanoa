@@ -149,7 +149,8 @@ switch (_shop) do
 			_return =
 			[
 				["B_Quadbike_01_F", 5000],
-				["C_Offroad_01_F", 20000]
+				["C_Offroad_01_F", 20000],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
             case 2 : //Gendarme
@@ -159,7 +160,9 @@ switch (_shop) do
 				["B_Quadbike_01_F", 5000],
 				["C_Offroad_01_F", 20000],
 				["C_Offroad_02_unarmed_F",20000],
-				["B_T_LSV_01_unarmed_F",33500]
+				["B_T_LSV_01_unarmed_F",33500],
+                ["C_SUV_01_F", 23333],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
             case 3 : //adjudant
@@ -169,7 +172,9 @@ switch (_shop) do
 				["B_Quadbike_01_F", 5000],
 				["C_Offroad_01_F", 20000],
 				["C_Offroad_02_unarmed_F",20000],
-				["B_T_LSV_01_unarmed_F",33500]
+				["B_T_LSV_01_unarmed_F",33500],
+                ["C_SUV_01_F", 23333],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
             case 4 : //Lieutenant
@@ -180,7 +185,9 @@ switch (_shop) do
 				["C_Offroad_01_F", 20000],
 				["C_Offroad_02_unarmed_F",20000],
 				["B_T_LSV_01_unarmed_F",33500],
-				["I_MRAP_03_F",200000]
+				["I_MRAP_03_F",200000],
+                ["C_SUV_01_F", 23333],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
             case 5 : //Major
@@ -191,7 +198,9 @@ switch (_shop) do
 				["C_Offroad_01_F", 20000],
 				["C_Offroad_02_unarmed_F",20000],
 				["B_T_LSV_01_unarmed_F",33500],
-				["I_MRAP_03_F",200000]
+				["I_MRAP_03_F",200000],
+                ["C_SUV_01_F", 23333],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
             case 6 : //Colonel
@@ -202,7 +211,9 @@ switch (_shop) do
 				["C_Offroad_01_F", 20000],
 				["C_Offroad_02_unarmed_F",20000],
 				["B_T_LSV_01_unarmed_F",33500],
-				["I_MRAP_03_F",200000]
+				["I_MRAP_03_F",200000],
+                ["C_SUV_01_F", 23333],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
             case 7 : //Général
@@ -214,7 +225,9 @@ switch (_shop) do
 				["C_Offroad_01_F", 20000],
 				["C_Offroad_02_unarmed_F",20000],
 				["B_T_LSV_01_unarmed_F",33500],
-				["I_MRAP_03_F",200000]
+				["I_MRAP_03_F",200000],
+                ["C_SUV_01_F", 23333],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
             case 8 : //GIGN
@@ -224,7 +237,9 @@ switch (_shop) do
 				["B_Quadbike_01_F", 5000],
 				["C_Offroad_02_unarmed_F",20000],
 				["B_T_LSV_01_unarmed_F",33500],
-				["I_MRAP_03_F",200000]
+				["I_MRAP_03_F",200000],
+                ["C_SUV_01_F", 23333],
+                ["C_Hatchback_01_F", 16666]
 			];
             };
         };
@@ -503,7 +518,8 @@ switch (_shop) do
                 [
                     ["C_Offroad_01_F", 40000],
                     ["C_SUV_01_F", 50000],
-                    ["B_Truck_01_fuel_F",1000000]
+                    ["C_Offroad_02_unarmed_F",50000],
+                    ["C_Heli_Light_01_civil_F",553000]
                 ];
             };
         };
