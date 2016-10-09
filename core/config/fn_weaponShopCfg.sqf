@@ -1227,6 +1227,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
+			case (playerSide != civilian): {"Accessible que aux civils !"};
 			case (!license_civ_natiosecuri): {"Tu n'est pas salarié de l'entreprise National Security !"};
 			default
 			{

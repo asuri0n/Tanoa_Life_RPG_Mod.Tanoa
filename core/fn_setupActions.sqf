@@ -15,7 +15,7 @@ switch (playerSide) do
 	case east:
 	{
 		//Passport System
-		life_actions = life_actions + [player addAction["<t color='#00FF00'>Montrer son passport</t>",life_fnc_civShowPassport,"",1,false,true,"",' playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && player distance cursorTarget < 3.5']];
+		life_actions = life_actions + [player addAction["<t color='#00FF00'>Montrer son passport</t>",life_fnc_civShowPassport,"",1,false,true,"",' (playerSide == civilian || playerSide == east) && !isNull cursorTarget && cursorTarget isKindOf "Man" && player distance cursorTarget < 3.5']];
 		//Drop fishing net
 		life_actions = [player addAction["Drop Fishing Net",life_fnc_dropFishingNet,"",0,false,false,"",'
 		(surfaceisWater (getPos vehicle player)) && (vehicle player isKindOf "Ship") && life_carryWeight < life_maxWeight && speed (vehicle player) < 2 && speed (vehicle player) > -1 && !life_net_dropped ']];
