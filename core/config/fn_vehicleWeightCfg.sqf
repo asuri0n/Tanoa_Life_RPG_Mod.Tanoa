@@ -70,7 +70,7 @@ switch (_className) do
     case "C_Plane_Civil_01_F": {500};
 
 	/**
-	 * [REVIEWED] Civil - Avions
+	 * [REVIEWED] Civil - Bateau
 	**/
     case "C_Rubberboat": {50};
     case "C_Boat_Civil_01_F": {150};

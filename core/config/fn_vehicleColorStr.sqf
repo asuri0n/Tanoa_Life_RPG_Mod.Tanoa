@@ -49,7 +49,7 @@ switch (_vehicle) do
 			case 8: {_color = "Cyan"};
 			case 9: {_color = "Depanneur"};
 			case 10: {_color = "Medecin"};
-			case 10: {_color = "Gendarmerie"};
+			case 11: {_color = "Gendarmerie"};
 		};
 	};
 
@@ -348,6 +348,14 @@ switch (_vehicle) do
 			case 6: {_color = "Marron"};
 			case 7: {_color = "Blanc"};
 			case 8: {_color = "Olive"};
+		};
+	};
+
+	case "B_T_LSV_01_unarmed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Gendarmerie"};
 		};
 	};
 };

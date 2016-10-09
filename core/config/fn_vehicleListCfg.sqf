@@ -61,8 +61,7 @@ switch (_shop) do
             ["B_Truck_01_fuel_F",1000000],
             ["B_Truck_01_box_F",1333334],
             // Spécial
-            ["O_Truck_03_device_F",1333000],
-            ["O_Truck_02_Ammo_F",5000000]
+            ["O_Truck_03_device_F",1333000]
         ];
     };
 
@@ -350,9 +349,6 @@ switch (_shop) do
                 {
                     _return =
                     [
-                        ["B_UAV_AI",1],
-                        ["gunner",1],
-
                         ["B_Heli_Light_01_F",142000],
                         ["O_Heli_Light_02_unarmed_F",233333],
                         ["I_Heli_light_03_unarmed_F",245000],
@@ -363,9 +359,6 @@ switch (_shop) do
                 } else {
                     _return =
                     [
-                        ["B_UAV_AI",1],
-                        ["gunner",1],
-
                         ["B_Heli_Light_01_F",142000],
                         ["O_Heli_Light_02_unarmed_F",233333],
                         ["I_Heli_light_03_unarmed_F",245000],
