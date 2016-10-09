@@ -581,7 +581,8 @@ life_licenses =
 	["license_civ_bounty_hunter","civ"],
 
 	//ENTREPRISES
-	["license_civ_bonbeur","civ"]
+	["license_civ_bonbeur","civ"],
+	["license_civ_natiosecuri","civ"]
 
 ];
 

@@ -233,5 +233,6 @@ switch (_var) do
 
 	case "license_civ_transport": {"Licence de transport"};
 	case "license_civ_bonbeur": {"Entreprise Bonbeur"};
+	case "license_civ_natiosecuri": {"National Security"};
 
 };

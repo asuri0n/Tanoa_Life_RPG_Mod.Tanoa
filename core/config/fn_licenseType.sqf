@@ -18,24 +18,24 @@ switch (_mode) do
 			case "wood": {_var = "license_civ_bucheron"};
 			case "gold": {_var = "license_civ_joaillier"};
 			case "clay": {_var = "license_civ_brique"};
-			case "diamant": {_var = "license_civ_diamantaire"};	
-			case "iron": {_var = "license_civ_iron"};			
+			case "diamant": {_var = "license_civ_diamantaire"};
+			case "iron": {_var = "license_civ_iron"};
 			case "lin": {_var = "license_civ_tissu"};
 			case "oil": {_var = "license_civ_plastique"};
 			case "powder": {_var = "license_civ_poudre"};
 			case "charbonp": {_var = "license_civ_poudre"};
-			case "souffrep": {_var = "license_civ_poudre"};		
+			case "souffrep": {_var = "license_civ_poudre"};
 			case "heroin": {_var = "license_civ_heroine"};
 			case "marijuana": {_var = "license_civ_canabis"};
-			case "cocaine": {_var = "license_civ_cocaine"};		
+			case "cocaine": {_var = "license_civ_cocaine"};
 			case "uraniump": {_var = "license_civ_uranium"};
 			case "uraniump1": {_var = "license_civ_uranium"};
 			case "uraniump2": {_var = "license_civ_uranium"};
 			case "uraniump3": {_var = "license_civ_uranium"};
 			case "uraniump4": {_var = "license_civ_uranium"};
 			case "archeologie": {_var = "license_civ_archeologie"};
-			case "organ": {_var = "license_civ_organ"};	
-		
+			case "organ": {_var = "license_civ_organ"};
+
 			case "driver": {_var = "license_civ_driver"}; //Drivers License cost
 			case "boat": {_var = "license_civ_boat"}; //Boating license cost
 			case "pilot": {_var = "license_civ_air"}; //Pilot/air license cost
@@ -92,17 +92,19 @@ switch (_mode) do
 			case "turtle": {_var = "license_civ_turtle"};
 			case "sscp": {_var = "license_civ_sscp"};
 			case "ef": {_var = "license_civ_ef"};
-			case "umb": {_var = "license_civ_umb"};				
-			
-			
+			case "umb": {_var = "license_civ_umb"};
+
+
 			case "permrebel": {_var = "license_civ_permrebel"};
 			case "cop_leger": {_var = "license_cop_fusiller_leger"};
 			case "cop_medecin": {_var = "license_cop_medecin"};
 			case "cop_lourd": {_var = "license_cop_fusiller_lourd"};
 			case "cop_precision": {_var = "license_cop_tireur_precision"};
-			case "cop_elite": {_var = "license_cop_tireur_elite"};				
-					
-			
+			case "cop_elite": {_var = "license_cop_tireur_elite"};
+
+			case "bonbeur": {_var = "license_civ_bonbeur"};
+			case "natiosecuri": {_var = "license_civ_natiosecuri"};
+
 			case "transport": {_var = "license_civ_busDriver"}; //WearlDStyLz
 			default {_var = ""};
 		};
@@ -166,27 +168,30 @@ switch (_mode) do
 			case "license_cop_tireur_precision": {_var = "cop_precision"};
 			case "license_cop_tireur_elite": {_var = "cop_elite"};
 			*/
-			
-			case "license_civ_permrebel": {_var = "permrebel"};			
-			case "license_civ_organ": {_var = "organ"};	
-			
-			
+
+			case "license_civ_permrebel": {_var = "permrebel"};
+			case "license_civ_organ": {_var = "organ"};
+
+
 			case "license_civ_bucheron": {_var = "wood"};
 			case "license_civ_joaillier": {_var = "gold"};
 			case "license_civ_brique": {_var = "clay"};
-			case "license_civ_diamantaire": {_var = "diamant"};	
-			case "license_civ_iron": {_var = "iron"};			
+			case "license_civ_diamantaire": {_var = "diamant"};
+			case "license_civ_iron": {_var = "iron"};
 			case "license_civ_tissu": {_var = "lin"};
 			case "license_civ_plastique": {_var = "oil"};
-			case "license_civ_poudre": {_var = "powder"};		
+			case "license_civ_poudre": {_var = "powder"};
 			case "license_civ_heroine": {_var = "heroin"};
 			case "license_civ_canabis": {_var = "marijuana"};
-			case "license_civ_cocaine": {_var = "cocaine"};		
+			case "license_civ_cocaine": {_var = "cocaine"};
 			case "license_civ_uranium": {_var = "uraniump"};
 			case "license_civ_archeologie": {_var = "archeologie"};
-			case "license_civ_organ": {_var = "organ"};	
-			
-			
+			case "license_civ_organ": {_var = "organ"};
+
+			case "license_civ_bonbeur": {_var = "bonbeur"};
+			case "license_civ_natiosecuri": {_var = "natiosecuri"};
+
+
 			default {_var = ""};
 		};
 	};

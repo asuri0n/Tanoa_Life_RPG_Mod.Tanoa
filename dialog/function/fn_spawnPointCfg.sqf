@@ -37,11 +37,15 @@ switch (_side) do
 		_return  pushBack ["civ_spawn_4","Aéroport de saint george","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 		_return  pushBack ["civ_spawn_5","Ouméré","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 
+		if(license_civ_gangster) then {
+			_return  pushBack ["gangster_spawn","Camp Gangster","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+		};
+
 		if(license_civ_bonbeur) then {
 			_return  pushBack ["bonbeur_spawn","Entreprise bonbeur","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 		};
-		if(license_civ_gangster) then {
-			_return  pushBack ["gangster_spawn","Camp Gangster","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+		if(license_civ_natiosecuri) then {
+			_return  pushBack ["national_security","National Security","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 		};
 
 		if(count life_houses > 0) then {

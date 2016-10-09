@@ -43,10 +43,11 @@ _clothes = switch (life_clothing_store) do
 	case "dep": {[_selection] call life_fnc_clothing_dep;};
 	case "presse": {[_selection] call life_fnc_clothing_presse;};
 	case "xxx": {[_selection] call life_fnc_clothing_xxx;};
-	case "sscp": {[_selection] call life_fnc_clothing_sscp;};
 	case "wt": {[_selection] call life_fnc_clothing_wt;};
 	case "hunter": {[_selection] call life_fnc_clothing_hunter;}; //Added Jo for Bounty Hunter
 	case "donator": {[_selection] call life_fnc_clothing_donator;};
+
+	case "natiosecuri": {[_selection] call life_fnc_clothing_natiosecuri;};
 };
 
 if(count _clothes == 0) exitWith {};

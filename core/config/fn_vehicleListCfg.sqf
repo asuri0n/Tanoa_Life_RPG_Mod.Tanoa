@@ -491,5 +491,22 @@ switch (_shop) do
             };
         };
     };
+
+    case "natiosecuri":
+    {
+        switch(true) do
+        {
+            case (!license_civ_natiosecuri): {"Tu n'es pas membre de l'entreprise National Security!"};
+            default
+            {
+                _return =
+                [
+                    ["C_Offroad_01_F", 40000],
+                    ["C_SUV_01_F", 50000],
+                    ["B_Truck_01_fuel_F",1000000]
+                ];
+            };
+        };
+    };
 };
 _return;

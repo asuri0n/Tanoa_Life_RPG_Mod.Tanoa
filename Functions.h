@@ -240,7 +240,7 @@ class Life_Client_Core
 		class clothing_hunter {}; //Mais qu'il est con.
 		class clothing_presse {}; //Mais qu'il est teubé
 		class clothing_xxx {};
-		class clothing_sscp {};
+		class clothing_natiosecuri {};
 		class clothing_wt {};
 		class clothing_donator {};
 
