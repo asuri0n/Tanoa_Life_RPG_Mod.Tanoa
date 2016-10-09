@@ -94,6 +94,7 @@ switch (_side) do
 		_return = [];
 		if(license_civ_rebel) then {
 			_return  pushBack ["reb_spawn_1","Aérodrome de Bala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+			_return  pushBack ["civ_spawn_2","La Rochelle","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 
 			diag_log format["[VACA_DEBUG] ====== SPAWN gang data:%1", life_gangData];
 			if((count life_gangData) != 0) then {
