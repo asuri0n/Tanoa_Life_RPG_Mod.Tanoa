@@ -486,7 +486,7 @@ switch (_code) do
 				_veh = vehicle player;
 			};
 
-			if(_veh isKindOf "House_F" && playerSide == civilian) then {
+			if(_veh isKindOf "House_F" && (playerSide == civilian OR playerSide == east)) then {
 				if(_veh in life_vehicles && player distance _veh < 15) then {
 					_door = [_veh] call life_fnc_nearestDoor;
 					if(_door == 0) exitWith {hint "Tu n'es pas proche d'une porte!"};
