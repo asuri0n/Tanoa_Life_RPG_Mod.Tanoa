@@ -8,7 +8,7 @@ private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleTe
 _building = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _building) exitWith {};
 if(!(_building isKindOf "House_F")) exitWith {hint "Ceci n'est pas une porte."};
-if({side _x == west} count playableUnits < 2) exitWith {hint "Il faut 2 gendarmes connectés pour pouvoir braquer une maison"};
+if({side _x == west} count playableUnits < 5) exitWith {hint "Il faut 5 gendarmes connectés pour pouvoir braquer une maison"};
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = 0;};
 if(_building in invo_bank_buildings) then {
 	[[1,"<t color='#ff0000' shadow='2' size = '1.2'>Alerte !</t><br /><t color='#ff0000' shadow='2' size = '1'>La banque fédérale<br />est en train de se faire braquer!</t>",true,[]],"life_fnc_broadcast",true,false] call life_fnc_MP;
