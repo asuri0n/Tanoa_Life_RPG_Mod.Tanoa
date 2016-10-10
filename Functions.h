@@ -241,7 +241,7 @@ class Life_Client_Core
 		class clothing_presse {}; //Mais qu'il est teubé
 		class clothing_xxx {};
 		class clothing_natiosecuri {};
-		class clothing_wt {};
+		class clothing_avocat_wh {};
 		class clothing_donator {};
 
 		class itemIsLiquid {}; //Komodo: returns true if item in argument is a liquid

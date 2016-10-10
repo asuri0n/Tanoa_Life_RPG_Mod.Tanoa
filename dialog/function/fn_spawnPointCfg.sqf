@@ -41,11 +41,15 @@ switch (_side) do
 			_return  pushBack ["gangster_spawn","Camp Gangster","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 		};
 
+		// ENTREPRISES CIVIL
 		if(license_civ_bonbeur) then {
 			_return  pushBack ["bonbeur_spawn","Entreprise bonbeur","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 		};
 		if(license_civ_natiosecuri) then {
 			_return  pushBack ["national_security","National Security","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
+		};
+		if(license_civ_avocat_wh) then {
+			_return  pushBack ["avocat_wh","Avocats WH","\a3\ui_f\data\map\MapControl\watertower_ca.paa"];
 		};
 
 		if(count life_houses > 0) then {

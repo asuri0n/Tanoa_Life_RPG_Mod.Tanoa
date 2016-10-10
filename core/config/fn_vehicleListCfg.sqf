@@ -500,22 +500,27 @@ switch (_shop) do
         };
     };
 
+    /*
+     * ENTREPRISES
+    **/
+
     case "natiosecuri":
     {
-        switch(true) do
-        {
-            case (!license_civ_natiosecuri): {"Tu n'es pas membre de l'entreprise National Security!"};
-            default
-            {
-                _return =
-                [
-                    ["C_Offroad_01_F", 40000],
-                    ["C_SUV_01_F", 50000],
-                    ["C_Offroad_02_unarmed_F",50000],
-                    ["C_Heli_Light_01_civil_F",553000]
-                ];
-            };
-        };
+        _return =
+        [
+            ["C_Offroad_01_F", 40000],
+            ["C_SUV_01_F", 50000],
+            ["C_Offroad_02_unarmed_F",50000],
+            ["C_Heli_Light_01_civil_F",553000]
+        ];
+    };
+
+    case "avocat_wh":
+    {
+        _return =
+        [
+            ["C_SUV_01_F", 50000]
+        ];
     };
 };
 _return;

@@ -15,12 +15,14 @@ if((_this select 3) in ["bruce","dive","kart","donator"] && playerSide != civili
 if((_this select 3) in ["reb"] && playerSide != east) exitWith {hint "Tu dois être rebelle pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint "Tu dois être un rebelle pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "gangster" && !license_civ_gangster) exitWith {hint "Tu dois être un gangster pour utiliser ce vendeur!"; closeDialog 0;};
-if((_this select 3) == "natiosecuri" && !license_civ_natiosecuri) exitWith {hint "Tu dois être salarié de l'entreprise National Security!"; closeDialog 0;};
 if((_this select 3) == "bac" && !license_cop_bac) exitWith {hint "Tu dois être membre de la BAC pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) == "hunter" && !license_civ_bounty_hunter) exitWith {hint "Tu dois être membre des chasseurs de primes pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint "Tu dois être un gendarme pour utiliser ce vendeur!"; closeDialog 0;};
 if((_this select 3) in ["med"] && playerSide != independent) exitWith {hint "Seul l'effectif du SAMU peut utiliser ce vendeur!"; closeDialog 0;};//ajout serrat
 
+// ENTREPRISES
+if((_this select 3) == "natiosecuri" && !license_civ_natiosecuri) exitWith {hint "Tu dois être salarié de l'entreprise National Security!"; closeDialog 0;};
+if((_this select 3) == "avocat_wh" && !license_civ_avocat_wh) exitWith {hint "Tu dois être membre du cabinet d'avocats!"; closeDialog 0;};
 life_clothing_store = _this select 3;
 
 //License Check?

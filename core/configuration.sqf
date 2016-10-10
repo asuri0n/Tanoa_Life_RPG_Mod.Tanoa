@@ -582,7 +582,8 @@ life_licenses =
 
 	//ENTREPRISES
 	["license_civ_bonbeur","civ"],
-	["license_civ_natiosecuri","civ"]
+	["license_civ_natiosecuri","civ"],
+	["license_civ_avocat_wh","civ"]
 
 ];
 

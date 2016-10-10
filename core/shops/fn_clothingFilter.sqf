@@ -47,7 +47,9 @@ _clothes = switch (life_clothing_store) do
 	case "hunter": {[_selection] call life_fnc_clothing_hunter;}; //Added Jo for Bounty Hunter
 	case "donator": {[_selection] call life_fnc_clothing_donator;};
 
+	// ENTREPRISES
 	case "natiosecuri": {[_selection] call life_fnc_clothing_natiosecuri;};
+	case "avocat_wh": {[_selection] call life_fnc_clothing_avocat_wh;};
 };
 
 if(count _clothes == 0) exitWith {};

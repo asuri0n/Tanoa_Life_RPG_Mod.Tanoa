@@ -230,9 +230,13 @@ switch (_var) do
 
 	case "license_cop_bac": {"Membre de la Brigade Anti Criminalité"}; //Ajout Bac 11/10/14 Jo
 	case "license_civ_busDriver": {"transport de personnes"};
-
 	case "license_civ_transport": {"transport"};
+
+	/*
+	 * ENTREPRISES
+	**/
 	case "license_civ_bonbeur": {"Entreprise Bonbeur"};
 	case "license_civ_natiosecuri": {"National Security"};
+	case "license_civ_avocat_wh": {"Avocats WH"};
 
 };

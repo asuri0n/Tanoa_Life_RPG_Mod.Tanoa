@@ -10,7 +10,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Mohammed's Jihadi Shop"];
+ctrlSetText[3103,"Avocats cabinet"];
 
 switch (_filter) do
 {
@@ -18,7 +18,7 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_C_WorkerCoveralls",nil,3000]
+			["U_I_G_resistanceLeader_F",nil,3000]
 		];
 	};
 
@@ -26,7 +26,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["H_Cap_pmc_headphones",nil,500]
+			["H_Cap_headphones",nil,500]
 		];
 	};
 
@@ -50,7 +50,7 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_Carryall_cbr",nil,10000]
+			["B_ViperHarness_blk_F",nil,10000]
 		];
 	};
 };

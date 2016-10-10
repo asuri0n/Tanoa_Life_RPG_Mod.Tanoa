@@ -255,7 +255,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Accessible que aux civils !"};
-			case (!license_civ_natiosecuri): {"Tu n'a pas le Permis de Port d'Armes !"};
+			case (!license_civ_gun): {"Tu n'a pas le Permis de Port d'Armes !"};
 			default
 			{
 				["Armes a Feu De Billy Joe",
@@ -1223,6 +1223,11 @@ switch(_shop) do
 			};
 		};
 	};
+
+	/*
+	 * ENTREPRISES
+	**/
+
 	case "natiosecuri":
 	{
 		switch(true) do
@@ -1245,6 +1250,36 @@ switch(_shop) do
 						["optic_ERCO_blk_F",nil,10000],
 						["optic_DMS",nil,50000],
 						["optic_Holosight_smg_blk_F",nil,10000],
+
+						["ItemRadio",nil,200],
+						["ItemMap",nil,500],
+						["ItemGPS",nil,500],
+						["ItemCompass",nil,500],
+						["ItemWatch",nil,150],
+						["Rangefinder",nil,1500],
+						["acc_flashlight",nil,2500],
+						["NVGoggles","Night Vision",5000],
+						["ToolKit",nil,5000]
+					]
+				];
+			};
+		};
+	};
+	case "avocat_wh":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Accessible que aux civils !"};
+			case (!license_civ_avocat_wh): {"Tu n'est pas membre du cabinet d'avocat"};
+			default
+			{
+				["Cabinet Avocats",
+					[
+
+						["SMG_01_F",nil,35000],
+						["30Rnd_45ACP_Mag_SMG_01",nil,50],
+						["ItemRadio",nil,200],
+						["ItemMap",nil,500],
 
 						["ItemRadio",nil,200],
 						["ItemMap",nil,500],

@@ -104,6 +104,7 @@ switch (_mode) do
 
 			case "bonbeur": {_var = "license_civ_bonbeur"};
 			case "natiosecuri": {_var = "license_civ_natiosecuri"};
+			case "avocat_wh": {_var = "license_civ_avocat_wh"};
 
 			case "transport": {_var = "license_civ_busDriver"}; //WearlDStyLz
 			default {_var = ""};
@@ -188,8 +189,10 @@ switch (_mode) do
 			case "license_civ_archeologie": {_var = "archeologie"};
 			case "license_civ_organ": {_var = "organ"};
 
+			// ENTREPRISES
 			case "license_civ_bonbeur": {_var = "bonbeur"};
 			case "license_civ_natiosecuri": {_var = "natiosecuri"};
+			case "license_civ_avocat_wh": {_var = "avocat_wh"};
 
 
 			default {_var = ""};
