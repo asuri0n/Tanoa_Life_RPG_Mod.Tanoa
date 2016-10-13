@@ -333,6 +333,7 @@ switch(_shop) do
 							["30Rnd_9x21_Mag_SMG_02",nil,430],
 
 						["arifle_AKS_F",nil,100000],
+						["arifle_AKM_F",nil,400000],
 							["30Rnd_545x39_Mag_F",nil,500],
 
 						["arifle_SPAR_02_khk_F",nil,325000],
@@ -340,9 +341,7 @@ switch(_shop) do
 							["150Rnd_556x45_Drum_Mag_F",nil,3000],
 
 						["arifle_Katiba_C_F",nil,332500],
-							["30Rnd_65x39_caseless_green",nil,500],
-						["LMG_03_F",nil,380000],
-							["200Rnd_556x45_Box_F",nil,3500]
+							["30Rnd_65x39_caseless_green",nil,500]
 					]
 				];
 			};
@@ -562,6 +561,7 @@ switch(_shop) do
 
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
+						["arifle_SPAR_01_blk_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
 							["20Rnd_556x45_UW_mag",nil,500],
 
@@ -598,7 +598,7 @@ switch(_shop) do
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 
-						["acc_flashlight",nil,2500],
+						["acc_flashlight",nil,500],
 
 					//Items
 						["ItemMap","Carte",0],
@@ -652,6 +652,7 @@ switch(_shop) do
 
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
+						["arifle_SPAR_01_blk_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
 							["20Rnd_556x45_UW_mag",nil,500],
 
@@ -699,7 +700,7 @@ switch(_shop) do
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 
-						["acc_flashlight",nil,2500],
+						["acc_flashlight",nil,500],
 
 					//Items
 						["ItemMap","Carte",0],
@@ -753,6 +754,7 @@ switch(_shop) do
 
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
+						["arifle_SPAR_01_blk_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
 							["20Rnd_556x45_UW_mag",nil,500],
 
@@ -811,7 +813,7 @@ switch(_shop) do
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 
-						["acc_flashlight",nil,2500],
+						["acc_flashlight",nil,500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
@@ -867,6 +869,7 @@ switch(_shop) do
 
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
+						["arifle_SPAR_01_blk_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
 							["20Rnd_556x45_UW_mag",nil,500],
 
@@ -931,7 +934,7 @@ switch(_shop) do
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 
-						["acc_flashlight",nil,2500],
+						["acc_flashlight",nil,500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
@@ -990,6 +993,7 @@ switch(_shop) do
 
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
+						["arifle_SPAR_01_blk_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
 							["20Rnd_556x45_UW_mag",nil,500],
 
@@ -1056,7 +1060,7 @@ switch(_shop) do
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 
-						["acc_flashlight",nil,2500],
+						["acc_flashlight",nil,500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
@@ -1114,6 +1118,7 @@ switch(_shop) do
 
 						["arifle_Mk20_F",nil,27500],
 						["arifle_SDAR_F",nil,27500],
+						["arifle_SPAR_01_blk_F",nil,27500],
 							["30Rnd_556x45_Stanag",nil,500],
 
 						["arifle_CTAR_blk_F",nil,27500],
@@ -1178,7 +1183,7 @@ switch(_shop) do
 						["muzzle_snds_65_TI_ghex_F",nil,2500],
 						["muzzle_snds_65_TI_hex_F",nil,2500],
 
-						["acc_flashlight",nil,2500],
+						["acc_flashlight",nil,500],
 
 					//Items
 						//["AGM_Epipen",nil,35000],
