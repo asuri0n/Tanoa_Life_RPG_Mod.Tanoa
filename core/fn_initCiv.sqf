@@ -33,12 +33,12 @@ waitUntil {!(isNull (findDisplay 46))};
 	};
 };*/
 
-if(license_civ_rebel) then
+/*if(license_civ_rebel) then
 {
 	player enableSimulation false;
 	["noRebelCiv",false,true] call BIS_fnc_endMission;
 	sleep 35;
-};
+};*/
 
 /*****
 SAUVEGARDE DE LA POSITION
@@ -100,6 +100,7 @@ _name = name player;
 switch (true) do {
     case license_civ_gangster: {invo_faction = "gangster"; player setVariable ["invo_faction","gangster",true];};
     //case license_civ_bounty_hunter: {invo_faction = "bounty_hunter"; player setVariable ["invo_faction","bounty_hunter",true];};
+	case license_civ_rebel: {invo_faction = "rebel"; player setVariable ["invo_faction","rebel",true];};
     default {invo_faction = "civilian"; player setVariable ["invo_faction","civilian",true];};
 };
 

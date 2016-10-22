@@ -16,7 +16,9 @@ disableSerialization;
 //Long boring series of checks
 if(dialog) exitWith {};
 if(_shop == "") exitWith {};
-if(_sideCheck != sideUnknown && {playerSide != _sideCheck}) exitWith {hint "Tu n'es pas autorisé a utiliser ce magasin!"};
+
+if(_sideCheck != sideUnknown && {playerSide != _sideCheck} && !license_civ_rebel) exitWith {hint "Tu n'es pas autorisé a utiliser ce magasin!"};
+if(playerSide == east && _sideCheck != civilian && _sideCheck != east) exitWith {hint "Tu n'es pas autorisé a utiliser ce magasin!"};
 
 if(!createDialog "Life_Vehicle_Shop_v2") exitWith {};
 

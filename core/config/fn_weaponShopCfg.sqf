@@ -125,6 +125,9 @@ switch(_shop) do
 						["srifle_GM6_camo_F",nil,712500],
 							["5Rnd_127x108_Mag",nil,2500],
 
+						["LMG_03_F",nil,550000],
+							["200Rnd_556x45_Box_F",nil,3500],
+
 						["LMG_Zafir_F",nil,650000],
 							["150Rnd_762x54_Box",nil,5000]
 					]
@@ -137,7 +140,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != east): {"Accessible qu'aux rebelles !"};
+			//case (playerSide != east): {"Accessible qu'aux rebelles !"};
 			case (!license_civ_rebel): {"Tu n'as pas ta licence d'entrainement Rebelle!"};
 			default
 			{
@@ -180,9 +183,6 @@ switch(_shop) do
 
 						["srifle_DMR_05_tan_f",nil,600000],
 							["10Rnd_93x64_DMR_05_Mag",nil,5000],
-
-						["LMG_03_F",nil,380000],
-							["200Rnd_556x45_Box_F",nil,3500],
 
 						["arifle_Mk20_F",nil,60000],
 						["arifle_SDAR_F",nil,60000],
@@ -333,15 +333,11 @@ switch(_shop) do
 							["30Rnd_9x21_Mag_SMG_02",nil,430],
 
 						["arifle_AKS_F",nil,100000],
-						["arifle_AKM_F",nil,400000],
 							["30Rnd_545x39_Mag_F",nil,500],
 
 						["arifle_SPAR_02_khk_F",nil,325000],
 						["arifle_SPAR_02_snd_F",nil,325000],
-							["150Rnd_556x45_Drum_Mag_F",nil,3000],
-
-						["arifle_Katiba_C_F",nil,332500],
-							["30Rnd_65x39_caseless_green",nil,500]
+							["150Rnd_556x45_Drum_Mag_F",nil,3000]
 					]
 				];
 			};

@@ -186,10 +186,10 @@
 		{ deleteMarkerLocal _x; } forEach _illegalmarkers;
 	};
 
-	_copmarkers = ["marker1"];
+	/*_copmarkers = ["marker1"];
 	if (playerSide != west) then {
 		{ deleteMarkerLocal _x; } forEach _copmarkers;
-	};
+	};*/
 };
 
 [] spawn {

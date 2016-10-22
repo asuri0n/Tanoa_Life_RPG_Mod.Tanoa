@@ -140,8 +140,8 @@ switch (_item) do
 	case "uraniump4" : {5};
 	case "uraniump" : {3};
 
-	case "organp" : {5};
-	case "organ" : {3};
+	case "organp" : {3};
+	case "organ" : {5};
 
 	case "osslp" : {5};
 	case "ossillp" : {3};

@@ -732,7 +732,7 @@ list_commercial_items =
 */
 sell_array =
 [
-	["apple",80],
+	["apple",40],
 	["peach",20],
 	["heroinu",2700],
 	["heroinp",4700],
@@ -837,7 +837,7 @@ sell_array =
 	["crystalmethpur",140000],
 	["archeologieillegale",7300],
 	["organ",6000],
-	["organp",11900],
+	["organp",22000],
 //-------------
 ["rockp",1],
 ["rocktaillep",1],
@@ -854,7 +854,7 @@ sell_array =
 ["calcairep",1],
 ["cimentp",1],
 ["osslp",7300],
-["organp",11900],
+["organp",22000],
 ["briquep",1100]
 
 ];
